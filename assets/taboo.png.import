@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gnj8840s2ky"
-path.s3tc="res://.godot/imported/tableTEST.png-f1036ce76279119be888b391fb7c1a6a.s3tc.ctex"
+uid="uid://d0343jkkhwhco"
+path.s3tc="res://.godot/imported/taboo.png-0550b238015c77fd7be738c0b1f11273.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/tableTEST.png"
-dest_files=["res://.godot/imported/tableTEST.png-f1036ce76279119be888b391fb7c1a6a.s3tc.ctex"]
+source_file="res://assets/taboo.png"
+dest_files=["res://.godot/imported/taboo.png-0550b238015c77fd7be738c0b1f11273.s3tc.ctex"]
 
 [params]
 

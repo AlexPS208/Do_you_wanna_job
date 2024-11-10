@@ -1,0 +1,278 @@
+[gd_scene load_steps=21 format=3 uid="uid://dy3tfvuabf6xs"]
+
+[ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
+[ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
+[ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="1_v8iea"]
+[ext_resource type="Script" path="res://scenes/camera_movement.gd" id="3_p5qoy"]
+[ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="3_ripa5"]
+[ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="4_cglvn"]
+[ext_resource type="Texture2D" uid="uid://cqc3ag5hijqxd" path="res://assets/JackTEST.png" id="5_13m0n"]
+[ext_resource type="Texture2D" uid="uid://gnj8840s2ky" path="res://assets/tableTEST.png" id="6_sfssq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
+shader = ExtResource("1_77jim")
+shader_parameter/sky_color = Color(0.03, 0.05, 0.11, 1)
+shader_parameter/star_base_color = Color(0.8, 1, 0.3, 1)
+shader_parameter/star_hue_offset = 0.6
+shader_parameter/star_intensity = 0.08
+shader_parameter/star_twinkle_speed = 0.8
+shader_parameter/star_twinkle_intensity = 0.2
+shader_parameter/layer_scale = 20.0
+shader_parameter/layer_scale_step = 10.0
+shader_parameter/layers_count = 3
+
+[sub_resource type="Sky" id="Sky_wkf54"]
+sky_material = SubResource("ShaderMaterial_2ff6s")
+
+[sub_resource type="Environment" id="Environment_1msqq"]
+background_mode = 2
+sky = SubResource("Sky_wkf54")
+
+[sub_resource type="Animation" id="Animation_a5a76"]
+resource_name = "Light_turn_on"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.266667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lamp_sound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Camera3D:fov")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.266667, 0.5),
+"transitions": PackedFloat32Array(0.25, 1),
+"update": 0,
+"values": [80.0, 70.0]
+}
+
+[sub_resource type="Animation" id="Animation_g10gl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lamp_sound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Camera3D:fov")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [75.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0001e"]
+_data = {
+"Light_turn_on": SubResource("Animation_a5a76"),
+"RESET": SubResource("Animation_g10gl")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uf4ii"]
+albedo_texture = ExtResource("3_ripa5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nph2e"]
+transparency = 1
+albedo_color = Color(1, 1, 0.768627, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_euara"]
+transparency = 1
+albedo_color = Color(0.815686, 1, 1, 0.498039)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2ltn"]
+albedo_texture = ExtResource("4_cglvn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3flx0"]
+albedo_texture = ExtResource("3_ripa5")
+uv1_scale = Vector3(14, 0.2, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yuhuq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_13m0n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="FirstManager" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1msqq")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Scene_transit_start" type="ColorRect" parent="UI"]
+offset_right = 1943.0
+offset_bottom = 1099.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_u78f6")
+
+[node name="Lamp_animator" type="AnimationPlayer" parent="UI/Scene_transit_start"]
+libraries = {
+"": SubResource("AnimationLibrary_0001e")
+}
+
+[node name="Lamp_sound" type="AudioStreamPlayer3D" parent="UI/Scene_transit_start"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74544, -3.04326)
+stream = ExtResource("1_v8iea")
+volume_db = 10.0
+pitch_scale = 0.85
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+script = ExtResource("3_p5qoy")
+
+[node name="Scene" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
+
+[node name="Ceil" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -2.5)
+size = Vector3(10, 0.1, 10)
+material = SubResource("StandardMaterial3D_uf4ii")
+
+[node name="Lamp2" type="CSGBox3D" parent="Scene/Ceil"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.096, -0.07, -2.7)
+size = Vector3(1.691, 0.02, 0.1)
+material = SubResource("StandardMaterial3D_nph2e")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Ceil/Lamp2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Scene/Ceil/Lamp2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.5, 0, 0)
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Scene/Ceil/Lamp2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.5, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Scene/Ceil/Lamp2"]
+light_energy = 0.5
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Scene/Ceil/Lamp2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+light_energy = 0.5
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Scene/Ceil/Lamp2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+light_energy = 0.5
+
+[node name="Lamp" type="CSGBox3D" parent="Scene/Ceil"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07, -3.5)
+visible = false
+size = Vector3(0.1, 0.03, 0.1)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Scene/Ceil/Lamp"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Ceil/Lamp"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="Lamp4" type="CSGBox3D" parent="Scene/Ceil"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07, 2)
+size = Vector3(0.1, 0.03, 0.1)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Scene/Ceil/Lamp4"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Ceil/Lamp4"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="Wall1" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, -7.5)
+size = Vector3(10, 3.5, 0.1)
+material = SubResource("StandardMaterial3D_uf4ii")
+
+[node name="Window" type="CSGBox3D" parent="Scene/Wall1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+operation = 2
+size = Vector3(3, 2, 0.15)
+
+[node name="Window" type="CSGBox3D" parent="Scene/Wall1/Window"]
+operation = 2
+size = Vector3(4, 2, 0.02)
+material = SubResource("StandardMaterial3D_euara")
+
+[node name="Mr_Kekich" type="CSGBox3D" parent="Scene/Wall1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28519, -0.371524, -0.2)
+size = Vector3(1, 1, 0.1)
+material = SubResource("StandardMaterial3D_y2ltn")
+
+[node name="Windowsill" type="CSGBox3D" parent="Scene/Wall1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0.1)
+size = Vector3(3, 0.1, 0.2)
+material = SubResource("StandardMaterial3D_3flx0")
+
+[node name="Wall2" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 2.5)
+size = Vector3(10, 3.5, 0.1)
+material = SubResource("StandardMaterial3D_uf4ii")
+
+[node name="Wall3" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.25, -2.5)
+size = Vector3(0.1, 3.5, 10)
+material = SubResource("StandardMaterial3D_uf4ii")
+
+[node name="Wall4" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.25, -2.5)
+size = Vector3(0.1, 3.5, 10)
+material = SubResource("StandardMaterial3D_uf4ii")
+
+[node name="Floor" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -2.5)
+size = Vector3(10, 0.1, 10)
+material = SubResource("StandardMaterial3D_uf4ii")
+
+[node name="Mr_Shutnyara" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.2, -2.5)
+sprite_frames = SubResource("SpriteFrames_yuhuq")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Table" type="Sprite3D" parent="Mr_Shutnyara"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9, 3.4)
+texture = ExtResource("6_sfssq")
