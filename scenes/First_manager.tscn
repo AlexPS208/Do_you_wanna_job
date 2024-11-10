@@ -1,16 +1,15 @@
-[gd_scene load_steps=31 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=28 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="1_v8iea"]
-[ext_resource type="Script" path="res://scenes/camera_movement.gd" id="3_p5qoy"]
-[ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="3_ripa5"]
 [ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="4_cglvn"]
+[ext_resource type="Texture2D" uid="uid://bpnuakblvm0i5" path="res://assets/wallpaper_front.png" id="4_ms1l2"]
 [ext_resource type="Texture2D" uid="uid://cqc3ag5hijqxd" path="res://assets/JackTEST.png" id="5_13m0n"]
-[ext_resource type="Texture2D" uid="uid://bbxgd5k8hjbjj" path="res://assets/wallpaperT1.png" id="5_fqksx"]
 [ext_resource type="Texture2D" uid="uid://gnj8840s2ky" path="res://assets/tableTEST.png" id="6_sfssq"]
 [ext_resource type="Shader" path="res://assets/shaders/Outline_shader.gdshader" id="6_utuxu"]
-[ext_resource type="Texture2D" uid="uid://cxueinwytlk6f" path="res://assets/wallpaperT.png" id="9_w7c60"]
+[ext_resource type="Texture2D" uid="uid://1xvmxye43yrr" path="res://assets/wallpaper_side.png" id="7_0caud"]
+[ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/board.png" id="7_4lm6e"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
 shader = ExtResource("1_77jim")
@@ -133,11 +132,7 @@ transparency = 1
 albedo_color = Color(1, 1, 0.768627, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_irrrc"]
-albedo_texture = ExtResource("5_fqksx")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_euara"]
-transparency = 1
-albedo_color = Color(0.815686, 1, 1, 0.498039)
+albedo_texture = ExtResource("4_ms1l2")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8xyi8"]
 render_priority = 0
@@ -150,18 +145,14 @@ shader_parameter/constant_width = true
 next_pass = SubResource("ShaderMaterial_8xyi8")
 albedo_texture = ExtResource("4_cglvn")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3flx0"]
-albedo_texture = ExtResource("3_ripa5")
-uv1_scale = Vector3(14, 0.2, 1)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5y5b"]
-albedo_texture = ExtResource("5_fqksx")
+albedo_texture = ExtResource("4_ms1l2")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h3ic3"]
-albedo_texture = ExtResource("9_w7c60")
+albedo_texture = ExtResource("7_0caud")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vo0m6"]
-albedo_texture = ExtResource("9_w7c60")
+albedo_texture = ExtResource("7_0caud")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hhhlk"]
 load_path = "res://.godot/imported/white_wall.jpg-8d9fd96bd2d9ebbcdfbb7d970956a8cf.s3tc.ctex"
@@ -207,7 +198,6 @@ pitch_scale = 0.85
 
 [node name="Camera3D" type="Camera3D" parent="."]
 current = true
-script = ExtResource("3_p5qoy")
 
 [node name="Scene" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
@@ -266,25 +256,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, -7.5)
 size = Vector3(5, 3.5, 0.1)
 material = SubResource("StandardMaterial3D_irrrc")
 
-[node name="Window" type="CSGBox3D" parent="Scene/Wall1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
-operation = 2
-size = Vector3(3, 2, 0.15)
-
-[node name="Window" type="CSGBox3D" parent="Scene/Wall1/Window"]
-operation = 2
-size = Vector3(4, 2, 0.02)
-material = SubResource("StandardMaterial3D_euara")
-
 [node name="Mr_Kekich" type="CSGBox3D" parent="Scene/Wall1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28519, -0.371524, -0.2)
 size = Vector3(1, 1, 0.1)
 material = SubResource("StandardMaterial3D_y2ltn")
 
-[node name="Windowsill" type="CSGBox3D" parent="Scene/Wall1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0.1)
-size = Vector3(3, 0.1, 0.2)
-material = SubResource("StandardMaterial3D_3flx0")
+[node name="Board" type="Sprite3D" parent="Scene/Wall1"]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0, 0.25, 0.11)
+texture = ExtResource("7_4lm6e")
 
 [node name="Wall2" type="CSGBox3D" parent="Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 2.5)
@@ -292,7 +271,7 @@ size = Vector3(5, 3.5, 0.1)
 material = SubResource("StandardMaterial3D_c5y5b")
 
 [node name="Wall3" type="CSGBox3D" parent="Scene"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2.5, 0.25, -2.5)
+transform = Transform3D(-1, 8.74228e-08, 0, 3.82137e-15, 4.37114e-08, -1, -8.74228e-08, -1, -4.37114e-08, 2.5, 0.25, -2.5)
 size = Vector3(0.1, 10, 3.5)
 material = SubResource("StandardMaterial3D_h3ic3")
 
@@ -306,16 +285,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -2.5)
 size = Vector3(5, 0.1, 10)
 material = SubResource("StandardMaterial3D_d5irv")
 
-[node name="Baseboards" type="CSGBox3D" parent="Scene/Floor"]
-
-[node name="Baseboards" type="Node3D" parent="Scene"]
-
 [node name="Mr_Shutnyara" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.2, -2.5)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.2, -2.35)
 sprite_frames = SubResource("SpriteFrames_yuhuq")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="Table" type="Sprite3D" parent="Mr_Shutnyara"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9, 3.4)
+transform = Transform3D(1, 0, 0, 0, 0.999848, 0.0174524, 0, -0.0174524, 0.999848, 0, -9, 3.4)
 texture = ExtResource("6_sfssq")

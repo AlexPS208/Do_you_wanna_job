@@ -368,10 +368,6 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 
 [node name="SpotLight3D3" type="SpotLight3D" parent="Scene/Lamp"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.5, 0, 0)
 
-[node name="Flicker_timer" type="Timer" parent="Scene/Lamp"]
-
-[node name="Flicker_duration_timer" type="Timer" parent="Scene/Lamp"]
-
 [node name="Floor" type="CSGBox3D" parent="Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.364258, -2.38087, -2.06974)
 size = Vector3(18, 0.1, 29)
@@ -394,5 +390,3 @@ parameters/looping = true
 [connection signal="pressed" from="UI/Menu/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit" to="." method="_on_exit_pressed"]
 [connection signal="animation_finished" from="Cutscene_animation" to="." method="_on_cutscene_animation_animation_finished"]
-[connection signal="timeout" from="Scene/Lamp/Flicker_timer" to="Scene/Lamp" method="_on_flicker_timer_timeout"]
-[connection signal="timeout" from="Scene/Lamp/Flicker_duration_timer" to="Scene/Lamp" method="_on_flicker_duration_timer_timeout"]
