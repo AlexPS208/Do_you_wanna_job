@@ -1,8 +1,9 @@
-[gd_scene load_steps=25 format=3 uid="uid://4a511imbpxmm"]
+[gd_scene load_steps=27 format=3 uid="uid://4a511imbpxmm"]
 
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_5li4t"]
 [ext_resource type="Script" path="res://scenes/start_cutscene.gd" id="1_hjrkf"]
 [ext_resource type="Texture2D" uid="uid://cad1dq8qly7e3" path="res://assets/black_door.jpg" id="2_e4u8d"]
+[ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="2_wxyd6"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="5_m1b6y"]
 [ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="6_e411h"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="6_wnjup"]
@@ -25,9 +26,14 @@ font_color = Color(0.952941, 0.698039, 0.0666667, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3plmt"]
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_daclm"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("2_wxyd6")
+
 [sub_resource type="Animation" id="Animation_qui2l"]
 resource_name = "Cutscene"
-length = 17.0
+length = 15.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -95,7 +101,7 @@ tracks/5/path = NodePath("Scene/Door/door_boom_sound:playing")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(7.23333),
+"times": PackedFloat32Array(7.03333),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -286,6 +292,11 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_3plmt")
 text = "EXIT"
 alignment = 0
 
+[node name="Button_sound" type="AudioStreamPlayer3D" parent="UI"]
+stream = SubResource("AudioStreamRandomizer_daclm")
+volume_db = -10.0
+pitch_scale = 1.7
+
 [node name="Cutscene_animation" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_e66qx")
@@ -340,6 +351,7 @@ script = ExtResource("6_e411h")
 
 [node name="OmniLight3D1" type="OmniLight3D" parent="Scene/Lamp"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+light_color = Color(1, 1, 0.913725, 1)
 light_energy = 0.2
 light_indirect_energy = 0.2
 omni_range = 0.3
@@ -347,6 +359,7 @@ omni_attenuation = 0.2
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Scene/Lamp"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.1, 0)
+light_color = Color(1, 1, 0.913725, 1)
 light_energy = 0.2
 light_indirect_energy = 0.2
 omni_range = 0.3
@@ -354,6 +367,7 @@ omni_attenuation = 0.2
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="Scene/Lamp"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.1, 0)
+light_color = Color(1, 1, 0.913725, 1)
 light_energy = 0.2
 light_indirect_energy = 0.2
 omni_range = 0.3
@@ -361,12 +375,15 @@ omni_attenuation = 0.2
 
 [node name="SpotLight3D1" type="SpotLight3D" parent="Scene/Lamp"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="Scene/Lamp"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
 [node name="SpotLight3D3" type="SpotLight3D" parent="Scene/Lamp"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
 [node name="Flicker_timer" type="Timer" parent="Scene/Lamp"]
 
@@ -386,7 +403,7 @@ parameters/looping = true
 [node name="Low_decs" type="AudioStreamPlayer3D" parent="Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.9486)
 stream = ExtResource("8_dvetb")
-volume_db = -5.0
+volume_db = -15.0
 autoplay = true
 max_distance = 15.0
 parameters/looping = true

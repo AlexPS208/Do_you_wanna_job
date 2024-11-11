@@ -1,15 +1,20 @@
-[gd_scene load_steps=28 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=41 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="1_v8iea"]
+[ext_resource type="Script" path="res://scenes/ui.gd" id="2_pphr1"]
 [ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="4_cglvn"]
 [ext_resource type="Texture2D" uid="uid://bpnuakblvm0i5" path="res://assets/wallpaper_front.png" id="4_ms1l2"]
 [ext_resource type="Texture2D" uid="uid://cqc3ag5hijqxd" path="res://assets/JackTEST.png" id="5_13m0n"]
+[ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="5_h67a8"]
+[ext_resource type="Texture2D" uid="uid://bxj2m8cucnct7" path="res://assets/ceiling.png" id="6_8lkm5"]
 [ext_resource type="Texture2D" uid="uid://gnj8840s2ky" path="res://assets/tableTEST.png" id="6_sfssq"]
 [ext_resource type="Shader" path="res://assets/shaders/Outline_shader.gdshader" id="6_utuxu"]
 [ext_resource type="Texture2D" uid="uid://1xvmxye43yrr" path="res://assets/wallpaper_side.png" id="7_0caud"]
 [ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/board.png" id="7_4lm6e"]
+[ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/wallpaper_back.png" id="8_ogdb7"]
+[ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/floor.png" id="13_p3mmc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
 shader = ExtResource("1_77jim")
@@ -115,8 +120,37 @@ _data = {
 "RESET": SubResource("Animation_g10gl")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_ln1j6"]
+font_size = 96
+font_color = Color(0.952941, 0.698039, 0.0666667, 1)
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6fsts"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xoaum"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_saon5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0fy8g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4cwbj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vn6ur"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_exisx"]
+font_size = 80
+font_color = Color(0.952941, 0.698039, 0.0666667, 1)
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_miy72"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("5_h67a8")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_me5q2"]
-albedo_color = Color(0.682353, 0.682353, 0.682353, 1)
+albedo_texture = ExtResource("6_8lkm5")
 emission = Color(1, 1, 1, 1)
 emission_operator = 1
 normal_scale = -11.3
@@ -146,7 +180,7 @@ next_pass = SubResource("ShaderMaterial_8xyi8")
 albedo_texture = ExtResource("4_cglvn")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5y5b"]
-albedo_texture = ExtResource("4_ms1l2")
+albedo_texture = ExtResource("8_ogdb7")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h3ic3"]
 albedo_texture = ExtResource("7_0caud")
@@ -154,12 +188,8 @@ albedo_texture = ExtResource("7_0caud")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vo0m6"]
 albedo_texture = ExtResource("7_0caud")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hhhlk"]
-load_path = "res://.godot/imported/white_wall.jpg-8d9fd96bd2d9ebbcdfbb7d970956a8cf.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5irv"]
-albedo_color = Color(0.623529, 0.341176, 0.215686, 1)
-albedo_texture = SubResource("CompressedTexture2D_hhhlk")
+albedo_texture = ExtResource("13_p3mmc")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yuhuq"]
 animations = [{
@@ -178,10 +208,15 @@ animations = [{
 environment = SubResource("Environment_1msqq")
 
 [node name="UI" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("2_pphr1")
 
 [node name="Scene_transit_start" type="ColorRect" parent="UI"]
-offset_right = 1943.0
-offset_bottom = 1099.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0, 0, 0, 1)
 script = ExtResource("1_u78f6")
 
@@ -195,6 +230,241 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74544, -3.04326)
 stream = ExtResource("1_v8iea")
 volume_db = 10.0
 pitch_scale = 0.85
+
+[node name="Menu" type="Control" parent="UI"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MenuPanel" type="ColorRect" parent="UI/Menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.588235)
+
+[node name="Label" type="Label" parent="UI/Menu/MenuPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.35
+anchor_right = 0.5
+anchor_bottom = 0.35
+offset_left = -79.0
+offset_top = -39.5
+offset_right = 79.0
+offset_bottom = 39.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "PAUSE"
+label_settings = SubResource("LabelSettings_ln1j6")
+
+[node name="Resume" type="Button" parent="UI/Menu/MenuPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = -43.5
+offset_right = 105.0
+offset_bottom = 43.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6fsts")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xoaum")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_saon5")
+text = "RESUME"
+
+[node name="Exit" type="Button" parent="UI/Menu/MenuPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.6
+anchor_right = 0.5
+anchor_bottom = 0.6
+offset_left = -56.5
+offset_top = -43.5
+offset_right = 56.5
+offset_bottom = 43.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0fy8g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4cwbj")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vn6ur")
+text = "EXIT"
+
+[node name="Exit_pre_confirm" type="ColorRect" parent="UI/Menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.588235)
+
+[node name="Label" type="Label" parent="UI/Menu/Exit_pre_confirm"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.35
+anchor_right = 0.5
+anchor_bottom = 0.35
+offset_left = -79.0
+offset_top = -39.5
+offset_right = 79.0
+offset_bottom = 39.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Are you sure?"
+label_settings = SubResource("LabelSettings_ln1j6")
+
+[node name="Pre_exit" type="Button" parent="UI/Menu/Exit_pre_confirm"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = -43.5
+offset_right = 105.0
+offset_bottom = 43.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6fsts")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xoaum")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_saon5")
+text = "YES"
+
+[node name="Pre_cancel" type="Button" parent="UI/Menu/Exit_pre_confirm"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.6
+anchor_right = 0.5
+anchor_bottom = 0.6
+offset_left = -56.5
+offset_top = -43.5
+offset_right = 56.5
+offset_bottom = 43.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0fy8g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4cwbj")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vn6ur")
+text = "NO
+"
+
+[node name="Exit_confirm" type="ColorRect" parent="UI/Menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.588235)
+
+[node name="Label" type="Label" parent="UI/Menu/Exit_confirm"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.3
+offset_left = -79.0
+offset_top = -39.5
+offset_right = 79.0
+offset_bottom = 39.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Here is a cheat code for you:
+HESOYAM
+Do you still wanna exit?"
+label_settings = SubResource("LabelSettings_exisx")
+horizontal_alignment = 1
+
+[node name="Exit_confirmed" type="Button" parent="UI/Menu/Exit_confirm"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.55
+anchor_right = 0.5
+anchor_bottom = 0.55
+offset_left = -105.0
+offset_top = -43.5
+offset_right = 105.0
+offset_bottom = 43.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6fsts")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xoaum")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_saon5")
+text = "YES"
+
+[node name="Cancel" type="Button" parent="UI/Menu/Exit_confirm"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.65
+anchor_right = 0.5
+anchor_bottom = 0.65
+offset_left = -56.5
+offset_top = -43.5
+offset_right = 56.5
+offset_bottom = 43.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0fy8g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4cwbj")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vn6ur")
+text = "NO
+"
+
+[node name="Button_sound" type="AudioStreamPlayer3D" parent="UI"]
+stream = SubResource("AudioStreamRandomizer_miy72")
+pitch_scale = 1.7
 
 [node name="Camera3D" type="Camera3D" parent="."]
 current = true
@@ -214,42 +484,60 @@ material = SubResource("StandardMaterial3D_nph2e")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Scene/Ceil/Lamp2"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="Scene/Ceil/Lamp2"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
 [node name="SpotLight3D3" type="SpotLight3D" parent="Scene/Ceil/Lamp2"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Scene/Ceil/Lamp2"]
+light_color = Color(1, 1, 0.913725, 1)
 light_energy = 0.5
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Scene/Ceil/Lamp2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 light_energy = 0.5
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="Scene/Ceil/Lamp2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 light_energy = 0.5
 
-[node name="Lamp" type="CSGBox3D" parent="Scene/Ceil"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07, -3.5)
-visible = false
-size = Vector3(0.1, 0.03, 0.1)
+[node name="Lamp3" type="CSGBox3D" parent="Scene/Ceil"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.096, -0.07, 2)
+size = Vector3(1.691, 0.02, 0.1)
+material = SubResource("StandardMaterial3D_nph2e")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Scene/Ceil/Lamp"]
-
-[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Ceil/Lamp"]
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Ceil/Lamp3"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
-[node name="Lamp4" type="CSGBox3D" parent="Scene/Ceil"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07, 2)
-size = Vector3(0.1, 0.03, 0.1)
+[node name="SpotLight3D2" type="SpotLight3D" parent="Scene/Ceil/Lamp3"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Scene/Ceil/Lamp4"]
+[node name="SpotLight3D3" type="SpotLight3D" parent="Scene/Ceil/Lamp3"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Ceil/Lamp4"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+[node name="OmniLight3D" type="OmniLight3D" parent="Scene/Ceil/Lamp3"]
+light_color = Color(1, 1, 0.913725, 1)
+light_energy = 0.5
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Scene/Ceil/Lamp3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
+light_energy = 0.5
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Scene/Ceil/Lamp3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
+light_energy = 0.5
 
 [node name="Wall1" type="CSGBox3D" parent="Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, -7.5)
@@ -294,3 +582,10 @@ autoplay = "idle"
 [node name="Table" type="Sprite3D" parent="Mr_Shutnyara"]
 transform = Transform3D(1, 0, 0, 0, 0.999848, 0.0174524, 0, -0.0174524, 0.999848, 0, -9, 3.4)
 texture = ExtResource("6_sfssq")
+
+[connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]
+[connection signal="pressed" from="UI/Menu/MenuPanel/Exit" to="UI" method="_on_exit_pressed"]
+[connection signal="pressed" from="UI/Menu/Exit_pre_confirm/Pre_exit" to="UI" method="_on_pre_exit_pressed"]
+[connection signal="pressed" from="UI/Menu/Exit_pre_confirm/Pre_cancel" to="UI" method="_on_pre_cancel_pressed"]
+[connection signal="pressed" from="UI/Menu/Exit_confirm/Exit_confirmed" to="UI" method="_on_exit_confirmed_pressed"]
+[connection signal="pressed" from="UI/Menu/Exit_confirm/Cancel" to="UI" method="_on_cancel_pressed"]
