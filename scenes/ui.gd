@@ -11,6 +11,12 @@ var is_menu_panel_active: bool = false
 var is_pre_confirm_active: bool = false
 var is_confirm_active: bool = false
 
+var dialog_node
+
+func _ready() -> void:
+	await get_tree().create_timer(2).timeout
+	dialog_node = Dialogic.start("First_manager")
+
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
@@ -19,6 +25,12 @@ func _process(delta: float) -> void:
 			show_menu()
 		else:
 			hide_menu()
+
+
+func _simulate_keypress(action_name: String):
+	Input.action_press(action_name)
+	print(action_name)
+	Input.action_release(action_name)
 
 func show_menu() -> void:
 	get_tree().paused = true
@@ -29,6 +41,8 @@ func show_menu() -> void:
 	
 	exit_pre_confirm_panel.visible = false
 	is_pre_confirm_active = false
+	
+	toggle_dialogic_layer(true)
 
 
 func hide_menu() -> void:
@@ -41,6 +55,8 @@ func hide_menu() -> void:
 	is_menu_active = false
 	is_pre_confirm_active = false
 	is_confirm_active = false
+	
+	toggle_dialogic_layer(false)
 
 
 func show_pre_confirm() -> void:
@@ -60,6 +76,14 @@ func show_confirm() -> void:
 
 	exit_confirm_panel.visible = true
 	is_confirm_active = true
+
+
+# DIALOGS
+func toggle_dialogic_layer(is_menu_open: bool):
+	if is_menu_open:
+		Dialogic.paused = true
+	else:
+		Dialogic.paused = false
 
 
 # BUTTONS

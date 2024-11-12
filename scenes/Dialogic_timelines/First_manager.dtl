@@ -1,0 +1,12 @@
+Hello, boy
+First_manager: You can call me Mr. Shutnyara and I will be your first step on this job interview
+First_manager: Interlude, please
+[text_input text="Enter your name:" var="Players_name" placeholder="name"]
+if {Players_name} == "Mr. Shutnyara":
+	First_manager: Haha, namesake
+else:
+	First_manager: Very nice to meet you, {Players_name}
+First_manager: Tell me, is this your first interview?
+- 1. Yes
+- 2. No
+First_manager: Okey, but it's doesn't matter, 'couse it's your first interview in [i]our company[/i]

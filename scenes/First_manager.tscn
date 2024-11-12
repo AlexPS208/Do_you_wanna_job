@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/board.png" id="7_4lm6e"]
 [ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/wallpaper_back.png" id="8_ogdb7"]
 [ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/floor.png" id="13_p3mmc"]
+[ext_resource type="Script" path="res://scenes/first_manager.gd" id="15_7w0pd"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
 shader = ExtResource("1_77jim")
@@ -138,12 +139,6 @@ outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vn6ur"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_exisx"]
-font_size = 80
-font_color = Color(0.952941, 0.698039, 0.0666667, 1)
-outline_size = 6
-outline_color = Color(0, 0, 0, 1)
-
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_miy72"]
 random_pitch = 1.1
 streams_count = 1
@@ -209,6 +204,8 @@ environment = SubResource("Environment_1msqq")
 
 [node name="UI" type="CanvasLayer" parent="."]
 process_mode = 3
+process_priority = 1
+layer = 3
 script = ExtResource("2_pphr1")
 
 [node name="Scene_transit_start" type="ColorRect" parent="UI"]
@@ -217,6 +214,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
 script = ExtResource("1_u78f6")
 
@@ -396,24 +394,27 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.588235)
 
-[node name="Label" type="Label" parent="UI/Menu/Exit_confirm"]
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/Menu/Exit_confirm"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.3
-anchor_right = 0.5
-anchor_bottom = 0.3
-offset_left = -79.0
-offset_top = -39.5
-offset_right = 79.0
-offset_bottom = 39.5
+anchor_left = 0.154
+anchor_top = 0.16
+anchor_right = 0.848
+anchor_bottom = 0.453
+offset_left = -0.680023
+offset_top = 0.199982
+offset_right = 0.839844
+offset_bottom = -0.240021
 grow_horizontal = 2
 grow_vertical = 2
-text = "Here is a cheat code for you:
-HESOYAM
-Do you still wanna exit?"
-label_settings = SubResource("LabelSettings_exisx")
-horizontal_alignment = 1
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[center]Here is a cheat code for you:
+[color=white]HESOYAM[/color]
+Do you still wanna exit?[/center]"
+scroll_active = false
 
 [node name="Exit_confirmed" type="Button" parent="UI/Menu/Exit_confirm"]
 layout_mode = 1
@@ -578,6 +579,7 @@ transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.2, -2.35)
 sprite_frames = SubResource("SpriteFrames_yuhuq")
 animation = &"idle"
 autoplay = "idle"
+script = ExtResource("15_7w0pd")
 
 [node name="Table" type="Sprite3D" parent="Mr_Shutnyara"]
 transform = Transform3D(1, 0, 0, 0, 0.999848, 0.0174524, 0, -0.0174524, 0.999848, 0, -9, 3.4)
