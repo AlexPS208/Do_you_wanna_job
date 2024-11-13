@@ -14,7 +14,7 @@ var is_confirm_active: bool = false
 var dialog_node
 
 func _ready() -> void:
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(1).timeout
 	dialog_node = Dialogic.start("First_manager")
 
 

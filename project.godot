@@ -48,6 +48,9 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 variables={
+"First_manager_vars": {
+"is_have_interview_experience": false
+},
 "Players_name": ""
 }
 layout/style_list=["res://scenes/Dialogic_timelines/Display_style.tres"]
