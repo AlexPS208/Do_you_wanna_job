@@ -1,24 +1,27 @@
-[gd_scene load_steps=60 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=68 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="1_v8iea"]
 [ext_resource type="Script" path="res://scenes/ui.gd" id="2_pphr1"]
 [ext_resource type="Script" path="res://scenes/stressbar.gd" id="3_dkhrf"]
-[ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="3_qi32y"]
 [ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="4_cglvn"]
 [ext_resource type="Texture2D" uid="uid://bpnuakblvm0i5" path="res://assets/wallpaper_front.png" id="4_ms1l2"]
+[ext_resource type="Texture2D" uid="uid://cudvcrstrws0q" path="res://assets/Stressbar/Stressbar.png" id="4_ri2g5"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="5_h67a8"]
 [ext_resource type="Texture2D" uid="uid://bxj2m8cucnct7" path="res://assets/ceiling.png" id="6_8lkm5"]
-[ext_resource type="Texture2D" uid="uid://gnj8840s2ky" path="res://assets/tableTEST.png" id="6_sfssq"]
 [ext_resource type="Shader" path="res://assets/shaders/Outline_shader.gdshader" id="6_utuxu"]
+[ext_resource type="Texture2D" uid="uid://bh5acs7mud0ny" path="res://assets/Stressbar/H1.png" id="6_uvmcl"]
 [ext_resource type="Texture2D" uid="uid://1xvmxye43yrr" path="res://assets/wallpaper_side.png" id="7_0caud"]
 [ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/board.png" id="7_4lm6e"]
+[ext_resource type="Texture2D" uid="uid://k4c81co6lolh" path="res://assets/Stressbar/H2.png" id="7_wc1io"]
+[ext_resource type="Texture2D" uid="uid://hnqedw6jwfjj" path="res://assets/Stressbar/H3.png" id="8_ob4km"]
 [ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/wallpaper_back.png" id="8_ogdb7"]
 [ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/floor.png" id="13_p3mmc"]
 [ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
 [ext_resource type="Texture2D" uid="uid://b7cbsci20foc5" path="res://assets/First_manager/SHt.png" id="19_2j7gn"]
+[ext_resource type="Texture2D" uid="uid://cjr4xhg0r8djm" path="res://assets/decor/cactus.png" id="19_fle2d"]
 [ext_resource type="Texture2D" uid="uid://bwm8gw6lutbu1" path="res://assets/First_manager/SHh2.1.png" id="19_pyawq"]
 [ext_resource type="Texture2D" uid="uid://b4mvfd4i77k03" path="res://assets/First_manager/SHh1.png" id="19_r5h3g"]
 [ext_resource type="Texture2D" uid="uid://bgctmq0s3o5ul" path="res://assets/First_manager/SHh2.png" id="20_8sj3n"]
@@ -32,7 +35,9 @@
 [ext_resource type="Texture2D" uid="uid://dpfw3cjx7dt4l" path="res://assets/First_manager/SHh3.2.png" id="27_1n05b"]
 [ext_resource type="Texture2D" uid="uid://df67tjisohtj1" path="res://assets/First_manager/SHh1.2.png" id="27_mh6x4"]
 [ext_resource type="Texture2D" uid="uid://c7uw6jw2p3i8i" path="res://assets/First_manager/SHh3.1.png" id="28_2qs4l"]
+[ext_resource type="Texture2D" uid="uid://dfwru3to22a74" path="res://assets/table.png" id="33_vhlox"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
+[ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
 shader = ExtResource("1_77jim")
@@ -52,6 +57,30 @@ sky_material = SubResource("ShaderMaterial_2ff6s")
 [sub_resource type="Environment" id="Environment_1msqq"]
 background_mode = 2
 sky = SubResource("Sky_wkf54")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tm23o"]
+atlas = ExtResource("4_ri2g5")
+region = Rect2(1195, 1265, 3611, 472)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_amfk4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_uvmcl")
+}, {
+"duration": 1.5,
+"texture": ExtResource("7_wc1io")
+}, {
+"duration": 1.2,
+"texture": ExtResource("8_ob4km")
+}, {
+"duration": 5.0,
+"texture": ExtResource("6_uvmcl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [sub_resource type="Animation" id="Animation_a5a76"]
 resource_name = "Light_turn_on"
@@ -340,6 +369,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7vx8b"]
+random_pitch = 1.15
+streams_count = 1
+stream_0/stream = ExtResource("38_k4ksr")
+
 [node name="FirstManager" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -354,6 +388,15 @@ script = ExtResource("2_pphr1")
 [node name="Stressbar" type="Node" parent="UI"]
 script = ExtResource("3_dkhrf")
 
+[node name="StressPointer" type="TextureRect" parent="UI/Stressbar"]
+visible = false
+offset_left = 940.0
+offset_top = 38.0
+offset_right = 980.0
+offset_bottom = 138.0
+texture = ExtResource("8_ogdb7")
+expand_mode = 1
+
 [node name="StressBarBackground" type="TextureRect" parent="UI/Stressbar"]
 anchors_preset = -1
 anchor_left = 0.5
@@ -361,21 +404,19 @@ anchor_top = 0.05
 anchor_right = 0.5
 anchor_bottom = 0.05
 offset_left = -500.0
-offset_top = 6.0
+offset_top = -34.0
 offset_right = 500.0
-offset_bottom = 56.0
+offset_bottom = 97.0
 grow_horizontal = 2
-texture = ExtResource("3_qi32y")
-expand_mode = 1
+texture = SubResource("AtlasTexture_tm23o")
+expand_mode = 5
 
-[node name="StressPointer" type="TextureRect" parent="UI/Stressbar/StressBarBackground"]
-layout_mode = 0
-offset_left = 480.0
-offset_top = -25.0
-offset_right = 520.0
-offset_bottom = 75.0
-texture = ExtResource("8_ogdb7")
-expand_mode = 1
+[node name="StressPointer" type="AnimatedSprite2D" parent="UI/Stressbar/StressBarBackground"]
+position = Vector2(500, 63)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_amfk4")
+autoplay = "default"
+frame_progress = 0.070647
 
 [node name="Scene_transit_start" type="ColorRect" parent="UI"]
 anchors_preset = 15
@@ -633,8 +674,10 @@ text = "NO
 "
 
 [node name="Button_sound" type="AudioStreamPlayer3D" parent="UI"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
 stream = SubResource("AudioStreamRandomizer_miy72")
-volume_db = -10.0
+volume_db = -21.0
+max_db = 0.0
 pitch_scale = 1.7
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -744,6 +787,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -2.5)
 size = Vector3(5, 0.1, 10)
 material = SubResource("StandardMaterial3D_d5irv")
 
+[node name="Decor" type="Node3D" parent="Scene"]
+
+[node name="Cactus" type="Sprite3D" parent="Scene/Decor"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.64787, -0.306632, -6.82766)
+texture = ExtResource("19_fle2d")
+
 [node name="Manager" type="Node3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.275, -2.1)
 script = ExtResource("16_hlt7j")
@@ -751,7 +800,7 @@ script = ExtResource("16_hlt7j")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.120651)
 sprite_frames = SubResource("SpriteFrames_u2dut")
-animation = &"speak_open_unserious"
+animation = &"speak_open_serious"
 autoplay = "smile_open_unserious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
@@ -767,8 +816,11 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="Table" type="Sprite3D" parent="Manager"]
-transform = Transform3D(1, 0, 0, 0, 0.994522, 0.104528, 0, -0.104528, 0.994522, 0, -9.4994, 0.486219)
-texture = ExtResource("6_sfssq")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.31418, 0.486219)
+texture = ExtResource("33_vhlox")
+
+[node name="Manager_voice" type="AudioStreamPlayer3D" parent="Manager"]
+stream = SubResource("AudioStreamRandomizer_7vx8b")
 
 [connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Exit" to="UI" method="_on_exit_pressed"]

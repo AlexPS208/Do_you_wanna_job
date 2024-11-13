@@ -2,6 +2,7 @@ extends Node3D
 
 @onready var head: AnimatedSprite3D = $Manager_head
 @onready var hands: AnimatedSprite3D = $Manager_hands
+@onready var voice: AudioStreamPlayer3D = $Manager_voice
 
 # Signals params
 var animation_name: String = ""
@@ -40,5 +41,6 @@ func start_head_animation() -> void:
 	for loop in range(loops-1):
 		for sprite in animation_sprites_names:
 			head.play(sprite)
+			voice.play()
 			await get_tree().create_timer(0.125).timeout
 	head.play(end_sprite_name)

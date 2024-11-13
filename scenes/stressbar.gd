@@ -1,7 +1,7 @@
 extends Node
 
 @onready var stress_bar: TextureRect = $StressBarBackground
-@onready var stress_pointer: TextureRect = $StressBarBackground/StressPointer
+@onready var stress_pointer: AnimatedSprite2D = $StressBarBackground/StressPointer
 
 @export var min_stress: int = 0
 @export var max_stress: int = 100
@@ -31,7 +31,7 @@ func update_pointer_position():
 	var progress_ratio = float(current_stress - min_stress) / float(max_stress - min_stress)
 	
 	var min_x = 0.0
-	var max_x = min_x + stress_bar.size.x - stress_pointer.size.x
+	var max_x = min_x + stress_bar.size.x
 
 	target_stress_position = lerp(min_x, max_x, progress_ratio)
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://4a511imbpxmm"]
+[gd_scene load_steps=28 format=3 uid="uid://4a511imbpxmm"]
 
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_5li4t"]
 [ext_resource type="Script" path="res://scenes/start_cutscene.gd" id="1_hjrkf"]
 [ext_resource type="Texture2D" uid="uid://cad1dq8qly7e3" path="res://assets/black_door.jpg" id="2_e4u8d"]
+[ext_resource type="Texture2D" uid="uid://ba7mtjmkmcos1" path="res://assets/Icon.png" id="2_ncbjw"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="2_wxyd6"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="5_m1b6y"]
 [ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="6_e411h"]
@@ -291,6 +292,12 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fmvjb")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_3plmt")
 text = "EXIT"
 alignment = 0
+
+[node name="Icon" type="Sprite2D" parent="UI/Menu"]
+visible = false
+position = Vector2(293, 220)
+scale = Vector2(0.240831, 0.211491)
+texture = ExtResource("2_ncbjw")
 
 [node name="Button_sound" type="AudioStreamPlayer3D" parent="UI"]
 stream = SubResource("AudioStreamRandomizer_daclm")
