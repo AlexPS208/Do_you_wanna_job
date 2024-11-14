@@ -3,6 +3,7 @@ extends Node3D
 @onready var head: AnimatedSprite3D = $Manager_head
 @onready var hands: AnimatedSprite3D = $Manager_hands
 @onready var voice: AudioStreamPlayer3D = $Manager_voice
+@onready var blink_timer: Timer = $Manager_blink_timer
 
 # Signals params
 var animation_name: String = ""
@@ -11,11 +12,18 @@ var target_part: String = ""
 var loops: int = 1
 
 var animation_sprites_names: Array = []
+var blink_interval: float = 3.0
 
 
 func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
+	reset_blink_timer()
 
+
+func reset_blink_timer() -> void:
+	blink_timer.wait_time = randf_range(3.0, 5.0)
+	blink_timer.start()
+	
 
 func _on_dialogic_signal(params: Dictionary):
 	if params.has("part") and params.has("animation") and params.has("end_sprite") and params.has("loops"):
@@ -44,3 +52,16 @@ func start_head_animation() -> void:
 			voice.play()
 			await get_tree().create_timer(0.125).timeout
 	head.play(end_sprite_name)
+
+
+# Blink animation
+func _on_manager_blink_timer_timeout() -> void:
+	if head.animation.contains("open"):
+		var open_state = head.animation
+		var close_state = open_state.replace("open", "close")
+		for i in range(randi_range(1, 2)):
+			head.play(close_state)
+			await get_tree().create_timer(0.125).timeout
+			head.play(open_state)
+			await get_tree().create_timer(0.125).timeout
+	reset_blink_timer()

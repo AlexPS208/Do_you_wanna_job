@@ -822,9 +822,12 @@ texture = ExtResource("33_vhlox")
 [node name="Manager_voice" type="AudioStreamPlayer3D" parent="Manager"]
 stream = SubResource("AudioStreamRandomizer_7vx8b")
 
+[node name="Manager_blink_timer" type="Timer" parent="Manager"]
+
 [connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Exit" to="UI" method="_on_exit_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit_pre_confirm/Pre_exit" to="UI" method="_on_pre_exit_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit_pre_confirm/Pre_cancel" to="UI" method="_on_pre_cancel_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit_confirm/Exit_confirmed" to="UI" method="_on_exit_confirmed_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit_confirm/Cancel" to="UI" method="_on_cancel_pressed"]
+[connection signal="timeout" from="Manager/Manager_blink_timer" to="Manager" method="_on_manager_blink_timer_timeout"]
