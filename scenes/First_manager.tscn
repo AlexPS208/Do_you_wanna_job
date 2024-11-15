@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=69 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -35,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://dpfw3cjx7dt4l" path="res://assets/First_manager/SHh3.2.png" id="27_1n05b"]
 [ext_resource type="Texture2D" uid="uid://df67tjisohtj1" path="res://assets/First_manager/SHh1.2.png" id="27_mh6x4"]
 [ext_resource type="Texture2D" uid="uid://c7uw6jw2p3i8i" path="res://assets/First_manager/SHh3.1.png" id="28_2qs4l"]
+[ext_resource type="Texture2D" uid="uid://bgipvxjydbcu5" path="res://assets/First_manager/SHh2.6.png" id="33_ecsrh"]
 [ext_resource type="Texture2D" uid="uid://dfwru3to22a74" path="res://assets/table.png" id="33_vhlox"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
@@ -328,6 +329,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"speak_open_serious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_ecsrh")
+}],
+"loop": true,
+"name": &"speak_open_surprised",
 "speed": 5.0
 }, {
 "frames": [{
@@ -800,7 +809,7 @@ script = ExtResource("16_hlt7j")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.120651)
 sprite_frames = SubResource("SpriteFrames_u2dut")
-animation = &"speak_open_serious"
+animation = &"speak_open_surprised"
 autoplay = "smile_open_unserious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
@@ -821,6 +830,7 @@ texture = ExtResource("33_vhlox")
 
 [node name="Manager_voice" type="AudioStreamPlayer3D" parent="Manager"]
 stream = SubResource("AudioStreamRandomizer_7vx8b")
+volume_db = -15.0
 
 [node name="Manager_blink_timer" type="Timer" parent="Manager"]
 

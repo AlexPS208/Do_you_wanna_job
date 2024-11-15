@@ -1,0 +1,301 @@
+[gd_scene load_steps=7 format=3 uid="uid://cj1y7h7pyygrv"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.gd" id="1_vgif6"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="2_2fl7o"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_button_sound.gd" id="3_nql87"]
+[ext_resource type="AudioStream" uid="uid://b6c1p14bc20p1" path="res://addons/dialogic/Example Assets/sound-effects/typing1.wav" id="4_yv78k"]
+[ext_resource type="AudioStream" uid="uid://c2viukvbub6v6" path="res://addons/dialogic/Example Assets/sound-effects/typing4.wav" id="5_51ipw"]
+
+[sub_resource type="AudioStream" id="AudioStream_pe27w"]
+
+[node name="VN_ChoiceLayer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_vgif6")
+
+[node name="Choices" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.0
+offset_top = -47.0
+offset_right = 42.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+metadata/_edit_layout_mode = 1
+
+[node name="DialogicNode_ChoiceButton1" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton1"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[node name="DialogicNode_ChoiceButton2" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton2"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[node name="DialogicNode_ChoiceButton3" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton3"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[node name="DialogicNode_ChoiceButton4" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton4"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[node name="DialogicNode_ChoiceButton5" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton5"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[node name="DialogicNode_ChoiceButton6" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton6"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+
+[node name="DialogicNode_ChoiceButton7" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton7"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+
+[node name="DialogicNode_ChoiceButton8" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton8"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+
+[node name="DialogicNode_ChoiceButton9" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton9"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+
+[node name="DialogicNode_ChoiceButton10" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton10"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+
+[node name="DialogicNode_ChoiceButton11" type="Button" parent="Choices" node_paths=PackedStringArray("text_node")]
+layout_mode = 2
+text = "Some text"
+script = ExtResource("2_2fl7o")
+text_node = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Choices/DialogicNode_ChoiceButton11"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+
+[node name="DialogicNode_ButtonSound" type="AudioStreamPlayer" parent="Choices"]
+unique_name_in_owner = true
+script = ExtResource("3_nql87")
+sound_pressed = ExtResource("4_yv78k")
+sound_hover = ExtResource("5_51ipw")
+sound_focus = SubResource("AudioStream_pe27w")

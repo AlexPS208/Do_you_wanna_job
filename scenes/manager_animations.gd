@@ -12,7 +12,7 @@ var target_part: String = ""
 var loops: int = 1
 
 var animation_sprites_names: Array = []
-var blink_interval: float = 3.0
+var is_blink_allowed: bool = true
 
 
 func _ready() -> void:
@@ -21,7 +21,7 @@ func _ready() -> void:
 
 
 func reset_blink_timer() -> void:
-	blink_timer.wait_time = randf_range(3.0, 5.0)
+	blink_timer.wait_time = randf_range(2.0, 4.0)
 	blink_timer.start()
 	
 
@@ -37,6 +37,8 @@ func _on_dialogic_signal(params: Dictionary):
 			animation_sprites_names = ["quiet_open_unserious", "speak_open_unserious"]
 		elif animation_name == "speak_serious":
 			animation_sprites_names = ["quiet_open_serious", "speak_open_serious"]
+		elif animation_name == "speak_surprised":
+			animation_sprites_names = ["quiet_open_surprised", "speak_open_surprised"]
 		elif animation_name == "smile_serious":
 			animation_sprites_names = ["smile_open_serious", "speak_open_serious"]
 			
@@ -45,6 +47,7 @@ func _on_dialogic_signal(params: Dictionary):
 
 
 func start_head_animation() -> void:
+	is_blink_allowed = false
 	await get_tree().create_timer(0.1).timeout
 	for loop in range(loops-1):
 		for sprite in animation_sprites_names:
@@ -52,11 +55,12 @@ func start_head_animation() -> void:
 			voice.play()
 			await get_tree().create_timer(0.125).timeout
 	head.play(end_sprite_name)
+	is_blink_allowed = true
 
 
 # Blink animation
 func _on_manager_blink_timer_timeout() -> void:
-	if head.animation.contains("open"):
+	if head.animation.contains("open") and is_blink_allowed:
 		var open_state = head.animation
 		var close_state = open_state.replace("open", "close")
 		for i in range(randi_range(1, 2)):

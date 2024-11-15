@@ -11,7 +11,6 @@ extends Button
 ## Using a different node may allow using rich text effects; they are
 ## not supported on buttons at this point.
 
-
 ## Used to identify what choices to put on. If you leave it at -1, choices will be distributed automatically.
 @export var choice_index: int = -1
 
@@ -22,7 +21,9 @@ extends Button
 ## Can be set to play this sound when focused. Requires a sibling DialogicNode_ButtonSound node.
 @export var sound_focus: AudioStream
 ## If set, the text will be set on this node's `text` property instead.
-@export var text_node: Node
+
+@export var text_node: RichTextLabel
+
 
 
 func _ready() -> void:
@@ -37,9 +38,28 @@ func _load_info(choice_info: Dictionary) -> void:
 	disabled = choice_info.disabled
 
 
-## Called when the text changes.
 func set_choice_text(new_text: String) -> void:
-	if text_node:
-		text_node.text = new_text
+	if text_node and text_node is RichTextLabel:
+		text = " "
+		text_node.bbcode_text = "[center]" + new_text + "[/center]"
 	else:
 		text = new_text
+	
+	# Удаление BBCode тегов
+	var regex = RegEx.new()
+	regex.compile(r"\[.*?\]")
+	var clean_text = regex.sub(new_text, "")
+	
+	var text_length = clean_text.length()
+	var padding = 5
+	var width = text_length * 12 + padding
+	
+	custom_minimum_size = Vector2(width, 29)
+
+
+## Called when the text changes.
+#func set_choice_text(new_text: String) -> void:
+	#if text_node:
+		#text_node.text = new_text
+	#else:
+		#text = new_text
