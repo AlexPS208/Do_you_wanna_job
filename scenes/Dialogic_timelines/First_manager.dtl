@@ -3,12 +3,12 @@ Hello, boy
 # Stress question
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
 Do you wanna job?
-- [color=green]Yes[/color]
-	[signal arg="stress_decrease"]
+- Yes
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
 	Good mood!
-- [color=red]No[/color]
-	[signal arg="stress_increase"]
+- No
+	[signal arg_type="dict" arg="{"stress_change":5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	Then why’d you come?
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
@@ -27,17 +27,17 @@ else:
 # Stress question
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
 First_manager: Tell me, ith thith your firtht interview?
-- [color=green]Yes[/color]
-	[signal arg="stress_increase"]
+- Yes
+	[signal arg_type="dict" arg="{"stress_change":5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":2,"part":"head"}"]
 	First_manager: Okey
-- [color=red]No[/color]
-	[signal arg="stress_decrease"]
+- No
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
 	First_manager: Tho, you have interview experience. Very good
 	set {First_manager_vars.is_have_interview_experience} = true
 if {First_manager_vars.is_have_interview_experience} == true:
-	[signal arg="stress_increase"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":7,"part":"head"}"]
 First_manager: But it doethn't matter, becauthe it'th your firtht interview in [i]our company[/i].
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":7,"part":"head"}"]
@@ -47,21 +47,32 @@ First_manager: You’ll learn thoon enough
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":9,"part":"head"}"]
 First_manager: To put your mind at eath, let me tell you a few thingth we value in our interviewth
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":10,"part":"head"}"]
-First_manager: Firssst of all, anssswering [color=green]confidently[/color] ith a big plus here. We like people who thound like they know their shtuff
+First_manager: Firssst of all, anssswering [color=#6BBF59]confidently[/color] ith a big plus here. We like people who thound like they know their shtuff
 [signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_unserious","loops":12,"part":"head"}"]
-First_manager: Then there are timess when I might throw a tricky quethtion your way. I’d like to see you pick up on that and… maybe [color=violet]sidestep a bit[/color]
+First_manager: Then there are timess when I might throw a tricky quethtion your way. I’d like to see you pick up on that and… maybe [color=#8e59f5]sidestep a bit[/color]
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":12,"part":"head"}"]
-First_manager: Oh, and remember, we’re all human here. Sssometimess a bit of [color=orange]humor[/color] lightensthe mood — if the topic allowss it, of courssse
+First_manager: Oh, and remember, we’re all human here. Sssometimess a bit of [color=#f7d038]humor[/color] lightensthe mood — if the topic allowss it, of courssse
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":10,"part":"head"}"]
 First_manager: And pleathe… [color=gray]don’t be thilent[/color]. A quiet candidate ith a worry for uth. Thilence makess us nervouth, you see
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
 First_manager: Do you underthtand me?
-- [color=green]Yes, perfectly[/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":5}"]
+- [color=#6BBF59]Yes, perfectly[/color]
+	[signal arg_type="dict" arg="{"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":8,"part":"head"}"]
 	First_manager: Good, good! I like a man who knowthz what they’re doing
-- [color=violet]I think… but maybe one more time?[/color]
+- [color=#8e59f5]I think… but maybe one more time?[/color]
+	[signal arg_type="dict" arg="{"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":12,"part":"head"}"]
 	First_manager: Ah, a cautious one! Thmart move. But don't be afraid to thpeak up when you know the answer – we value clarity!
-- [color=orange]Got about half of it[/color]
+- [color=#f7d038]Got about half of it[/color]
+	[signal arg_type="dict" arg="{"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":12,"part":"head"}"]
 	First_manager: Hahaha, I like it! Good thenshe of humor. Jutht don't make a habit of it inthtead of good answerth, eh?
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":10,"part":"head"}"]
+	First_manager: Ohhh, cat got your tongue? Or maybe you think thhhilenthhh ithhh a valid anther...
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+	First_manager: Well, not here, kiddo. No one getthhh a job by thitting quiet.
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":6,"part":"head"}"]
+First_manager: Lathhh okay, let’th not drag thhhithh out for too long, let’thhh get to the point

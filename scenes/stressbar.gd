@@ -3,29 +3,25 @@ extends Node
 @onready var stress_bar: TextureRect = $StressBarBackground
 @onready var stress_pointer: AnimatedSprite2D = $StressBarBackground/StressPointer
 
-@export var min_stress: int = 0
-@export var max_stress: int = 100
-var current_stress: int = 50
+@export var min_stress: float = 0.0
+@export var max_stress: float = 100.0
+var current_stress: float = 50.0
 var target_stress_position: float
 
 func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	update_pointer_position()
 
-# Плавное обновление позиции указателя
 func _process(delta):
 	stress_pointer.position.x = lerp(stress_pointer.position.x, target_stress_position, 5 * delta)
 
 
-func increase_stress(amount: int):
-	current_stress += amount
-	current_stress = clamp(current_stress, min_stress, max_stress)
-	update_pointer_position()
 
-func decrease_stress(amount: int):
-	current_stress -= amount
-	current_stress = clamp(current_stress, min_stress, max_stress)
-	update_pointer_position()
+func increase_stress():
+	pass
+
+func decrease_stress():
+	pass
 
 func update_pointer_position():
 	var progress_ratio = float(current_stress - min_stress) / float(max_stress - min_stress)
@@ -36,8 +32,15 @@ func update_pointer_position():
 	target_stress_position = lerp(min_x, max_x, progress_ratio)
 
 
-func _on_dialogic_signal(argument: String):
-	if argument == "stress_increase":
-		increase_stress(5)
-	elif argument == "stress_decrease":
-		decrease_stress(5)
+func _on_dialogic_signal(argument: Dictionary):
+	if argument.has("stress_change"):
+		var stress_change_value: float = argument["stress_change"]
+		
+		current_stress += stress_change_value
+		current_stress = clamp(current_stress, min_stress, max_stress)
+		update_pointer_position()
+		
+		if stress_change_value > 0:
+			increase_stress()
+		else:
+			decrease_stress()

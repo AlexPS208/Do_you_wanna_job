@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nd8gruww5kil"
-path="res://.godot/imported/board.png-aeeee8e2906231b92d271d02de0f6106.ctex"
+uid="uid://3ygpjgbnn8oh"
+path="res://.godot/imported/taboo.svg-919417087733ee2071f9ff20a9466c35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://board.png"
-dest_files=["res://.godot/imported/board.png-aeeee8e2906231b92d271d02de0f6106.ctex"]
+source_file="res://assets/taboo.svg"
+dest_files=["res://.godot/imported/taboo.svg-919417087733ee2071f9ff20a9466c35.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

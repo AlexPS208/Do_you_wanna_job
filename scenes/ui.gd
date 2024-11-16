@@ -6,6 +6,12 @@ extends CanvasLayer
 @onready var exit_confirm_panel: ColorRect = $Menu/Exit_confirm
 @onready var button_sound: AudioStreamPlayer3D = $Button_sound
 
+@onready var timebar: Node = $Timebar
+@onready var timebar_bar: TextureRect = $Timebar/Time_bar
+@onready var timer: Timer = $Timebar/Timer
+@onready var timer_animator: AnimationPlayer = $Timebar/Timebar_animator
+
+
 var is_menu_active: bool = false
 var is_menu_panel_active: bool = false
 var is_pre_confirm_active: bool = false
@@ -13,9 +19,18 @@ var is_confirm_active: bool = false
 
 var dialog_node
 
+var original_timebar_width: float
+var original_timebar_position: Vector2
+var current_skip_choice: int = 0
+
 func _ready() -> void:
 	await get_tree().create_timer(1).timeout
+	
+	Dialogic.signal_event.connect(_on_dialogic_signal)
 	dialog_node = Dialogic.start("First_manager")
+	
+	original_timebar_width = timebar_bar.size.x
+	original_timebar_position = timebar_bar.position
 
 
 func _process(delta: float) -> void:
@@ -25,11 +40,15 @@ func _process(delta: float) -> void:
 			show_menu()
 		else:
 			hide_menu()
+			
+	if timer.is_stopped() == false:
+		var remaining_time = timer.time_left
+		var total_time = timer.wait_time
+		update_timebar(total_time, remaining_time)
 
 
 func _simulate_keypress(action_name: String):
 	Input.action_press(action_name)
-	print(action_name)
 	Input.action_release(action_name)
 
 func show_menu() -> void:
@@ -78,12 +97,55 @@ func show_confirm() -> void:
 	is_confirm_active = true
 
 
-# DIALOGS
+# DIALOGIC
 func toggle_dialogic_layer(is_menu_open: bool):
 	if is_menu_open:
 		Dialogic.paused = true
 	else:
 		Dialogic.paused = false
+
+func _on_dialogic_signal(argument: Dictionary):
+	if argument.has("start_timer"):
+		var duration = argument["start_timer"]
+		current_skip_choice = argument["skip_choice"]
+		start_timer(duration)
+	if argument.has("stop_timer"):
+		stop_timer()
+
+
+# TIMER AND TIMEBAR
+func start_timer(duration: float):
+	timebar_bar.size.x = original_timebar_width
+	timebar_bar.position.x = original_timebar_position.x
+	timer_animator.play("timebar_show")
+	timer.wait_time = duration
+	timer.start()
+	update_timebar(duration, duration) 
+
+func stop_timer():
+	if timer.is_stopped() == false:
+		timer.stop()
+		timer_animator.play("timebar_hide")
+
+func _on_timer_timeout() -> void:
+	focus_on_skip_choice()
+	get_viewport().gui_get_focus_owner().pressed.emit()
+	stop_timer()
+
+func focus_on_skip_choice():
+	for button in get_tree().get_nodes_in_group("dialogic_choice_button"):
+		if button.name == "DialogicNode_ChoiceButton" + str(current_skip_choice):
+			button.grab_focus()
+
+
+func update_timebar(total_time: float, remaining_time: float):
+	var min_width = 64.0
+	var progress_ratio = remaining_time / total_time
+	var new_width = max(original_timebar_width * progress_ratio, min_width)
+
+	timebar_bar.size.x = new_width
+	timebar_bar.position.x = ((original_timebar_width - new_width) / 2.0) + original_timebar_position.x
+
 
 
 # BUTTONS

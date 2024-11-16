@@ -13,7 +13,9 @@ config_version=5
 config/name="Do you wanna job?"
 run/main_scene="res://scenes/start_cutscene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://board.png"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+config/icon="res://assets/taboo.svg"
 
 [autoload]
 
@@ -56,16 +58,25 @@ variables={
 layout/style_list=["res://scenes/Dialogic_timelines/Display_style.tres"]
 layout/default_style="res://scenes/Dialogic_timelines/Display_style.tres"
 glossary/default_case_sensitive=true
+text/autoskip_time_per_event=0.1
+choices/hotkey_behaviour=1
+text/autoadvance_fixed_delay=0.1
+choices/def_false_behaviour=0
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[global_group]
+
+dialogic_choice_button=""
 
 [gui]
 

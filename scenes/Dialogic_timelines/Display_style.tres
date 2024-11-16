@@ -36,8 +36,8 @@ overrides = {}
 script = ExtResource("1_syjn7")
 scene = ExtResource("5_kdm6i")
 overrides = {
-"box_margin_bottom": "50.0",
-"box_size": "Vector2(1000, 200)",
+"box_margin_bottom": "40.0",
+"box_size": "Vector2(1000, 150)",
 "name_label_box_offset": "Vector2(0, -10)",
 "typing_sounds_enabled": "false"
 }
@@ -69,7 +69,7 @@ overrides = {}
 script = ExtResource("1_syjn7")
 scene = ExtResource("10_rive2")
 overrides = {
-"boxes_offset": "Vector2(0, 200)",
+"boxes_offset": "Vector2(0, 225)",
 "font_size_custom": "32.0"
 }
 
@@ -90,4 +90,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_syjn7")]([])
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "18"
