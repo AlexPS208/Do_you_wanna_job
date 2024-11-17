@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=81 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -17,8 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://k4c81co6lolh" path="res://assets/Stressbar/H2.png" id="7_wc1io"]
 [ext_resource type="Texture2D" uid="uid://hnqedw6jwfjj" path="res://assets/Stressbar/H3.png" id="8_ob4km"]
 [ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/wallpaper_back.png" id="8_ogdb7"]
-[ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="9_6ohct"]
-[ext_resource type="Texture2D" uid="uid://dkmgcisrducts" path="res://assets/clock.svg" id="9_ymotb"]
+[ext_resource type="Texture2D" uid="uid://qpmp1e8fdpkf" path="res://assets/time.png" id="8_ynwt4"]
 [ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/floor.png" id="13_p3mmc"]
 [ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
@@ -85,69 +84,27 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="Animation" id="Animation_wg4y3"]
-resource_name = "timebar_hide"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Time_bar:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.0666667, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Time_icon:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.233333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Time_icon:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.233333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(928, 190), Vector2(928, 100)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Time_bar:offset_top")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.0666667, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [17.0, -72.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Time_bar:offset_bottom")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.0666667, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [17.68, -71.32]
-}
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ruwna"]
+load_path = "res://.godot/imported/time.png-e9cc3bc9e7ccdeae0fcaa808ccaa5dbf.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ets8c"]
+atlas = SubResource("CompressedTexture2D_ruwna")
+region = Rect2(1698.76, 1341.97, 2600.53, 74.1295)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsv5t"]
+atlas = ExtResource("8_ynwt4")
+region = Rect2(1707.84, 924.043, 2584.77, 75.6854)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wifxj"]
+load_path = "res://.godot/imported/time.png-e9cc3bc9e7ccdeae0fcaa808ccaa5dbf.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7sanb"]
+atlas = SubResource("CompressedTexture2D_wifxj")
+region = Rect2(1675.51, 1751.33, 2649.79, 142.747)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5sshh"]
+atlas = ExtResource("8_ynwt4")
+region = Rect2(2887.58, 376.641, 224.986, 225.578)
 
 [sub_resource type="Animation" id="Animation_j2fid"]
 length = 0.001
@@ -235,6 +192,183 @@ tracks/6/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Time_bar_back:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(577.92, 206)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Time_bar_back:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Time_bar_outline:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(567, 191)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Time_bar_outline:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_b0gxx"]
+resource_name = "time_icon_warning"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Time_icon:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.261799, 0.0, 0.261799, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_wg4y3"]
+resource_name = "timebar_hide"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Time_bar:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Time_icon:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Time_icon:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(928, 190), Vector2(928, 100)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Time_bar:offset_top")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.0666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [17.0, -72.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Time_bar:offset_bottom")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.0666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [17.68, -71.32]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Time_bar_outline:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.0666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Time_bar_outline:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.0666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(567, 191), Vector2(567, 103)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Time_bar_back:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.0666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Time_bar_back:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.0666667, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(577.92, 206), Vector2(577.92, 117)]
+}
 
 [sub_resource type="Animation" id="Animation_e0wfs"]
 resource_name = "timebar_show"
@@ -287,22 +421,53 @@ tracks/3/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
-
-[sub_resource type="Animation" id="Animation_b0gxx"]
-resource_name = "time_icon_warning"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Time_icon:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Time_bar_back:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, -0.261799, 0.0, 0.261799, 0.0]
+"values": [Vector2(578, 117), Vector2(577.92, 206)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Time_bar_back:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Time_bar_outline:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(567, 105), Vector2(567, 191)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Time_bar_outline:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h683"]
@@ -650,20 +815,53 @@ frame_progress = 0.070647
 
 [node name="Timebar" type="Node" parent="UI"]
 
+[node name="Time_bar_back" type="TextureRect" parent="UI/Timebar"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.301
+anchor_top = 0.175
+anchor_right = 0.699
+anchor_bottom = 0.205
+offset_top = 17.0
+offset_right = 0.00012207
+offset_bottom = 17.68
+grow_horizontal = 2
+pivot_offset = Vector2(382.08, 24.64)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_ets8c")
+expand_mode = 2
+
 [node name="Time_bar" type="TextureRect" parent="UI/Timebar"]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
 anchor_left = 0.301
 anchor_top = 0.175
 anchor_right = 0.699
-anchor_bottom = 0.22
+anchor_bottom = 0.205
 offset_top = 17.0
 offset_bottom = 17.68
 grow_horizontal = 2
 pivot_offset = Vector2(382.08, 24.64)
 mouse_filter = 2
-texture = ExtResource("9_6ohct")
+texture = SubResource("AtlasTexture_gsv5t")
 expand_mode = 2
+
+[node name="Time_bar_outline" type="TextureRect" parent="UI/Timebar"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.301
+anchor_top = 0.175
+anchor_right = 0.699
+anchor_bottom = 0.205
+offset_left = -10.92
+offset_top = 2.0
+offset_right = 10.92
+offset_bottom = 28.6
+grow_horizontal = 2
+pivot_offset = Vector2(382.08, 24.64)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_7sanb")
+expand_mode = 5
 
 [node name="Time_icon" type="TextureRect" parent="UI/Timebar"]
 modulate = Color(1, 1, 1, 0)
@@ -673,13 +871,13 @@ anchor_top = 0.176
 anchor_right = 0.5
 anchor_bottom = 0.235
 offset_left = -32.0
-offset_top = -0.0800171
+offset_top = -0.0800018
 offset_right = 32.0
-offset_bottom = 0.199982
+offset_bottom = 0.199997
 grow_horizontal = 2
 pivot_offset = Vector2(32, 32)
 mouse_filter = 2
-texture = ExtResource("9_ymotb")
+texture = SubResource("AtlasTexture_5sshh")
 expand_mode = 3
 
 [node name="Timer" type="Timer" parent="UI/Timebar"]

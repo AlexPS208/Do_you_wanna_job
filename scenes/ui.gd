@@ -19,6 +19,14 @@ var is_confirm_active: bool = false
 
 var dialog_node
 
+var main_labels = ["main_01", "main_02"]
+var event_labels = {
+	"group_1": ["event_01_01", "event_01_02"],
+	"group_2": ["event_02_01", "event_02_02", "event_02_03"]
+}
+
+var used_labels = []
+
 var original_timebar_width: float
 var original_timebar_position: Vector2
 var current_skip_choice: int = 0
@@ -45,6 +53,8 @@ func _process(delta: float) -> void:
 		var remaining_time = timer.time_left
 		var total_time = timer.wait_time
 		update_timebar(total_time, remaining_time)
+		if remaining_time < 3.0:
+			timer_animator.play("time_icon_warning")
 
 
 func _simulate_keypress(action_name: String):
@@ -111,6 +121,30 @@ func _on_dialogic_signal(argument: Dictionary):
 		start_timer(duration)
 	if argument.has("stop_timer"):
 		stop_timer()
+	
+	if argument.has("random_question"):
+		random_jump()
+
+
+# RANDOM QUESTION
+func random_jump(is_event: bool = false, event_group: String = ""):
+	var available_labels = []
+	
+	if is_event and event_group in event_labels:
+		for label in event_labels[event_group]:
+			if not used_labels.has(label):
+				available_labels.append(label)
+	else:
+		for label in main_labels:
+			if not used_labels.has(label):
+				available_labels.append(label)
+	
+	if available_labels.size() > 0:
+		var random_label = available_labels[randi() % available_labels.size()]
+		Dialogic.Jump.jump_to_label(random_label)
+		used_labels.append(random_label)
+	else:
+		Dialogic.Jump.jump_to_label("End")
 
 
 # TIMER AND TIMEBAR
