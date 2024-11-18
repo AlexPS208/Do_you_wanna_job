@@ -442,7 +442,7 @@ expand_mode = 1
 modulate = Color(0.729412, 0.933333, 0.0941176, 1)
 offset_left = 232.0
 offset_top = 83.0
-offset_right = 750.0
+offset_right = 654.0
 offset_bottom = 141.0
 texture = SubResource("AtlasTexture_egv2c")
 expand_mode = 1
@@ -475,7 +475,7 @@ texture = SubResource("AtlasTexture_j12b0")
 
 [node name="Timebar_bar" type="TextureRect" parent="UI/Timebar"]
 modulate = Color(0.180392, 1, 1, 1)
-offset_left = 1171.0
+offset_left = 1271.0
 offset_top = 80.0
 offset_right = 1691.0
 offset_bottom = 134.0

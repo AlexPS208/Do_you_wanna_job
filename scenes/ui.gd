@@ -7,9 +7,8 @@ extends CanvasLayer
 @onready var button_sound: AudioStreamPlayer3D = $Button_sound
 
 @onready var timebar: Node = $Timebar
-@onready var timebar_bar: TextureRect = $Timebar/Time_bar
+@onready var timebar_bar: TextureRect = $Timebar/Timebar_bar
 @onready var timer: Timer = $Timebar/Timer
-@onready var timer_animator: AnimationPlayer = $Timebar/Timebar_animator
 
 
 var is_menu_active: bool = false
@@ -18,18 +17,18 @@ var is_pre_confirm_active: bool = false
 var is_confirm_active: bool = false
 
 var dialog_node
+var current_skip_choice: int = 0
+
+var original_timebar_width: float
+var original_timebar_position: Vector2
 
 var main_labels = ["main_01", "main_02"]
 var event_labels = {
 	"group_1": ["event_01_01", "event_01_02"],
 	"group_2": ["event_02_01", "event_02_02", "event_02_03"]
 }
-
 var used_labels = []
 
-var original_timebar_width: float
-var original_timebar_position: Vector2
-var current_skip_choice: int = 0
 
 func _ready() -> void:
 	await get_tree().create_timer(1).timeout
@@ -48,13 +47,11 @@ func _process(delta: float) -> void:
 			show_menu()
 		else:
 			hide_menu()
-			
-	if timer.is_stopped() == false:
+	
+	if !timer.is_stopped():
 		var remaining_time = timer.time_left
 		var total_time = timer.wait_time
 		update_timebar(total_time, remaining_time)
-		if remaining_time < 3.0:
-			timer_animator.play("time_icon_warning")
 
 
 func _simulate_keypress(action_name: String):
@@ -121,7 +118,7 @@ func _on_dialogic_signal(argument: Dictionary):
 		start_timer(duration)
 	if argument.has("stop_timer"):
 		stop_timer()
-	
+
 	if argument.has("random_question"):
 		random_jump()
 
@@ -148,38 +145,38 @@ func random_jump(is_event: bool = false, event_group: String = ""):
 
 
 # TIMER AND TIMEBAR
-func start_timer(duration: float):
+func start_timer(duration: float) -> void:
+	# Устанавливаем начальные параметры шкалы
 	timebar_bar.size.x = original_timebar_width
 	timebar_bar.position.x = original_timebar_position.x
-	timer_animator.play("timebar_show")
+	
+	# Настраиваем таймер и запускаем его
 	timer.wait_time = duration
 	timer.start()
-	update_timebar(duration, duration) 
-
-func stop_timer():
-	if timer.is_stopped() == false:
-		timer.stop()
-		timer_animator.play("timebar_hide")
 
 func _on_timer_timeout() -> void:
 	focus_on_skip_choice()
 	get_viewport().gui_get_focus_owner().pressed.emit()
 	stop_timer()
 
+func stop_timer() -> void:
+	if !timer.is_stopped():
+		timer.stop()
+		timebar_bar.position.x = original_timebar_position.x
+		timebar_bar.size.x = original_timebar_width
+
 func focus_on_skip_choice():
 	for button in get_tree().get_nodes_in_group("dialogic_choice_button"):
 		if button.name == "DialogicNode_ChoiceButton" + str(current_skip_choice):
 			button.grab_focus()
 
-
-func update_timebar(total_time: float, remaining_time: float):
-	var min_width = 64.0
+func update_timebar(total_time: float, remaining_time: float) -> void:
 	var progress_ratio = remaining_time / total_time
-	var new_width = max(original_timebar_width * progress_ratio, min_width)
+	progress_ratio = clamp(progress_ratio, 0.0, 1.0)
 
+	var new_width = original_timebar_width * progress_ratio
 	timebar_bar.size.x = new_width
-	timebar_bar.position.x = ((original_timebar_width - new_width) / 2.0) + original_timebar_position.x
-
+	timebar_bar.position.x = original_timebar_position.x + (original_timebar_width - new_width)
 
 
 # BUTTONS

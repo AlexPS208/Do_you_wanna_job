@@ -72,6 +72,7 @@ First_manager: Do you underthtand me?
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":12,"part":"head"}"]
 	First_manager: Hahaha, I like it! Good thenshe of humor. Jutht don't make a habit of it inthtead of good answerth, eh?
 - [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":9,"part":"head"}"]
 	First_manager: Ohhh, cat got your tongue? Or maybe you think thhhilenthhh ithhh a valid anther...
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
