@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxj2m8cucnct7"
-path.s3tc="res://.godot/imported/ceiling.png-93c071a68206c8c3b6b3221fdf601d6a.s3tc.ctex"
+uid="uid://bivfvkg7txjy8"
+path.s3tc="res://.godot/imported/wallpaper_back.png-9f09833688c5dd7f80eb7e8a8f312e5e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/ceiling.png"
-dest_files=["res://.godot/imported/ceiling.png-93c071a68206c8c3b6b3221fdf601d6a.s3tc.ctex"]
+source_file="res://assets/First_manager_scene/wallpaper_back.png"
+dest_files=["res://.godot/imported/wallpaper_back.png-9f09833688c5dd7f80eb7e8a8f312e5e.s3tc.ctex"]
 
 [params]
 

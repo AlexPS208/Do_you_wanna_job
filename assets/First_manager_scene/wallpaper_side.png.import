@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpnuakblvm0i5"
-path.s3tc="res://.godot/imported/wallpaper_front.png-f746e2dab630a52b6bc259e4788c6970.s3tc.ctex"
+uid="uid://1xvmxye43yrr"
+path.s3tc="res://.godot/imported/wallpaper_side.png-de904d7dd7834b20e3fd857978b70048.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/wallpaper_front.png"
-dest_files=["res://.godot/imported/wallpaper_front.png-f746e2dab630a52b6bc259e4788c6970.s3tc.ctex"]
+source_file="res://assets/First_manager_scene/wallpaper_side.png"
+dest_files=["res://.godot/imported/wallpaper_side.png-de904d7dd7834b20e3fd857978b70048.s3tc.ctex"]
 
 [params]
 

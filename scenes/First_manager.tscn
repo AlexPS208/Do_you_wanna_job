@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=83 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -6,19 +6,19 @@
 [ext_resource type="Script" path="res://scenes/ui.gd" id="2_pphr1"]
 [ext_resource type="Script" path="res://scenes/stressbar.gd" id="3_dkhrf"]
 [ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="4_cglvn"]
-[ext_resource type="Texture2D" uid="uid://bpnuakblvm0i5" path="res://assets/wallpaper_front.png" id="4_ms1l2"]
-[ext_resource type="Texture2D" uid="uid://cudvcrstrws0q" path="res://assets/Stressbar/Stressbar.png" id="4_ri2g5"]
+[ext_resource type="Texture2D" uid="uid://bpnuakblvm0i5" path="res://assets/First_manager_scene/wallpaper_front.png" id="4_ms1l2"]
+[ext_resource type="Texture2D" uid="uid://c7bcc8m4r3mfr" path="res://assets/BAR.png" id="4_s16kj"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="5_h67a8"]
-[ext_resource type="Texture2D" uid="uid://bxj2m8cucnct7" path="res://assets/ceiling.png" id="6_8lkm5"]
+[ext_resource type="Texture2D" uid="uid://bxj2m8cucnct7" path="res://assets/First_manager_scene/ceiling.png" id="6_8lkm5"]
 [ext_resource type="Shader" path="res://assets/shaders/Outline_shader.gdshader" id="6_utuxu"]
 [ext_resource type="Texture2D" uid="uid://bh5acs7mud0ny" path="res://assets/Stressbar/H1.png" id="6_uvmcl"]
-[ext_resource type="Texture2D" uid="uid://1xvmxye43yrr" path="res://assets/wallpaper_side.png" id="7_0caud"]
-[ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/board.png" id="7_4lm6e"]
+[ext_resource type="Texture2D" uid="uid://1xvmxye43yrr" path="res://assets/First_manager_scene/wallpaper_side.png" id="7_0caud"]
+[ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/First_manager_scene/board.png" id="7_4lm6e"]
 [ext_resource type="Texture2D" uid="uid://k4c81co6lolh" path="res://assets/Stressbar/H2.png" id="7_wc1io"]
 [ext_resource type="Texture2D" uid="uid://hnqedw6jwfjj" path="res://assets/Stressbar/H3.png" id="8_ob4km"]
-[ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/wallpaper_back.png" id="8_ogdb7"]
+[ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/First_manager_scene/wallpaper_back.png" id="8_ogdb7"]
 [ext_resource type="Texture2D" uid="uid://qpmp1e8fdpkf" path="res://assets/time.png" id="8_ynwt4"]
-[ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/floor.png" id="13_p3mmc"]
+[ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/First_manager_scene/floor.png" id="13_p3mmc"]
 [ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
 [ext_resource type="Texture2D" uid="uid://b7cbsci20foc5" path="res://assets/First_manager/SHt.png" id="19_2j7gn"]
@@ -37,7 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://df67tjisohtj1" path="res://assets/First_manager/SHh1.2.png" id="27_mh6x4"]
 [ext_resource type="Texture2D" uid="uid://c7uw6jw2p3i8i" path="res://assets/First_manager/SHh3.1.png" id="28_2qs4l"]
 [ext_resource type="Texture2D" uid="uid://bgipvxjydbcu5" path="res://assets/First_manager/SHh2.6.png" id="33_ecsrh"]
-[ext_resource type="Texture2D" uid="uid://dfwru3to22a74" path="res://assets/table.png" id="33_vhlox"]
+[ext_resource type="Texture2D" uid="uid://dfwru3to22a74" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
 
@@ -60,9 +60,17 @@ sky_material = SubResource("ShaderMaterial_2ff6s")
 background_mode = 2
 sky = SubResource("Sky_wkf54")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tm23o"]
-atlas = ExtResource("4_ri2g5")
-region = Rect2(1195, 1265, 3611, 472)
+[sub_resource type="AtlasTexture" id="AtlasTexture_j12b0"]
+atlas = ExtResource("4_s16kj")
+region = Rect2(723.816, 488.461, 485.29, 61.5792)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_egv2c"]
+atlas = ExtResource("4_s16kj")
+region = Rect2(726.024, 686.412, 485.486, 58.1429)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqq8w"]
+atlas = ExtResource("4_s16kj")
+region = Rect2(584.911, 286.01, 634.247, 151.159)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_amfk4"]
 animations = [{
@@ -792,26 +800,39 @@ script = ExtResource("2_pphr1")
 [node name="Stressbar" type="Node" parent="UI"]
 script = ExtResource("3_dkhrf")
 
+[node name="Stressbar_bar_back" type="TextureRect" parent="UI/Stressbar"]
+modulate = Color(0.729412, 0.933333, 0.0941176, 1)
+offset_left = 228.0
+offset_top = 83.0
+offset_right = 755.0
+offset_bottom = 141.0
+texture = SubResource("AtlasTexture_j12b0")
+expand_mode = 1
+
+[node name="Stressbar_bar" type="TextureRect" parent="UI/Stressbar"]
+modulate = Color(0.729412, 0.933333, 0.0941176, 1)
+offset_left = 232.0
+offset_top = 83.0
+offset_right = 654.0
+offset_bottom = 141.0
+texture = SubResource("AtlasTexture_egv2c")
+expand_mode = 1
+
 [node name="StressBarBackground" type="TextureRect" parent="UI/Stressbar"]
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.05
-anchor_right = 0.5
-anchor_bottom = 0.05
-offset_left = -500.0
-offset_top = -34.0
-offset_right = 500.0
-offset_bottom = 97.0
-grow_horizontal = 2
-texture = SubResource("AtlasTexture_tm23o")
-expand_mode = 5
+offset_left = 68.0
+offset_top = 67.0
+offset_right = 768.0
+offset_bottom = 233.6
+texture = SubResource("AtlasTexture_kqq8w")
 
 [node name="StressPointer" type="AnimatedSprite2D" parent="UI/Stressbar/StressBarBackground"]
-position = Vector2(500, 63)
-scale = Vector2(0.3, 0.3)
+modulate = Color(0.729412, 0.933333, 0.0941176, 1)
+position = Vector2(85, 82)
+scale = Vector2(0.344196, 0.344196)
 sprite_frames = SubResource("SpriteFrames_amfk4")
 autoplay = "default"
-frame_progress = 0.070647
+frame = 3
+frame_progress = 0.728821
 
 [node name="Timebar" type="Node" parent="UI"]
 
@@ -888,6 +909,7 @@ libraries = {
 }
 
 [node name="Scene_transit_start" type="ColorRect" parent="UI"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -910,6 +932,7 @@ pitch_scale = 0.85
 
 [node name="Menu" type="Control" parent="UI"]
 process_mode = 3
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
