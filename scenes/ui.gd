@@ -9,6 +9,10 @@ extends CanvasLayer
 @onready var timebar: Node = $Timebar
 @onready var timebar_bar: TextureRect = $Timebar/Timebar_bar
 @onready var timer: Timer = $Timebar/Timer
+@onready var timebar_animator: AnimationPlayer = $Timebar/Timebar_animator
+@onready var sight: TextureRect = $Sight_texture
+@onready var camera: Camera3D = $"../Camera3D"
+@onready var question_counter: Label = $Timebar/Question_counter
 
 
 var is_menu_active: bool = false
@@ -21,6 +25,14 @@ var current_skip_choice: int = 0
 
 var original_timebar_width: float
 var original_timebar_position: Vector2
+
+var original_fov: float = 70.0
+var target_fov: float = 60.0
+var original_sight_color: Color = Color(1, 1, 1, 0)  # ffffff00
+var target_sight_color: Color = Color(1, 1, 1, 1)    # ffffff
+var lerp_speed: float = 0.3
+
+var questions_value = 11
 
 var main_labels = ["main_01", "main_02"]
 var event_labels = {
@@ -52,6 +64,14 @@ func _process(delta: float) -> void:
 		var remaining_time = timer.time_left
 		var total_time = timer.wait_time
 		update_timebar(total_time, remaining_time)
+		# Плавное изменение FOV камеры
+		camera.fov = lerp(camera.fov, target_fov, lerp_speed * delta)
+		# Плавное изменение modulate у sight
+		sight.modulate = sight.modulate.lerp(target_sight_color, lerp_speed * delta)
+	else:
+		# Возврат к исходным значениям
+		camera.fov = lerp(camera.fov, original_fov, lerp_speed * delta * 15)
+		sight.modulate = sight.modulate.lerp(original_sight_color, lerp_speed * delta * 15)
 
 
 func _simulate_keypress(action_name: String):
@@ -118,6 +138,8 @@ func _on_dialogic_signal(argument: Dictionary):
 		start_timer(duration)
 	if argument.has("stop_timer"):
 		stop_timer()
+		if argument["is_answered"]:
+			decrease_questions_value()
 
 	if argument.has("random_question"):
 		random_jump()
@@ -125,6 +147,10 @@ func _on_dialogic_signal(argument: Dictionary):
 
 # RANDOM QUESTION
 func random_jump(is_event: bool = false, event_group: String = ""):
+	if questions_value <= 0:
+		Dialogic.Jump.jump_to_label("End")
+		return
+	
 	var available_labels = []
 	
 	if is_event and event_group in event_labels:
@@ -144,13 +170,19 @@ func random_jump(is_event: bool = false, event_group: String = ""):
 		Dialogic.Jump.jump_to_label("End")
 
 
+func decrease_questions_value() -> void:
+	timebar_animator.play("Questions_counter_hide")
+	await get_tree().create_timer(0.2).timeout
+	questions_value -= 1
+	question_counter.text = str(questions_value)
+	timebar_animator.play("Questions_counter_show")
+
+
 # TIMER AND TIMEBAR
 func start_timer(duration: float) -> void:
-	# Устанавливаем начальные параметры шкалы
 	timebar_bar.size.x = original_timebar_width
 	timebar_bar.position.x = original_timebar_position.x
-	
-	# Настраиваем таймер и запускаем его
+
 	timer.wait_time = duration
 	timer.start()
 
