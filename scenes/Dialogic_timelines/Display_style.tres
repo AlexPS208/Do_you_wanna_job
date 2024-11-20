@@ -69,7 +69,8 @@ overrides = {}
 script = ExtResource("1_syjn7")
 scene = ExtResource("10_rive2")
 overrides = {
-"boxes_offset": "Vector2(0, 225)",
+"boxes_offset": "Vector2(660, 0)",
+"boxes_v_separation": "20.0",
 "font_size_custom": "32.0"
 }
 

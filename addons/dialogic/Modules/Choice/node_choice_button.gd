@@ -41,7 +41,8 @@ func _load_info(choice_info: Dictionary) -> void:
 func set_choice_text(new_text: String) -> void:
 	if text_node and text_node is RichTextLabel:
 		text = " "
-		text_node.bbcode_text = "[center]" + new_text + "[/center]"
+		#text_node.bbcode_text = "[center]" + new_text + "[/center]"
+		text_node.bbcode_text = "   " + new_text
 	else:
 		text = new_text
 	
@@ -54,7 +55,7 @@ func set_choice_text(new_text: String) -> void:
 	var padding = 5
 	var width = text_length * 12 + padding
 	
-	custom_minimum_size = Vector2(width, 29)
+	custom_minimum_size = Vector2(600, 29)
 
 
 ## Called when the text changes.

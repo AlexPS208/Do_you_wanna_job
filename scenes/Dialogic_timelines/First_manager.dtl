@@ -87,19 +87,20 @@ First_manager: Ah, working with you will be... [i]intereshting[/i]. Jushht don�
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":6,"part":"head"}"]
 First_manager: What experience of yours would you shay was the mosht... [i]challenging[/i]?
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":10}"]
-- [color=#6BBF59]Managing a high-pressure project with a tight deadline[/color]
+- [color=#6BBF59]Managing a high-pressure project[/color]
 	[signal arg_type="dict" arg="{"stop_timer":true}"]
-	This taught me a lot about persistence and teamwork
+	[color=#6BBF59]Managing a high-pressure project with a tight deadline. This taught me a lot about persistence and teamwork[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":8,"part":"head"}"]
 	First_manager: Ah, you sound like you’ve been through the wringer. Good. You’ll need that toughnessh here
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 - [color=#8e59f5]Every experience has its own challenges[/color]
 	[signal arg_type="dict" arg="{"stop_timer":true}"]
-	But I try not to dwell on them too much
+	[color=#8e59f5]Every experience has its own challenges. But I try not to dwell on them too much[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
 	First_manager: Hmm... diplomatic. I’ll keep an eye on you
-- [color=#f7d038]Waking up on time every Monday morning, honestly[/color]
+- [color=#f7d038]Waking up on time[/color]
 	[signal arg_type="dict" arg="{"stop_timer":true}"]
+	[color=#f7d038]Waking up on time every Monday morning, honestly[/color]
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
 	First_manager: Ha-ha!
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
@@ -120,18 +121,20 @@ First_manager: Our work here requiresh a shtrict [i]discipline[/i]. Shometimesh 
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
 First_manager: Sho... are you easily tempted?
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":10}"]
-- [color=#6BBF59]I thrive under pressure and see it as an opportunity to grow[/color]
+- [color=#6BBF59]I thrive under pressure[/color]
 	[signal arg_type="dict" arg="{"stop_timer":true}"]
+	[color=#6BBF59]I thrive under pressure and see it as an opportunity to grow[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
 	First_manager: Honeshly... It'sh anouff shtrange
 	[signal arg_type="dict" arg="{"stress_change":5}"]
 - [color=#8e59f5]Every experience has its own challenges[/color]
 	[signal arg_type="dict" arg="{"stop_timer":true}"]
+	[color=#8e59f5]Every experience has its own challenges[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
 	First_manager: Fair enough...
-- [color=#f7d038]Pressure makes diamonds, doesn’t it?[/color]
+- [color=#f7d038]Pressure makes diamonds[/color]
 	[signal arg_type="dict" arg="{"stop_timer":true}"]
-	Let’s hope I shine bright
+	[color=#f7d038]Pressure makes diamonds, doesn’t it? Let’s hope I shine bright[/color]
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
 	First_manager: Haha, diamondsh! Let’sh hope you’re not cubic zirconia!
 	[signal arg_type="dict" arg="{"stress_change":-10}"]
