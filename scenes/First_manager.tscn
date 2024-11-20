@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=82 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://k4c81co6lolh" path="res://assets/Stressbar/H2.png" id="7_wc1io"]
 [ext_resource type="Texture2D" uid="uid://hnqedw6jwfjj" path="res://assets/Stressbar/H3.png" id="8_ob4km"]
 [ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/First_manager_scene/wallpaper_back.png" id="8_ogdb7"]
+[ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="12_bc7br"]
 [ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/First_manager_scene/floor.png" id="13_p3mmc"]
 [ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
@@ -60,6 +61,11 @@ sky_material = SubResource("ShaderMaterial_2ff6s")
 background_mode = 2
 sky = SubResource("Sky_wkf54")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fdx82"]
+shader = ExtResource("12_bc7br")
+shader_parameter/grain_amount = 0.05
+shader_parameter/grain_size = 1.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_j12b0"]
 atlas = ExtResource("4_s16kj")
 region = Rect2(723.816, 488.461, 485.29, 61.5792)
@@ -93,7 +99,7 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ssfp5"]
-font_size = 82
+font_size = 76
 font_color = Color(0.180392, 1, 1, 0)
 
 [sub_resource type="Animation" id="Animation_j2fid"]
@@ -471,13 +477,18 @@ stream_0/stream = ExtResource("38_k4ksr")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1msqq")
 
-[node name="UI" type="CanvasLayer" parent="."]
-process_mode = 3
-process_priority = 1
-layer = 3
-script = ExtResource("2_pphr1")
+[node name="Under_UI_effects" type="CanvasLayer" parent="."]
 
-[node name="Sight_texture" type="TextureRect" parent="UI"]
+[node name="Postprocessing_shader" type="ColorRect" parent="Under_UI_effects"]
+material = SubResource("ShaderMaterial_fdx82")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Sight_texture" type="TextureRect" parent="Under_UI_effects"]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
@@ -487,38 +498,44 @@ grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("3_ov60v")
 
+[node name="UI" type="CanvasLayer" parent="."]
+process_mode = 3
+process_priority = 1
+layer = 3
+script = ExtResource("2_pphr1")
+
 [node name="Stressbar" type="Node" parent="UI"]
 script = ExtResource("3_dkhrf")
 
 [node name="Stressbar_bar_back" type="TextureRect" parent="UI/Stressbar"]
 modulate = Color(0.729412, 0.933333, 0.0941176, 1)
-offset_left = 228.0
-offset_top = 83.0
-offset_right = 755.0
-offset_bottom = 141.0
+offset_left = 214.0
+offset_top = 75.0
+offset_right = 689.0
+offset_bottom = 134.0
 texture = SubResource("AtlasTexture_j12b0")
 expand_mode = 1
 
 [node name="Stressbar_bar" type="TextureRect" parent="UI/Stressbar"]
 modulate = Color(0.729412, 0.933333, 0.0941176, 1)
-offset_left = 232.0
-offset_top = 83.0
-offset_right = 750.0
-offset_bottom = 141.0
+offset_left = 212.0
+offset_top = 75.0
+offset_right = 687.0
+offset_bottom = 131.0
 texture = SubResource("AtlasTexture_egv2c")
 expand_mode = 1
 
 [node name="StressBar_frame" type="TextureRect" parent="UI/Stressbar"]
 offset_left = 64.0
 offset_top = 64.0
-offset_right = 764.0
-offset_bottom = 230.6
+offset_right = 698.0
+offset_bottom = 215.0
 texture = SubResource("AtlasTexture_kqq8w")
 
 [node name="Stressbar_icon" type="AnimatedSprite2D" parent="UI/Stressbar/StressBar_frame"]
 modulate = Color(0.729412, 0.933333, 0.0941176, 1)
-position = Vector2(85, 82)
-scale = Vector2(0.344196, 0.344196)
+position = Vector2(76, 75)
+scale = Vector2(0.295312, 0.295312)
 sprite_frames = SubResource("SpriteFrames_amfk4")
 autoplay = "default"
 frame = 3
@@ -528,18 +545,19 @@ frame_progress = 0.728821
 
 [node name="Timebar_bar_background" type="TextureRect" parent="UI/Timebar"]
 modulate = Color(0.180392, 1, 1, 1)
-offset_left = 1168.0
-offset_top = 75.0
-offset_right = 1702.0
-offset_bottom = 144.0
+offset_left = 1227.0
+offset_top = 74.0
+offset_right = 1713.0
+offset_bottom = 135.0
 texture = SubResource("AtlasTexture_j12b0")
+expand_mode = 1
 
 [node name="Timebar_bar" type="TextureRect" parent="UI/Timebar"]
 modulate = Color(0.180392, 1, 1, 1)
-offset_left = 1171.0
-offset_top = 80.0
-offset_right = 1691.0
-offset_bottom = 134.0
+offset_left = 1229.0
+offset_top = 77.0
+offset_right = 1707.0
+offset_bottom = 131.0
 texture = SubResource("AtlasTexture_egv2c")
 expand_mode = 1
 
@@ -547,20 +565,21 @@ expand_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -764.0
+offset_left = -701.0
 offset_top = 64.0
 offset_right = -64.0
-offset_bottom = 230.0
+offset_bottom = 215.0
 grow_horizontal = 0
 pivot_offset = Vector2(700, 0)
 texture = SubResource("AtlasTexture_kqq8w")
 flip_h = true
 
 [node name="Question_counter" type="Label" parent="UI/Timebar"]
-offset_left = 1734.0
-offset_top = 92.0
-offset_right = 1809.0
-offset_bottom = 193.0
+offset_left = 1740.0
+offset_top = 90.0
+offset_right = 1815.0
+offset_bottom = 191.0
+text = "11"
 label_settings = SubResource("LabelSettings_ssfp5")
 horizontal_alignment = 1
 
@@ -572,7 +591,6 @@ libraries = {
 }
 
 [node name="Scene_transit_start" type="ColorRect" parent="UI"]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -595,7 +613,6 @@ pitch_scale = 0.85
 
 [node name="Menu" type="Control" parent="UI"]
 process_mode = 3
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

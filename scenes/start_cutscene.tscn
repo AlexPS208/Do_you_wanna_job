@@ -1,8 +1,9 @@
-[gd_scene load_steps=28 format=3 uid="uid://4a511imbpxmm"]
+[gd_scene load_steps=30 format=3 uid="uid://4a511imbpxmm"]
 
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_5li4t"]
 [ext_resource type="Script" path="res://scenes/start_cutscene.gd" id="1_hjrkf"]
 [ext_resource type="Texture2D" uid="uid://cad1dq8qly7e3" path="res://assets/black_door.jpg" id="2_e4u8d"]
+[ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="2_hkafq"]
 [ext_resource type="Texture2D" uid="uid://ba7mtjmkmcos1" path="res://assets/Icon.png" id="2_ncbjw"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="2_wxyd6"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="5_m1b6y"]
@@ -10,6 +11,11 @@
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="6_wnjup"]
 [ext_resource type="AudioStream" uid="uid://c3nvhvwyu2k4n" path="res://assets/sounds/StartTabu.mp3" id="7_f4hno"]
 [ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="8_dvetb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lfds8"]
+shader = ExtResource("2_hkafq")
+shader_parameter/grain_amount = 0.05
+shader_parameter/grain_size = 1.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_m83xh"]
 font_size = 64
@@ -237,6 +243,17 @@ albedo_texture = ExtResource("2_e4u8d")
 
 [node name="Start_cutscene" type="Node3D"]
 script = ExtResource("1_hjrkf")
+
+[node name="Under_UI_effects" type="CanvasLayer" parent="."]
+
+[node name="Postprocessing_shader" type="ColorRect" parent="Under_UI_effects"]
+material = SubResource("ShaderMaterial_lfds8")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [node name="UI" type="CanvasLayer" parent="."]
 

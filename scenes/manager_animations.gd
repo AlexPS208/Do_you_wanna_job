@@ -55,6 +55,7 @@ func start_head_animation() -> void:
 			voice.play()
 			await get_tree().create_timer(0.125).timeout
 	head.play(end_sprite_name)
+	reset_blink_timer()
 	is_blink_allowed = true
 
 

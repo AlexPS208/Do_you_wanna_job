@@ -10,7 +10,7 @@ extends CanvasLayer
 @onready var timebar_bar: TextureRect = $Timebar/Timebar_bar
 @onready var timer: Timer = $Timebar/Timer
 @onready var timebar_animator: AnimationPlayer = $Timebar/Timebar_animator
-@onready var sight: TextureRect = $Sight_texture
+@onready var sight: TextureRect = $"../Under_UI_effects/Sight_texture"
 @onready var camera: Camera3D = $"../Camera3D"
 @onready var question_counter: Label = $Timebar/Question_counter
 
