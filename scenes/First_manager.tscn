@@ -1,10 +1,9 @@
-[gd_scene load_steps=83 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=81 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="1_v8iea"]
 [ext_resource type="Script" path="res://scenes/ui.gd" id="2_pphr1"]
-[ext_resource type="Script" path="res://scenes/stressbar.gd" id="3_dkhrf"]
 [ext_resource type="Texture2D" uid="uid://doeqs1dinas4x" path="res://assets/sight.png" id="3_ov60v"]
 [ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="4_cglvn"]
 [ext_resource type="Texture2D" uid="uid://bpnuakblvm0i5" path="res://assets/First_manager_scene/wallpaper_front.png" id="4_ms1l2"]
@@ -41,7 +40,6 @@
 [ext_resource type="Texture2D" uid="uid://dfwru3to22a74" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
-[ext_resource type="PackedScene" uid="uid://bnfv3fkfv32vu" path="res://scenes/additional_scenes/audio_manager.tscn" id="42_o7m68"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
 shader = ExtResource("1_77jim")
@@ -212,6 +210,18 @@ tracks/2/keys = {
 "update": 0,
 "values": [80.0, 70.0]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stressbar/Stressbar_bar:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(475, 56)]
+}
 
 [sub_resource type="Animation" id="Animation_g10gl"]
 length = 0.001
@@ -250,6 +260,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [75.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stressbar/Stressbar_bar:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(475, 56)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0001e"]
@@ -506,7 +528,6 @@ layer = 3
 script = ExtResource("2_pphr1")
 
 [node name="Stressbar" type="Node" parent="UI"]
-script = ExtResource("3_dkhrf")
 
 [node name="Stressbar_bar_back" type="TextureRect" parent="UI/Stressbar"]
 modulate = Color(0.729412, 0.933333, 0.0941176, 1)
@@ -996,8 +1017,6 @@ stream = SubResource("AudioStreamRandomizer_7vx8b")
 volume_db = -15.0
 
 [node name="Manager_blink_timer" type="Timer" parent="Manager"]
-
-[node name="AudioManager" parent="." instance=ExtResource("42_o7m68")]
 
 [connection signal="timeout" from="UI/Timebar/Timer" to="UI" method="_on_timer_timeout"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]

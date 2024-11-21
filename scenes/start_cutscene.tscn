@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://4a511imbpxmm"]
+[gd_scene load_steps=31 format=3 uid="uid://4a511imbpxmm"]
 
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_5li4t"]
 [ext_resource type="Script" path="res://scenes/start_cutscene.gd" id="1_hjrkf"]
@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="6_wnjup"]
 [ext_resource type="AudioStream" uid="uid://c3nvhvwyu2k4n" path="res://assets/sounds/StartTabu.mp3" id="7_f4hno"]
 [ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="8_dvetb"]
+[ext_resource type="PackedScene" uid="uid://bnfv3fkfv32vu" path="res://scenes/additional_scenes/audio_manager.tscn" id="12_ycn6m"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lfds8"]
 shader = ExtResource("2_hkafq")
@@ -113,18 +114,6 @@ tracks/5/keys = {
 "update": 1,
 "values": [true]
 }
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Scene/Kekich_audio:playing")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
 
 [sub_resource type="Animation" id="Animation_sin70"]
 length = 0.001
@@ -195,18 +184,6 @@ tracks/5/path = NodePath("Scene/Door/door_boom_sound:playing")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Scene/Kekich_audio:playing")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -431,6 +408,8 @@ volume_db = -15.0
 autoplay = true
 max_distance = 15.0
 parameters/looping = true
+
+[node name="AudioManager" parent="." instance=ExtResource("12_ycn6m")]
 
 [connection signal="pressed" from="UI/Menu/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit" to="." method="_on_exit_pressed"]

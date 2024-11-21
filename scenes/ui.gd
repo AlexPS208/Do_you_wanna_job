@@ -14,24 +14,32 @@ extends CanvasLayer
 @onready var camera: Camera3D = $"../Camera3D"
 @onready var question_counter: Label = $Timebar/Question_counter
 
+@onready var stress_bar: TextureRect = $Stressbar/Stressbar_bar
+@onready var stress_pointer: AnimatedSprite2D = $Stressbar/StressBar_frame/Stressbar_icon
+@onready var stress_bar_bg: TextureRect = $Stressbar/Stressbar_bar_back
 
+# Menu
 var is_menu_active: bool = false
 var is_menu_panel_active: bool = false
 var is_pre_confirm_active: bool = false
 var is_confirm_active: bool = false
 
+# Dialogic
 var dialog_node
 var current_skip_choice: int = 0
 
+# Timebar
 var original_timebar_width: float
 var original_timebar_position: Vector2
 
+# Timer animation
 var original_fov: float = 70.0
 var target_fov: float = 60.0
 var original_sight_color: Color = Color(1, 1, 1, 0)  # ffffff00
 var target_sight_color: Color = Color(1, 1, 1, 1)    # ffffff
 var lerp_speed: float = 0.3
 
+# Questions
 var questions_value = 11
 
 var main_labels = ["main_01", "main_02"]
@@ -42,7 +50,24 @@ var event_labels = {
 var used_labels = []
 
 
+# Stressbar
+var min_stress: float = 0.0
+var max_stress: float = 100.0
+
+var current_stress: float = 60
+var displayed_stress: float = 100
+var target_stress_position: float
+
+var stressbar_original_width: float
+var stressbar_max_speed = 1.5
+var stressbar_min_speed = 0.75
+var stressbar_lerp_speed: float = 5.0
+
+
+
 func _ready() -> void:
+	stressbar_original_width = stress_bar.size.x
+	update_pointer_position()
 	await get_tree().create_timer(1).timeout
 	
 	Dialogic.signal_event.connect(_on_dialogic_signal)
@@ -72,6 +97,11 @@ func _process(delta: float) -> void:
 		# Возврат к исходным значениям
 		camera.fov = lerp(camera.fov, original_fov, lerp_speed * delta * 15)
 		sight.modulate = sight.modulate.lerp(original_sight_color, lerp_speed * delta * 15)
+	
+	displayed_stress = lerp(displayed_stress, current_stress, stressbar_lerp_speed * delta)
+	update_pointer_position()
+	update_bar_color()
+
 
 
 func _simulate_keypress(action_name: String):
@@ -87,6 +117,7 @@ func show_menu() -> void:
 	
 	exit_pre_confirm_panel.visible = false
 	is_pre_confirm_active = false
+	AudioManager.set_music_volume(-50.0, 5.0)
 	
 	toggle_dialogic_layer(true)
 
@@ -101,6 +132,7 @@ func hide_menu() -> void:
 	is_menu_active = false
 	is_pre_confirm_active = false
 	is_confirm_active = false
+	AudioManager.set_original_music_volume(5.0)
 	
 	toggle_dialogic_layer(false)
 
@@ -131,7 +163,9 @@ func toggle_dialogic_layer(is_menu_open: bool):
 	else:
 		Dialogic.paused = false
 
+
 func _on_dialogic_signal(argument: Dictionary):
+	# Timebar
 	if argument.has("start_timer"):
 		var duration = argument["start_timer"]
 		current_skip_choice = argument["skip_choice"]
@@ -140,9 +174,17 @@ func _on_dialogic_signal(argument: Dictionary):
 		stop_timer()
 		if argument["is_answered"]:
 			decrease_questions_value()
-
+	
+	# Random question
 	if argument.has("random_question"):
 		random_jump()
+	
+	# Stressbar
+	if argument.has("stress_change"):
+		var stress_change_value: float = argument["stress_change"]
+		
+		current_stress -= stress_change_value
+		current_stress = clamp(current_stress, min_stress, max_stress)
 
 
 # RANDOM QUESTION
@@ -183,6 +225,11 @@ func start_timer(duration: float) -> void:
 	timebar_bar.size.x = original_timebar_width
 	timebar_bar.position.x = original_timebar_position.x
 
+	if current_stress >= 50:
+		AudioManager.set_music_volume(-60.0, 1.0)
+	else:
+		AudioManager.set_music_volume(-10.0, 1.0)
+		
 	timer.wait_time = duration
 	timer.start()
 
@@ -193,6 +240,7 @@ func _on_timer_timeout() -> void:
 
 func stop_timer() -> void:
 	if !timer.is_stopped():
+		AudioManager.set_original_music_volume(5.0)
 		timer.stop()
 		timebar_bar.position.x = original_timebar_position.x
 		timebar_bar.size.x = original_timebar_width
@@ -210,6 +258,40 @@ func update_timebar(total_time: float, remaining_time: float) -> void:
 	timebar_bar.size.x = new_width
 	timebar_bar.position.x = original_timebar_position.x + (original_timebar_width - new_width)
 
+
+# STRESSBAR
+func update_bar_color() -> void:
+	var current_color: Color 
+	if current_stress >= 75:
+		current_color = Color(0.73, 0.93, 0.09) # "#baee18"
+	elif current_stress >= 50:
+		current_color = Color(0.96, 0.65, 0.01) # "#f4a602"
+	elif current_stress >= 25:
+		current_color = Color(1.0, 0.51, 0.0)   # "#ff8300"
+	else:
+		current_color = Color(0.9, 0.32, 0.0)   # "#e65100"
+	
+	stress_bar.modulate = current_color
+	stress_pointer.modulate = current_color
+	stress_bar_bg.modulate = current_color
+
+
+func update_pointer_position():
+	var progress_ratio = float(displayed_stress - min_stress) / float(max_stress - min_stress)
+	progress_ratio = clamp(progress_ratio, 0.0, 1.0)
+	
+	stress_bar.size.x = stressbar_original_width * progress_ratio
+	
+	var min_x = 0.0
+	var max_x = stressbar_original_width
+	target_stress_position = lerp(min_x, max_x, progress_ratio)
+	
+	update_pointer_animation_speed(progress_ratio)
+
+
+func update_pointer_animation_speed(progress_ratio: float) -> void:
+	var animation_speed = lerp(stressbar_max_speed, stressbar_min_speed, progress_ratio)
+	stress_pointer.speed_scale = animation_speed
 
 # BUTTONS
 func _on_resume_pressed() -> void:

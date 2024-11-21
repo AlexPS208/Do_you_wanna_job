@@ -20,6 +20,7 @@ config/icon="res://assets/taboo.png"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+AudioManager="*res://scenes/additional_scenes/audio_manager.tscn"
 
 [dialogic]
 
