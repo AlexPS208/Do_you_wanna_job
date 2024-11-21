@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=83 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -41,6 +41,7 @@
 [ext_resource type="Texture2D" uid="uid://dfwru3to22a74" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
+[ext_resource type="PackedScene" uid="uid://bnfv3fkfv32vu" path="res://scenes/additional_scenes/audio_manager.tscn" id="42_o7m68"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
 shader = ExtResource("1_77jim")
@@ -102,34 +103,6 @@ animations = [{
 font_size = 76
 font_color = Color(0.180392, 1, 1, 0)
 
-[sub_resource type="Animation" id="Animation_j2fid"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Question_counter:label_settings:font_color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.180392, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_b0gxx"]
-resource_name = "time_icon_warning"
-length = 0.5
-loop_mode = 1
-
-[sub_resource type="Animation" id="Animation_wg4y3"]
-resource_name = "timebar_hide"
-length = 0.3
-
-[sub_resource type="Animation" id="Animation_e0wfs"]
-resource_name = "timebar_show"
-length = 0.3
-
 [sub_resource type="Animation" id="Animation_udtqr"]
 resource_name = "Questions_counter_hide"
 length = 0.2
@@ -161,6 +134,34 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(0.180392, 1, 1, 0), Color(0.180392, 1, 1, 1)]
 }
+
+[sub_resource type="Animation" id="Animation_j2fid"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Question_counter:label_settings:font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.180392, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_b0gxx"]
+resource_name = "time_icon_warning"
+length = 0.5
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_wg4y3"]
+resource_name = "timebar_hide"
+length = 0.3
+
+[sub_resource type="Animation" id="Animation_e0wfs"]
+resource_name = "timebar_show"
+length = 0.3
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h683"]
 _data = {
@@ -579,7 +580,6 @@ offset_left = 1740.0
 offset_top = 90.0
 offset_right = 1815.0
 offset_bottom = 191.0
-text = "11"
 label_settings = SubResource("LabelSettings_ssfp5")
 horizontal_alignment = 1
 
@@ -996,6 +996,8 @@ stream = SubResource("AudioStreamRandomizer_7vx8b")
 volume_db = -15.0
 
 [node name="Manager_blink_timer" type="Timer" parent="Manager"]
+
+[node name="AudioManager" parent="." instance=ExtResource("42_o7m68")]
 
 [connection signal="timeout" from="UI/Timebar/Timer" to="UI" method="_on_timer_timeout"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]

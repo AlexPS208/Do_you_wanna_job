@@ -2,6 +2,7 @@ extends Node
 
 @onready var stress_bar: TextureRect = $Stressbar_bar
 @onready var stress_pointer: AnimatedSprite2D = $StressBar_frame/Stressbar_icon
+@onready var stress_bar_bg: TextureRect = $Stressbar_bar_back
 
 var min_stress: float = 0.0
 var max_stress: float = 100.0
@@ -24,6 +25,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	displayed_stress = lerp(displayed_stress, current_stress, lerp_speed * delta)
 	update_pointer_position()
+	update_bar_color()
 
 
 func increase_stress():
@@ -31,6 +33,22 @@ func increase_stress():
 
 func decrease_stress():
 	pass
+
+
+func update_bar_color() -> void:
+	var current_color: Color 
+	if current_stress >= 75:
+		current_color = Color(0.73, 0.93, 0.09) # "#baee18"
+	elif current_stress >= 50:
+		current_color = Color(0.96, 0.65, 0.01) # "#f4a602"
+	elif current_stress >= 25:
+		current_color = Color(1.0, 0.51, 0.0)   # "#ff8300"
+	else:
+		current_color = Color(0.9, 0.32, 0.0)   # "#e65100"
+	
+	stress_bar.modulate = current_color
+	stress_pointer.modulate = current_color
+	stress_bar_bg.modulate = current_color
 
 
 func update_pointer_position():
