@@ -25,7 +25,8 @@ AudioManager="*res://scenes/additional_scenes/audio_manager.tscn"
 [dialogic]
 
 directories/dch_directory={
-"First_manager": "res://scenes/Dialogic_timelines/First_manager.dch"
+"First_manager": "res://scenes/Dialogic_timelines/First_manager.dch",
+"Player": "res://scenes/Dialogic_timelines/Player.dch"
 }
 directories/dtl_directory={
 "First_manager": "res://scenes/Dialogic_timelines/First_manager.dtl"
@@ -51,10 +52,7 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 variables={
-"First_manager_vars": {
-"is_have_interview_experience": false
-},
-"Players_name": ""
+"Players_name": "candidate"
 }
 layout/style_list=["res://scenes/Dialogic_timelines/Display_style.tres"]
 layout/default_style="res://scenes/Dialogic_timelines/Display_style.tres"

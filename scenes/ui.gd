@@ -10,6 +10,7 @@ extends CanvasLayer
 @onready var timebar_bar: TextureRect = $Timebar/Timebar_bar
 @onready var timer: Timer = $Timebar/Timer
 @onready var timebar_animator: AnimationPlayer = $Timebar/Timebar_animator
+
 @onready var sight: TextureRect = $"../Under_UI_effects/Sight_texture"
 @onready var camera: Camera3D = $"../Camera3D"
 @onready var question_counter: Label = $Timebar/Question_counter
@@ -17,6 +18,7 @@ extends CanvasLayer
 @onready var stress_bar: TextureRect = $Stressbar/Stressbar_bar
 @onready var stress_pointer: AnimatedSprite2D = $Stressbar/StressBar_frame/Stressbar_icon
 @onready var stress_bar_bg: TextureRect = $Stressbar/Stressbar_bar_back
+@onready var stressbar_animator: AnimationPlayer = $Stressbar/Stressbar_animator
 
 # Menu
 var is_menu_active: bool = false
@@ -31,6 +33,7 @@ var current_skip_choice: int = 0
 # Timebar
 var original_timebar_width: float
 var original_timebar_position: Vector2
+var is_timebar_hide: bool = true
 
 # Timer animation
 var original_fov: float = 70.0
@@ -178,7 +181,14 @@ func _on_dialogic_signal(argument: Dictionary):
 	if argument.has("stop_timer"):
 		stop_timer()
 		if argument["is_answered"]:
+			if is_timebar_hide:
+				timebar_animator.play("timebar_show")
+				is_timebar_hide = false
+				await get_tree().create_timer(0.3).timeout
 			decrease_questions_value()
+	if argument.has("show_stressbar"):
+		if argument["show_stressbar"]:
+			stressbar_animator.play("stressbar_show")
 	
 	# Random question
 	if argument.has("random_question"):

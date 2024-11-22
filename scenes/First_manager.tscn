@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=82 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://1xvmxye43yrr" path="res://assets/First_manager_scene/wallpaper_side.png" id="7_0caud"]
 [ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/First_manager_scene/board.png" id="7_4lm6e"]
 [ext_resource type="Texture2D" uid="uid://k4c81co6lolh" path="res://assets/Stressbar/H2.png" id="7_wc1io"]
-[ext_resource type="Texture2D" uid="uid://hnqedw6jwfjj" path="res://assets/Stressbar/H3.png" id="8_ob4km"]
+[ext_resource type="Texture2D" uid="uid://kpqiy6dsrqbv" path="res://assets/H3.png" id="8_1idwh"]
 [ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/First_manager_scene/wallpaper_back.png" id="8_ogdb7"]
 [ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="12_bc7br"]
 [ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/First_manager_scene/floor.png" id="13_p3mmc"]
@@ -87,7 +87,7 @@ animations = [{
 "texture": ExtResource("7_wc1io")
 }, {
 "duration": 1.2,
-"texture": ExtResource("8_ob4km")
+"texture": ExtResource("8_1idwh")
 }, {
 "duration": 5.0,
 "texture": ExtResource("6_uvmcl")
@@ -96,6 +96,91 @@ animations = [{
 "name": &"default",
 "speed": 10.0
 }]
+
+[sub_resource type="Animation" id="Animation_3qnwr"]
+resource_name = "stressbar_show"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Stressbar_bar_back:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(214, -205), Vector2(214, 75)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Stressbar_bar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(212, -199), Vector2(212, 75)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StressBar_frame:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(64, -214), Vector2(64, 64)]
+}
+
+[sub_resource type="Animation" id="Animation_4673v"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Stressbar_bar_back:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(214, -191)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Stressbar_bar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(212, -195)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StressBar_frame:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(64, -206)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lwogh"]
+_data = {
+"RESET": SubResource("Animation_4673v"),
+"stressbar_show": SubResource("Animation_3qnwr")
+}
 
 [sub_resource type="LabelSettings" id="LabelSettings_ssfp5"]
 font_size = 76
@@ -147,27 +232,112 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(0.180392, 1, 1, 0)]
 }
-
-[sub_resource type="Animation" id="Animation_b0gxx"]
-resource_name = "time_icon_warning"
-length = 0.5
-loop_mode = 1
-
-[sub_resource type="Animation" id="Animation_wg4y3"]
-resource_name = "timebar_hide"
-length = 0.3
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Timebar_frame:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1219, -218)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Timebar_bar:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1229, -196)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Timebar_bar_background:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1227, -199)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Question_counter:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1740, 90)]
+}
 
 [sub_resource type="Animation" id="Animation_e0wfs"]
 resource_name = "timebar_show"
 length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Timebar_frame:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1219, -212), Vector2(1219, 64)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Timebar_bar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1229, -199), Vector2(1229, 77)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Timebar_bar_background:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1227, -204), Vector2(1227, 74)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Question_counter:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1740, -184), Vector2(1740, 90)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h683"]
 _data = {
 "Questions_counter_hide": SubResource("Animation_udtqr"),
 "Questions_counter_show": SubResource("Animation_fp75i"),
 "RESET": SubResource("Animation_j2fid"),
-"time_icon_warning": SubResource("Animation_b0gxx"),
-"timebar_hide": SubResource("Animation_wg4y3"),
 "timebar_show": SubResource("Animation_e0wfs")
 }
 
@@ -532,26 +702,26 @@ script = ExtResource("2_pphr1")
 [node name="Stressbar_bar_back" type="TextureRect" parent="UI/Stressbar"]
 modulate = Color(0.729412, 0.933333, 0.0941176, 1)
 offset_left = 214.0
-offset_top = 75.0
+offset_top = -191.0
 offset_right = 689.0
-offset_bottom = 134.0
+offset_bottom = -132.0
 texture = SubResource("AtlasTexture_j12b0")
 expand_mode = 1
 
 [node name="Stressbar_bar" type="TextureRect" parent="UI/Stressbar"]
 modulate = Color(0.729412, 0.933333, 0.0941176, 1)
 offset_left = 212.0
-offset_top = 75.0
+offset_top = -195.0
 offset_right = 687.0
-offset_bottom = 131.0
+offset_bottom = -139.0
 texture = SubResource("AtlasTexture_egv2c")
 expand_mode = 1
 
 [node name="StressBar_frame" type="TextureRect" parent="UI/Stressbar"]
 offset_left = 64.0
-offset_top = 64.0
+offset_top = -206.0
 offset_right = 698.0
-offset_bottom = 215.0
+offset_bottom = -55.0
 texture = SubResource("AtlasTexture_kqq8w")
 
 [node name="Stressbar_icon" type="AnimatedSprite2D" parent="UI/Stressbar/StressBar_frame"]
@@ -563,23 +733,28 @@ autoplay = "default"
 frame = 3
 frame_progress = 0.728821
 
+[node name="Stressbar_animator" type="AnimationPlayer" parent="UI/Stressbar"]
+libraries = {
+"": SubResource("AnimationLibrary_lwogh")
+}
+
 [node name="Timebar" type="Node" parent="UI"]
 
 [node name="Timebar_bar_background" type="TextureRect" parent="UI/Timebar"]
 modulate = Color(0.180392, 1, 1, 1)
 offset_left = 1227.0
-offset_top = 74.0
+offset_top = -199.0
 offset_right = 1713.0
-offset_bottom = 135.0
+offset_bottom = -138.0
 texture = SubResource("AtlasTexture_j12b0")
 expand_mode = 1
 
 [node name="Timebar_bar" type="TextureRect" parent="UI/Timebar"]
 modulate = Color(0.180392, 1, 1, 1)
 offset_left = 1229.0
-offset_top = 77.0
+offset_top = -196.0
 offset_right = 1707.0
-offset_bottom = 131.0
+offset_bottom = -142.0
 texture = SubResource("AtlasTexture_egv2c")
 expand_mode = 1
 
@@ -588,9 +763,9 @@ anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -701.0
-offset_top = 64.0
+offset_top = -218.0
 offset_right = -64.0
-offset_bottom = 215.0
+offset_bottom = -67.0
 grow_horizontal = 0
 pivot_offset = Vector2(700, 0)
 texture = SubResource("AtlasTexture_kqq8w")
@@ -612,6 +787,7 @@ libraries = {
 }
 
 [node name="Scene_transit_start" type="ColorRect" parent="UI"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -634,6 +810,7 @@ pitch_scale = 0.85
 
 [node name="Menu" type="Control" parent="UI"]
 process_mode = 3
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

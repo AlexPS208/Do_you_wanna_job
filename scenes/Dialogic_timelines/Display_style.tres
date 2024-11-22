@@ -41,8 +41,9 @@ overrides = {
 "box_margin_bottom": "40.0",
 "box_size": "Vector2(1000, 200)",
 "italics_font": "\"res://assets/fonts/Lato-Italic.ttf\"",
-"name_label_box_offset": "Vector2(0, -10)",
-"name_label_font": "\"res://assets/fonts/AlegreyaSC-Regular.ttf\"",
+"name_label_box_offset": "Vector2(0, -15)",
+"name_label_custom_font_size": "24.0",
+"name_label_font": "\"res://assets/fonts/AlegreyaSC-Bold.ttf\"",
 "normal_font": "\"res://assets/fonts/Lato-Regular.ttf\"",
 "typing_sounds_enabled": "false"
 }
