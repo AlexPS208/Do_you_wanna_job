@@ -1,10 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://cj1y7h7pyygrv"]
+[gd_scene load_steps=11 format=3 uid="uid://cj1y7h7pyygrv"]
 
 [ext_resource type="Script" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.gd" id="1_vgif6"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="2_2fl7o"]
+[ext_resource type="FontFile" uid="uid://bq50aphki8gw" path="res://assets/fonts/Lato-Regular.ttf" id="3_5mory"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_button_sound.gd" id="3_nql87"]
+[ext_resource type="FontFile" uid="uid://jgfor7ltnubn" path="res://assets/fonts/Lato-Italic.ttf" id="4_j37cb"]
 [ext_resource type="AudioStream" uid="uid://b6c1p14bc20p1" path="res://addons/dialogic/Example Assets/sound-effects/typing1.wav" id="4_yv78k"]
 [ext_resource type="AudioStream" uid="uid://c2viukvbub6v6" path="res://addons/dialogic/Example Assets/sound-effects/typing4.wav" id="5_51ipw"]
+[ext_resource type="FontFile" uid="uid://xm7k0xhu03gw" path="res://assets/fonts/Lato-BoldItalic.ttf" id="5_ik47y"]
+[ext_resource type="FontFile" uid="uid://dmrkcfyarviss" path="res://assets/fonts/Lato-Bold.ttf" id="6_o7k2s"]
 
 [sub_resource type="AudioStream" id="AudioStream_pe27w"]
 
@@ -50,6 +54,10 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_5mory")
+theme_override_fonts/italics_font = ExtResource("4_j37cb")
+theme_override_fonts/bold_italics_font = ExtResource("5_ik47y")
+theme_override_fonts/bold_font = ExtResource("6_o7k2s")
 theme_override_font_sizes/bold_italics_font_size = 32
 theme_override_font_sizes/italics_font_size = 32
 theme_override_font_sizes/mono_font_size = 32
@@ -74,6 +82,10 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_5mory")
+theme_override_fonts/italics_font = ExtResource("4_j37cb")
+theme_override_fonts/bold_italics_font = ExtResource("5_ik47y")
+theme_override_fonts/bold_font = ExtResource("6_o7k2s")
 theme_override_font_sizes/bold_italics_font_size = 32
 theme_override_font_sizes/italics_font_size = 32
 theme_override_font_sizes/mono_font_size = 32
@@ -98,6 +110,10 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_5mory")
+theme_override_fonts/italics_font = ExtResource("4_j37cb")
+theme_override_fonts/bold_italics_font = ExtResource("5_ik47y")
+theme_override_fonts/bold_font = ExtResource("6_o7k2s")
 theme_override_font_sizes/bold_italics_font_size = 32
 theme_override_font_sizes/italics_font_size = 32
 theme_override_font_sizes/mono_font_size = 32
@@ -122,6 +138,10 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_5mory")
+theme_override_fonts/italics_font = ExtResource("4_j37cb")
+theme_override_fonts/bold_italics_font = ExtResource("5_ik47y")
+theme_override_fonts/bold_font = ExtResource("6_o7k2s")
 theme_override_font_sizes/bold_italics_font_size = 32
 theme_override_font_sizes/italics_font_size = 32
 theme_override_font_sizes/mono_font_size = 32

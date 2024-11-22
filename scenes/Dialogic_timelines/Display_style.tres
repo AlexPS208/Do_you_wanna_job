@@ -36,9 +36,14 @@ overrides = {}
 script = ExtResource("1_syjn7")
 scene = ExtResource("5_kdm6i")
 overrides = {
+"bold_font": "\"res://assets/fonts/Lato-Bold.ttf\"",
+"bold_italics_font": "\"res://assets/fonts/Lato-BoldItalic.ttf\"",
 "box_margin_bottom": "40.0",
 "box_size": "Vector2(1000, 200)",
+"italics_font": "\"res://assets/fonts/Lato-Italic.ttf\"",
 "name_label_box_offset": "Vector2(0, -10)",
+"name_label_font": "\"res://assets/fonts/AlegreyaSC-Regular.ttf\"",
+"normal_font": "\"res://assets/fonts/Lato-Regular.ttf\"",
 "typing_sounds_enabled": "false"
 }
 
@@ -71,6 +76,7 @@ scene = ExtResource("10_rive2")
 overrides = {
 "boxes_offset": "Vector2(660, 0)",
 "boxes_v_separation": "20.0",
+"font_custom": "\"res://assets/fonts/Lato-Regular.ttf\"",
 "font_size_custom": "32.0"
 }
 

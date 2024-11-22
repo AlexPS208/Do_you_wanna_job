@@ -9,8 +9,8 @@
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="5_m1b6y"]
 [ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="6_e411h"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="6_wnjup"]
-[ext_resource type="AudioStream" uid="uid://c3nvhvwyu2k4n" path="res://assets/sounds/StartTabu.mp3" id="7_f4hno"]
 [ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="8_dvetb"]
+[ext_resource type="AudioStream" uid="uid://bexj2d15lpa27" path="res://assets/sounds/whispers.mp3" id="11_507uh"]
 [ext_resource type="PackedScene" uid="uid://bnfv3fkfv32vu" path="res://scenes/additional_scenes/audio_manager.tscn" id="12_ycn6m"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lfds8"]
@@ -41,7 +41,7 @@ stream_0/stream = ExtResource("2_wxyd6")
 
 [sub_resource type="Animation" id="Animation_qui2l"]
 resource_name = "Cutscene"
-length = 15.0
+length = 14.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -110,6 +110,18 @@ tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(7.03333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Scene/Whispers:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(6.66667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -184,6 +196,18 @@ tracks/5/path = NodePath("Scene/Door/door_boom_sound:playing")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Scene/Whispers:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -336,12 +360,12 @@ material = SubResource("StandardMaterial3D_vn53a")
 
 [node name="door_open_sound" type="AudioStreamPlayer3D" parent="Scene/Door"]
 stream = ExtResource("5_m1b6y")
-volume_db = 5.0
+volume_db = 15.0
 max_distance = 10.0
 
 [node name="door_boom_sound" type="AudioStreamPlayer3D" parent="Scene/Door"]
 stream = ExtResource("6_wnjup")
-volume_db = 5.0
+volume_db = 10.0
 max_distance = 10.0
 
 [node name="Lamp" type="CSGBox3D" parent="Scene"]
@@ -395,19 +419,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.364258, -2.38087, -2.06974
 size = Vector3(18, 0.1, 29)
 material = SubResource("StandardMaterial3D_hoo87")
 
-[node name="Kekich_audio" type="AudioStreamPlayer3D" parent="Scene"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.651969, -6.57877)
-stream = ExtResource("7_f4hno")
-max_distance = 7.0
-parameters/looping = true
-
 [node name="Low_decs" type="AudioStreamPlayer3D" parent="Scene"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.9486)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.87205)
 stream = ExtResource("8_dvetb")
 volume_db = -15.0
 autoplay = true
 max_distance = 15.0
 parameters/looping = true
+
+[node name="Whispers" type="AudioStreamPlayer3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.84523)
+stream = ExtResource("11_507uh")
+volume_db = -15.0
+max_distance = 3.0
 
 [node name="AudioManager" parent="." instance=ExtResource("12_ycn6m")]
 

@@ -8,12 +8,22 @@ process_mode = 3
 script = ExtResource("1_45fwd")
 
 [node name="Music" type="AudioStreamPlayer3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3)
+stream = ExtResource("1_mvky7")
+volume_db = -35.0
+
+[node name="Music" type="AudioStreamPlayer3D" parent="Music"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 stream = ExtResource("1_mvky7")
 volume_db = -35.0
 
 [node name="Ambient" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
-volume_db = -35.0
+volume_db = -25.0
+
+[node name="Clock" type="AudioStreamPlayer3D" parent="."]
+volume_db = -15.0
 
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="finished" from="Music/Music" to="." method="_on_music_finished"]
+[connection signal="finished" from="Ambient" to="." method="_on_ambient_finished"]

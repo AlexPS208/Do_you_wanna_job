@@ -54,7 +54,7 @@ var used_labels = []
 var min_stress: float = 0.0
 var max_stress: float = 100.0
 
-var current_stress: float = 60
+var current_stress: float = 100
 var displayed_stress: float = 100
 var target_stress_position: float
 
@@ -66,6 +66,9 @@ var stressbar_lerp_speed: float = 5.0
 
 
 func _ready() -> void:
+	AudioManager.play_music_loop_with_fade("res://assets/sounds/Do you wanna job.wav")
+	AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
+	
 	stressbar_original_width = stress_bar.size.x
 	update_pointer_position()
 	await get_tree().create_timer(1).timeout
@@ -117,7 +120,8 @@ func show_menu() -> void:
 	
 	exit_pre_confirm_panel.visible = false
 	is_pre_confirm_active = false
-	AudioManager.set_music_volume(-50.0, 5.0)
+	AudioManager.set_music_volume(-45.0, 5.0)
+	AudioManager.set_ambient_volume(-45.0, 5.0)
 	
 	toggle_dialogic_layer(true)
 
@@ -133,6 +137,7 @@ func hide_menu() -> void:
 	is_pre_confirm_active = false
 	is_confirm_active = false
 	AudioManager.set_original_music_volume(5.0)
+	AudioManager.set_original_ambient_volume(5.0)
 	
 	toggle_dialogic_layer(false)
 
@@ -226,10 +231,11 @@ func start_timer(duration: float) -> void:
 	timebar_bar.position.x = original_timebar_position.x
 
 	if current_stress >= 50:
-		AudioManager.set_music_volume(-60.0, 1.0)
+		AudioManager.set_music_volume(-50.0, 1.0)
 	else:
-		AudioManager.set_music_volume(-10.0, 1.0)
-		
+		AudioManager.set_music_volume(0.0, 1.0)
+	AudioManager.set_ambient_volume(-45.0, 1.0)
+	AudioManager.start_clock("res://assets/sounds/Heartbeat.mp3")
 	timer.wait_time = duration
 	timer.start()
 
@@ -241,6 +247,8 @@ func _on_timer_timeout() -> void:
 func stop_timer() -> void:
 	if !timer.is_stopped():
 		AudioManager.set_original_music_volume(5.0)
+		AudioManager.set_original_ambient_volume(5.0)
+		AudioManager.stop_clock()
 		timer.stop()
 		timebar_bar.position.x = original_timebar_position.x
 		timebar_bar.size.x = original_timebar_width

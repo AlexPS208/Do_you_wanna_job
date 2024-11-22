@@ -19,7 +19,7 @@ First_manager: You can call me Mr. Shutnyara, and I’ll be your first step on t
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
 First_manager: Interlude, pleathe
 [text_input text="Enter your name:" var="Players_name" placeholder="name"]
-if {Players_name}    ==    "Mr. Shutnyara" or {Players_name} ==  "Shutnyara"  or {Players_name} ==  "shutnyara"  or {Players_name} ==  "mr. shutnyara":
+if {Players_name}    ==    "Mr. Jack" or {Players_name} ==  "Jack"  or {Players_name} ==  "jack"  or {Players_name} ==  "mr. jack":
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":3,"part":"head"}"]
 	First_manager: Haha, namethake!
 else:

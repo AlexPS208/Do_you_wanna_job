@@ -9,7 +9,8 @@ var first_manager_scene = preload("res://scenes/First_manager.tscn")
 
 func _ready() -> void:
 	door.position = Vector3(0, -0.964, -5)
-	AudioManager.play_music_loop_with_fade("res://assets/sounds/Do you wanna job.wav")
+	#AudioManager.play_music_loop_with_fade("res://assets/sounds/Do you wanna job.wav")
+	AudioManager.play_ambient("res://assets/sounds/whispers.mp3")
 	
 
 func _on_cutscene_animation_animation_finished(anim_name: StringName) -> void:
