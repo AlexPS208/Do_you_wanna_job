@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+@onready var scene_animator: AnimationPlayer = $Scene_transit_start/Lamp_animator
+
 @onready var menu: Control = $Menu
 @onready var menu_panel: ColorRect = $Menu/MenuPanel
 @onready var exit_pre_confirm_panel: ColorRect = $Menu/Exit_pre_confirm
@@ -68,6 +70,8 @@ var stressbar_max_speed = 0.75
 var stressbar_min_speed = 0.75
 var stressbar_lerp_speed: float = 5.0
 
+var is_player_dead: bool = false
+
 
 
 func _ready() -> void:
@@ -105,6 +109,9 @@ func _process(delta: float) -> void:
 		# Возврат к исходным значениям
 		camera.fov = lerp(camera.fov, original_fov, lerp_speed * delta * 15)
 		sight.modulate = sight.modulate.lerp(original_sight_color, lerp_speed * delta * 15)
+	
+	if current_stress <= 80:
+		death()
 	
 	displayed_stress = lerp(displayed_stress, current_stress, stressbar_lerp_speed * delta)
 	update_pointer_position()
@@ -318,6 +325,19 @@ func update_pointer_animation_speed(progress_ratio: float) -> void:
 	var animation_speed = lerp(stressbar_max_speed, stressbar_min_speed, progress_ratio)
 	stress_pointer.speed_scale = animation_speed
 
+
+# END ANIMATIONS
+func death():
+	if is_player_dead:
+		return
+	
+	Dialogic.Jump.jump_to_label("death")
+	Dialogic.Inputs.auto_advance.enabled_until_next_event = true
+	AudioManager.start_clock("res://assets/sounds/Heartbeat.mp3")
+	is_player_dead = true
+	scene_animator.play("death_animation")
+
+
 # BUTTONS
 func _on_resume_pressed() -> void:
 	button_sound.play()
@@ -344,3 +364,9 @@ func _on_exit_confirmed_pressed() -> void:
 func _on_cancel_pressed() -> void:
 	button_sound.play()
 	show_pre_confirm()
+
+
+# RESTART SCENE
+func _on_restart_pressed() -> void:
+	AudioManager.stop_clock()
+	get_tree().reload_current_scene()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=102 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -22,7 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://cjt47d1nwmala" path="res://assets/Stressbar/cut2.png" id="10_8nhsc"]
 [ext_resource type="Texture2D" uid="uid://c1igx6t7syqr6" path="res://assets/Stressbar/cut3.png" id="11_7k6iy"]
 [ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="12_bc7br"]
-[ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/First_manager_scene/floor.png" id="13_p3mmc"]
 [ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
 [ext_resource type="Texture2D" uid="uid://b7cbsci20foc5" path="res://assets/First_manager/SHt.png" id="19_2j7gn"]
@@ -40,7 +39,9 @@
 [ext_resource type="Texture2D" uid="uid://dgyo2qobhpauf" path="res://assets/First_manager/SHh3.png" id="23_4lw8k"]
 [ext_resource type="Texture2D" uid="uid://ckx3bmc6w5gyg" path="res://assets/First_manager/SHh2.2.png" id="23_5rb67"]
 [ext_resource type="Texture2D" uid="uid://gbiyyp5722oj" path="res://assets/decor/art3.png" id="23_moor5"]
+[ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="23_wwukv"]
 [ext_resource type="Texture2D" uid="uid://2vw3ta4pqyr8" path="res://assets/decor/art4.png" id="24_gxu4a"]
+[ext_resource type="Texture2D" uid="uid://s1oixy58r827" path="res://assets/First_manager_scene/floor (2).png" id="25_tkijw"]
 [ext_resource type="Texture2D" uid="uid://kur2x2pk0gmd" path="res://assets/First_manager/SHh1.3.png" id="25_uoyhy"]
 [ext_resource type="Texture2D" uid="uid://dpfw3cjx7dt4l" path="res://assets/First_manager/SHh3.2.png" id="27_1n05b"]
 [ext_resource type="Texture2D" uid="uid://df67tjisohtj1" path="res://assets/First_manager/SHh1.2.png" id="27_mh6x4"]
@@ -632,10 +633,58 @@ tracks/6/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
 }
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../Scene/Door/Door_boom:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Restart:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Restart:disabled")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Restart:mouse_filter")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
 
 [sub_resource type="Animation" id="Animation_gxhb4"]
 resource_name = "death_animation"
-length = 10.0
+length = 9.1333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -643,10 +692,10 @@ tracks/0/path = NodePath("../../Camera3D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.33333, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 1.5, 1.66667, 1.76667, 2.16667, 2.26667, 2.66667, 2.76667, 3.16667, 3.26667, 3.66667, 3.76667, 4.16667, 4.66667, 4.86667, 5, 5.16667, 5.73333, 5.93333, 6.13333, 6.33333),
+"transitions": PackedFloat32Array(1, 1, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 3, 1.5, 0.9, 0.3, 1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0.4, 0)]
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.38, 0), Vector3(0, 0.38, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.38, 0), Vector3(0, 0.38, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.4, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.38, 0.5), Vector3(0, 0.4, 4.9), Vector3(0, 0.266705, 4.44997), Vector3(0, -1.28512, 2.14767), Vector3(0, -1.28512, 2.14767)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -655,10 +704,10 @@ tracks/1/path = NodePath("../../Camera3D:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.33333, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 1.5, 1.66667, 4.66667, 4.86667, 5.16667, 5.73333, 5.93333, 6.13333, 6.33333),
+"transitions": PackedFloat32Array(1, 1, 1, 2.5, 0.5, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(-0.10472, 0, 0)]
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(-0.10472, 0, 0), Vector3(-0.10472, 0, 0), Vector3(-0.10472, -1.5708, 0), Vector3(0, -3.14159, 0), Vector3(0, -3.14159, 0), Vector3(0.188496, -3.14159, 0), Vector3(1.05504, -2.56694, 0.639893), Vector3(0.764448, -1.99826, 1.396)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -667,10 +716,82 @@ tracks/2/path = NodePath("../../Under_UI_effects/Sight_texture:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.33333),
+"times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 3.03143),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(6.43333, 6.96667, 7.23334, 7.83334, 9.13334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1.2),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../Scene/Door/Door_boom:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Restart:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(7.83334, 9.13334),
+"transitions": PackedFloat32Array(1, 1.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Restart:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(7.76667, 7.83334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Restart:mouse_filter")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(7.76667, 7.83334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../Camera3D:fov")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(5.16667, 5.73333, 5.83333),
+"transitions": PackedFloat32Array(1.5, 0.5, 1),
+"update": 0,
+"values": [70.0, 65.0, 75.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0001e"]
@@ -679,6 +800,18 @@ _data = {
 "RESET": SubResource("Animation_g10gl"),
 "death_animation": SubResource("Animation_gxhb4")
 }
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mci6f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iybhq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4tgn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c3eoc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlvuw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_paqp0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ln1j6"]
 font_size = 96
@@ -746,7 +879,7 @@ albedo_texture = ExtResource("7_0caud")
 albedo_texture = ExtResource("7_0caud")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5irv"]
-albedo_texture = ExtResource("13_p3mmc")
+albedo_texture = ExtResource("25_tkijw")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u2dut"]
 animations = [{
@@ -1047,6 +1180,34 @@ stream = ExtResource("1_v8iea")
 volume_db = 10.0
 pitch_scale = 0.85
 
+[node name="Restart" type="Button" parent="UI/Scene_transit_start"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 25)
+mouse_filter = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.0235294, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mci6f")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iybhq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g4tgn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_c3eoc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dlvuw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_paqp0")
+disabled = true
+text = "RESTART"
+
 [node name="Menu" type="Control" parent="UI"]
 process_mode = 3
 layout_mode = 3
@@ -1289,6 +1450,7 @@ max_db = 0.0
 pitch_scale = 1.7
 
 [node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 current = true
 
 [node name="Scene" type="Node3D" parent="."]
@@ -1367,7 +1529,7 @@ size = Vector3(5, 3.5, 0.1)
 material = SubResource("StandardMaterial3D_irrrc")
 
 [node name="Mr_Kekich" type="CSGBox3D" parent="Scene/Wall1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28519, -0.371524, -0.2)
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 1.28519, -0.371524, -0.2)
 size = Vector3(1, 1, 0.1)
 material = SubResource("StandardMaterial3D_y2ltn")
 
@@ -1389,6 +1551,10 @@ size = Vector3(1.45, 2.9, 0.12)
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -0.05, 2.519)
 size = Vector3(1.45, 2.9, 0.1)
 material = SubResource("StandardMaterial3D_oglby")
+
+[node name="Door_boom" type="AudioStreamPlayer3D" parent="Scene/Door"]
+stream = ExtResource("23_wwukv")
+volume_db = -25.0
 
 [node name="Wall3" type="CSGBox3D" parent="Scene"]
 transform = Transform3D(-1, 8.74228e-08, 0, 3.82137e-15, 4.37114e-08, -1, -8.74228e-08, -1, -4.37114e-08, 2.5, 0.25, -2.5)
@@ -1464,6 +1630,7 @@ volume_db = -15.0
 [node name="Manager_blink_timer" type="Timer" parent="Manager"]
 
 [connection signal="timeout" from="UI/Timebar/Timer" to="UI" method="_on_timer_timeout"]
+[connection signal="pressed" from="UI/Scene_transit_start/Restart" to="UI" method="_on_restart_pressed"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Exit" to="UI" method="_on_exit_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit_pre_confirm/Pre_exit" to="UI" method="_on_pre_exit_pressed"]

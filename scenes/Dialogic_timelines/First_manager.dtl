@@ -7,6 +7,7 @@ Do you wanna job?
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
 	Good mood!
 - No
+	[signal arg_type="dict" arg="{"stress_change":20}"]
 	jump skip
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	Then why’d you come?
@@ -102,13 +103,13 @@ First_manager: [color=#2effff]What experience of yours would you shay was the mo
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
 	First_manager: Ha-ha!
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":15}"]
 	First_manager: Well, let’sh hope you can wake up for this job too
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":7,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":15}"]
 	First_manager: Cat got your tongue? Or maybe... the question hit too closhe to home?
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":5,"part":"head"}"]
 First_manager: Hmm, intereshting... let’sh keep going
 [signal arg_type="dict" arg="{"random_question":"main"}"]
@@ -123,8 +124,8 @@ First_manager: Sho... [color=#2effff]are you easily tempted?[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
 	Player: [color=#6BBF59]I thrive under pressure and see it as an opportunity to grow[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":10}"]
 	First_manager: Honeshly... It'sh anouff shtrange
+	[signal arg_type="dict" arg="{"stress_change":10}"]
 - [color=#8e59f5]Every experience has its own challenges[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
 	Player: [color=#8e59f5]Every experience has its own challenges[/color]
@@ -139,8 +140,8 @@ First_manager: Sho... [color=#2effff]are you easily tempted?[/color]
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":15}"]
 	First_manager: Nothing? Maybe you’re already crumbling under my queshtionsh...
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
 First_manager: Alright, let’sh keep it rolling
 [signal arg_type="dict" arg="{"random_question":"main"}"]
@@ -156,3 +157,8 @@ First_manager: Прав нет
 First_manager: Все это перечёркивается войной
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
 First_manager: Которой по закону нет
+[end_timeline]
+label death
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":0,"part":"head"}"]
+[wait time="9.0"]
+[end_timeline]

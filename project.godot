@@ -37,7 +37,7 @@ text/letter_speed=0.025
 text/initial_text_reveal_skippable=false
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
-text/autoadvance_per_character_delay=0.1
+text/autoadvance_per_character_delay=0
 text/autoadvance_ignored_characters_enabled=true
 audio/max_channels=4.0
 animations/join_default_length=0.5
@@ -62,6 +62,7 @@ text/autoskip_time_per_event=0.1
 choices/hotkey_behaviour=1
 text/autoadvance_fixed_delay=0.1
 choices/def_false_behaviour=0
+text/autoadvance_per_word_delay=0.01
 
 [display]
 
