@@ -1450,7 +1450,6 @@ max_db = 0.0
 pitch_scale = 1.7
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 current = true
 
 [node name="Scene" type="Node3D" parent="."]
