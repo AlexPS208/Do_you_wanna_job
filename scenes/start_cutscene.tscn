@@ -357,9 +357,9 @@ size = Vector3(16, 5, 0.1)
 material = SubResource("StandardMaterial3D_hoo87")
 
 [node name="Door_frame" type="CSGBox3D" parent="Scene/Wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.962538, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.853538, 0)
 operation = 2
-size = Vector3(1.75, 4.218, 0.12)
+size = Vector3(1.75, 4, 0.12)
 
 [node name="Door" type="CSGBox3D" parent="Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.56, -5)
