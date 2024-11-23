@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://1ko1fq6kjmi7"]
+
+[ext_resource type="Script" path="res://scenes/additional_scenes/cursor_manager.gd" id="1_1i1dl"]
+
+[node name="CursorManager" type="Node"]
+process_mode = 3
+script = ExtResource("1_1i1dl")

@@ -1,12 +1,12 @@
-[gd_scene load_steps=31 format=3 uid="uid://4a511imbpxmm"]
+[gd_scene load_steps=33 format=3 uid="uid://4a511imbpxmm"]
 
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_5li4t"]
 [ext_resource type="Script" path="res://scenes/start_cutscene.gd" id="1_hjrkf"]
-[ext_resource type="Texture2D" uid="uid://cad1dq8qly7e3" path="res://assets/black_door.jpg" id="2_e4u8d"]
 [ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="2_hkafq"]
 [ext_resource type="Texture2D" uid="uid://ba7mtjmkmcos1" path="res://assets/Icon.png" id="2_ncbjw"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="2_wxyd6"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="5_m1b6y"]
+[ext_resource type="Texture2D" uid="uid://ccph45585hnv0" path="res://assets/door.png" id="6_dctsl"]
 [ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="6_e411h"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="6_wnjup"]
 [ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="8_dvetb"]
@@ -73,10 +73,10 @@ tracks/2/path = NodePath("Scene/Door:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(3, 4.23333, 4.83333, 6.4, 6.93333, 7.46667),
-"transitions": PackedFloat32Array(2, 0.8, 1, 1, 0.210224, 1),
+"times": PackedFloat32Array(0, 3, 4.23333, 4.83333, 6.4, 6.93333, 7.46667),
+"transitions": PackedFloat32Array(1, 2, 0.8, 1, 1, 0.210224, 1),
 "update": 0,
-"values": [Vector3(0, -0.967, -4.979), Vector3(0.062115, -0.967, -5.24575), Vector3(0.102064, -0.967001, -5.36204), Vector3(0.124569, -0.967001, -5.52152), Vector3(0.127231, -0.967001, -5.50303), Vector3(1.32958, -0.967001, -5.94007)]
+"values": [Vector3(0, -0.56, -5), Vector3(0, -0.56, -5), Vector3(0.062, -0.56, -5.246), Vector3(0.102, -0.56, -5.362), Vector3(0.125, -0.56, -5.522), Vector3(0.127039, -0.56, -5.51694), Vector3(1.33, -0.56, -5.94)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -163,7 +163,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0.234434, -0.967001, -5.62337)]
+"values": [Vector3(0, -0.56, -5)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -238,9 +238,17 @@ sky_custom_fov = 75.0
 albedo_texture = ExtResource("1_5li4t")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vn53a"]
-albedo_texture = ExtResource("2_e4u8d")
+albedo_texture = ExtResource("6_dctsl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5d58"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j7tkq"]
+load_path = "res://.godot/imported/ceiling.png-9d9f7755dd83628b4bbc8154a4e3031d.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gjell"]
+albedo_color = Color(0.787759, 0.787759, 0.787759, 1)
+albedo_texture = SubResource("CompressedTexture2D_j7tkq")
+uv1_scale = Vector3(3, 6, 1)
 
 [node name="Start_cutscene" type="Node3D"]
 script = ExtResource("1_hjrkf")
@@ -354,8 +362,8 @@ operation = 2
 size = Vector3(1.75, 4.218, 0.12)
 
 [node name="Door" type="CSGBox3D" parent="Scene"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.234434, -0.967001, -5.62337)
-size = Vector3(1.75, 4.218, 0.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.56, -5)
+size = Vector3(1.75, 3.49389, 0.1)
 material = SubResource("StandardMaterial3D_vn53a")
 
 [node name="door_open_sound" type="AudioStreamPlayer3D" parent="Scene/Door"]
@@ -415,9 +423,9 @@ light_color = Color(1, 1, 0.913725, 1)
 [node name="Flicker_duration_timer" type="Timer" parent="Scene/Lamp"]
 
 [node name="Floor" type="CSGBox3D" parent="Scene"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.364258, -2.38087, -2.06974)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.67734, -2.38087, -1.22478)
 size = Vector3(18, 0.1, 29)
-material = SubResource("StandardMaterial3D_hoo87")
+material = SubResource("StandardMaterial3D_gjell")
 
 [node name="Low_decs" type="AudioStreamPlayer3D" parent="Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.87205)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=82 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -9,24 +9,20 @@
 [ext_resource type="Texture2D" uid="uid://bpnuakblvm0i5" path="res://assets/First_manager_scene/wallpaper_front.png" id="4_ms1l2"]
 [ext_resource type="Texture2D" uid="uid://c7bcc8m4r3mfr" path="res://assets/BAR.png" id="4_s16kj"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="5_h67a8"]
-[ext_resource type="Texture2D" uid="uid://0idkkou3rjqt" path="res://assets/First_manager_scene/ceiling.png" id="6_8lkm5"]
+[ext_resource type="Texture2D" uid="uid://bxj2m8cucnct7" path="res://assets/First_manager_scene/ceiling.png" id="6_8lkm5"]
 [ext_resource type="Shader" path="res://assets/shaders/Outline_shader.gdshader" id="6_utuxu"]
 [ext_resource type="Texture2D" uid="uid://bh5acs7mud0ny" path="res://assets/Stressbar/H1.png" id="6_uvmcl"]
 [ext_resource type="Texture2D" uid="uid://1xvmxye43yrr" path="res://assets/First_manager_scene/wallpaper_side.png" id="7_0caud"]
 [ext_resource type="Texture2D" uid="uid://bpugq5jc0cddx" path="res://assets/First_manager_scene/board.png" id="7_4lm6e"]
 [ext_resource type="Texture2D" uid="uid://k4c81co6lolh" path="res://assets/Stressbar/H2.png" id="7_wc1io"]
-[ext_resource type="Texture2D" uid="uid://ef1d88pru25w" path="res://assets/H3.png" id="8_1idwh"]
+[ext_resource type="Texture2D" uid="uid://kpqiy6dsrqbv" path="res://assets/H3.png" id="8_1idwh"]
 [ext_resource type="Texture2D" uid="uid://bivfvkg7txjy8" path="res://assets/First_manager_scene/wallpaper_back.png" id="8_ogdb7"]
-[ext_resource type="Texture2D" uid="uid://dfnh7l34l8oc" path="res://assets/Stressbar/cut1.png" id="9_renbe"]
-[ext_resource type="Texture2D" uid="uid://oaqfoidkob56" path="res://assets/Stressbar/Empty.png" id="9_rk286"]
-[ext_resource type="Texture2D" uid="uid://cjt47d1nwmala" path="res://assets/Stressbar/cut2.png" id="10_8nhsc"]
-[ext_resource type="Texture2D" uid="uid://c1igx6t7syqr6" path="res://assets/Stressbar/cut3.png" id="11_7k6iy"]
 [ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="12_bc7br"]
 [ext_resource type="Texture2D" uid="uid://wtykse8o2jn4" path="res://assets/First_manager_scene/floor.png" id="13_p3mmc"]
 [ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
 [ext_resource type="Texture2D" uid="uid://b7cbsci20foc5" path="res://assets/First_manager/SHt.png" id="19_2j7gn"]
-[ext_resource type="Texture2D" uid="uid://cu1l2l50vqcvh" path="res://assets/decor/cactus.png" id="19_fle2d"]
+[ext_resource type="Texture2D" uid="uid://cjr4xhg0r8djm" path="res://assets/decor/cactus.png" id="19_fle2d"]
 [ext_resource type="Texture2D" uid="uid://bwm8gw6lutbu1" path="res://assets/First_manager/SHh2.1.png" id="19_pyawq"]
 [ext_resource type="Texture2D" uid="uid://b4mvfd4i77k03" path="res://assets/First_manager/SHh1.png" id="19_r5h3g"]
 [ext_resource type="Texture2D" uid="uid://bgctmq0s3o5ul" path="res://assets/First_manager/SHh2.png" id="20_8sj3n"]
@@ -34,12 +30,8 @@
 [ext_resource type="Texture2D" uid="uid://b6e28ew4uhwtf" path="res://assets/First_manager/SHh2.3.png" id="20_lajg4"]
 [ext_resource type="Texture2D" uid="uid://b2jfix0lh6lng" path="res://assets/First_manager/SHh1.1.png" id="21_krqqu"]
 [ext_resource type="Texture2D" uid="uid://c4qdxsd8am0oq" path="res://assets/First_manager/SHh2.4.png" id="22_l3ppr"]
-[ext_resource type="Texture2D" uid="uid://bd48g5ol487dj" path="res://assets/decor/art2.png" id="22_p6xnm"]
-[ext_resource type="Texture2D" uid="uid://dy0f0sttmcvfk" path="res://assets/decor/urn.png" id="22_st7l2"]
 [ext_resource type="Texture2D" uid="uid://dgyo2qobhpauf" path="res://assets/First_manager/SHh3.png" id="23_4lw8k"]
 [ext_resource type="Texture2D" uid="uid://ckx3bmc6w5gyg" path="res://assets/First_manager/SHh2.2.png" id="23_5rb67"]
-[ext_resource type="Texture2D" uid="uid://gbiyyp5722oj" path="res://assets/decor/art3.png" id="23_moor5"]
-[ext_resource type="Texture2D" uid="uid://2vw3ta4pqyr8" path="res://assets/decor/art4.png" id="24_gxu4a"]
 [ext_resource type="Texture2D" uid="uid://kur2x2pk0gmd" path="res://assets/First_manager/SHh1.3.png" id="25_uoyhy"]
 [ext_resource type="Texture2D" uid="uid://dpfw3cjx7dt4l" path="res://assets/First_manager/SHh3.2.png" id="27_1n05b"]
 [ext_resource type="Texture2D" uid="uid://df67tjisohtj1" path="res://assets/First_manager/SHh1.2.png" id="27_mh6x4"]
@@ -97,42 +89,11 @@ animations = [{
 "duration": 1.2,
 "texture": ExtResource("8_1idwh")
 }, {
-"duration": 6.0,
+"duration": 5.0,
 "texture": ExtResource("6_uvmcl")
 }],
 "loop": true,
-"name": &"beat",
-"speed": 14.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_uvmcl")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_3lums"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_rk286")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_renbe")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_8nhsc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_7k6iy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_rk286")
-}],
-"loop": false,
-"name": &"cut",
+"name": &"default",
 "speed": 10.0
 }]
 
@@ -173,42 +134,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(64, -206)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("StressBar_frame:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Stressbar_bar:rotation")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Stressbar_bar_back:rotation")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_3qnwr"]
@@ -251,86 +176,9 @@ tracks/2/keys = {
 "values": [Vector2(64, -214), Vector2(64, 64)]
 }
 
-[sub_resource type="Animation" id="Animation_7ulva"]
-resource_name = "stress_hit"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Stressbar_bar_back:position")
-tracks/0/interp = 0
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.133333, 0.2, 0.233333, 0.266667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(214, 75), Vector2(214, 121), Vector2(214, 121), Vector2(214, 121), Vector2(214, 109), Vector2(214, 67), Vector2(214, 57), Vector2(214, 75)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("StressBar_frame:position")
-tracks/1/interp = 0
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.133333, 0.2, 0.233333, 0.266667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(64, 64), Vector2(64, 115), Vector2(64, 115), Vector2(64, 115), Vector2(64, 94), Vector2(64, 45), Vector2(64, 45), Vector2(64, 64)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Stressbar_bar:position")
-tracks/2/interp = 0
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.133333, 0.2, 0.233333, 0.266667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(212, 75), Vector2(212, 122), Vector2(212, 122), Vector2(212, 122), Vector2(212, 111), Vector2(212, 68), Vector2(212, 57), Vector2(212, 75)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("StressBar_frame:rotation")
-tracks/3/interp = 0
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.133333, 0.2, 0.233333, 0.266667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -0.0349066, 0.0, 0.0, 0.0349066, 0.0698132, 0.0, 0.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Stressbar_bar:rotation")
-tracks/4/interp = 0
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.133333, 0.2, 0.233333, 0.266667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -0.0349066, 0.0, 0.0, 0.0349066, 0.0698132, 0.0, 0.0]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Stressbar_bar_back:rotation")
-tracks/5/interp = 0
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.133333, 0.2, 0.233333, 0.266667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -0.0349066, 0.0, 0.0, 0.0349066, 0.0698132, 0.0, 0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lwogh"]
 _data = {
 "RESET": SubResource("Animation_4673v"),
-"stress_hit": SubResource("Animation_7ulva"),
 "stressbar_show": SubResource("Animation_3qnwr")
 }
 
@@ -881,16 +729,9 @@ modulate = Color(0.729412, 0.933333, 0.0941176, 1)
 position = Vector2(76, 75)
 scale = Vector2(0.295312, 0.295312)
 sprite_frames = SubResource("SpriteFrames_amfk4")
-animation = &"beat"
-autoplay = "idle"
-
-[node name="Stress_icon_cut" type="AnimatedSprite2D" parent="UI/Stressbar/StressBar_frame"]
-position = Vector2(74, 74)
-scale = Vector2(0.411607, 0.411607)
-sprite_frames = SubResource("SpriteFrames_3lums")
-animation = &"cut"
-frame = 4
-frame_progress = 1.0
+autoplay = "default"
+frame = 3
+frame_progress = 0.728821
 
 [node name="Stressbar_animator" type="AnimationPlayer" parent="UI/Stressbar"]
 libraries = {
@@ -1317,37 +1158,17 @@ material = SubResource("StandardMaterial3D_d5irv")
 [node name="Decor" type="Node3D" parent="Scene"]
 
 [node name="Cactus" type="Sprite3D" parent="Scene/Decor"]
-transform = Transform3D(0.249657, 0, -0.013084, 0, 0.25, 0, 0.013084, 0, 0.249657, -1.76771, -0.370127, -6.77583)
-flip_h = true
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.64787, -0.306632, -6.82766)
 texture = ExtResource("19_fle2d")
 
-[node name="Urn" type="Sprite3D" parent="Scene/Decor"]
-transform = Transform3D(0.099863, 1.70312e-10, -0.0052336, -0.000447038, 0.0996345, -0.00852999, 0.00521447, 0.00854169, 0.099498, 1.45528, -1.13134, -4.78954)
-modulate = Color(0.589096, 0.589096, 0.589096, 1)
-texture = ExtResource("22_st7l2")
-
-[node name="Art" type="Sprite3D" parent="Scene/Decor"]
-transform = Transform3D(-1.96701e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.96701e-08, -2.42858, 0.54932, -6.1622)
-texture = ExtResource("22_p6xnm")
-
-[node name="Art2" type="Sprite3D" parent="Scene/Decor"]
-transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, -2.42858, 0.54932, -5.13024)
-texture = ExtResource("23_moor5")
-
-[node name="Art3" type="Sprite3D" parent="Scene/Decor"]
-transform = Transform3D(-0.0209344, 0, -0.399452, 0, 0.4, 0, 0.399452, 0, -0.0209344, 2.36486, 0.491153, -5.77905)
-modulate = Color(0.82606, 0.82606, 0.82606, 1)
-texture = ExtResource("24_gxu4a")
-
 [node name="Manager" type="Node3D" parent="."]
-process_mode = 1
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.275, -2.1)
 script = ExtResource("16_hlt7j")
 
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.120651)
 sprite_frames = SubResource("SpriteFrames_u2dut")
-animation = &"speak_open_unserious"
+animation = &"speak_open_surprised"
 autoplay = "smile_open_unserious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]

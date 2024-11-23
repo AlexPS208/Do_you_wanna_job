@@ -42,7 +42,7 @@ func set_choice_text(new_text: String) -> void:
 	if text_node and text_node is RichTextLabel:
 		text = " "
 		#text_node.bbcode_text = "[center]" + new_text + "[/center]"
-		text_node.bbcode_text = "   " + new_text
+		text_node.bbcode_text = "[b]    " + new_text + "[/b]"
 	else:
 		text = new_text
 	

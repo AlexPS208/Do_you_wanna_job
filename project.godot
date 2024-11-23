@@ -21,6 +21,7 @@ config/icon="res://assets/taboo.png"
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 AudioManager="*res://scenes/additional_scenes/audio_manager.tscn"
+CursorManager="*res://scenes/additional_scenes/cursor_manager.tscn"
 
 [dialogic]
 
@@ -68,7 +69,6 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/aspect="expand"
-mouse_cursor/custom_image="res://assets/cursor.png"
 
 [editor_plugins]
 

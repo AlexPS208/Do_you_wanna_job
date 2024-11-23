@@ -17,8 +17,10 @@ extends CanvasLayer
 
 @onready var stress_bar: TextureRect = $Stressbar/Stressbar_bar
 @onready var stress_pointer: AnimatedSprite2D = $Stressbar/StressBar_frame/Stressbar_icon
+@onready var stress_pointer_cut: AnimatedSprite2D = $Stressbar/StressBar_frame/Stress_icon_cut
 @onready var stress_bar_bg: TextureRect = $Stressbar/Stressbar_bar_back
 @onready var stressbar_animator: AnimationPlayer = $Stressbar/Stressbar_animator
+
 
 # Menu
 var is_menu_active: bool = false
@@ -62,7 +64,7 @@ var displayed_stress: float = 100
 var target_stress_position: float
 
 var stressbar_original_width: float
-var stressbar_max_speed = 1.5
+var stressbar_max_speed = 0.75
 var stressbar_min_speed = 0.75
 var stressbar_lerp_speed: float = 5.0
 
@@ -184,11 +186,12 @@ func _on_dialogic_signal(argument: Dictionary):
 			if is_timebar_hide:
 				timebar_animator.play("timebar_show")
 				is_timebar_hide = false
-				await get_tree().create_timer(0.3).timeout
+				await get_tree().create_timer(0.4).timeout
 			decrease_questions_value()
 	if argument.has("show_stressbar"):
 		if argument["show_stressbar"]:
 			stressbar_animator.play("stressbar_show")
+			
 	
 	# Random question
 	if argument.has("random_question"):
@@ -197,6 +200,9 @@ func _on_dialogic_signal(argument: Dictionary):
 	# Stressbar
 	if argument.has("stress_change"):
 		var stress_change_value: float = argument["stress_change"]
+		if stress_change_value > 0:
+			stress_pointer_cut.play("cut")
+			stressbar_animator.play("stress_hit")
 		
 		current_stress -= stress_change_value
 		current_stress = clamp(current_stress, min_stress, max_stress)
@@ -239,6 +245,7 @@ func decrease_questions_value() -> void:
 func start_timer(duration: float) -> void:
 	timebar_bar.size.x = original_timebar_width
 	timebar_bar.position.x = original_timebar_position.x
+	stress_pointer.play("beat")
 
 	if current_stress >= 50:
 		AudioManager.set_music_volume(-50.0, 1.0)
@@ -259,6 +266,7 @@ func stop_timer() -> void:
 		AudioManager.set_original_music_volume(5.0)
 		AudioManager.set_original_ambient_volume(5.0)
 		AudioManager.stop_clock()
+		stress_pointer.play("idle")
 		timer.stop()
 		timebar_bar.position.x = original_timebar_position.x
 		timebar_bar.size.x = original_timebar_width
@@ -275,7 +283,6 @@ func update_timebar(total_time: float, remaining_time: float) -> void:
 	var new_width = original_timebar_width * progress_ratio
 	timebar_bar.size.x = new_width
 	timebar_bar.position.x = original_timebar_position.x + (original_timebar_width - new_width)
-
 
 # STRESSBAR
 func update_bar_color() -> void:
