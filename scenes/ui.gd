@@ -16,6 +16,7 @@ extends CanvasLayer
 @onready var sight: TextureRect = $"../Under_UI_effects/Sight_texture"
 @onready var camera: Camera3D = $"../Camera3D"
 @onready var question_counter: Label = $Timebar/Question_counter
+@onready var silentbar_animator: AnimationPlayer = $Silentbar/Silentbar_animator
 
 @onready var stress_bar: TextureRect = $Stressbar/Stressbar_bar
 @onready var stress_pointer: AnimatedSprite2D = $Stressbar/StressBar_frame/Stressbar_icon
@@ -70,12 +71,13 @@ var stressbar_max_speed = 0.75
 var stressbar_min_speed = 0.75
 var stressbar_lerp_speed: float = 5.0
 
+var silent_answers: int = 3
 var is_player_dead: bool = false
 
 
 
 func _ready() -> void:
-	AudioManager.play_music_loop_with_fade("res://assets/sounds/Do you wanna job.wav")
+	AudioManager.play_music_loop_with_fade("res://assets/sounds/test.mp3")
 	AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
 	
 	stressbar_original_width = stress_bar.size.x
@@ -91,6 +93,9 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
+		if is_player_dead:
+			return
+		
 		button_sound.play()
 		if !is_menu_active:
 			show_menu()
@@ -110,7 +115,7 @@ func _process(delta: float) -> void:
 		camera.fov = lerp(camera.fov, original_fov, lerp_speed * delta * 15)
 		sight.modulate = sight.modulate.lerp(original_sight_color, lerp_speed * delta * 15)
 	
-	if current_stress <= 80:
+	if current_stress <= 0 or silent_answers <= 0:
 		death()
 	
 	displayed_stress = lerp(displayed_stress, current_stress, stressbar_lerp_speed * delta)
@@ -195,9 +200,14 @@ func _on_dialogic_signal(argument: Dictionary):
 				is_timebar_hide = false
 				await get_tree().create_timer(0.4).timeout
 			decrease_questions_value()
+		elif !argument["is_answered"] and argument["is_silent"]:
+			silent_answer()
 	if argument.has("show_stressbar"):
 		if argument["show_stressbar"]:
 			stressbar_animator.play("stressbar_show")
+	if argument.has("show_silentbar"):
+		if argument["show_silentbar"]:
+			silentbar_animator.play("show_pointers")
 			
 	
 	# Random question
@@ -290,6 +300,11 @@ func update_timebar(total_time: float, remaining_time: float) -> void:
 	var new_width = original_timebar_width * progress_ratio
 	timebar_bar.size.x = new_width
 	timebar_bar.position.x = original_timebar_position.x + (original_timebar_width - new_width)
+
+func silent_answer():
+	silentbar_animator.play("remove_point_" + str(silent_answers))
+	silent_answers -= 1
+	
 
 # STRESSBAR
 func update_bar_color() -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=102 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=115 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -22,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://cjt47d1nwmala" path="res://assets/Stressbar/cut2.png" id="10_8nhsc"]
 [ext_resource type="Texture2D" uid="uid://c1igx6t7syqr6" path="res://assets/Stressbar/cut3.png" id="11_7k6iy"]
 [ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="12_bc7br"]
+[ext_resource type="Texture2D" uid="uid://bxqwmudlq5jl5" path="res://assets/stopper.png" id="13_4cly6"]
+[ext_resource type="Texture2D" uid="uid://c133tsjntxrk3" path="res://assets/dis.png" id="14_lkyhw"]
 [ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
 [ext_resource type="Texture2D" uid="uid://b7cbsci20foc5" path="res://assets/First_manager/SHt.png" id="19_2j7gn"]
@@ -46,8 +48,10 @@
 [ext_resource type="Texture2D" uid="uid://dpfw3cjx7dt4l" path="res://assets/First_manager/SHh3.2.png" id="27_1n05b"]
 [ext_resource type="Texture2D" uid="uid://df67tjisohtj1" path="res://assets/First_manager/SHh1.2.png" id="27_mh6x4"]
 [ext_resource type="Texture2D" uid="uid://c7uw6jw2p3i8i" path="res://assets/First_manager/SHh3.1.png" id="28_2qs4l"]
+[ext_resource type="Texture2D" uid="uid://deh464bywl03x" path="res://assets/decor/ventilation.png" id="33_2r50m"]
 [ext_resource type="Texture2D" uid="uid://bgipvxjydbcu5" path="res://assets/First_manager/SHh2.6.png" id="33_ecsrh"]
-[ext_resource type="Texture2D" uid="uid://dfwru3to22a74" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
+[ext_resource type="Texture2D" uid="uid://cqi2bt85lwv52" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
+[ext_resource type="Texture2D" uid="uid://dmur8pektmtak" path="res://assets/decor/switch.png" id="34_4odwf"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
 
@@ -495,6 +499,189 @@ _data = {
 "timebar_show": SubResource("Animation_e0wfs")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmyim"]
+atlas = ExtResource("13_4cly6")
+region = Rect2(48.1093, 0, 51.9422, 53)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ax5gi"]
+load_path = "res://.godot/imported/stopper.png-78ad1e2f0cdaf1c4971acb7db238672c.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0okj"]
+atlas = SubResource("CompressedTexture2D_ax5gi")
+region = Rect2(1, 10, 32, 32)
+
+[sub_resource type="Animation" id="Animation_aga1w"]
+resource_name = "show_pointers"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Point_1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1652, -129), Vector2(1647, 170)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Point_2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1599, -129), Vector2(1584, 170)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Point_3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1547, -128), Vector2(1522, 170)]
+}
+
+[sub_resource type="Animation" id="Animation_w51oa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Point_1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1652, -129)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Point_2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1599, -129)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Point_3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1547, -128)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Point_1/pointer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.180392, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Point_2/pointer:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.180392, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Point_3/pointer:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.180392, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5hl6p"]
+resource_name = "remove_point_1"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Point_1/pointer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(0.180392, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_j588o"]
+resource_name = "remove_point_2"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Point_2/pointer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(0.180392, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_usay6"]
+resource_name = "remove_point_3"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Point_3/pointer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(0.180392, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rhmux"]
+_data = {
+"RESET": SubResource("Animation_w51oa"),
+"remove_point_1": SubResource("Animation_5hl6p"),
+"remove_point_2": SubResource("Animation_j588o"),
+"remove_point_3": SubResource("Animation_usay6"),
+"show_pointers": SubResource("Animation_aga1w")
+}
+
 [sub_resource type="Animation" id="Animation_a5a76"]
 resource_name = "Light_turn_on"
 length = 0.5
@@ -684,7 +871,7 @@ tracks/10/keys = {
 
 [sub_resource type="Animation" id="Animation_gxhb4"]
 resource_name = "death_animation"
-length = 9.1333
+length = 7.3
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -728,10 +915,10 @@ tracks/3/path = NodePath(".:color")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(6.43333, 6.96667, 7.23334, 7.83334, 9.13334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1.2),
+"times": PackedFloat32Array(5.93333, 7.3),
+"transitions": PackedFloat32Array(1, 1.2),
 "update": 0,
-"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -752,7 +939,7 @@ tracks/5/path = NodePath("Restart:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(7.83334, 9.13334),
+"times": PackedFloat32Array(5.93333, 7.3),
 "transitions": PackedFloat32Array(1, 1.5),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -764,7 +951,7 @@ tracks/6/path = NodePath("Restart:disabled")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(7.76667, 7.83334),
+"times": PackedFloat32Array(5.86666, 5.93333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -776,7 +963,7 @@ tracks/7/path = NodePath("Restart:mouse_filter")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(7.76667, 7.83334),
+"times": PackedFloat32Array(5.86666, 5.93333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [2, 0]
@@ -1157,6 +1344,136 @@ horizontal_alignment = 1
 [node name="Timebar_animator" type="AnimationPlayer" parent="UI/Timebar"]
 libraries = {
 "": SubResource("AnimationLibrary_4h683")
+}
+
+[node name="Silentbar" type="Node" parent="UI"]
+
+[node name="Point_1" type="TextureRect" parent="UI/Silentbar"]
+offset_left = 1652.0
+offset_top = -129.0
+offset_right = 1682.0
+offset_bottom = -99.0
+texture = SubResource("AtlasTexture_jmyim")
+expand_mode = 1
+
+[node name="point_back" type="TextureRect" parent="UI/Silentbar/Point_1"]
+modulate = Color(0.180392, 1, 1, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -6.0
+offset_right = 6.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_y0okj")
+expand_mode = 1
+
+[node name="pointer" type="TextureRect" parent="UI/Silentbar/Point_1"]
+modulate = Color(0.180392, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.5
+offset_top = -23.0
+offset_right = 29.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_lkyhw")
+
+[node name="Point_2" type="TextureRect" parent="UI/Silentbar"]
+offset_left = 1599.0
+offset_top = -129.0
+offset_right = 1629.0
+offset_bottom = -99.0
+texture = SubResource("AtlasTexture_jmyim")
+expand_mode = 1
+
+[node name="point_back" type="TextureRect" parent="UI/Silentbar/Point_2"]
+modulate = Color(0.180392, 1, 1, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -6.0
+offset_right = 6.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_y0okj")
+expand_mode = 1
+
+[node name="pointer" type="TextureRect" parent="UI/Silentbar/Point_2"]
+modulate = Color(0.180392, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.0
+offset_top = -23.0
+offset_right = 30.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_lkyhw")
+
+[node name="Point_3" type="TextureRect" parent="UI/Silentbar"]
+offset_left = 1547.0
+offset_top = -128.0
+offset_right = 1577.0
+offset_bottom = -98.0
+texture = SubResource("AtlasTexture_jmyim")
+expand_mode = 1
+
+[node name="point_back" type="TextureRect" parent="UI/Silentbar/Point_3"]
+modulate = Color(0.180392, 1, 1, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -6.0
+offset_right = 6.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_y0okj")
+expand_mode = 1
+
+[node name="pointer" type="TextureRect" parent="UI/Silentbar/Point_3"]
+modulate = Color(0.180392, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.0
+offset_top = -23.0
+offset_right = 30.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_lkyhw")
+
+[node name="Silentbar_animator" type="AnimationPlayer" parent="UI/Silentbar"]
+libraries = {
+"": SubResource("AnimationLibrary_rhmux")
 }
 
 [node name="Scene_transit_start" type="ColorRect" parent="UI"]
@@ -1594,6 +1911,15 @@ texture = ExtResource("23_moor5")
 transform = Transform3D(-0.0209344, 0, -0.399452, 0, 0.4, 0, 0.399452, 0, -0.0209344, 2.36486, 0.491153, -5.77905)
 modulate = Color(0.82606, 0.82606, 0.82606, 1)
 texture = ExtResource("24_gxu4a")
+
+[node name="Ventilation" type="Sprite3D" parent="Scene/Decor"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.02852, 1.59507, -7.42563)
+texture = ExtResource("33_2r50m")
+
+[node name="Switch" type="Sprite3D" parent="Scene/Decor"]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.43707, -0.31447, -5.74571)
+modulate = Color(0.629675, 0.629675, 0.629675, 1)
+texture = ExtResource("34_4odwf")
 
 [node name="Manager" type="Node3D" parent="."]
 process_mode = 1

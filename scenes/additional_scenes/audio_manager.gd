@@ -7,7 +7,7 @@ extends Node
 
 # Музыка
 var music_fade_duration: float = 10.0
-var original_music_volume_db: float = -35.0
+var original_music_volume_db: float = -20.0
 var current_music_volume_db: float = -80.0
 var target_music_volume_db: float
 

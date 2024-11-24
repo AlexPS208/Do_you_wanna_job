@@ -1,149 +1,165 @@
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-Hello, boy
+Hello, there!
 # Stress question
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
 Do you wanna job?
 - Yes
+	[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
+	Player: Так точно
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
 	Good mood!
 - No
-	[signal arg_type="dict" arg="{"stress_change":20}"]
 	jump skip
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-	Then why’d you come?
+	Then why'd you come here?
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
-	Eh, anyway... you're here
+	Eh, anyway... you’re here now.
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":7,"part":"head"}"]
-First_manager: You can call me [b][color=#e77d18]Mr. Jock[/color][/b], and I’ll be your first step on thith job interview
+First_manager: You can call me [b][color=#e77d18]Mr. Jock[/color][/b], and I’ll be your first step in this job interview
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
-First_manager: Interlude, pleathe
+First_manager: Interlude, please.
 [text_input text="Enter your name:" var="Players_name" placeholder="name"]
 if {Players_name}    ==    "Mr. Jock" or {Players_name} ==  "Jock"  or {Players_name} ==  "jock"  or {Players_name} ==  "mr. jock":
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":3,"part":"head"}"]
-	First_manager: Haha, namethake!
+	First_manager: Haha, namesake!
 else:
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-	First_manager: Very nithe to meet you, {Players_name}
+	First_manager: Very nice to meet you, [color=#2effff][b]{Players_name}[/b][/color]
 # Stress question
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
-First_manager: Tell me, ith thith your firtht interview?
+First_manager: Tell me, is this your first interview?
 - Yes
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":2,"part":"head"}"]
 	First_manager: Okey
 - No
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-	First_manager: Tho, you have interview experience. Very good
+	First_manager: So, you have interview experience. Very good!
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":7,"part":"head"}"]
-First_manager: But it doethn't matter, becauthe it'th your firtht interview in [i]our company[/i].
+First_manager: But it doesn’t matter because this is your first interview in [i]our company[/i].
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":7,"part":"head"}"]
-First_manager: In our company, we have... how to thay... certain [i]expectations[/i]
+First_manager: In our company, we have... how should I put it... certain [i]expectations[/i].
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-First_manager: You’ll learn thoon enough
+First_manager: You’ll learn soon enough.
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":9,"part":"head"}"]
-First_manager: To put your mind at eath, let me tell you a few thingth we value in our interviewth
+First_manager: To ease your mind, let me share a few things we value in our interviews.
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":10,"part":"head"}"]
-First_manager: Firssst of all, anssswering [b][color=#6BBF59]confidently[/color][/b] ith a big plus here. We like people who thound like they know their shtuff
+First_manager: First of all, answering [b][color=#6BBF59]confidently[/color][/b] is a big plus. We appreciate people who sound like they know their stuff.
 [signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_unserious","loops":12,"part":"head"}"]
-First_manager: Then there are timess when I might throw a tricky quethtion your way. I’d like to see you pick up on that and… maybe [b][color=#8e59f5]sidestep a bit[/color][/b]
+First_manager: Then there are times when I might throw a tricky question your way. I’d like to see if you can pick up on that and perhaps [b][color=#8e59f5]sidestep it gracefully[/color][/b].
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":12,"part":"head"}"]
-First_manager: Oh, and remember, we’re all human here. Sssometimess a bit of [b][color=#f7d038]humor[/color][/b] lightensthe mood — if the topic allowss it, of courssse
+First_manager: Oh, and remember, we’re all human here. Sometimes a bit of [b][color=#f7d038]humor[/color][/b] lightens the mood—if the topic allows it, of course.
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":10,"part":"head"}"]
-First_manager: And pleathe… [b][color=gray]don’t be thilent[/color][/b]. A quiet candidate ith a worry for uth. Thilence makess us nervouth, you see
+First_manager: And please... [b][color=gray]don’t stay silent[/color][/b]. A quiet candidate makes us nervous. Silence is unsettling, you know.
 label skip
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_unserious","loops":6,"part":"head","show_stressbar":true}"]
-First_manager: Don'th be nervouth, thish hath ruined many candidhatesh
+First_manager: Don’t be [color=#baee18][b]nervous[/b][/color], though. Nervousness has ruined many candidates.
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 [signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
-First_manager: It'sh will be like [b][color=#2effff]10 questionshh[/color][/b]. But remember\: [i]silenth - ishn'th an anthwer[/i]
+First_manager: It’s just going to be [b][color=#2effff]10 questions[/color][/b].
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_serious","loops":6,"part":"head","show_silentbar":true}"]
+First_manager: But remember\: [b][color=gray]silence isn’t an answer[/color][/b]
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
-First_manager: [b][color=#2effff]Do you underthtand me?[/color][/b]
+First_manager: [b][color=#2effff]Do you understand me?[/color][/b]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
 - [color=#6BBF59]Yes, perfectly[/color]
-	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
+	Player: [color=#6BBF59]Yes, perfectly[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":8,"part":"head"}"]
-	First_manager: Good, good! I like a man who knowthz what they’re doing
-- [color=#8e59f5]I think… but maybe one more time?[/color]
-	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
+	First_manager: Good, good! I like someone who knows what they’re doing.
+- [color=#8e59f5]I think…[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#8e59f5]I think… but maybe one more time?[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":12,"part":"head"}"]
-	First_manager: Ah, a cautious one! Thmart move. But don't be afraid to thpeak up when you know the answer – we value clarity!
+	First_manager: Ah, a cautious one! Smart move. But don’t be afraid to speak up when you know the answer—we value clarity.
 - [color=#f7d038]Got about half of it[/color]
-	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#f7d038]Got about half of it[/color]
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":12,"part":"head"}"]
-	First_manager: Hahaha, I like it! Good thenshe of humor. Jutht don't make a habit of it inthtead of good answerth, eh?
+	First_manager: Hahaha, I like that! Good sense of humor. Just don’t make a habit of joking instead of giving good answers, eh?
 - [color=gray] . . . [/color]
-	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":9,"part":"head"}"]
-	First_manager: Ohhh, cat got your tongue? Or maybe you think thhhilenthhh ithhh a valid anther...
+	First_manager: Ohhh, cat got your tongue? Or maybe you think silence is a valid answer...
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-	First_manager: Well, not here, kiddo. No one getthhh a job by thitting quiet.
+	First_manager: Well, not here, kiddo. No one gets a job by sitting quietly.
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":6,"part":"head"}"]
-First_manager: Lathhh okay, let’th not drag thhhithh out for too long, let’thhh get to the point
+First_manager: Alright, let’s not drag this out for too long. Let’s get to the point.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # MAIN QUESTION 1
 label main_01
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":8,"part":"head"}"]
-First_manager: Ah, working with you will be... [i]intereshting[/i]. Jushht don’t[i] messh up[/i]. Now, let’sh get to it...
+First_manager: Ah, working with you will be... [i]interesting[/i]. Just don’t [i]mess it up[/i]. Now, let’s get to it...
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":6,"part":"head"}"]
-First_manager: [color=#2effff]What experience of yours would you shay was the mosht... [i]challenging[/i]?[/color]
+First_manager: [color=#2effff][b]What experience of yours would you say was the most... [i]challenging[/i]?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
 - [color=#6BBF59]Managing a high-pressure project[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":9,"part":"player_voice"}"]
 	Player: [color=#6BBF59]Managing a high-pressure project with a tight deadline. This taught me a lot about persistence and teamwork[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":8,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	First_manager: Ah, you sound like you’ve been through the wringer. Good. You’ll need that toughnessh here
+	First_manager: Ah, you sound like you’ve been through the wringer. Good. You’ll need that toughness here.
 - [color=#8e59f5]Every experience has its own challenges[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":7,"part":"player_voice"}"]
 	Player: [color=#8e59f5]Every experience has its own challenges. But I try not to dwell on them too much[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
-	First_manager: Hmm... diplomatic. I’ll keep an eye on you
+	First_manager: Hmm... diplomatic. I’ll keep an eye on you.
 - [color=#f7d038]Waking up on time[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
 	Player: [color=#f7d038]Waking up on time every Monday morning, honestly[/color]
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
 	First_manager: Ha-ha!
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-	First_manager: Well, let’sh hope you can wake up for this job too
+	First_manager: Let’s hope you can wake up for this job too.
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 - [color=gray] . . . [/color]
-	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":7,"part":"head"}"]
-	First_manager: Cat got your tongue? Or maybe... the question hit too closhe to home?
+	First_manager: Cat got your tongue? Or maybe... the question hit a little too close to home?
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":5,"part":"head"}"]
-First_manager: Hmm, intereshting... let’sh keep going
+First_manager: Hmm, interesting... let’s keep going.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # MAIN QUESTION 2
 label main_02
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":10,"part":"head"}"]
-First_manager: Our work here requiresh a shtrict [i]discipline[/i]. Shometimesh we have to shay about [i]shtaying calm under presshhure[/i]
+First_manager: Our work here requires a strict [i]discipline[/i].\
+Sometimes, it’s all about [i]staying calm under pressure[/i].
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
-First_manager: Sho... [color=#2effff]are you easily tempted?[/color]
+First_manager: [color=#2effff][b]So... are you easily tempted?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
 - [color=#6BBF59]I thrive under pressure[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
 	Player: [color=#6BBF59]I thrive under pressure and see it as an opportunity to grow[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
-	First_manager: Honeshly... It'sh anouff shtrange
+	First_manager: Honestly... that’s strange.
 	[signal arg_type="dict" arg="{"stress_change":10}"]
 - [color=#8e59f5]Every experience has its own challenges[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
 	Player: [color=#8e59f5]Every experience has its own challenges[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
 	First_manager: Fair enough...
 - [color=#f7d038]Pressure makes diamonds[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
 	Player: [color=#f7d038]Pressure makes diamonds, doesn’t it? Let’s hope I shine bright[/color]
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-10}"]
-	First_manager: Haha, diamondsh! Let’sh hope you’re not cubic zirconia!
+	First_manager: Haha, diamonds! Let’s hope you’re not cubic zirconia!
 - [color=gray] . . . [/color]
-	[signal arg_type="dict" arg="{"is_answered":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
-	First_manager: Nothing? Maybe you’re already crumbling under my queshtionsh...
+	First_manager: Nothing? Maybe you’re already crumbling under my questions...
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
-First_manager: Alright, let’sh keep it rolling
+First_manager: Alright, let’s keep it rolling
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # ENDING
 label End
@@ -160,5 +176,4 @@ First_manager: Которой по закону нет
 [end_timeline]
 label death
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":0,"part":"head"}"]
-[wait time="9.0"]
 [end_timeline]

@@ -31,6 +31,10 @@ func _on_dialogic_signal(params: Dictionary):
 		animation_name = params["animation"]
 		end_sprite_name = params["end_sprite"]
 		loops = params["loops"]
+	elif params.has("part") and params.has("loops"):
+		target_part = params["part"]
+		loops = params["loops"]
+
 
 	if target_part == "head":
 		if animation_name == "speak_unserious":
@@ -44,6 +48,9 @@ func _on_dialogic_signal(params: Dictionary):
 		
 		start_head_animation()
 		target_part = ""
+	
+	if target_part == "player_voice":
+		start_voice_animation()
 
 
 func start_head_animation() -> void:
@@ -57,6 +64,15 @@ func start_head_animation() -> void:
 	head.play(end_sprite_name)
 	reset_blink_timer()
 	is_blink_allowed = true
+
+func start_voice_animation() -> void:
+	await get_tree().create_timer(0.1).timeout
+	voice.pitch_scale += 0.5
+	for loop in range(loops-1):
+		for sprite in animation_sprites_names:
+			voice.play()
+			await get_tree().create_timer(0.125).timeout
+	voice.pitch_scale -= 0.5
 
 
 # Blink animation
