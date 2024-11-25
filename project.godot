@@ -81,7 +81,7 @@ dialogic_choice_button=""
 
 [gui]
 
-theme/custom_font="res://assets/fonts/impact.ttf"
+theme/custom_font="res://assets/fonts/AlegreyaSC-Bold.ttf"
 
 [input]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k6l700ehqiyg"
-path.s3tc="res://.godot/imported/SHh4.png-3cd5c7d667bc1f5942a10415b32de595.s3tc.ctex"
+uid="uid://dten2fqsvqp42"
+path.s3tc="res://.godot/imported/SHha4.png-03e71ba894d020a74d5beb90b2ab6f88.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/First_manager/SHh4.png"
-dest_files=["res://.godot/imported/SHh4.png-3cd5c7d667bc1f5942a10415b32de595.s3tc.ctex"]
+source_file="res://assets/First_manager/SHha4.png"
+dest_files=["res://.godot/imported/SHha4.png-03e71ba894d020a74d5beb90b2ab6f88.s3tc.ctex"]
 
 [params]
 

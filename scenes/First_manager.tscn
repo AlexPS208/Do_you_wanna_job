@@ -1,4 +1,4 @@
-[gd_scene load_steps=115 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=123 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -54,6 +54,14 @@
 [ext_resource type="Texture2D" uid="uid://dmur8pektmtak" path="res://assets/decor/switch.png" id="34_4odwf"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
+[ext_resource type="Texture2D" uid="uid://df5crn16psqaj" path="res://assets/First_manager/SHh4.2.png" id="46_cwslg"]
+[ext_resource type="Texture2D" uid="uid://c2rf5cnbqy4la" path="res://assets/First_manager/SHh4.4.png" id="46_wvesy"]
+[ext_resource type="Texture2D" uid="uid://dudycxt6ucx4h" path="res://assets/First_manager/SHh4.1.2.png" id="47_fqwk2"]
+[ext_resource type="Texture2D" uid="uid://ui6215hp0sxj" path="res://assets/First_manager/SHh4.3.png" id="47_i7bwg"]
+[ext_resource type="Texture2D" uid="uid://k6l700ehqiyg" path="res://assets/First_manager/SHh4.png" id="48_y60jk"]
+[ext_resource type="Texture2D" uid="uid://ckdae01qkoel4" path="res://assets/First_manager/SHh4.1.png" id="50_vap5x"]
+[ext_resource type="Texture2D" uid="uid://dtof0q4gxe8wc" path="res://assets/First_manager/SHha3.png" id="57_sr0cp"]
+[ext_resource type="Texture2D" uid="uid://dten2fqsvqp42" path="res://assets/First_manager/SHha4.png" id="59_k5yqx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ff6s"]
 shader = ExtResource("1_77jim")
@@ -510,46 +518,6 @@ load_path = "res://.godot/imported/stopper.png-78ad1e2f0cdaf1c4971acb7db238672c.
 atlas = SubResource("CompressedTexture2D_ax5gi")
 region = Rect2(1, 10, 32, 32)
 
-[sub_resource type="Animation" id="Animation_aga1w"]
-resource_name = "show_pointers"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Point_1:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.166667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1652, -129), Vector2(1647, 170)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Point_2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.233333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1599, -129), Vector2(1584, 170)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Point_3:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1547, -128), Vector2(1522, 170)]
-}
-
 [sub_resource type="Animation" id="Animation_w51oa"]
 length = 0.001
 tracks/0/type = "value"
@@ -671,6 +639,46 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1.5),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(0.180392, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_aga1w"]
+resource_name = "show_pointers"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Point_1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1652, -129), Vector2(1647, 170)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Point_2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1599, -129), Vector2(1584, 170)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Point_3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1547, -128), Vector2(1522, 170)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rhmux"]
@@ -1074,7 +1082,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("19_1mj0h")
 }],
-"loop": true,
+"loop": false,
 "name": &"quiet_close_serious",
 "speed": 5.0
 }, {
@@ -1082,7 +1090,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_lajg4")
 }],
-"loop": true,
+"loop": false,
 "name": &"quiet_close_surprised",
 "speed": 5.0
 }, {
@@ -1090,7 +1098,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("19_pyawq")
 }],
-"loop": true,
+"loop": false,
 "name": &"quiet_close_unserious",
 "speed": 5.0
 }, {
@@ -1098,7 +1106,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("22_l3ppr")
 }],
-"loop": true,
+"loop": false,
 "name": &"quiet_open_serious",
 "speed": 5.0
 }, {
@@ -1106,7 +1114,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("23_5rb67")
 }],
-"loop": true,
+"loop": false,
 "name": &"quiet_open_surprised",
 "speed": 5.0
 }, {
@@ -1114,7 +1122,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_8sj3n")
 }],
-"loop": true,
+"loop": false,
 "name": &"quiet_open_unserious",
 "speed": 5.0
 }, {
@@ -1122,7 +1130,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("25_uoyhy")
 }],
-"loop": true,
+"loop": false,
 "name": &"smile_close_serious",
 "speed": 5.0
 }, {
@@ -1130,7 +1138,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_krqqu")
 }],
-"loop": true,
+"loop": false,
 "name": &"smile_close_unserious",
 "speed": 5.0
 }, {
@@ -1138,7 +1146,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("27_mh6x4")
 }],
-"loop": true,
+"loop": false,
 "name": &"smile_open_serious",
 "speed": 5.0
 }, {
@@ -1146,15 +1154,63 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("19_r5h3g")
 }],
-"loop": true,
+"loop": false,
 "name": &"smile_open_unserious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_wvesy")
+}],
+"loop": false,
+"name": &"smirk_close_serious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_fqwk2")
+}],
+"loop": false,
+"name": &"smirk_close_surprised",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_cwslg")
+}],
+"loop": false,
+"name": &"smirk_close_unserious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_i7bwg")
+}],
+"loop": true,
+"name": &"smirk_open_serious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_vap5x")
+}],
+"loop": false,
+"name": &"smirk_open_surprised",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48_y60jk")
+}],
+"loop": false,
+"name": &"smirk_open_unserious",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("27_1n05b")
 }],
-"loop": true,
+"loop": false,
 "name": &"speak_close_serious",
 "speed": 5.0
 }, {
@@ -1162,7 +1218,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("28_2qs4l")
 }],
-"loop": true,
+"loop": false,
 "name": &"speak_open_serious",
 "speed": 5.0
 }, {
@@ -1170,7 +1226,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("33_ecsrh")
 }],
-"loop": true,
+"loop": false,
 "name": &"speak_open_surprised",
 "speed": 5.0
 }, {
@@ -1178,7 +1234,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("23_4lw8k")
 }],
-"loop": true,
+"loop": false,
 "name": &"speak_open_unserious",
 "speed": 5.0
 }]
@@ -1198,17 +1254,33 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("57_sr0cp")
+}],
+"loop": false,
+"name": &"finger_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("20_kyhj0")
 }],
-"loop": true,
-"name": &"idle",
+"loop": false,
+"name": &"normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59_k5yqx")
+}],
+"loop": false,
+"name": &"with_cookie",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("34_7ok7h")
 }],
-"loop": true,
+"loop": false,
 "name": &"with_paper",
 "speed": 5.0
 }]
@@ -1335,7 +1407,7 @@ flip_h = true
 offset_left = 1740.0
 offset_top = 90.0
 offset_right = 1815.0
-offset_bottom = 191.0
+offset_bottom = 195.0
 label_settings = SubResource("LabelSettings_ssfp5")
 horizontal_alignment = 1
 
@@ -1929,8 +2001,8 @@ script = ExtResource("16_hlt7j")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.120651)
 sprite_frames = SubResource("SpriteFrames_u2dut")
-animation = &"speak_open_unserious"
-autoplay = "smile_open_unserious"
+animation = &"smirk_open_unserious"
+autoplay = "smirk_open_unserious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
@@ -1941,8 +2013,8 @@ autoplay = "idle"
 [node name="Manager_hands" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175977, 0.754335)
 sprite_frames = SubResource("SpriteFrames_o5mk5")
-animation = &"idle"
-autoplay = "idle"
+animation = &"with_paper"
+autoplay = "normal"
 
 [node name="Table" type="Sprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.31418, 0.486219)

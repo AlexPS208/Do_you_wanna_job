@@ -161,6 +161,71 @@ First_manager: [color=#2effff][b]So... are you easily tempted?[/b][/color]
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
 First_manager: Alright, let’s keep it rolling
 [signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_03
+label main_03
+[signal arg_type="dict" arg="{"animation":"quiet_unserious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
+First_manager: Every good decision starts with a [i]clear view[/i]
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
+First_manager: [color=#2effff][b]What’s more important\: speed or precision?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
+- [color=#6BBF59]Precision is key[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
+	Player: [color=#6BBF59]Precision. Accuracy ensures success.[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
+	First_manager: Good, good. Hitting the mark is better than rushing past it.
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+- [color=#8e59f5]Depends on the situation[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#8e59f5]It depends on the situation[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":5,"part":"hand"}"]
+	First_manager: Fair, but indecision in the wrong moment can cost you
+- [color=#f7d038]Both[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
+	Player: [color=#f7d038]Why not both? Life’s short, aim fast![/color]
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":5,"part":"hand"}"]
+	First_manager: Hah, ambitious. But haste makes waste, you know
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	First_manager: Ah, nothing to say? Let’s hope you’re not too hesitant under pressure
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_04
+label main_04
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: Это четвёртый вопрос
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_05
+label main_05
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: Это пятый вопрос
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_06
+label main_06
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: Это шестой вопрос
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_07
+label main_07
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: Это седьмой вопрос
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_01
+label event_01
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: А это ивент 1
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_02
+label event_02
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: А это ивент 2
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 # ENDING
 label End
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]

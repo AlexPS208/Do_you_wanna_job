@@ -49,12 +49,10 @@ var lerp_speed: float = 0.3
 
 # Questions
 var questions_value = 11
+var current_question_number = 0
 
-var main_labels = ["main_01", "main_02"]
-var event_labels = {
-	"group_1": ["event_01_01", "event_01_02"],
-	"group_2": ["event_02_01", "event_02_02", "event_02_03"]
-}
+var main_labels = ["main_01", "main_02", "main_03", "main_04", "main_05", "main_06", "main_07"]
+var event_labels = ["event_01", "event_02"]
 var used_labels = []
 
 
@@ -226,21 +224,26 @@ func _on_dialogic_signal(argument: Dictionary):
 
 
 # RANDOM QUESTION
-func random_jump(is_event: bool = false, event_group: String = ""):
+func random_jump():
 	if questions_value <= 0:
 		Dialogic.Jump.jump_to_label("End")
 		return
 	
+	
+	var current_block
+	current_question_number += 1
+	if current_question_number in [4, 8, 12]:
+		current_block = event_labels
+	else:
+		current_block = main_labels
+	
+	
 	var available_labels = []
 	
-	if is_event and event_group in event_labels:
-		for label in event_labels[event_group]:
-			if not used_labels.has(label):
-				available_labels.append(label)
-	else:
-		for label in main_labels:
-			if not used_labels.has(label):
-				available_labels.append(label)
+	for label in current_block:
+		if not used_labels.has(label):
+			available_labels.append(label)
+
 	
 	if available_labels.size() > 0:
 		var random_label = available_labels[randi() % available_labels.size()]
