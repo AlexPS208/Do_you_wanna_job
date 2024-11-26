@@ -1,4 +1,4 @@
-[gd_scene load_steps=123 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=129 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -53,7 +53,13 @@
 [ext_resource type="Texture2D" uid="uid://cqi2bt85lwv52" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
 [ext_resource type="Texture2D" uid="uid://dmur8pektmtak" path="res://assets/decor/switch.png" id="34_4odwf"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
+[ext_resource type="Texture2D" uid="uid://dajuqrguf1lli" path="res://assets/First_manager/5.2.1.png" id="36_6forg"]
+[ext_resource type="Texture2D" uid="uid://bjgfs282ape0u" path="res://assets/First_manager/5.1.png" id="37_84nak"]
+[ext_resource type="Texture2D" uid="uid://bsrp0u868ih1m" path="res://assets/First_manager/5.3.1.png" id="37_lc5iw"]
+[ext_resource type="Texture2D" uid="uid://cb25v37wehsje" path="res://assets/First_manager/5.2.png" id="37_p3g2j"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
+[ext_resource type="Texture2D" uid="uid://ehnwpg5so00p" path="res://assets/First_manager/5.3.png" id="39_0qla2"]
+[ext_resource type="Texture2D" uid="uid://nbqcadv1gis7" path="res://assets/First_manager/5.png" id="39_i4o41"]
 [ext_resource type="Texture2D" uid="uid://df5crn16psqaj" path="res://assets/First_manager/SHh4.2.png" id="46_cwslg"]
 [ext_resource type="Texture2D" uid="uid://c2rf5cnbqy4la" path="res://assets/First_manager/SHh4.4.png" id="46_wvesy"]
 [ext_resource type="Texture2D" uid="uid://dudycxt6ucx4h" path="res://assets/First_manager/SHh4.1.2.png" id="47_fqwk2"]
@@ -349,7 +355,7 @@ _data = {
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_ssfp5"]
-font_size = 76
+font_size = 102
 font_color = Color(0.180392, 1, 1, 0)
 
 [sub_resource type="Animation" id="Animation_udtqr"]
@@ -434,18 +440,6 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(1227, -199)]
 }
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Question_counter:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1740, 90)]
-}
 
 [sub_resource type="Animation" id="Animation_e0wfs"]
 resource_name = "timebar_show"
@@ -485,18 +479,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1227, -204), Vector2(1227, 74)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Question_counter:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1740, -184), Vector2(1740, 90)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h683"]
@@ -1080,6 +1062,54 @@ albedo_texture = ExtResource("25_tkijw")
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("36_6forg")
+}],
+"loop": false,
+"name": &"fear_close_serious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_lc5iw")
+}],
+"loop": false,
+"name": &"fear_close_surprised",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_84nak")
+}],
+"loop": false,
+"name": &"fear_close_unserious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_p3g2j")
+}],
+"loop": false,
+"name": &"fear_open_serious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_0qla2")
+}],
+"loop": false,
+"name": &"fear_open_surprised",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_i4o41")
+}],
+"loop": false,
+"name": &"fear_open_unserious",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("19_1mj0h")
 }],
 "loop": false,
@@ -1405,9 +1435,9 @@ flip_h = true
 
 [node name="Question_counter" type="Label" parent="UI/Timebar"]
 offset_left = 1740.0
-offset_top = 90.0
-offset_right = 1815.0
-offset_bottom = 195.0
+offset_top = 58.0
+offset_right = 1819.0
+offset_bottom = 198.0
 label_settings = SubResource("LabelSettings_ssfp5")
 horizontal_alignment = 1
 
@@ -2013,7 +2043,7 @@ autoplay = "idle"
 [node name="Manager_hands" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175977, 0.754335)
 sprite_frames = SubResource("SpriteFrames_o5mk5")
-animation = &"with_paper"
+animation = &"normal"
 autoplay = "normal"
 
 [node name="Table" type="Sprite3D" parent="Manager"]

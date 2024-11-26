@@ -199,45 +199,173 @@ First_manager: [color=#2effff][b]What’s more important\: speed or precision?[/
 # main_04
 label main_04
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
-First_manager: Это четвёртый вопрос
+First_manager: [i]Balance[/i] is everything.
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":6,"part":"head"}"]
+First_manager: [color=#2effff][b]Would you say you’re better at leading or supporting?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
+- [color=#6BBF59]Adaptable role[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
+	Player: [color=#6BBF59]I can do both, depending on the team’s needs[/color]
+	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
+	First_manager: A flexible candidate. That’s what I like to hear.
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+- [color=#8e59f5]No experience[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5] I haven’t had much experience with either[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"with_paper","loops":5,"part":"hand"}"]
+	First_manager: It's very strange, your resume stated otherwise...
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- [color=#f7d038]Leader, mostly[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#f7d038]Leader, unless the coffee’s bad, then I’m no good at all[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
+	First_manager: Hah, charming. But leadership takes more than charisma
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	First_manager: Quiet, but leadership rarely favors those who hesitate
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":0,"part":"hand"}"]
+First_manager: Okey, now I am the leader, and we continue
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_05
 label main_05
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
-First_manager: Это пятый вопрос
+First_manager: [i]The right words[/i] can open any door, don't think?
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":6,"part":"head"}"]
+First_manager: [color=#2effff][b]What’s more valuable\: logic or persuasion?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
+- [color=#6BBF59]Logic is key[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#6BBF59]Logic. It creates undeniable solutions.[/color]
+	[signal arg_type="dict" arg="{"animation":"quiet_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":5,"part":"hand"}"]
+	First_manager: A strong foundation, but persuasion builds the bridges
+- [color=#8e59f5]Depends on use[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5]Both have their place; knowing when to use each is vital[/color]
+	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
+	First_manager: Yes, versatility is the mark of a sharp mind
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+- [color=#f7d038]Charm works[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#f7d038]Neither. Just charm your way in![/color]
+	[signal arg_type="dict" arg="{"animation":"smirk_serious","end_sprite":"smirk_open_serious","loops":2,"part":"head"}"]
+	First_manager: Amusing
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+	First_manager: But charm alone rarely lasts long
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smirk_open_serious","loops":5,"part":"head"}"]
+	First_manager: Speechlessness doesn’t win many arguments
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
+First_manager: Soo... next question
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_06
 label main_06
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
-First_manager: Это шестой вопрос
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
+First_manager: Sometimes, [i]instincts[/i] speak louder than plans
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":6,"part":"head"}"]
+First_manager: [color=#2effff][b]Do you trust your gut feelings?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
+- [color=#6BBF59]Trust my gut[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#6BBF59]Yes, when time is short, instincts guide me[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
+	First_manager: Good. Quick thinking under pressure can be a lifesaver
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+- [color=#8e59f5]Check first[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
+	Player: [color=#8e59f5]Only after verifying the facts[/color]
+	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"quiet_open_unserious","loops":5,"part":"head"}"]
+	First_manager: Cautious. Useful, but overthinking can slow you down.
+- [color=#f7d038]Gut = food[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#f7d038]Only if my gut says "lunch break"[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smirk_open_serious","loops":4,"part":"head"}"]
+	First_manager: Clever. But instincts should do more than crave sandwiches.
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":4,"part":"head"}"]
+	First_manager: No gut, no glory. Trusting yourself is half the battle
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
+First_manager: Next...
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_07
 label main_07
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
-First_manager: Это седьмой вопрос
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":2,"part":"head"}"]
+First_manager: [i]Perspective is everything[/i]
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
+First_manager: [color=#2effff][b]What’s more important\: the details or the big picture?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
+- [color=#6BBF59]Big picture[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#6BBF59]The big picture. It keeps everything aligned[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":4,"part":"hand"}"]
+	First_manager: Visionary thinking, but without details, the big picture crumbles
+- [color=#8e59f5]Both matter[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5]You can’t separate them. Both are equally important[/color]
+	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
+	First_manager: Smart. [i]Balance[/i] is the key to solid decision-making.
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+- [color=#f7d038]Delegate details[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#f7d038]The details, as long as someone else handles them[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	First_manager: Delegation has its place, but responsibility starts with you.
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
+	First_manager: [i]Perspective[/i] comes with [i]experience[/i]. Silence, though… teaches little
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # event_01
 label event_01
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
-First_manager: А это ивент 1
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"with_cookie","end_sprite":"normal","loops":4,"part":"hand"}"]
+First_manager: А это ивент про печеньку
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # event_02
 label event_02
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
-First_manager: А это ивент 2
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"normal","loops":4,"part":"hand"}"]
+First_manager: А это ивент про записку
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # ENDING
 label End
-[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-First_manager: И запомни, мальчик
-[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-First_manager: Конституции нет
-[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-First_manager: Прав нет
-[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-First_manager: Все это перечёркивается войной
-[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-First_manager: Которой по закону нет
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":2,"part":"head"}"]
+First_manager: So, very good
+[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
+First_manager: I really like your answers
+[signal arg_type="dict" arg="{"animation":"smirk_serious","end_sprite":"smirk_open_serious","loops":4,"part":"head"}"]
+First_manager: Of course, it could have been better
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
+First_manager: But this is quite enough
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: You can go to the mr. Sunboy
+[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":4,"part":"head"}"]
+First_manager: I'll call him for recomendation about you
 [end_timeline]
 label death
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":0,"part":"head"}"]
