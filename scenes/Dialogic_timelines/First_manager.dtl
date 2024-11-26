@@ -122,8 +122,13 @@ First_manager: [color=#2effff][b]What experience of yours would you say was the 
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":7,"part":"head"}"]
 	First_manager: Cat got your tongue? Or maybe... the question hit a little too close to home?
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":5,"part":"head"}"]
-First_manager: Hmm, interesting... let’s keep going.
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
+First_manager: Challenges really shape how we work, don’t they?
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
+First_manager: It’s interesting to hear what people consider their biggest one
+[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":5,"part":"hand"}"]
+[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
+First_manager: Sometimes the challenge itself teaches more than the solution does
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # MAIN QUESTION 2
 label main_02
@@ -158,8 +163,10 @@ First_manager: [color=#2effff][b]So... are you easily tempted?[/b][/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
 	First_manager: Nothing? Maybe you’re already crumbling under my questions...
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
-First_manager: Alright, let’s keep it rolling
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
+First_manager: A little temptation can test self-control, don’t you think?
+[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+Player: True, but it’s how we respond that matters most
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_03
 label main_03
@@ -195,6 +202,12 @@ First_manager: [color=#2effff][b]What’s more important\: speed or precision?[/
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 	First_manager: Ah, nothing to say? Let’s hope you’re not too hesitant under pressure
 	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":6,"part":"head"}"]
+First_manager: There’s always a balance between doing things quickly and doing them right.
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
+First_manager: Where do you land on that spectrum?
+[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+Player: It really depends, but striking the right balance is the hardest part
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_04
 label main_04
@@ -229,9 +242,11 @@ First_manager: [color=#2effff][b]Would you say you’re better at leading or sup
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 	First_manager: Quiet, but leadership rarely favors those who hesitate
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":0,"part":"hand"}"]
-First_manager: Okey, now I am the leader, and we continue
+First_manager: Not everyone can do both well
+[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"smirk_open_unserious","loops":4,"part":"head"}"]
+First_manager: It’s interesting to see where people naturally thrive
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_05
 label main_05
@@ -303,8 +318,10 @@ First_manager: [color=#2effff][b]Do you trust your gut feelings?[/b][/color]
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":4,"part":"head"}"]
 	First_manager: No gut, no glory. Trusting yourself is half the battle
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
-First_manager: Next...
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+First_manager: Intuition is tricky — sometimes it’s spot-on, other times it leads us astray
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unsurprised","loops":5,"part":"head"}"]
+First_manager: I think gut feelings are useful, but only when balanced with analysis
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_07
 label main_07
@@ -339,6 +356,12 @@ First_manager: [color=#2effff][b]What’s more important\: the details or the bi
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
 	First_manager: [i]Perspective[/i] comes with [i]experience[/i]. Silence, though… teaches little
 	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
+First_manager: Zooming in and out can be tough
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
+First_manager: Where do you feel more comfortable?
+[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+Player: Both are crucial, but knowing when to switch focus is the real challenge
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_08
 label main_08
@@ -375,6 +398,10 @@ First_manager: [color=#2effff][b]How do you handle unexpected changes in plans?[
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	First_manager: No response? Silence won’t make the changes [b]go away[/b]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_surprised","loops":6,"part":"head"}"]
+First_manager: Plans rarely survive first contact, right? How do you deal with that?
+[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+Player: It’s all about staying calm and figuring out what’s next
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_09
 label main_09
