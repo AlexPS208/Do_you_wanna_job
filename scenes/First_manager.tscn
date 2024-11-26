@@ -2031,7 +2031,7 @@ script = ExtResource("16_hlt7j")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.120651)
 sprite_frames = SubResource("SpriteFrames_u2dut")
-animation = &"smirk_open_unserious"
+animation = &"quiet_open_serious"
 autoplay = "smirk_open_unserious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]

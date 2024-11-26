@@ -51,8 +51,8 @@ var lerp_speed: float = 0.3
 var questions_value = 11
 var current_question_number = 0
 
-var main_labels = ["main_01", "main_02", "main_03", "main_04", "main_05", "main_06", "main_07"]
-var event_labels = ["event_01", "event_02"]
+var main_labels = ["main_01", "main_02", "main_03", "main_04", "main_05", "main_06", "main_07", "main_08", "main_09", "main_10", "main_11", "main_12"]
+var event_labels = ["event_01", "event_02", "event_03"]
 var used_labels = []
 
 
