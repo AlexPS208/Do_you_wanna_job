@@ -677,7 +677,6 @@ First_manager: [color=#2effff][b]That’s cheerful, isn’t it? So, what do you 
 	Player: [color=#6BBF59]Sounds like someone who couldn’t handle the pressure and wanted to scare others[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"smile_open_surprised","loops":8,"part":"head"}"]
 	First_manager: Hmm, could be. Or maybe they were just being honest. Sometimes pressure reveals things you didn’t know were there…
-[signal arg_type="dict" arg="{"stress_change":10}"]
 - [color=#8e59f5]Overreaction[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]

@@ -46,7 +46,7 @@ overrides = {
 "normal_font": "\"res://assets/fonts/Lato-Regular.ttf\"",
 "typing_sounds_enabled": "true",
 "typing_sounds_mode": "1",
-"typing_sounds_pitch": "0.9",
+"typing_sounds_pitch": "1.5",
 "typing_sounds_pitch_variance": "0.1"
 }
 

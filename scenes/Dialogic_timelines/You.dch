@@ -5,9 +5,20 @@
 "color": Color(0.180392, 1, 1, 1),
 "custom_info": {
 "prefix": "",
-"sound_mood_default": "",
-"sound_moods": {},
-"style": "",
+"sound_mood_default": "Voice",
+"sound_moods": {
+"Voice": {
+"mode": 2,
+"name": "Voice",
+"pitch_base": 1.5,
+"pitch_variance": 0.1,
+"skip_characters": 0.0,
+"sound_path": "res://assets/sounds/Player_voice.mp3",
+"volume_base": -10.0,
+"volume_variance": 0.0
+}
+},
+"style": "Default_style_with_typing_sound",
 "suffix": ""
 },
 "default_portrait": "",
