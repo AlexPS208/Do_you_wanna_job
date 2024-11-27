@@ -609,7 +609,7 @@ First_manager: [color=#2effff][b]Did you eat my cookie?[/b][/color]
 	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
 	Player: [color=#6BBF59]No, I would never touch your food without permission![/color]
 	[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 	First_manager: Really? You look suspiciously... crumb-free for someone innocent.
 - [color=#8e59f5]No memory of it[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -623,10 +623,10 @@ First_manager: [color=#2effff][b]Did you eat my cookie?[/b][/color]
 	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
 	Player: [color=#f7d038]I’m not saying it was me, but if I had, I would’ve eaten the whole thing[/color]
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
-	First_manager: Ha! Bold, aren’t you?
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	First_manager: Ha! Bold, aren’t you?
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":15}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
 	First_manager: But that doesn’t mean I trust you
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -676,7 +676,7 @@ First_manager: [color=#2effff][b]That’s cheerful, isn’t it? So, what do you 
 	[signal arg_type="dict" arg="{"loops":7,"part":"player_voice"}"]
 	Player: [color=#6BBF59]Sounds like someone who couldn’t handle the pressure and wanted to scare others[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"smile_open_surprised","loops":8,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 	First_manager: Hmm, could be. Or maybe they were just being honest. Sometimes pressure reveals things you didn’t know were there…
 - [color=#8e59f5]Overreaction[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -696,7 +696,7 @@ First_manager: [color=#2effff][b]That’s cheerful, isn’t it? So, what do you 
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
 	First_manager: A movie, huh?
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_serious","loops":6,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
 	First_manager: If this were fiction, you might be the main character. Think about that
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -736,8 +736,8 @@ First_manager: [color=#2effff][b]Has that shadow always been in the painting?[/b
 	[signal arg_type="dict" arg="{"animation":"fear_surprised","end_sprite":"fear_open_surprised","loops":4,"part":"head"}"]
 	First_manager: Really? Are you sure? You didn’t sound sure.
 	[signal arg_type="dict" arg="{"animation":"fear_surprised","end_sprite":"fear_open_surprised","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
 	First_manager: Why would you lie to me about something so odd?
-	[signal arg_type="dict" arg="{"stress_change":10}"]
 - [color=#8e59f5]Didn’t notice[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
@@ -745,7 +745,7 @@ First_manager: [color=#2effff][b]Has that shadow always been in the painting?[/b
 	[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":3,"part":"head"}"]
 	First_manager: Not paying attention?
 	[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":5,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 	First_manager: A great trait for a future employee, isn’t it?
 - [color=#f7d038]Haunted painting[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -755,7 +755,7 @@ First_manager: [color=#2effff][b]Has that shadow always been in the painting?[/b
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	First_manager: Ha! Bold, aren’t you?
 	[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":15}"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
 	First_manager: You’ve got jokes. Let’s hope you’re joking, at least
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -787,7 +787,7 @@ label event_04
 First_manager: Do you hear that?
 [signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","loops":4,"part":"head"}"]
 First_manager: No, seriously — do you hear anything?
-[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"speak_open_surprised","loops":4,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
 First_manager: [color=#2effff][b]Do you hear anything unusual?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":10}"]
 - [color=#6BBF59]Whispers heard[/color]
@@ -797,7 +797,7 @@ First_manager: [color=#2effff][b]Do you hear anything unusual?[/b][/color]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
 	First_manager: Oh, so it’s not just me?
 	[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","loops":3,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
 	First_manager: That’s... not reassuring
 - [color=#8e59f5]Uncertain[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -806,7 +806,7 @@ First_manager: [color=#2effff][b]Do you hear anything unusual?[/b][/color]
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	First_manager: Hmm, you’re on the fence. Smart.
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_surprised","loops":6,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
 	First_manager: Sometimes, it’s best not to commit to what you can’t explain
 - [color=#f7d038]Ghost joke[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
