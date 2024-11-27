@@ -1,0 +1,13 @@
+[style name="Default_style_with_typing_sound"]
+[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+You: Okay, deep breaths. I need this job. I really need this job
+[signal arg_type="dict" arg="{"loops":8,"part":"player_voice"}"]
+You: That resume looked so professional when I bought it. Should’ve at least read it first... might’ve helped
+[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
+You: Alright, no panicking. Just nod, smile, and pray they don’t ask too many specifics
+[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+You: I don’t even know what this role is for. Hopefully, they don’t either
+[signal arg_type="dict" arg="{"loops":8,"part":"player_voice"}"]
+You: C’mon, if I can sell myself on paper, I can sell myself in person. Just… avoid any technical questions
+[signal arg_type="dict" arg="{"light_on":true}"]
+[end_timeline]

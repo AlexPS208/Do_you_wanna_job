@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var scene_animator: AnimationPlayer = $Scene_transit_start/Lamp_animator
+@onready var scene_animator: AnimationPlayer = $"../Under_UI_effects/Scene_transit_start/Lamp_animator"
 
 @onready var menu: Control = $Menu
 @onready var menu_panel: ColorRect = $Menu/MenuPanel
@@ -81,15 +81,11 @@ var is_player_dead: bool = false
 
 
 func _ready() -> void:
-	AudioManager.play_music_loop_with_fade("res://assets/sounds/test.mp3")
-	AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
-	
 	stressbar_original_width = stress_bar.size.x
 	update_pointer_position()
-	await get_tree().create_timer(1).timeout
 	
 	Dialogic.signal_event.connect(_on_dialogic_signal)
-	dialog_node = Dialogic.start("First_manager")
+	Dialogic.start("First_cutscene")
 	
 	original_timebar_width = timebar_bar.size.x
 	original_timebar_position = timebar_bar.position
@@ -191,6 +187,15 @@ func toggle_dialogic_layer(is_menu_open: bool):
 
 
 func _on_dialogic_signal(argument: Dictionary):
+	if argument.has("light_on"):
+		await get_tree().create_timer(1).timeout
+		scene_animator.play("Light_turn_on")
+		AudioManager.play_music_loop_with_fade("res://assets/sounds/test.mp3")
+		AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
+		await get_tree().create_timer(1).timeout
+		dialog_node = Dialogic.start("First_manager")
+
+	
 	# Timebar
 	if argument.has("start_timer"):
 		var duration = argument["start_timer"]
@@ -214,7 +219,7 @@ func _on_dialogic_signal(argument: Dictionary):
 			silentbar_animator.play("show_pointers")
 			
 	
-	# Random question
+	# Random question & events
 	if argument.has("random_question"):
 		random_jump()
 	if argument.has("event"):
@@ -228,6 +233,8 @@ func _on_dialogic_signal(argument: Dictionary):
 			event_end()
 			if is_art_event:
 				event_art_end()
+			if is_whispers_event:
+				event_whispers_end()
 	
 	# Stressbar
 	if argument.has("stress_change"):
@@ -238,6 +245,11 @@ func _on_dialogic_signal(argument: Dictionary):
 		
 		current_stress -= stress_change_value
 		current_stress = clamp(current_stress, min_stress, max_stress)
+	
+	# Win
+	if argument.has("end_first_manager"):
+		if argument["end_first_manager"]:
+			win_animation_start()
 
 
 # RANDOM QUESTION
@@ -297,7 +309,7 @@ func event_whispers_start():
 	whispers.play()
 
 func event_whispers_end():
-	is_whispers_event = true
+	is_whispers_event = false
 	whispers.stop()
 
 
@@ -394,6 +406,11 @@ func death():
 	AudioManager.start_clock("res://assets/sounds/Heartbeat.mp3")
 	is_player_dead = true
 	scene_animator.play("death_animation")
+
+func win_animation_start():
+	is_player_dead = true
+	scene_animator.play("win_animation")
+
 
 
 # BUTTONS

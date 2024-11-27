@@ -1,13 +1,15 @@
-[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-Hello, there!
-# Stress question
+[style name="Display_style"]
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
+What did you say? I didn't hear you
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":5,"part":"head"}"]
+However, let's not waste time
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
 Do you wanna job?
 - Yes
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
 	Good mood!
 - No
-	jump skip
+	jump End
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	Then why'd you come here?
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
@@ -15,7 +17,7 @@ Do you wanna job?
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":7,"part":"head"}"]
 First_manager: You can call me [b][color=#e77d18]Mr. Jock[/color][/b], and I’ll be your first step in this job interview
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
-First_manager: Interlude, please.
+First_manager: Introduce yourself, please.
 [text_input text="Enter your name:" var="Players_name" placeholder="name"]
 if {Players_name}    ==    "Mr. Jock" or {Players_name} ==  "Jock"  or {Players_name} ==  "jock"  or {Players_name} ==  "mr. jock":
 	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":3,"part":"head"}"]
@@ -48,7 +50,6 @@ First_manager: Then there are times when I might throw a tricky question your wa
 First_manager: Oh, and remember, we’re all human here. Sometimes a bit of [b][color=#f7d038]humor[/color][/b] lightens the mood—if the topic allows it, of course.
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":10,"part":"head"}"]
 First_manager: And please... [b][color=gray]don’t stay silent[/color][/b]. A quiet candidate makes us nervous. Silence is unsettling, you know.
-label skip
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_unserious","loops":6,"part":"head","show_stressbar":true}"]
 First_manager: Don’t be [color=#baee18][b]nervous[/b][/color], though. Nervousness has ruined many candidates.
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
@@ -676,7 +677,7 @@ First_manager: [color=#2effff][b]That’s cheerful, isn’t it? So, what do you 
 	Player: [color=#6BBF59]Sounds like someone who couldn’t handle the pressure and wanted to scare others[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"smile_open_surprised","loops":8,"part":"head"}"]
 	First_manager: Hmm, could be. Or maybe they were just being honest. Sometimes pressure reveals things you didn’t know were there…
-	[signal arg_type="dict" arg="{"stress_change":10}"]
+[signal arg_type="dict" arg="{"stress_change":10}"]
 - [color=#8e59f5]Overreaction[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
@@ -852,6 +853,7 @@ First_manager: But this is quite enough
 First_manager: You can go to the mr. Sunboy
 [signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":4,"part":"head"}"]
 First_manager: I'll call him for recomendation about you
+[signal arg_type="dict" arg="{"end_first_manager":true}"]
 [end_timeline]
 label death
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":0,"part":"head"}"]

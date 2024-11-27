@@ -27,9 +27,11 @@ CursorManager="*res://scenes/additional_scenes/cursor_manager.tscn"
 
 directories/dch_directory={
 "First_manager": "res://scenes/Dialogic_timelines/First_manager.dch",
-"Player": "res://scenes/Dialogic_timelines/Player.dch"
+"Player": "res://scenes/Dialogic_timelines/Player.dch",
+"You": "res://scenes/Dialogic_timelines/You.dch"
 }
 directories/dtl_directory={
+"First_cutscene": "res://scenes/Dialogic_timelines/First_cutscene.dtl",
 "First_manager": "res://scenes/Dialogic_timelines/First_manager.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
@@ -55,7 +57,7 @@ text/autopauses={}
 variables={
 "Players_name": "candidate"
 }
-layout/style_list=["res://scenes/Dialogic_timelines/Display_style.tres"]
+layout/style_list=["res://scenes/Dialogic_timelines/Display_style.tres", "res://scenes/Dialogic_timelines/Default_style_with_typing_sound.tres"]
 layout/default_style="res://scenes/Dialogic_timelines/Display_style.tres"
 glossary/default_case_sensitive=true
 text/autoskip_time_per_event=0.1

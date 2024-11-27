@@ -1,7 +1,6 @@
-[gd_scene load_steps=143 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=146 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
-[ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="1_v8iea"]
 [ext_resource type="Script" path="res://scenes/ui.gd" id="2_pphr1"]
 [ext_resource type="Texture2D" uid="uid://doeqs1dinas4x" path="res://assets/sight.png" id="3_ov60v"]
@@ -50,6 +49,8 @@
 [ext_resource type="Texture2D" uid="uid://dpfw3cjx7dt4l" path="res://assets/First_manager/SHh3.2.png" id="27_1n05b"]
 [ext_resource type="Texture2D" uid="uid://df67tjisohtj1" path="res://assets/First_manager/SHh1.2.png" id="27_mh6x4"]
 [ext_resource type="Texture2D" uid="uid://c7uw6jw2p3i8i" path="res://assets/First_manager/SHh3.1.png" id="28_2qs4l"]
+[ext_resource type="AudioStream" uid="uid://dqor6ru3t0gfx" path="res://assets/sounds/door_squeak.mp3" id="29_e258u"]
+[ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="30_65hmf"]
 [ext_resource type="Texture2D" uid="uid://deh464bywl03x" path="res://assets/decor/ventilation.png" id="33_2r50m"]
 [ext_resource type="Texture2D" uid="uid://bgipvxjydbcu5" path="res://assets/First_manager/SHh2.6.png" id="33_ecsrh"]
 [ext_resource type="Texture2D" uid="uid://cqi2bt85lwv52" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
@@ -96,8 +97,440 @@ shader_parameter/layers_count = 3
 sky_material = SubResource("ShaderMaterial_2ff6s")
 
 [sub_resource type="Environment" id="Environment_1msqq"]
-background_mode = 2
+background_energy_multiplier = 0.0
 sky = SubResource("Sky_wkf54")
+ambient_light_energy = 0.0
+
+[sub_resource type="Animation" id="Animation_a5a76"]
+resource_name = "Light_turn_on"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.266667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lamp_sound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Camera3D:fov")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.266667, 0.5),
+"transitions": PackedFloat32Array(0.25, 1),
+"update": 0,
+"values": [80.0, 70.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stressbar/Stressbar_bar:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(475, 56)]
+}
+
+[sub_resource type="Animation" id="Animation_g10gl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lamp_sound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Camera3D:fov")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [75.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Stressbar/Stressbar_bar:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(475, 56)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../Camera3D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../Camera3D:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../Under_UI_effects/Sight_texture:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../Scene/Door/Door_boom:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Restart:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Restart:disabled")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Restart:mouse_filter")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../../Scene/Door:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.05, 2.519)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("../../Scene/Door:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 3.14159, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("../../Scene/Door/Door_open:playing")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_gxhb4"]
+resource_name = "death_animation"
+length = 7.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 1.66667, 1.76667, 2.16667, 2.26667, 2.66667, 2.76667, 3.16667, 3.26667, 3.66667, 3.76667, 4.16667, 4.66667, 4.86667, 5, 5.16667, 5.73333, 5.93333, 6.13333, 6.33333),
+"transitions": PackedFloat32Array(1, 1, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 3, 1.5, 0.9, 0.3, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.38, 0), Vector3(0, 0.38, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.38, 0), Vector3(0, 0.38, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.4, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.38, 0.5), Vector3(0, 0.4, 4.9), Vector3(0, 0.266705, 4.44997), Vector3(0, -1.28512, 2.14767), Vector3(0, -1.28512, 2.14767)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5, 1.66667, 4.66667, 4.86667, 5.16667, 5.73333, 5.93333, 6.13333, 6.33333),
+"transitions": PackedFloat32Array(1, 1, 1, 2.5, 0.5, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(-0.10472, 0, 0), Vector3(-0.10472, 0, 0), Vector3(-0.10472, -1.5708, 0), Vector3(0, -3.14159, 0), Vector3(0, -3.14159, 0), Vector3(0.188496, -3.14159, 0), Vector3(1.05504, -2.56694, 0.639893), Vector3(0.764448, -1.99826, 1.396)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Under_UI_effects/Sight_texture:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 3.03143),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(5.93333, 7.3),
+"transitions": PackedFloat32Array(1, 1.2),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../Scene/Door/Door_boom:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Restart:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(5.93333, 7.3),
+"transitions": PackedFloat32Array(1, 1.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Restart:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(5.86666, 5.93333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Restart:mouse_filter")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(5.86666, 5.93333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../Camera3D:fov")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(5.16667, 5.73333, 5.83333),
+"transitions": PackedFloat32Array(1.5, 0.5, 1),
+"update": 0,
+"values": [70.0, 65.0, 75.0]
+}
+
+[sub_resource type="Animation" id="Animation_y84vm"]
+resource_name = "win_animation"
+length = 3.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.5, 2, 2.2, 2.4, 3.4, 3.8),
+"transitions": PackedFloat32Array(0.450625, 0.5, 1, 1, 1, 1, 2, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.620487, 0), Vector3(0, 0.620487, 0), Vector3(0, 0.620487, 0.293296), Vector3(0, 0.65, 0.32), Vector3(0, 0.62, 0.34), Vector3(0, 0.62, 0.34), Vector3(0, 0.62, 7)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 1.5, 2, 3.4, 3.8),
+"transitions": PackedFloat32Array(1, 1.5, 0.5, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-0.145787, 0, 0), Vector3(-0.0698132, -1.5708, 0), Vector3(0, -3.14159, 0), Vector3(0, -3.14159, 0), Vector3(0, -3.14159, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Scene/Door:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2.4, 2.83333),
+"transitions": PackedFloat32Array(1.41421, 1),
+"update": 0,
+"values": [Vector3(0, -0.05, 2.519), Vector3(-0.515284, -0.05, 3.1996)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../Scene/Door:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2.4, 2.83333),
+"transitions": PackedFloat32Array(1.2, 1),
+"update": 0,
+"values": [Vector3(0, 3.14159, 0), Vector3(0, 1.86747, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../Camera3D:fov")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.4, 3.8),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [70.0, 80.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../Scene/Door/Door_open:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.33333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0001e"]
+_data = {
+"Light_turn_on": SubResource("Animation_a5a76"),
+"RESET": SubResource("Animation_g10gl"),
+"death_animation": SubResource("Animation_gxhb4"),
+"win_animation": SubResource("Animation_y84vm")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mci6f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iybhq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4tgn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c3eoc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlvuw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_paqp0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fdx82"]
 shader = ExtResource("12_bc7br")
@@ -945,324 +1378,6 @@ _data = {
 "show_pointers": SubResource("Animation_aga1w")
 }
 
-[sub_resource type="Animation" id="Animation_a5a76"]
-resource_name = "Light_turn_on"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.266667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Lamp_sound:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../../Camera3D:fov")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.266667, 0.5),
-"transitions": PackedFloat32Array(0.25, 1),
-"update": 0,
-"values": [80.0, 70.0]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../Stressbar/Stressbar_bar:size")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(475, 56)]
-}
-
-[sub_resource type="Animation" id="Animation_g10gl"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0, 0, 0, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Lamp_sound:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../../Camera3D:fov")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [75.0]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../Stressbar/Stressbar_bar:size")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(475, 56)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../../Camera3D:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("../../Camera3D:rotation")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("../../Under_UI_effects/Sight_texture:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("../../Scene/Door/Door_boom:playing")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Restart:modulate")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("Restart:disabled")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("Restart:mouse_filter")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [2]
-}
-
-[sub_resource type="Animation" id="Animation_gxhb4"]
-resource_name = "death_animation"
-length = 7.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../Camera3D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5, 1.66667, 1.76667, 2.16667, 2.26667, 2.66667, 2.76667, 3.16667, 3.26667, 3.66667, 3.76667, 4.16667, 4.66667, 4.86667, 5, 5.16667, 5.73333, 5.93333, 6.13333, 6.33333),
-"transitions": PackedFloat32Array(1, 1, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 2.5, 1, 3, 1.5, 0.9, 0.3, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.38, 0), Vector3(0, 0.38, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.38, 0), Vector3(0, 0.38, 0), Vector3(0, 0.42, 0), Vector3(0, 0.42, 0), Vector3(0, 0.4, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.409858, 0), Vector3(0, 0.38, 0.5), Vector3(0, 0.4, 4.9), Vector3(0, 0.266705, 4.44997), Vector3(0, -1.28512, 2.14767), Vector3(0, -1.28512, 2.14767)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Camera3D:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.5, 1.66667, 4.66667, 4.86667, 5.16667, 5.73333, 5.93333, 6.13333, 6.33333),
-"transitions": PackedFloat32Array(1, 1, 1, 2.5, 0.5, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(-0.10472, 0, 0), Vector3(-0.10472, 0, 0), Vector3(-0.10472, -1.5708, 0), Vector3(0, -3.14159, 0), Vector3(0, -3.14159, 0), Vector3(0.188496, -3.14159, 0), Vector3(1.05504, -2.56694, 0.639893), Vector3(0.764448, -1.99826, 1.396)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../../Under_UI_effects/Sight_texture:modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(1, 3.03143),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath(".:color")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(5.93333, 7.3),
-"transitions": PackedFloat32Array(1, 1.2),
-"update": 0,
-"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../../Scene/Door/Door_boom:playing")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(5.5),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Restart:modulate")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(5.93333, 7.3),
-"transitions": PackedFloat32Array(1, 1.5),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Restart:disabled")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(5.86666, 5.93333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("Restart:mouse_filter")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(5.86666, 5.93333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [2, 0]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("../../Camera3D:fov")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(5.16667, 5.73333, 5.83333),
-"transitions": PackedFloat32Array(1.5, 0.5, 1),
-"update": 0,
-"values": [70.0, 65.0, 75.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_0001e"]
-_data = {
-"Light_turn_on": SubResource("Animation_a5a76"),
-"RESET": SubResource("Animation_g10gl"),
-"death_animation": SubResource("Animation_gxhb4")
-}
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mci6f"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iybhq"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4tgn"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c3eoc"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlvuw"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_paqp0"]
-
 [sub_resource type="LabelSettings" id="LabelSettings_ln1j6"]
 font_size = 96
 font_color = Color(0.952941, 0.698039, 0.0666667, 1)
@@ -1330,6 +1445,10 @@ albedo_texture = ExtResource("7_0caud")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5irv"]
 albedo_texture = ExtResource("25_tkijw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5a8g"]
+albedo_texture = ExtResource("30_65hmf")
+uv1_scale = Vector3(2, 3, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pmuyk"]
 animations = [{
@@ -1673,6 +1792,54 @@ environment = SubResource("Environment_1msqq")
 
 [node name="Under_UI_effects" type="CanvasLayer" parent="."]
 
+[node name="Scene_transit_start" type="ColorRect" parent="Under_UI_effects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Lamp_animator" type="AnimationPlayer" parent="Under_UI_effects/Scene_transit_start"]
+libraries = {
+"": SubResource("AnimationLibrary_0001e")
+}
+
+[node name="Lamp_sound" type="AudioStreamPlayer3D" parent="Under_UI_effects/Scene_transit_start"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74544, -3.04326)
+stream = ExtResource("1_v8iea")
+volume_db = 10.0
+pitch_scale = 0.85
+
+[node name="Restart" type="Button" parent="Under_UI_effects/Scene_transit_start"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 25)
+mouse_filter = 2
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.0235294, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mci6f")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iybhq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g4tgn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_c3eoc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dlvuw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_paqp0")
+disabled = true
+text = "RESTART"
+
 [node name="Postprocessing_shader" type="ColorRect" parent="Under_UI_effects"]
 material = SubResource("ShaderMaterial_fdx82")
 anchors_preset = 15
@@ -1933,55 +2100,6 @@ texture = ExtResource("14_lkyhw")
 libraries = {
 "": SubResource("AnimationLibrary_rhmux")
 }
-
-[node name="Scene_transit_start" type="ColorRect" parent="UI"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0, 0, 0, 1)
-script = ExtResource("1_u78f6")
-
-[node name="Lamp_animator" type="AnimationPlayer" parent="UI/Scene_transit_start"]
-libraries = {
-"": SubResource("AnimationLibrary_0001e")
-}
-
-[node name="Lamp_sound" type="AudioStreamPlayer3D" parent="UI/Scene_transit_start"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74544, -3.04326)
-stream = ExtResource("1_v8iea")
-volume_db = 10.0
-pitch_scale = 0.85
-
-[node name="Restart" type="Button" parent="UI/Scene_transit_start"]
-modulate = Color(1, 1, 1, 0)
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_top = -4.0
-offset_bottom = 4.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(0, 25)
-mouse_filter = 2
-theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.0235294, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 64
-theme_override_styles/focus = SubResource("StyleBoxEmpty_mci6f")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_iybhq")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g4tgn")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_c3eoc")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_dlvuw")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_paqp0")
-disabled = true
-text = "RESTART"
 
 [node name="Menu" type="Control" parent="UI"]
 process_mode = 3
@@ -2322,13 +2440,18 @@ operation = 2
 size = Vector3(1.45, 2.9, 0.12)
 
 [node name="Door" type="CSGBox3D" parent="Scene"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -0.05, 2.519)
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, -0.05, 2.519)
 size = Vector3(1.45, 2.9, 0.1)
 material = SubResource("StandardMaterial3D_oglby")
 
 [node name="Door_boom" type="AudioStreamPlayer3D" parent="Scene/Door"]
 stream = ExtResource("23_wwukv")
 volume_db = -25.0
+
+[node name="Door_open" type="AudioStreamPlayer3D" parent="Scene/Door"]
+stream = ExtResource("29_e258u")
+volume_db = 5.0
+max_distance = 10.0
 
 [node name="Wall3" type="CSGBox3D" parent="Scene"]
 transform = Transform3D(-1, 8.74228e-08, 0, 3.82137e-15, 4.37114e-08, -1, -8.74228e-08, -1, -4.37114e-08, 2.5, 0.25, -2.5)
@@ -2344,6 +2467,11 @@ material = SubResource("StandardMaterial3D_vo0m6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -2.5)
 size = Vector3(5, 0.1, 10)
 material = SubResource("StandardMaterial3D_d5irv")
+
+[node name="Floor2" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0588305, -1.53982, 4.77045)
+size = Vector3(15, 0.1, 20)
+material = SubResource("StandardMaterial3D_i5a8g")
 
 [node name="Decor" type="Node3D" parent="Scene"]
 
@@ -2421,8 +2549,8 @@ volume_db = -15.0
 
 [node name="Manager_blink_timer" type="Timer" parent="Manager"]
 
+[connection signal="pressed" from="Under_UI_effects/Scene_transit_start/Restart" to="UI" method="_on_restart_pressed"]
 [connection signal="timeout" from="UI/Timebar/Timer" to="UI" method="_on_timer_timeout"]
-[connection signal="pressed" from="UI/Scene_transit_start/Restart" to="UI" method="_on_restart_pressed"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Exit" to="UI" method="_on_exit_pressed"]
 [connection signal="pressed" from="UI/Menu/Exit_pre_confirm/Pre_exit" to="UI" method="_on_pre_exit_pressed"]

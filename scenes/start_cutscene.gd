@@ -11,7 +11,7 @@ func _ready() -> void:
 	AudioManager.play_ambient("res://assets/sounds/whispers.mp3")
 	
 
-func _on_cutscene_animation_animation_finished(anim_name: StringName) -> void:
+func _on_cutscene_animation_animation_finished(_animation_name: String) -> void:
 	get_tree().change_scene_to_packed(first_manager_scene)
 
 

@@ -7,9 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="2_wxyd6"]
 [ext_resource type="Texture2D" uid="uid://dyrvdqs3nreip" path="res://assets/title.png" id="4_3cyrk"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="5_m1b6y"]
-[ext_resource type="Texture2D" uid="uid://ccph45585hnv0" path="res://assets/door.png" id="6_dctsl"]
 [ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="6_e411h"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="6_wnjup"]
+[ext_resource type="Texture2D" uid="uid://kc4m35a78urw" path="res://assets/door1.png" id="7_cpvxn"]
 [ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="8_dvetb"]
 [ext_resource type="AudioStream" uid="uid://bexj2d15lpa27" path="res://assets/sounds/whispers.mp3" id="11_507uh"]
 [ext_resource type="PackedScene" uid="uid://bnfv3fkfv32vu" path="res://scenes/additional_scenes/audio_manager.tscn" id="12_ycn6m"]
@@ -235,7 +235,7 @@ sky_custom_fov = 75.0
 albedo_texture = ExtResource("1_5li4t")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vn53a"]
-albedo_texture = ExtResource("6_dctsl")
+albedo_texture = ExtResource("7_cpvxn")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5d58"]
 
@@ -348,9 +348,9 @@ size = Vector3(16, 5, 0.1)
 material = SubResource("StandardMaterial3D_hoo87")
 
 [node name="Door_frame" type="CSGBox3D" parent="Scene/Wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.853538, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.831809, 0)
 operation = 2
-size = Vector3(1.75, 4, 0.12)
+size = Vector3(1.75, 4.04346, 0.12)
 
 [node name="Door" type="CSGBox3D" parent="Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.56, -5)
