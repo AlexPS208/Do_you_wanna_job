@@ -15,7 +15,7 @@ extends CanvasLayer
 
 @onready var sight: TextureRect = $"../Under_UI_effects/Sight_texture"
 @onready var camera: Camera3D = $"../Camera3D"
-@onready var question_counter: Label = $Timebar/Question_counter
+@onready var question_counter: Label = $Timebar/Timebar_frame/Question_counter
 @onready var silentbar_animator: AnimationPlayer = $Silentbar/Silentbar_animator
 
 @onready var stress_bar: TextureRect = $Stressbar/Stressbar_bar
@@ -211,6 +211,13 @@ func _on_dialogic_signal(argument: Dictionary):
 	# Random question
 	if argument.has("random_question"):
 		random_jump()
+	if argument.has("event"):
+		event_start()
+		if argument["event"] == "cookie":
+			pass
+	if argument.has("event_end"):
+		if argument["event_end"]:
+			event_end()
 	
 	# Stressbar
 	if argument.has("stress_change"):
@@ -228,7 +235,6 @@ func random_jump():
 	if questions_value <= 0:
 		Dialogic.Jump.jump_to_label("End")
 		return
-	
 	
 	var current_block
 	current_question_number += 1
@@ -259,6 +265,13 @@ func decrease_questions_value() -> void:
 	questions_value -= 1
 	question_counter.text = str(questions_value)
 	timebar_animator.play("Questions_counter_show")
+
+
+func event_start() -> void:
+	timebar_animator.play("event_start")
+
+func event_end() -> void:
+	timebar_animator.play("event_end")
 
 
 # TIMER AND TIMEBAR

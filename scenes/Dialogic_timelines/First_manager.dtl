@@ -320,7 +320,7 @@ First_manager: [color=#2effff][b]Do you trust your gut feelings?[/b][/color]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 First_manager: Intuition is tricky — sometimes it’s spot-on, other times it leads us astray
-[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unsurprised","loops":5,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":5,"part":"head"}"]
 First_manager: I think gut feelings are useful, but only when balanced with analysis
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_07
@@ -414,7 +414,7 @@ First_manager: [color=#2effff][b]How do you lighten the mood during stressful si
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
 	Player: [color=#6BBF59]I remind everyone to stay focused and stay positive[/color]
-	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"queit_open_unserious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
 	First_manager: Nice, but sometimes a bit of levity works wonders
 - [color=#8e59f5]Wait it out[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
@@ -435,8 +435,8 @@ First_manager: [color=#2effff][b]How do you lighten the mood during stressful si
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	First_manager: No response? [b]Stress[/b] can thrive in silence
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smirk_open_unserious","loops":6,"part":"head"}"]
-[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":6,"part":"hand"}"]
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smirk_open_unserious","loops":8,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":8,"part":"hand"}"]
 First_manager: Staying positive is important, but don’t underestimate the power of a well-timed laugh to break the tension
 [signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
 Player: True, though humor can be tricky. Knowing when and how to use it matters.
@@ -492,7 +492,7 @@ First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inco
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
 	Player: [color=#6BBF59]I jot it down and revisit it when I have time[/color]
-	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"queit_open_unserious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
 	First_manager: Practical, but capturing the energy of the moment can be key
 - [color=#8e59f5]Hope it returns[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
@@ -510,7 +510,7 @@ First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inco
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	[signal arg_type="dict" arg="{"animation":"smirk_serious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
 	First_manager: One of ex-coworkers did the same
-	[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"quiet_open_serious","loops":1,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
 	First_manager: Poor Herald...
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
@@ -518,13 +518,13 @@ First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inco
 	First_manager: A missed moment, perhaps
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":7,"part":"head"}"]
-First_manager: Sometimes those spur-of-the-moment ideas are the best ones — don’t let them get away.
-[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smirk_open_serious","loops":5,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":5,"part":"hand"}"]
+First_manager: Sometimes those spur-of-the-moment ideas are the best ones — don’t let them get away.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_12
 label main_12
 [signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
-[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"with_paper","loops":1,"part":"hand"}"]
+[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"with_paper","loops":5,"part":"hand"}"]
 First_manager: By the way, I read in your [i]CV[/i] about your [i]communication skills[/i]. Is that true?
 [signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"smirk_open_surprised","loops":5,"part":"head"}"]
 First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inconvenient times?[/b][/color]
@@ -533,7 +533,7 @@ First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inco
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
 	Player: [color=#6BBF59]I focus on being direct and to the point in every situation[/color]
-	[signal arg_type="dict" arg="{"animation":"smirk_serious","end_sprite":"queit_open_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"smirk_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	First_manager: Efficient, but it doesn’t always suit every scenario
 - [color=#8e59f5]Adapt as I go[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
@@ -586,20 +586,20 @@ First_manager: Wanna comment this?
 # event_01
 label event_01
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-[signal arg_type="dict" arg="{"animation":"with_cookie","end_sprite":"normal","loops":4,"part":"hand"}"]
+[signal arg_type="dict" arg="{"animation":"with_cookie","end_sprite":"normal","event":"cookie","loops":4,"part":"hand"}"]
 First_manager: А это ивент про печеньку
-[signal arg_type="dict" arg="{"random_question":"main"}"]
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # event_02
 label event_02
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"normal","loops":4,"part":"hand"}"]
+[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"normal","event":"note","loops":4,"part":"hand"}"]
 First_manager: А это ивент про записку
-[signal arg_type="dict" arg="{"random_question":"main"}"]
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # event_03
 label event_03
-[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","loops":2,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","event":"art","loops":2,"part":"head"}"]
 First_manager: Глянь на картину
-[signal arg_type="dict" arg="{"random_question":"main"}"]
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # ENDING
 label End
 [signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":2,"part":"head"}"]
