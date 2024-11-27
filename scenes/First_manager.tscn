@@ -1,4 +1,4 @@
-[gd_scene load_steps=136 format=3 uid="uid://dy3tfvuabf6xs"]
+[gd_scene load_steps=143 format=3 uid="uid://dy3tfvuabf6xs"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_77jim"]
 [ext_resource type="Script" path="res://scenes/light_turn_on.gd" id="1_u78f6"]
@@ -43,7 +43,6 @@
 [ext_resource type="Texture2D" uid="uid://dy0f0sttmcvfk" path="res://assets/decor/urn.png" id="22_st7l2"]
 [ext_resource type="Texture2D" uid="uid://dgyo2qobhpauf" path="res://assets/First_manager/SHh3.png" id="23_4lw8k"]
 [ext_resource type="Texture2D" uid="uid://ckx3bmc6w5gyg" path="res://assets/First_manager/SHh2.2.png" id="23_5rb67"]
-[ext_resource type="Texture2D" uid="uid://gbiyyp5722oj" path="res://assets/decor/art3.png" id="23_moor5"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="23_wwukv"]
 [ext_resource type="Texture2D" uid="uid://2vw3ta4pqyr8" path="res://assets/decor/art4.png" id="24_gxu4a"]
 [ext_resource type="Texture2D" uid="uid://s1oixy58r827" path="res://assets/First_manager_scene/floor (2).png" id="25_tkijw"]
@@ -56,13 +55,20 @@
 [ext_resource type="Texture2D" uid="uid://cqi2bt85lwv52" path="res://assets/First_manager_scene/table.png" id="33_vhlox"]
 [ext_resource type="Texture2D" uid="uid://dmur8pektmtak" path="res://assets/decor/switch.png" id="34_4odwf"]
 [ext_resource type="Texture2D" uid="uid://ybcnk3rso8yc" path="res://assets/First_manager/SHha2.png" id="34_7ok7h"]
+[ext_resource type="Texture2D" uid="uid://cnu5dkt8kh3jc" path="res://assets/decor/art3/art3.png" id="34_75jqf"]
+[ext_resource type="Texture2D" uid="uid://bc63csik105fq" path="res://assets/decor/art3/art3.1png.png" id="35_l5s2s"]
+[ext_resource type="Texture2D" uid="uid://dxgkssml730bb" path="res://assets/decor/art3/art3.2png.png" id="36_3fivs"]
 [ext_resource type="Texture2D" uid="uid://dajuqrguf1lli" path="res://assets/First_manager/5.2.1.png" id="36_6forg"]
+[ext_resource type="Texture2D" uid="uid://ceqm3k05m7rsi" path="res://assets/decor/art3/art3.3png.png" id="37_4inv6"]
 [ext_resource type="Texture2D" uid="uid://bjgfs282ape0u" path="res://assets/First_manager/5.1.png" id="37_84nak"]
 [ext_resource type="Texture2D" uid="uid://bsrp0u868ih1m" path="res://assets/First_manager/5.3.1.png" id="37_lc5iw"]
 [ext_resource type="Texture2D" uid="uid://cb25v37wehsje" path="res://assets/First_manager/5.2.png" id="37_p3g2j"]
+[ext_resource type="Texture2D" uid="uid://botnky07atpkj" path="res://assets/decor/art3/art3.4png.png" id="38_5dmpj"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="38_k4ksr"]
 [ext_resource type="Texture2D" uid="uid://ehnwpg5so00p" path="res://assets/First_manager/5.3.png" id="39_0qla2"]
 [ext_resource type="Texture2D" uid="uid://nbqcadv1gis7" path="res://assets/First_manager/5.png" id="39_i4o41"]
+[ext_resource type="Texture2D" uid="uid://cq2kgkkpe6joh" path="res://assets/decor/art3/art3.5png.png" id="39_v8cg1"]
+[ext_resource type="AudioStream" uid="uid://bexj2d15lpa27" path="res://assets/sounds/whispers.mp3" id="42_v4mev"]
 [ext_resource type="Texture2D" uid="uid://df5crn16psqaj" path="res://assets/First_manager/SHh4.2.png" id="46_cwslg"]
 [ext_resource type="Texture2D" uid="uid://c2rf5cnbqy4la" path="res://assets/First_manager/SHh4.4.png" id="46_wvesy"]
 [ext_resource type="Texture2D" uid="uid://dudycxt6ucx4h" path="res://assets/First_manager/SHh4.1.2.png" id="47_fqwk2"]
@@ -530,44 +536,92 @@ tracks/10/keys = {
 "values": [Color(0.180392, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_e0wfs"]
-resource_name = "timebar_show"
-length = 0.3
+[sub_resource type="Animation" id="Animation_xkjxb"]
+resource_name = "event_end"
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Timebar_frame:position")
+tracks/0/path = NodePath("Timebar_frame/Event_sign:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
+"times": PackedFloat32Array(0.4, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1219, -212), Vector2(1219, 64)]
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Timebar_bar:position")
+tracks/1/path = NodePath("Timebar_frame/Event_sign:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1229, -199), Vector2(1229, 77)]
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_tshot"), ExtResource("14_542l7"), ExtResource("13_y8607")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Timebar_bar_background:position")
+tracks/2/path = NodePath("Timebar_bar:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.3),
+"times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1227, -204), Vector2(1227, 74)]
+"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Timebar_bar_background:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Silentbar/Point_1/point_back:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Silentbar/Point_2/point_back:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Silentbar/Point_3/point_back:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_ge0jb"]
@@ -658,92 +712,44 @@ tracks/6/keys = {
 "values": [Color(0.180392, 1, 1, 1), Color(0.894118, 0.498039, 0.105882, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_xkjxb"]
-resource_name = "event_end"
-length = 0.5
+[sub_resource type="Animation" id="Animation_e0wfs"]
+resource_name = "timebar_show"
+length = 0.3
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Timebar_frame/Event_sign:modulate")
+tracks/0/path = NodePath("Timebar_frame:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.4, 0.5),
+"times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+"values": [Vector2(1219, -212), Vector2(1219, 64)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Timebar_frame/Event_sign:texture")
+tracks/1/path = NodePath("Timebar_bar:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("15_tshot"), ExtResource("14_542l7"), ExtResource("13_y8607")]
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1229, -199), Vector2(1229, 77)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Timebar_bar:modulate")
+tracks/2/path = NodePath("Timebar_bar_background:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.1, 0.5),
+"times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Timebar_bar_background:modulate")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../Silentbar/Point_1/point_back:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("../Silentbar/Point_2/point_back:modulate")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("../Silentbar/Point_3/point_back:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0.1, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+"values": [Vector2(1227, -204), Vector2(1227, 74)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h683"]
@@ -1325,6 +1331,63 @@ albedo_texture = ExtResource("7_0caud")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5irv"]
 albedo_texture = ExtResource("25_tkijw")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_pmuyk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_v8cg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_5dmpj")
+}, {
+"duration": 5.0,
+"texture": ExtResource("37_4inv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_3fivs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_l5s2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_75jqf")
+}],
+"loop": false,
+"name": &"event_end",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_75jqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_l5s2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_3fivs")
+}, {
+"duration": 5.0,
+"texture": ExtResource("37_4inv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_5dmpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_v8cg1")
+}],
+"loop": false,
+"name": &"event_start",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_75jqf")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_u2dut"]
 animations = [{
 "frames": [{
@@ -1717,6 +1780,7 @@ texture = SubResource("AtlasTexture_kqq8w")
 flip_h = true
 
 [node name="Question_counter" type="Label" parent="UI/Timebar/Timebar_frame"]
+layout_mode = 0
 offset_left = 502.0
 offset_top = -5.0
 offset_right = 622.0
@@ -2293,13 +2357,17 @@ transform = Transform3D(0.099863, 1.70312e-10, -0.0052336, -0.000447038, 0.09963
 modulate = Color(0.589096, 0.589096, 0.589096, 1)
 texture = ExtResource("22_st7l2")
 
-[node name="Art" type="Sprite3D" parent="Scene/Decor"]
+[node name="Art1" type="Sprite3D" parent="Scene/Decor"]
 transform = Transform3D(-1.96701e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.96701e-08, -2.42858, 0.54932, -6.1622)
 texture = ExtResource("22_p6xnm")
 
-[node name="Art2" type="Sprite3D" parent="Scene/Decor"]
-transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, -2.42858, 0.54932, -5.13024)
-texture = ExtResource("23_moor5")
+[node name="Art2" type="AnimatedSprite3D" parent="Scene/Decor"]
+transform = Transform3D(-1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, -2.36779, 0.596663, -5.13677)
+sprite_frames = SubResource("SpriteFrames_pmuyk")
+animation = &"event_end"
+autoplay = "idle"
+frame = 5
+frame_progress = 1.0
 
 [node name="Art3" type="Sprite3D" parent="Scene/Decor"]
 transform = Transform3D(-0.0209344, 0, -0.399452, 0, 0.4, 0, 0.399452, 0, -0.0209344, 2.36486, 0.491153, -5.77905)
@@ -2309,6 +2377,11 @@ texture = ExtResource("24_gxu4a")
 [node name="Ventilation" type="Sprite3D" parent="Scene/Decor"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.02852, 1.59507, -7.42563)
 texture = ExtResource("33_2r50m")
+
+[node name="Whispers" type="AudioStreamPlayer3D" parent="Scene/Decor/Ventilation"]
+stream = ExtResource("42_v4mev")
+max_distance = 10.0
+parameters/looping = true
 
 [node name="Switch" type="Sprite3D" parent="Scene/Decor"]
 transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.43707, -0.31447, -5.74571)

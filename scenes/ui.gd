@@ -24,6 +24,9 @@ extends CanvasLayer
 @onready var stress_bar_bg: TextureRect = $Stressbar/Stressbar_bar_back
 @onready var stressbar_animator: AnimationPlayer = $Stressbar/Stressbar_animator
 
+@onready var painting: AnimatedSprite3D = $"../Scene/Decor/Art2"
+@onready var whispers: AudioStreamPlayer3D = $"../Scene/Decor/Ventilation/Whispers"
+
 
 # Menu
 var is_menu_active: bool = false
@@ -52,8 +55,11 @@ var questions_value = 11
 var current_question_number = 0
 
 var main_labels = ["main_01", "main_02", "main_03", "main_04", "main_05", "main_06", "main_07", "main_08", "main_09", "main_10", "main_11", "main_12"]
-var event_labels = ["event_01", "event_02", "event_03"]
+var event_labels = ["event_01", "event_02", "event_03", "event_04"]
 var used_labels = []
+
+var is_art_event: bool = false
+var is_whispers_event: bool = false
 
 
 # Stressbar
@@ -213,11 +219,15 @@ func _on_dialogic_signal(argument: Dictionary):
 		random_jump()
 	if argument.has("event"):
 		event_start()
-		if argument["event"] == "cookie":
-			pass
+		if argument["event"] == "art":
+			event_art_start()
+		if argument["event"] == "whispers":
+			event_whispers_start()
 	if argument.has("event_end"):
 		if argument["event_end"]:
 			event_end()
+			if is_art_event:
+				event_art_end()
 	
 	# Stressbar
 	if argument.has("stress_change"):
@@ -267,11 +277,28 @@ func decrease_questions_value() -> void:
 	timebar_animator.play("Questions_counter_show")
 
 
+# EVENTS
 func event_start() -> void:
 	timebar_animator.play("event_start")
 
 func event_end() -> void:
 	timebar_animator.play("event_end")
+
+func event_art_start():
+	is_art_event = true
+	painting.play("event_start")
+
+func event_art_end():
+	is_art_event = false
+	painting.play("event_end")
+
+func event_whispers_start():
+	is_whispers_event = true
+	whispers.play()
+
+func event_whispers_end():
+	is_whispers_event = true
+	whispers.stop()
 
 
 # TIMER AND TIMEBAR
