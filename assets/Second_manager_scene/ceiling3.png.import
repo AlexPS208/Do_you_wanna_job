@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnu5dkt8kh3jc"
-path.s3tc="res://.godot/imported/art3.png-0edd32b17655941a67c5e3289a19b934.s3tc.ctex"
+uid="uid://f7uqnp3gs8mr"
+path.s3tc="res://.godot/imported/ceiling3.png-c3482e38e777d112c42ed0d886c59a97.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/decor/art3/art3.png"
-dest_files=["res://.godot/imported/art3.png-0edd32b17655941a67c5e3289a19b934.s3tc.ctex"]
+source_file="res://assets/Second_manager_scene/ceiling3.png"
+dest_files=["res://.godot/imported/ceiling3.png-c3482e38e777d112c42ed0d886c59a97.s3tc.ctex"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceqm3k05m7rsi"
-path.s3tc="res://.godot/imported/art3.3png.png-4431671e92fb3ab95a8f25d312cbfd0b.s3tc.ctex"
+uid="uid://cu1l2l50vqcvh"
+path.s3tc="res://.godot/imported/cactus.png-79cdd4617ef77ebe43cca46a5b33c118.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/decor/art3/art3.3png.png"
-dest_files=["res://.godot/imported/art3.3png.png-4431671e92fb3ab95a8f25d312cbfd0b.s3tc.ctex"]
+source_file="res://assets/First_manager_scene/decor/cactus.png"
+dest_files=["res://.godot/imported/cactus.png-79cdd4617ef77ebe43cca46a5b33c118.s3tc.ctex"]
 
 [params]
 

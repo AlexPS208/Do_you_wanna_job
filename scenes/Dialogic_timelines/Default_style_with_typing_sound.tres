@@ -68,6 +68,11 @@ overrides = {
 "font_size_custom": "32.0"
 }
 
+[sub_resource type="Resource" id="Resource_ucjj4"]
+script = ExtResource("1_5gdpd")
+scene = ExtResource("9_2fvn5")
+overrides = {}
+
 [sub_resource type="Resource" id="Resource_3blrc"]
 script = ExtResource("1_5gdpd")
 scene = ExtResource("8_6dpjy")
@@ -77,11 +82,6 @@ overrides = {
 "font_custom": "\"res://assets/fonts/Lato-Regular.ttf\"",
 "font_size_custom": "32.0"
 }
-
-[sub_resource type="Resource" id="Resource_ucjj4"]
-script = ExtResource("1_5gdpd")
-scene = ExtResource("9_2fvn5")
-overrides = {}
 
 [resource]
 script = ExtResource("10_thuwi")

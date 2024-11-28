@@ -27,6 +27,7 @@ extends CanvasLayer
 @onready var painting: AnimatedSprite3D = $"../Scene/Decor/Art2"
 @onready var whispers: AudioStreamPlayer3D = $"../Scene/Decor/Ventilation/Whispers"
 
+var second_manager_scene = preload("res://scenes/Second_manager.tscn")
 
 # Menu
 var is_menu_active: bool = false
@@ -411,6 +412,10 @@ func win_animation_start():
 	is_player_dead = true
 	scene_animator.play("win_animation")
 
+
+func _on_lamp_animator_animation_finished(anim_name: StringName) -> void:
+	if anim_name == "win_animation":
+		get_tree().change_scene_to_packed(second_manager_scene)
 
 
 # BUTTONS
