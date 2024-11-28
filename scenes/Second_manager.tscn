@@ -1,4 +1,4 @@
-[gd_scene load_steps=126 format=3 uid="uid://b2llcp711acor"]
+[gd_scene load_steps=130 format=3 uid="uid://b2llcp711acor"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_t68ne"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="2_tlc3q"]
@@ -30,7 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://747cymmykihp" path="res://assets/Second_manager_scene/wallpaperKT1.png" id="29_m1ydc"]
 [ext_resource type="Texture2D" uid="uid://cjumk1levwtg0" path="res://assets/Second_manager_scene/floor3.png" id="30_vw0qm"]
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="31_8jpar"]
-[ext_resource type="Texture2D" uid="uid://ccsbxgl70c23i" path="res://assets/Second_manager_scene/decor/art7.png" id="31_dkge0"]
+[ext_resource type="Texture2D" uid="uid://ckdfybuyxcm3c" path="res://assets/Second_manager_scene/decor/clock.png" id="31_xwyvi"]
 [ext_resource type="Texture2D" uid="uid://07wlq6tbiqiw" path="res://assets/Second_manager_scene/decor/art9.png" id="32_56pvi"]
 [ext_resource type="Texture2D" uid="uid://iuuf40yr1oml" path="res://assets/Second_manager_scene/decor/art10.png" id="33_vw0je"]
 [ext_resource type="Texture2D" uid="uid://cc3kibdandc4a" path="res://assets/Second_manager_scene/decor/art5.png" id="34_7t44w"]
@@ -45,8 +45,10 @@
 [ext_resource type="AudioStream" uid="uid://bexj2d15lpa27" path="res://assets/sounds/whispers.mp3" id="43_bmqw8"]
 [ext_resource type="Texture2D" uid="uid://4jfck0nj702q" path="res://assets/Second_manager/CHha1png.png" id="43_fojxq"]
 [ext_resource type="Texture2D" uid="uid://vb8vv3xqe4up" path="res://assets/Second_manager/CHha2png.png" id="43_r0tts"]
+[ext_resource type="Texture2D" uid="uid://r6i7lca7vp24" path="res://assets/Second_manager/CHh15.png" id="43_ymsaw"]
 [ext_resource type="Texture2D" uid="uid://cn3bvt6n27jv1" path="res://assets/Second_manager/CHh10.png" id="44_1jdmq"]
 [ext_resource type="Texture2D" uid="uid://dg16byudamswv" path="res://assets/Second_manager_scene/decor/art6.1png.png" id="44_iij6h"]
+[ext_resource type="Texture2D" uid="uid://dmvmxdjfbek00" path="res://assets/Second_manager/CHh13.png" id="44_j3p25"]
 [ext_resource type="Texture2D" uid="uid://tqy8oju6a20l" path="res://assets/Second_manager/CHh9.png" id="44_j8y51"]
 [ext_resource type="Texture2D" uid="uid://cy0sytraj4yc8" path="res://assets/Second_manager_scene/decor/switch2.png" id="44_qovnt"]
 [ext_resource type="Texture2D" uid="uid://cx8inbdbol1q2" path="res://assets/Second_manager/CHha3.1png.png" id="44_rp3h8"]
@@ -57,7 +59,9 @@
 [ext_resource type="Texture2D" uid="uid://pqhtkvobqaed" path="res://assets/Second_manager/CHh5.png" id="46_84kka"]
 [ext_resource type="Texture2D" uid="uid://cd1u5opjl7272" path="res://assets/Second_manager/CHh3.png" id="46_fcbh7"]
 [ext_resource type="Texture2D" uid="uid://b4mvqbyytauko" path="res://assets/Second_manager/CHha3.3png.png" id="46_mdojk"]
+[ext_resource type="Texture2D" uid="uid://c6pkiuf4j7ub4" path="res://assets/Second_manager/CHh16.png" id="50_dxrd1"]
 [ext_resource type="Texture2D" uid="uid://salftehdkion" path="res://assets/Second_manager/CHh6.png" id="51_1nwk8"]
+[ext_resource type="Texture2D" uid="uid://dt6ipgnrsfyg8" path="res://assets/Second_manager/CHh14.png" id="52_dxtkk"]
 [ext_resource type="Texture2D" uid="uid://b7jssrwk08q5a" path="res://assets/Second_manager/CHh1.png" id="65_kmbtq"]
 [ext_resource type="Texture2D" uid="uid://diaa74m3hl64j" path="res://assets/Second_manager_scene/table2.png" id="74_fsplh"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="80_tkkwk"]
@@ -1667,6 +1671,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("43_ymsaw")
+}],
+"loop": false,
+"name": &"quiet_open_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_j3p25")
+}],
+"loop": false,
+"name": &"quiet_open_sadsmile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("42_bblmp")
 }],
 "loop": false,
@@ -1711,6 +1731,22 @@ animations = [{
 }],
 "loop": false,
 "name": &"speak_close_smile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_dxrd1")
+}],
+"loop": false,
+"name": &"speak_open_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_dxtkk")
+}],
+"loop": false,
+"name": &"speak_open_sadsmile",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2497,7 +2533,7 @@ material = SubResource("StandardMaterial3D_i5a8g")
 transform = Transform3D(0.34952, 0, -0.0183176, 0, 0.35, 0, 0.0183176, 0, 0.34952, -1.86896, 0.357548, -7.29825)
 flip_h = true
 modulate = Color(0.817521, 0.817521, 0.817521, 1)
-texture = ExtResource("31_dkge0")
+texture = ExtResource("31_xwyvi")
 
 [node name="Ladder" type="Sprite3D" parent="Scene/Decor"]
 transform = Transform3D(0.399452, 7.45058e-10, -0.0209344, -0.00178815, 0.398538, -0.03412, 0.0208579, 0.0341668, 0.397992, 1.70447, -0.817767, -7.1072)
@@ -2543,13 +2579,13 @@ transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.275, -2.1)
 script = ExtResource("40_d67qj")
 
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0400844, 0.120655)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0400844, 0.0334854)
 sprite_frames = SubResource("SpriteFrames_ea45k")
-animation = &"quiet_close_serious"
+animation = &"quiet_open_serious"
 autoplay = "quiet_close_serious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.200001, -0.203426)
 sprite_frames = SubResource("SpriteFrames_0vue5")
 animation = &"idle"
 autoplay = "idle"

@@ -39,7 +39,7 @@ Second_manager: So, don’t let nerves get the better of you
 Second_manager: Take a deep breath and remember — this is as much about us getting to know you as it is about you proving yourself.
 Second_manager: ...
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-[signal arg_type="dict" arg="{"is_answered":true,"show_stressbar":true,"stop_timer":true}"]
+[signal arg_type="dict" arg="{"is_answered":true,"show_silentbar":true,"show_stressbar":true,"stop_timer":true}"]
 Second_manager: You know rules
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 Second_manager: Now, let’s begin, shall we?
@@ -107,4 +107,7 @@ Second_manager: Good luck.
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 Second_manager: And remember, if you’ve come this far, you’re stronger than you think.
 [signal arg_type="dict" arg="{"end_manager":true}"]
+[end_timeline]
+label death
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":1,"part":"head"}"]
 [end_timeline]
