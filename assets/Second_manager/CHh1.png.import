@@ -3,25 +3,26 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7jssrwk08q5a"
-path="res://.godot/imported/CHh1.png-29b89fc64bb0b13a8ac2d6d3cd957864.ctex"
+path.s3tc="res://.godot/imported/CHh1.png-29b89fc64bb0b13a8ac2d6d3cd957864.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Second_manager/CHh1.png"
-dest_files=["res://.godot/imported/CHh1.png-29b89fc64bb0b13a8ac2d6d3cd957864.ctex"]
+dest_files=["res://.godot/imported/CHh1.png-29b89fc64bb0b13a8ac2d6d3cd957864.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -31,4 +32,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

@@ -85,7 +85,7 @@ func _ready() -> void:
 	update_pointer_position()
 	
 	Dialogic.signal_event.connect(_on_dialogic_signal)
-	Dialogic.start("First_cutscene")
+	Dialogic.start("Second_cutscene")
 	
 	original_timebar_width = timebar_bar.size.x
 	original_timebar_position = timebar_bar.position

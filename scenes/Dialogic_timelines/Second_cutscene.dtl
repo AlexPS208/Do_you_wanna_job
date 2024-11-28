@@ -1,0 +1,6 @@
+[style name="Default_style_with_typing_sound"]
+You: Phew... that was something. Thought he’d never stop talking
+You: At least I got through it. One step closer.
+You: Okay, time to shake it off. Next round’s waiting
+[signal arg_type="dict" arg="{"light_on":true}"]
+[end_timeline]

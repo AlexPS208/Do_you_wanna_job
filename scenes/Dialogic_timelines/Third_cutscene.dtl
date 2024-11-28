@@ -1,0 +1,9 @@
+[style name="Default_style_with_typing_sound"]
+You: Whew, that was harder than Jock. Definitely a different level
+You: But I made it through — kept my cool.
+You: I can handle this.
+You: Just one more stage to go.
+You: I need this job.
+You: Focus.
+[signal arg_type="dict" arg="{"light_on":true}"]
+[end_timeline]

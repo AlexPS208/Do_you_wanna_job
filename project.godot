@@ -32,7 +32,10 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "First_cutscene": "res://scenes/Dialogic_timelines/First_cutscene.dtl",
-"First_manager": "res://scenes/Dialogic_timelines/First_manager.dtl"
+"First_manager": "res://scenes/Dialogic_timelines/First_manager.dtl",
+"Second_cutscene": "res://scenes/Dialogic_timelines/Second_cutscene.dtl",
+"Second_manager": "res://scenes/Dialogic_timelines/Second_manager.dtl",
+"Third_cutscene": "res://scenes/Dialogic_timelines/Third_cutscene.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.025
