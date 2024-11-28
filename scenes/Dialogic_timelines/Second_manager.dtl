@@ -1,1 +1,110 @@
-[style name="Display_style"]
+[style name="Default_style_with_typing_sound"]
+Player: What the strange layout of the building...
+Player: Hello?
+Player: Mr. Pop?
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
+Second_manager: Huh? Who's there?
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: Ah, you must be the candidate Mr. Jock mentioned
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
+Second_manager: He spoke...
+Second_manager: ...
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+Second_manager: ...highly of you.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: Said you’ve got potential, though perhaps still a bit unpolished.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+Second_manager: Don’t worry — that’s not unusual.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
+Second_manager: I’ve been conducting interviews longer than most people have been working.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: I’ll warn you now — I take this process seriously.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: This isn’t just about skills.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: It’s about fit, about resilience, about finding someone who can thrive in...
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
+Second_manager: ...unique circumstances.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: That said, you’d be wrong to think we’re looking for perfection.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: A diamond starts as coal, after all
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: If there’s something worth refining, we’ll see it
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: That said, you’d be wrong to think we’re looking for perfection.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: So, don’t let nerves get the better of you
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":10,"part":"head"}"]
+Second_manager: Take a deep breath and remember — this is as much about us getting to know you as it is about you proving yourself.
+Second_manager: ...
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+[signal arg_type="dict" arg="{"is_answered":true,"show_stressbar":true,"stop_timer":true}"]
+Second_manager: You know rules
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: Now, let’s begin, shall we?
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+Second_manager: Soo.. First question
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_01
+label main_01
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
+Second_manager: In this place, success comes to those who know how to navigate ambiguity
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":4,"part":"head"}"]
+Second_manager: [color=#2effff][b]How do you handle unclear situations?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Seek clarity[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]By seeking clarity and making informed decisions[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: A wise choice. Clarity is earned, not given, and the bold reap the rewards.
+- [color=#8e59f5]Wait[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I try to wait until things become clearer[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Hesitation is a trap. This place thrives on the indecisive and leaves them behind
+- [color=#f7d038]Add more mystery[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]By adding more mystery to fit in here[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Amusing, but this isn’t a game. Mystery won’t be your ally for long.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Quiet won’t save you.
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+	Second_manager: Shadows consume those who stand still
+[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
+Second_manager: Ambiguity can paralyze or empower, depending on how you respond.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+Second_manager: Tell me, do you trust your instincts when the path isn’t clear?
+Player: I’d say instincts are useful, but careful thought keeps you grounded.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+Second_manager: Instincts are a blade, but thought is the hilt
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+Second_manager: You’d best hold both tightly here
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# WIN
+label End
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+Second_manager: Well, look at that.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+Second_manager: You’ve managed to impress me — a feat few achieve.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: My stage of this process is rarely kind to candidates, but you held your own.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: Resilience, adaptability, a spark of wit—I see potential in you.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: The final test awaits with our esteemed leader.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":9,"part":"head"}"]
+Second_manager: I’ll be sending my recommendations along, and I’ll make sure they know you’ve earned the chance to move forward.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+Second_manager: Good luck.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: And remember, if you’ve come this far, you’re stronger than you think.
+[signal arg_type="dict" arg="{"end_manager":true}"]
+[end_timeline]

@@ -26,7 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://dswhoyseuxt2u" path="res://assets/ivent2.png" id="14_542l7"]
 [ext_resource type="Texture2D" uid="uid://c133tsjntxrk3" path="res://assets/dis.png" id="14_lkyhw"]
 [ext_resource type="Texture2D" uid="uid://bf2qu0xukt8c8" path="res://assets/ivent1.png" id="15_tshot"]
-[ext_resource type="Script" path="res://scenes/manager_animations.gd" id="16_hlt7j"]
+[ext_resource type="Script" path="res://scenes/First_manager_animations.gd" id="16_hlt7j"]
 [ext_resource type="Texture2D" uid="uid://baboob07hoxws" path="res://assets/First_manager/SHh2.5.png" id="19_1mj0h"]
 [ext_resource type="Texture2D" uid="uid://b7cbsci20foc5" path="res://assets/First_manager/SHt.png" id="19_2j7gn"]
 [ext_resource type="Texture2D" uid="uid://cu1l2l50vqcvh" path="res://assets/First_manager_scene/decor/cactus.png" id="19_fle2d"]
@@ -2740,7 +2740,7 @@ script = ExtResource("16_hlt7j")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.120651)
 sprite_frames = SubResource("SpriteFrames_u2dut")
-animation = &"smirk_open_unserious"
+animation = &"fear_open_surprised"
 autoplay = "smirk_open_unserious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]

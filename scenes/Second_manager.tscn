@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://07wlq6tbiqiw" path="res://assets/Second_manager_scene/decor/art9.png" id="32_56pvi"]
 [ext_resource type="Texture2D" uid="uid://iuuf40yr1oml" path="res://assets/Second_manager_scene/decor/art10.png" id="33_vw0je"]
 [ext_resource type="Texture2D" uid="uid://cc3kibdandc4a" path="res://assets/Second_manager_scene/decor/art5.png" id="34_7t44w"]
+[ext_resource type="Script" path="res://scenes/Second_manager_animations.gd" id="40_d67qj"]
 [ext_resource type="Texture2D" uid="uid://uvplpytg0jxw" path="res://assets/Second_manager_scene/decor/art8.png" id="41_8s3db"]
 [ext_resource type="Texture2D" uid="uid://dihodlktsiwy0" path="res://assets/Second_manager/CHh8.png" id="41_d6gvj"]
 [ext_resource type="Texture2D" uid="uid://d0bdmyr27vdwq" path="res://assets/Second_manager_scene/decor/ventilation2.png" id="42_aj28f"]
@@ -50,7 +51,6 @@
 [ext_resource type="Texture2D" uid="uid://cy0sytraj4yc8" path="res://assets/Second_manager_scene/decor/switch2.png" id="44_qovnt"]
 [ext_resource type="Texture2D" uid="uid://cx8inbdbol1q2" path="res://assets/Second_manager/CHha3.1png.png" id="44_rp3h8"]
 [ext_resource type="Texture2D" uid="uid://pule5r4j008s" path="res://assets/Second_manager/CHh12.png" id="44_ulfvh"]
-[ext_resource type="Script" path="res://scenes/manager_animations.gd" id="45_0vcgv"]
 [ext_resource type="Texture2D" uid="uid://du565w1jamva2" path="res://assets/Second_manager/CHha3png.png" id="45_dsvr5"]
 [ext_resource type="Texture2D" uid="uid://o32rqvbnuc5f" path="res://assets/Second_manager/CHh4.png" id="45_dt015"]
 [ext_resource type="Texture2D" uid="uid://b0kwwqaamncgb" path="res://assets/Second_manager/CHha3.2png.png" id="45_qisdy"]
@@ -1780,7 +1780,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("44_rp3h8")
 }],
-"loop": false,
+"loop": true,
 "name": &"claps",
 "speed": 8.0
 }, {
@@ -1802,7 +1802,7 @@ animations = [{
 }]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7vx8b"]
-random_pitch = 1.15
+random_pitch = 1.05
 streams_count = 1
 stream_0/stream = ExtResource("80_tkkwk")
 
@@ -2540,12 +2540,12 @@ texture = ExtResource("44_iij6h")
 [node name="Manager" type="Node3D" parent="."]
 process_mode = 1
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.275, -2.1)
-script = ExtResource("45_0vcgv")
+script = ExtResource("40_d67qj")
 
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0400844, 0.120655)
 sprite_frames = SubResource("SpriteFrames_ea45k")
-animation = &"speak_surprised_smile"
+animation = &"quiet_close_serious"
 autoplay = "quiet_close_serious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
@@ -2566,6 +2566,7 @@ texture = ExtResource("74_fsplh")
 [node name="Manager_voice" type="AudioStreamPlayer3D" parent="Manager"]
 stream = SubResource("AudioStreamRandomizer_7vx8b")
 volume_db = -15.0
+pitch_scale = 0.75
 
 [node name="Manager_blink_timer" type="Timer" parent="Manager"]
 

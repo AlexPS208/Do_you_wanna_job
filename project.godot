@@ -28,6 +28,7 @@ CursorManager="*res://scenes/additional_scenes/cursor_manager.tscn"
 directories/dch_directory={
 "First_manager": "res://scenes/Dialogic_timelines/First_manager.dch",
 "Player": "res://scenes/Dialogic_timelines/Player.dch",
+"Second_manager": "res://scenes/Dialogic_timelines/Second_manager.dch",
 "You": "res://scenes/Dialogic_timelines/You.dch"
 }
 directories/dtl_directory={

@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 "_translation_id": "",
-"color": Color(0.180392, 1, 1, 1),
+"color": Color(0.407843, 0.768627, 0.588235, 1),
 "custom_info": {
 "prefix": "",
 "sound_mood_default": "Mood 1",
@@ -10,12 +10,12 @@
 "Mood 1": {
 "mode": 2,
 "name": "Mood 1",
-"pitch_base": 1.5,
-"pitch_variance": 0.1,
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
 "skip_characters": 0.0,
-"sound_path": "res://assets/sounds/Player_voice.mp3",
-"volume_base": -10.0,
-"volume_variance": 0.1
+"sound_path": "",
+"volume_base": -60.0,
+"volume_variance": 0.0
 }
 },
 "style": "",
@@ -23,7 +23,7 @@
 },
 "default_portrait": "",
 "description": "",
-"display_name": "{Players_name}",
+"display_name": "Mr. Pop",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

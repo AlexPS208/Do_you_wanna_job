@@ -193,7 +193,7 @@ func _on_dialogic_signal(argument: Dictionary):
 		AudioManager.play_music_loop_with_fade("res://assets/sounds/test.mp3")
 		AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
 		await get_tree().create_timer(1).timeout
-		dialog_node = Dialogic.start("First_manager")
+		dialog_node = Dialogic.start("Second_manager")
 
 	
 	# Timebar
@@ -247,8 +247,8 @@ func _on_dialogic_signal(argument: Dictionary):
 		current_stress = clamp(current_stress, min_stress, max_stress)
 	
 	# Win
-	if argument.has("end_first_manager"):
-		if argument["end_first_manager"]:
+	if argument.has("end_manager"):
+		if argument["end_manager"]:
 			win_animation_start()
 
 
