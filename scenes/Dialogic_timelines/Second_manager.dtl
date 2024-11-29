@@ -69,7 +69,7 @@ Second_manager: [color=#2effff][b]How do you handle unclear situations?[/b][/col
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	Player: [color=#f7d038]By adding more mystery to fit in here[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
 	Second_manager: Amusing, but this isn’t a game. Mystery won’t be your ally for long.
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
@@ -87,6 +87,54 @@ Player: I’d say instincts are useful, but careful thought keeps you grounded.
 Second_manager: Instincts are a blade, but thought is the hilt
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
 Second_manager: You’d best hold both tightly here
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_02
+label main_02
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: Rules are the foundation of this realm, but they are shrouded in mystery.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":4,"part":"head"}"]
+Second_manager: [color=#2effff][b]What is your stance on following unwritten rules?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Observe and adapt[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I’ll observe and adapt quickly[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: Good. The unspoken forms the foundation of what keeps this place standing...
+- [color=#8e59f5]Ask for guidance[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I’ll ask for guidance when I don’t understand[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":8,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Guidance won’t always arrive when you need it. Learn quickly, or suffer the gaps in knowledge.
+- [color=#f7d038]It's just suggestions[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Unwritten rules are just suggestions, aren’t they?[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Mock the unwritten at your peril. They carry weight you may not yet comprehend.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":8,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Silence doesn’t excuse ignorance. The unwritten rules don’t care if you understand them
+[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+Second_manager: The unseen binds us just as tightly as what’s documented.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: Do you think you’re capable of recognizing such bonds?
+Player: It depends on how obvious they are. Some things can only be learned through experience
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+Second_manager: Tell me, do you trust your instincts when the path isn’t clear?
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+Second_manager: Obvious?
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+Second_manager: Rarely
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+Second_manager: Experience?
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+Second_manager: Certainly
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+Second_manager: Pay attention to what others ignore — it might save you.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # WIN
 label End
