@@ -106,12 +106,9 @@ func _process(delta: float) -> void:
 		var remaining_time = timer.time_left
 		var total_time = timer.wait_time
 		update_timebar(total_time, remaining_time)
-		# Плавное изменение FOV камеры
 		camera.fov = lerp(camera.fov, target_fov, lerp_speed * delta)
-		# Плавное изменение modulate у sight
 		sight.modulate = sight.modulate.lerp(target_sight_color, lerp_speed * delta)
 	else:
-		# Возврат к исходным значениям
 		camera.fov = lerp(camera.fov, original_fov, lerp_speed * delta * 15)
 		sight.modulate = sight.modulate.lerp(original_sight_color, lerp_speed * delta * 15)
 	

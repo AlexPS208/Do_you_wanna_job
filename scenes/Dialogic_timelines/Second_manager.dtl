@@ -136,6 +136,94 @@ Second_manager: Certainly
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
 Second_manager: Pay attention to what others ignore — it might save you.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_03
+label main_03
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: Not all secrets are meant to be kept forever.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+Second_manager: Some must evolve.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
+Second_manager: [color=#2effff][b]What’s your strategy for handling sensitive information?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Safeguard it[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]To safeguard it with utmost care[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: Trust is earned, not given
+- [color=#8e59f5]As the situation demands[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I’ll handle it as the situation demands[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: A vague strategy lacks conviction.
+- [color=#f7d038]Whisper them[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Secrets are meant to be whispered in shadows[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Clever, but far from practical
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: Ironic
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":4,"part":"head"}"]
+	Second_manager: Secrets thrive in silence, but so does fear.
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	Second_manager: Speak, or the weight of silence will crush you
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: Handling secrets requires more than just care — it demands understanding
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: Tell me, do you see them as a burden or an opportunity?
+Player: I think it depends. Some secrets are worth keeping, while others are too heavy.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+Second_manager: A wise answer
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: But beware — mishandled secrets can be heavier than they seem
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_04
+label main_04
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: Every secret has a price, and not all are worth paying
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
+Second_manager: [color=#2effff][b]What drives your curiosity?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Understanding and purpose[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]The pursuit of understanding and purpose[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: Such drive leads to enlightenment
+- [color=#8e59f5]Curious only when I need[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I’m curious only when I need to be[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Curiosity without constancy is fleeting
+- [color=#f7d038]I follow the whispers[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I follow the whispers of the unknown[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Whimsy has its place, but not here
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: A quiet mind may be at peace, but a silent one stagnates. 
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
+	Second_manager: Curiosity cannot grow in the shadows of hesitation.
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
+	Second_manager: Including mine
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: Curiosity is the spark of discovery, but it must be controlled.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
+Second_manager: Do you agree?
+Player: Yes, but sometimes letting curiosity roam can lead to unexpected insights.
+[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
+Second_manager: True... true...
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 # WIN
 label End
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
