@@ -575,9 +575,20 @@ Second_manager: Those who innovate turn monotony into mastery
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # event_01
 label event_01
-[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
+Second_manager: This next step is my own design — a method born from years of experience.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":8,"part":"head"}"]
+Second_manager: A blitz of questions, rapid and deliberate, aimed at peeling back the surface to reveal the core of a candidate.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":8,"part":"head"}"]
+Second_manager: It’s not about perfection—it’s about instinct, reaction, and the truth that comes when thought gives way to honesty
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+Second_manager: Consider it… my personal touch
 [signal arg_type="dict" arg="{"event":"blitz"}"]
-Second_manager: Заглушка на ивент 1
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+Second_manager: Don’t waste time thinking too much.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+Second_manager: Let’s get on with it
+[signal arg_type="dict" arg="{"random_blitz":true}"]
 [signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # event_02
 label event_02

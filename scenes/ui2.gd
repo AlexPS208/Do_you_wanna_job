@@ -24,7 +24,6 @@ extends CanvasLayer
 @onready var stress_bar_bg: TextureRect = $Stressbar/Stressbar_bar_back
 @onready var stressbar_animator: AnimationPlayer = $Stressbar/Stressbar_animator
 
-#@onready var painting: AnimatedSprite3D = $"../Scene/Decor/Art2"
 @onready var whispers: AudioStreamPlayer3D = $"../Scene/Decor/Ventilation/Whispers"
 
 
@@ -60,6 +59,14 @@ var used_labels = []
 
 var is_art_event: bool = false
 var is_whispers_event: bool = false
+
+# Blitz questions
+var blitz_labels = ["blitz_01", "blitz_02", "blitz_03", "blitz_04", "blitz_05", "blitz_06", "blitz_07", "blitz_08", "blitz_09", "blitz_10"]
+var blitz_passed_labels = ["blitz_passed_01", "blitz_passed_02"]
+var used_blitz_labels = []
+var used_blitz_passed_labels = []
+var blitz_question_count = 0
+var max_blitz_questions = 5 
 
 
 # Stressbar
@@ -198,6 +205,7 @@ func _on_dialogic_signal(argument: Dictionary):
 		var duration = argument["start_timer"]
 		current_skip_choice = argument["skip_choice"]
 		start_timer(duration)
+	
 	if argument.has("stop_timer"):
 		stop_timer()
 		if argument["is_answered"]:
@@ -208,9 +216,11 @@ func _on_dialogic_signal(argument: Dictionary):
 			decrease_questions_value()
 		elif !argument["is_answered"] and argument["is_silent"]:
 			silent_answer()
+	
 	if argument.has("show_stressbar"):
 		if argument["show_stressbar"]:
 			stressbar_animator.play("stressbar_show")
+	
 	if argument.has("show_silentbar"):
 		if argument["show_silentbar"]:
 			silentbar_animator.play("show_pointers")
@@ -219,19 +229,17 @@ func _on_dialogic_signal(argument: Dictionary):
 	# Random question & events
 	if argument.has("random_question"):
 		random_jump()
+		
 	if argument.has("event"):
 		event_start()
-		if argument["event"] == "art":
-			event_art_start()
-		if argument["event"] == "whispers":
-			event_whispers_start()
+
 	if argument.has("event_end"):
 		if argument["event_end"]:
 			event_end()
-			if is_art_event:
-				event_art_end()
-			if is_whispers_event:
-				event_whispers_end()
+
+	
+	if argument.has("random_blitz"):
+		handle_blitz_event()
 	
 	# Stressbar
 	if argument.has("stress_change"):
@@ -288,6 +296,36 @@ func decrease_questions_value() -> void:
 	timebar_animator.play("Questions_counter_show")
 
 
+func handle_blitz_event():
+	if blitz_question_count < max_blitz_questions:
+		var available_labels = []
+		for label in blitz_labels:
+			if not used_blitz_labels.has(label):
+				available_labels.append(label)
+		
+		if available_labels.size() > 0:
+			var random_label = available_labels[randi() % available_labels.size()]
+			Dialogic.Jump.jump_to_label(random_label)
+			used_blitz_labels.append(random_label)
+			blitz_question_count += 1
+		else:
+			print("No more blitz labels available.")
+	else:
+		var available_passed_labels = []
+		for label in blitz_passed_labels:
+			if not used_blitz_passed_labels.has(label):
+				available_passed_labels.append(label)
+		
+		if available_passed_labels.size() > 0:
+			var random_passed_label = available_passed_labels[randi() % available_passed_labels.size()]
+			Dialogic.Jump.jump_to_label(random_passed_label)
+			used_blitz_passed_labels.append(random_passed_label)
+		else:
+			print("No more blitz passed labels available.")
+		
+		blitz_question_count = 0
+
+
 # EVENTS
 func event_start() -> void:
 	timebar_animator.play("event_start")
@@ -295,21 +333,6 @@ func event_start() -> void:
 func event_end() -> void:
 	timebar_animator.play("event_end")
 
-func event_art_start():
-	is_art_event = true
-	#painting.play("event_start")
-
-func event_art_end():
-	is_art_event = false
-	#painting.play("event_end")
-
-func event_whispers_start():
-	is_whispers_event = true
-	whispers.play()
-
-func event_whispers_end():
-	is_whispers_event = false
-	whispers.stop()
 
 
 # TIMER AND TIMEBAR
