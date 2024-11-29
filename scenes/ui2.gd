@@ -55,7 +55,7 @@ var questions_value = 11
 var current_question_number = 0
 
 var main_labels = ["main_01", "main_02", "main_03", "main_04", "main_05", "main_06", "main_07", "main_08", "main_09", "main_10", "main_11", "main_12"]
-var event_labels = ["event_01", "event_02", "event_03", "event_04"]
+var event_labels = ["event_01", "event_02"]
 var used_labels = []
 
 var is_art_event: bool = false
@@ -257,7 +257,7 @@ func random_jump():
 	
 	var current_block
 	current_question_number += 1
-	if current_question_number in [4, 8, 12]:
+	if current_question_number in [4, 12]:
 		current_block = event_labels
 	else:
 		current_block = main_labels

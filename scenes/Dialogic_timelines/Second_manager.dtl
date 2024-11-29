@@ -362,7 +362,7 @@ label main_08
 Second_manager: Not every journey begins with a map. 
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 Second_manager: How you navigate uncertainty often determines where you end up.
-[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
 Second_manager: [color=#2effff][b]How do you handle projects with unclear goals?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
 - [color=#6BBF59]Create a plan[/color]
@@ -375,6 +375,7 @@ Second_manager: [color=#2effff][b]How do you handle projects with unclear goals?
 	Second_manager: A fixed plan without clear goals often leads to dead ends.
 - [color=#8e59f5]Focus on gathering more information[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	Player: [color=#8e59f5]I focus on gathering more information and adjust as I go[/color]
 	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
 	Second_manager: Adjusting to uncertainty shows understanding of shifting priorities
@@ -396,6 +397,191 @@ Second_manager: Do you think it’s better to act first or wait for clarity?
 Player: Sometimes clarity comes from action, but rushing in can backfire.
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
 Second_manager: The trick is knowing when hesitation costs more than action.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_09
+label main_09
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: The absence of a clear path doesn’t stop the journey.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: It’s what you do in the void that defines you.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]How do you handle situations where there’s no clear solution?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Create a structured plan[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I create a structured plan and tackle the problem step by step[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Orderly, but too rigid.
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	Second_manager: The undefined often breaks structured plans.
+- [color=#8e59f5]Pause and wait[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Player: [color=#8e59f5]I pause and wait until the situation becomes clearer[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":7,"part":"head"}"]
+	Second_manager: Hesitation rarely leads to resolution. Clarity won’t always come on its own.
+- [color=#f7d038]Embrace chaos[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I embrace chaos — it’s not a problem if I can’t define it[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":4,"part":"head"}"]
+	Second_manager: A bold embrace of madness
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":5,"part":"head"}"]
+	Second_manager: Sometimes, that’s exactly what’s needed.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Quiet uncertainty doesn’t solve undefined problems — it only deepens them
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: Chaos is a natural state of things.
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: Do you think it’s better to control it or let it run free?
+Player: Sometimes chaos can create opportunities.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":3,"part":"head"}"]
+Second_manager: Risky, indeed
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
+Second_manager: Control what you can — but don’t be surprised when the rest slips through your fingers
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_10
+label main_10
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: Time is the cruelest master, and it rarely bends to our will.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: How do you cope when the clock conspires against you?
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]What’s your approach to impossible deadlines?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Prioritize tasks[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I prioritize tasks and focus on the most critical elements[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":8,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: A practical approach, but even the most critical task can slip through the cracks of time
+- [color=#8e59f5]Assess what’s feasible[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I assess what’s feasible and negotiate for more time if needed[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Negotiate...
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+	Second_manager: With who?
+- [color=#f7d038]Write my resignation letter[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I write my resignation letter — after all, it’s the easiest task to finish.[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":3,"part":"head"}"]
+	Second_manager: Clever, if a bit defeatist
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
+	Second_manager: Sometimes humor is the only way to survive the absurd
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Silence won’t stop the ticking clock
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+	Second_manager: Ticky-tacky...
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: Deadlines are the ultimate test of resolve. 
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: Do you meet them head-on, or bend them to your will?
+Player: Both, ideally. But sometimes, you just have to make the best of a bad situation.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":5,"part":"head"}"]
+Second_manager: Flexibility under pressure is the mark of a survivor
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_11
+label main_11
+[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+Second_manager: In every workplace, there are thorns among the roses. 
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]How do you handle difficult clients or coworkers?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]I stay professional[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I stay professional and address conflicts directly[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Professional, but direct conflict often stirs more trouble than it resolves.
+- [color=#8e59f5]I avoid unnecessary confrontation[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I avoid unnecessary confrontation and focus on my work[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Avoidance creates distance, but not solutions
+- [color=#f7d038]I offer them coffee[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I offer them coffee laced with extra patience — and maybe a little sugar[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+	Second_manager: A sweet approach
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
+	Second_manager: Humor disarms even the sharpest tongues — if used wisely
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Silence is an acceptance of difficulty, not a resolution to it
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+Second_manager: Dealing with thorns requires care. 
+[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
+Second_manager: Do you think it’s better to pluck them out or work around them?
+Player: Work around them — sometimes removing the thorn does more harm than good
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
+Second_manager: Some thorns protect the rose;\
+others are best left alone
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_12
+label main_12
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
+Second_manager: Every job has its monotony.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
+Second_manager: How you face it often determines how you’re remembered — or forgotten
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]What’s your approach to handling boring tasks?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Focus on finishing them[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I focus on finishing them quickly to move on to more important work[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Efficient, but speed doesn’t always lead to quality
+- [color=#8e59f5]I do them as needed[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I do them as needed and try to find a way to make them tolerable[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Practical, but tolerating monotony doesn’t inspire improvement
+- [color=#f7d038]Turn them into a competition[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I turn them into a competition with myself—who said boredom can’t be fun?[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+	Second_manager: Creative
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+	Second_manager: Finding joy in monotony is a rare skill
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Silence in the face of boredom risks turning apathy into habit
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: Boredom tests patience as much as skill.
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: Do you think it’s better to endure or innovate?
+Player: Both, but innovation makes endurance easier
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+Second_manager: Those who innovate turn monotony into mastery
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_01
+label event_01
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
+Second_manager: Заглушка на ивент
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_02
+label event_02
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
+Second_manager: Заглушка на ивент
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # WIN
 label End
