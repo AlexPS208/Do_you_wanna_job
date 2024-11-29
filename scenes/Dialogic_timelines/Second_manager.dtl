@@ -578,23 +578,264 @@ label event_01
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
 Second_manager: This next step is my own design — a method born from years of experience.
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":8,"part":"head"}"]
+[signal arg_type="dict" arg="{"event":"blitz"}"]
 Second_manager: A blitz of questions, rapid and deliberate, aimed at peeling back the surface to reveal the core of a candidate.
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":8,"part":"head"}"]
-Second_manager: It’s not about perfection—it’s about instinct, reaction, and the truth that comes when thought gives way to honesty
+Second_manager: It’s not about perfection — it’s about instinct, reaction, and the truth that comes when thought gives way to honesty
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
 Second_manager: Consider it… my personal touch
-[signal arg_type="dict" arg="{"event":"blitz"}"]
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
 Second_manager: Don’t waste time thinking too much.
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
 Second_manager: Let’s get on with it
 [signal arg_type="dict" arg="{"random_blitz":true}"]
-[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # event_02
 label event_02
-[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
+Second_manager: The first round of blitz revealed much, but insight is fleeting if left unchecked.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":5,"part":"head"}"]
 [signal arg_type="dict" arg="{"event":"blitz"}"]
-Second_manager: Заглушка на ивент 2
+Second_manager: To ensure clarity, we’ll conduct another one.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":9,"part":"head"}"]
+Second_manager: This second round will solidify the impressions formed in the first — confirming or contradicting what we’ve learned.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
+Second_manager: Consistency matters here, as does adaptability. Let’s see if the foundation holds.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+Second_manager: Let’s get on with it
+[signal arg_type="dict" arg="{"event":"blitz"}"]
+# blitz_01
+label blitz_01
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]What is the most important skill for survival here?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- Adaptation to unpredictability
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Adaptation to unpredictability
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- Obedience to every rule
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Obedience to every rule
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_02
+label blitz_02
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]What do you do when the shadows start moving?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- Stand still and observe
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Stand still and observe
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- Run in the opposite direction.
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Run in the opposite direction.
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_03
+label blitz_03
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]What is the function of the locked room on the third floor?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- To store forgotten records.
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: To store forgotten records.
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- To preserve the essence of secrecy
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: To preserve the essence of secrecy
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_04
+label blitz_04
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]If a co-worker disappears, what’s your first step?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- Look for them immediately
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Look for them immediately.
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- File a report and continue working
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: File a report and continue working
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_05
+label blitz_05
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]Why is silence more valuable than answers?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- Speaking reveals too much
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Because speaking reveals too much
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- It lets mystery grow
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Because it leaves room for mystery to grow
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
+	Second_manager: Not this time
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_06
+label blitz_06
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]What does the phrase “the floor remembers” mean?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- Every step leaves a mark
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Every step taken here leaves a permanent mark
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- The floor keeps secrets
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: The floor records secrets of those who walk on it
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_07
+label blitz_07
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]Why is eye contact discouraged with the mirrors in the west wing?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- They reflect more than you
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: They reflect more than just your image
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- They’re fragile and need protection
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: They are fragile and must be protected
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_08
+label blitz_08
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]What should you do if a file disappears from your desk?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- Report to the supervisor
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Report it to the supervisor immediately
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- Trust it’s in place
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Trust that it’s where it needs to be
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_09
+label blitz_09
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]Why must we always speak in riddles when discussing secrets?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- It confuses unwanted listeners
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: It confuses unwanted listeners
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- It strengthens their allure
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: It strengthens their allure
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_10
+label blitz_10
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]What should you do if the clock shows a time that doesn’t exist?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
+- Ignore it; time is malleable here
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Ignore it; time is malleable here
+	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":2.5}"]
+- Reset the clock to the correct time
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: Reset the clock to the correct time
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+- . . .
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+[signal arg_type="dict" arg="{"random_blitz":true}"]
+# blitz_passed_01
+label blitz_passed_01
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":1,"part":"head"}"]
+Second_manager: . . .
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"claps","end_sprite":"claps","loops":5,"part":"hand"}"]
+Second_manager: Interesting.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":15,"part":"head"}"]
+Second_manager: Far more revealing than you might have intended. Your answers have shown me aspects of your character — maybe more than you expected.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":7,"part":"head"}"]
+Second_manager: You've painted a clearer picture of who you are, or perhaps who you're trying to be.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+Second_manager: You’ve given me plenty to consider, but the real test still lies ahead
+[signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":1,"part":"hand"}"]
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
+# blitz_passed_02
+label blitz_passed_02
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":1,"part":"head"}"]
+Second_manager: . . .
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"claps","end_sprite":"claps","loops":5,"part":"hand"}"]
+Second_manager: Fascinating.
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+Second_manager: Your answers were more illuminating than you may realize
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
+Second_manager: Each one has painted a clearer picture of who you are
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+Second_manager: ... or perhaps, who you wish to be
+[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
+Second_manager: Time will tell if my trust is well-placed.
+[signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":1,"part":"hand"}"]
 [signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # WIN
 label End

@@ -85,6 +85,13 @@ var stressbar_lerp_speed: float = 5.0
 var silent_answers: int = 3
 var is_player_dead: bool = false
 
+# HESOYAM
+var is_code_allowed: bool = true
+var code_sequence = "HESOYAM"
+var input_buffer = ""
+var code_timer = 0.0
+var code_max_time = 10.0
+var timer_active = false
 
 
 func _ready() -> void:
@@ -125,7 +132,43 @@ func _process(delta: float) -> void:
 	displayed_stress = lerp(displayed_stress, current_stress, stressbar_lerp_speed * delta)
 	update_pointer_position()
 	update_bar_color()
+	
+	# Cheatcode
+	if timer_active:
+		code_timer -= delta
+		if code_timer <= 0:
+			_reset_input()
 
+
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and not event.echo:
+		var char_pressed = OS.get_keycode_string(event.keycode).to_upper()
+
+		if not timer_active:
+			_start_timer()
+
+		if char_pressed == code_sequence[input_buffer.length()]:
+			input_buffer += char_pressed
+
+			if input_buffer == code_sequence:
+				_on_code_activated()
+		else:
+			_reset_input()
+
+func _start_timer() -> void:
+	timer_active = true
+	code_timer = code_max_time
+
+func _reset_input() -> void:
+	input_buffer = ""
+	code_timer = 0.0
+	timer_active = false
+
+func _on_code_activated() -> void:
+	if is_code_allowed:
+		current_stress = 100
+	_reset_input()
 
 
 func _simulate_keypress(action_name: String):
@@ -198,7 +241,6 @@ func _on_dialogic_signal(argument: Dictionary):
 		AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
 		await get_tree().create_timer(1).timeout
 		dialog_node = Dialogic.start("Second_manager")
-
 	
 	# Timebar
 	if argument.has("start_timer"):
@@ -423,6 +465,8 @@ func death():
 	if is_player_dead:
 		return
 	
+	is_code_allowed = false
+	
 	Dialogic.Jump.jump_to_label("death")
 	Dialogic.Inputs.auto_advance.enabled_until_next_event = true
 	AudioManager.start_clock("res://assets/sounds/Heartbeat.mp3")
@@ -430,6 +474,7 @@ func death():
 	scene_animator.play("death_animation")
 
 func win_animation_start():
+	is_code_allowed = false
 	is_player_dead = true
 	scene_animator.play("win_animation")
 

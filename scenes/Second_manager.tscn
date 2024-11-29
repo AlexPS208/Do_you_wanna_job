@@ -14,12 +14,12 @@
 [ext_resource type="Texture2D" uid="uid://cjt47d1nwmala" path="res://assets/Stressbar/cut2.png" id="12_dc8od"]
 [ext_resource type="Texture2D" uid="uid://c1igx6t7syqr6" path="res://assets/Stressbar/cut3.png" id="13_exsfr"]
 [ext_resource type="Texture2D" uid="uid://b8rtyvjiv1akp" path="res://assets/ivent3.png" id="14_4alel"]
-[ext_resource type="Texture2D" uid="uid://dvh41d6ht5v8d" path="res://assets/ivent11.png" id="15_cyl27"]
-[ext_resource type="Texture2D" uid="uid://64ph8wf4k1bm" path="res://assets/ivent22.png" id="16_sybab"]
 [ext_resource type="Texture2D" uid="uid://bxqwmudlq5jl5" path="res://assets/stopper.png" id="17_bf03y"]
-[ext_resource type="Texture2D" uid="uid://bumhlyg1h4vb8" path="res://assets/ivent33.png" id="17_jitg4"]
 [ext_resource type="Texture2D" uid="uid://c133tsjntxrk3" path="res://assets/dis.png" id="18_8pvcu"]
+[ext_resource type="Texture2D" uid="uid://e0y3qavj6pyx" path="res://assets/ivent333.png" id="18_s6ryl"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="19_aud6g"]
+[ext_resource type="Texture2D" uid="uid://ey3xwh43m7b5" path="res://assets/ivent222.png" id="19_ybvgc"]
+[ext_resource type="Texture2D" uid="uid://brhq2vuh5aumy" path="res://assets/ivent111.png" id="20_5td0n"]
 [ext_resource type="Texture2D" uid="uid://f7uqnp3gs8mr" path="res://assets/Second_manager_scene/ceiling3.png" id="20_r56t0"]
 [ext_resource type="Texture2D" uid="uid://bwqpce0sbjls" path="res://assets/Second_manager_scene/wallpaperK1 копия.png" id="21_23hlr"]
 [ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="22_oshtd"]
@@ -1196,7 +1196,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("15_cyl27"), ExtResource("16_sybab"), ExtResource("17_jitg4")]
+"values": [ExtResource("20_5td0n"), ExtResource("19_ybvgc"), ExtResource("18_s6ryl")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -1284,7 +1284,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0.1, 0.3, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("17_jitg4"), ExtResource("16_sybab"), ExtResource("15_cyl27")]
+"values": [ExtResource("18_s6ryl"), ExtResource("19_ybvgc"), ExtResource("20_5td0n")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -2582,7 +2582,7 @@ script = ExtResource("40_d67qj")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0400844, 0.0334854)
 sprite_frames = SubResource("SpriteFrames_ea45k")
-animation = &"quiet_surprised_serious"
+animation = &"quiet_open_smile"
 autoplay = "quiet_close_serious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
@@ -2595,6 +2595,7 @@ autoplay = "idle"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.895191, 0.881117)
 sprite_frames = SubResource("SpriteFrames_1q1cf")
 animation = &"normal"
+autoplay = "normal"
 
 [node name="Table" type="Sprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.31418, 0.486219)
