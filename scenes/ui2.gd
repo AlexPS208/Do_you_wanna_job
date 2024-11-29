@@ -187,7 +187,7 @@ func _on_dialogic_signal(argument: Dictionary):
 	if argument.has("light_on"):
 		await get_tree().create_timer(1).timeout
 		scene_animator.play("Light_turn_on")
-		AudioManager.play_music_loop_with_fade("res://assets/sounds/test.mp3")
+		AudioManager.play_music_loop_with_fade("res://assets/sounds/Old_music.wav")
 		AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
 		await get_tree().create_timer(1).timeout
 		dialog_node = Dialogic.start("Second_manager")

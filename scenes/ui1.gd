@@ -80,7 +80,7 @@ var silent_answers: int = 3
 var is_player_dead: bool = false
 
 # HESOYAM
-var is_code_allowed: bool = false
+var is_code_allowed: bool = true
 var code_sequence = "HESOYAM"
 var input_buffer = ""
 var code_timer = 0.0
@@ -132,9 +132,6 @@ func _process(delta: float) -> void:
 		code_timer -= delta
 		if code_timer <= 0:
 			_reset_input()
-	
-	if current_stress < 100:
-		is_code_allowed = true
 
 
 func _input(event: InputEvent) -> void:
@@ -163,8 +160,7 @@ func _reset_input() -> void:
 
 func _on_code_activated() -> void:
 	if is_code_allowed:
-		Dialogic.Save.save("state")
-		Dialogic.Jump.jump_to_label("hesoyam")
+		current_stress = 100
 	_reset_input()
 
 
@@ -295,12 +291,7 @@ func _on_dialogic_signal(argument: Dictionary):
 	if argument.has("end_first_manager"):
 		if argument["end_first_manager"]:
 			win_animation_start()
-	
-	# HESOYAM
-	if argument.has("hesoyam"):
-		if argument["hesoyam"]:
-			current_stress = 100
-			Dialogic.Save.load("state")
+
 
 
 # RANDOM QUESTION
@@ -366,7 +357,6 @@ func event_whispers_end():
 
 # TIMER AND TIMEBAR
 func start_timer(duration: float) -> void:
-	is_code_allowed = false
 	timebar_bar.size.x = original_timebar_width
 	timebar_bar.position.x = original_timebar_position.x
 	stress_pointer.play("beat")
@@ -387,7 +377,6 @@ func _on_timer_timeout() -> void:
 
 func stop_timer() -> void:
 	if !timer.is_stopped():
-		is_code_allowed = true
 		AudioManager.set_original_music_volume(5.0)
 		AudioManager.set_original_ambient_volume(5.0)
 		AudioManager.stop_clock()

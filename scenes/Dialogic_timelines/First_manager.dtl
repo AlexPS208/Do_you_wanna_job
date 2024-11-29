@@ -858,10 +858,3 @@ First_manager: I'll call him for recomendation about you
 label death
 [signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":0,"part":"head"}"]
 [end_timeline]
-# HESOYAM
-label hesoyam
-[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":2,"part":"head"}"]
-First_manager: Oh...
-[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":4,"part":"head"}"]
-First_manager: We will take this into account
-[signal arg_type="dict" arg="{"hesoyam":true}"]
