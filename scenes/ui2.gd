@@ -257,8 +257,10 @@ func random_jump():
 	
 	var current_block
 	current_question_number += 1
-	if current_question_number in [4, 12]:
-		current_block = event_labels
+	if current_question_number == 4:
+		current_block = ["event_01"]
+	elif current_question_number == 12:
+		current_block = ["event_02"]
 	else:
 		current_block = main_labels
 	

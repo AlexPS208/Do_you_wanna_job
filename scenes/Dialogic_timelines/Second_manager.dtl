@@ -211,7 +211,7 @@ Second_manager: [color=#2effff][b]What drives your curiosity?[/b][/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: A quiet mind may be at peace, but a silent one stagnates. 
+	Second_manager: A quiet mind may be at peace, but a silent one stagnates.
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
 	Second_manager: Curiosity cannot grow in the shadows of hesitation.
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
@@ -259,11 +259,11 @@ Second_manager: [color=#2effff][b]How do you determine if someone can be trusted
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":2,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: No answer? 
+	Second_manager: No answer?
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
 	Second_manager: A lack of trust in your own words, perhaps?
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: Trust is the glue of this place, but also its sharpest blade. 
+Second_manager: Trust is the glue of this place, but also its sharpest blade.
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
 Second_manager: How do you decide when it’s safe to wield?
 Player: I think you have to weigh the risks, but there’s always a leap of faith involved.
@@ -359,7 +359,7 @@ Second_manager: The challenge is knowing which will matter more in the end
 # main_08
 label main_08
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Not every journey begins with a map. 
+Second_manager: Not every journey begins with a map.
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 Second_manager: How you navigate uncertainty often determines where you end up.
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
@@ -483,7 +483,7 @@ Second_manager: [color=#2effff][b]What’s your approach to impossible deadlines
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
 	Second_manager: Ticky-tacky...
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Deadlines are the ultimate test of resolve. 
+Second_manager: Deadlines are the ultimate test of resolve.
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
 Second_manager: Do you meet them head-on, or bend them to your will?
 Player: Both, ideally. But sometimes, you just have to make the best of a bad situation.
@@ -493,7 +493,7 @@ Second_manager: Flexibility under pressure is the mark of a survivor
 # main_11
 label main_11
 [signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
-Second_manager: In every workplace, there are thorns among the roses. 
+Second_manager: In every workplace, there are thorns among the roses.
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
 Second_manager: [color=#2effff][b]How do you handle difficult clients or coworkers?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
@@ -523,7 +523,7 @@ Second_manager: [color=#2effff][b]How do you handle difficult clients or coworke
 	[signal arg_type="dict" arg="{"stress_change":25}"]
 	Second_manager: Silence is an acceptance of difficulty, not a resolution to it
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: Dealing with thorns requires care. 
+Second_manager: Dealing with thorns requires care.
 [signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
 Second_manager: Do you think it’s better to pluck them out or work around them?
 Player: Work around them — sometimes removing the thorn does more harm than good
@@ -576,13 +576,15 @@ Second_manager: Those who innovate turn monotony into mastery
 # event_01
 label event_01
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
-Second_manager: Заглушка на ивент
-[signal arg_type="dict" arg="{"random_question":"main"}"]
+[signal arg_type="dict" arg="{"event":"blitz"}"]
+Second_manager: Заглушка на ивент 1
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # event_02
 label event_02
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
-Second_manager: Заглушка на ивент
-[signal arg_type="dict" arg="{"random_question":"main"}"]
+[signal arg_type="dict" arg="{"event":"blitz"}"]
+Second_manager: Заглушка на ивент 2
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # WIN
 label End
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]

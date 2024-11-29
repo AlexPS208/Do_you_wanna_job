@@ -1,4 +1,4 @@
-[gd_scene load_steps=130 format=3 uid="uid://b2llcp711acor"]
+[gd_scene load_steps=131 format=3 uid="uid://b2llcp711acor"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_t68ne"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="2_tlc3q"]
@@ -14,9 +14,10 @@
 [ext_resource type="Texture2D" uid="uid://cjt47d1nwmala" path="res://assets/Stressbar/cut2.png" id="12_dc8od"]
 [ext_resource type="Texture2D" uid="uid://c1igx6t7syqr6" path="res://assets/Stressbar/cut3.png" id="13_exsfr"]
 [ext_resource type="Texture2D" uid="uid://b8rtyvjiv1akp" path="res://assets/ivent3.png" id="14_4alel"]
-[ext_resource type="Texture2D" uid="uid://bf2qu0xukt8c8" path="res://assets/ivent1.png" id="15_b0was"]
-[ext_resource type="Texture2D" uid="uid://dswhoyseuxt2u" path="res://assets/ivent2.png" id="16_wwpna"]
+[ext_resource type="Texture2D" uid="uid://dvh41d6ht5v8d" path="res://assets/ivent11.png" id="15_cyl27"]
+[ext_resource type="Texture2D" uid="uid://64ph8wf4k1bm" path="res://assets/ivent22.png" id="16_sybab"]
 [ext_resource type="Texture2D" uid="uid://bxqwmudlq5jl5" path="res://assets/stopper.png" id="17_bf03y"]
+[ext_resource type="Texture2D" uid="uid://bumhlyg1h4vb8" path="res://assets/ivent33.png" id="17_jitg4"]
 [ext_resource type="Texture2D" uid="uid://c133tsjntxrk3" path="res://assets/dis.png" id="18_8pvcu"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="19_aud6g"]
 [ext_resource type="Texture2D" uid="uid://f7uqnp3gs8mr" path="res://assets/Second_manager_scene/ceiling3.png" id="20_r56t0"]
@@ -1180,10 +1181,10 @@ tracks/0/path = NodePath("Timebar_frame/Event_sign:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.4, 0.5),
+"times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+"values": [Color(0.419608, 0.780392, 0.580392, 1), Color(1, 1, 1, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1195,7 +1196,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("15_b0was"), ExtResource("16_wwpna"), ExtResource("14_4alel")]
+"values": [ExtResource("15_cyl27"), ExtResource("16_sybab"), ExtResource("17_jitg4")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -1207,7 +1208,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+"values": [Color(0.419608, 0.780392, 0.580392, 1), Color(0.180392, 1, 1, 1)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1219,7 +1220,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+"values": [Color(0.419608, 0.780392, 0.580392, 1), Color(0.180392, 1, 1, 1)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -1231,7 +1232,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+"values": [Color(0.419608, 0.780392, 0.580392, 1), Color(0.180392, 1, 1, 1)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -1243,7 +1244,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+"values": [Color(0.419608, 0.780392, 0.580392, 1), Color(0.180392, 1, 1, 1)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -1255,7 +1256,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.894118, 0.498039, 0.105882, 1), Color(0.180392, 1, 1, 1)]
+"values": [Color(0.419608, 0.780392, 0.580392, 1), Color(0.180392, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_ge0jb"]
@@ -1268,10 +1269,10 @@ tracks/0/path = NodePath("Timebar_frame/Event_sign:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
+"times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+"values": [Color(1, 1, 1, 0), Color(0.419608, 0.780392, 0.580392, 1)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1283,7 +1284,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0.1, 0.3, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [ExtResource("14_4alel"), ExtResource("16_wwpna"), ExtResource("15_b0was")]
+"values": [ExtResource("17_jitg4"), ExtResource("16_sybab"), ExtResource("15_cyl27")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -1295,7 +1296,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.180392, 1, 1, 1), Color(0.894118, 0.498039, 0.105882, 1)]
+"values": [Color(0.180392, 1, 1, 1), Color(0.419608, 0.780392, 0.580392, 1)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1307,7 +1308,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.180392, 1, 1, 1), Color(0.894118, 0.498039, 0.105882, 1)]
+"values": [Color(0.180392, 1, 1, 1), Color(0.419608, 0.780392, 0.580392, 1)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -1319,7 +1320,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.180392, 1, 1, 1), Color(0.894118, 0.498039, 0.105882, 1)]
+"values": [Color(0.180392, 1, 1, 1), Color(0.419608, 0.780392, 0.580392, 1)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -1331,7 +1332,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.180392, 1, 1, 1), Color(0.894118, 0.498039, 0.105882, 1)]
+"values": [Color(0.180392, 1, 1, 1), Color(0.419608, 0.780392, 0.580392, 1)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -1343,7 +1344,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0.1, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.180392, 1, 1, 1), Color(0.894118, 0.498039, 0.105882, 1)]
+"values": [Color(0.180392, 1, 1, 1), Color(0.419608, 0.780392, 0.580392, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_e0wfs"]
