@@ -79,6 +79,13 @@ var stressbar_lerp_speed: float = 5.0
 var silent_answers: int = 3
 var is_player_dead: bool = false
 
+# HESOYAM
+var is_code_allowed: bool = false
+var code_sequence = "HESOYAM"
+var input_buffer = ""
+var code_timer = 0.0
+var code_max_time = 10.0
+var timer_active = false
 
 
 func _ready() -> void:
@@ -107,12 +114,9 @@ func _process(delta: float) -> void:
 		var remaining_time = timer.time_left
 		var total_time = timer.wait_time
 		update_timebar(total_time, remaining_time)
-		# Плавное изменение FOV камеры
 		camera.fov = lerp(camera.fov, target_fov, lerp_speed * delta)
-		# Плавное изменение modulate у sight
 		sight.modulate = sight.modulate.lerp(target_sight_color, lerp_speed * delta)
 	else:
-		# Возврат к исходным значениям
 		camera.fov = lerp(camera.fov, original_fov, lerp_speed * delta * 15)
 		sight.modulate = sight.modulate.lerp(original_sight_color, lerp_speed * delta * 15)
 	
@@ -122,6 +126,46 @@ func _process(delta: float) -> void:
 	displayed_stress = lerp(displayed_stress, current_stress, stressbar_lerp_speed * delta)
 	update_pointer_position()
 	update_bar_color()
+	
+	# Cheatcode
+	if timer_active:
+		code_timer -= delta
+		if code_timer <= 0:
+			_reset_input()
+	
+	if current_stress < 100:
+		is_code_allowed = true
+
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and not event.echo:
+		var char_pressed = OS.get_keycode_string(event.keycode).to_upper()
+
+		if not timer_active:
+			_start_timer()
+
+		if char_pressed == code_sequence[input_buffer.length()]:
+			input_buffer += char_pressed
+
+			if input_buffer == code_sequence:
+				_on_code_activated()
+		else:
+			_reset_input()
+
+func _start_timer() -> void:
+	timer_active = true
+	code_timer = code_max_time
+
+func _reset_input() -> void:
+	input_buffer = ""
+	code_timer = 0.0
+	timer_active = false
+
+func _on_code_activated() -> void:
+	if is_code_allowed:
+		Dialogic.Save.save("state")
+		Dialogic.Jump.jump_to_label("hesoyam")
+	_reset_input()
 
 
 
@@ -251,6 +295,12 @@ func _on_dialogic_signal(argument: Dictionary):
 	if argument.has("end_first_manager"):
 		if argument["end_first_manager"]:
 			win_animation_start()
+	
+	# HESOYAM
+	if argument.has("hesoyam"):
+		if argument["hesoyam"]:
+			current_stress = 100
+			Dialogic.Save.load("state")
 
 
 # RANDOM QUESTION
@@ -316,6 +366,7 @@ func event_whispers_end():
 
 # TIMER AND TIMEBAR
 func start_timer(duration: float) -> void:
+	is_code_allowed = false
 	timebar_bar.size.x = original_timebar_width
 	timebar_bar.position.x = original_timebar_position.x
 	stress_pointer.play("beat")
@@ -336,6 +387,7 @@ func _on_timer_timeout() -> void:
 
 func stop_timer() -> void:
 	if !timer.is_stopped():
+		is_code_allowed = true
 		AudioManager.set_original_music_volume(5.0)
 		AudioManager.set_original_ambient_volume(5.0)
 		AudioManager.stop_clock()
@@ -402,6 +454,8 @@ func death():
 	if is_player_dead:
 		return
 	
+	is_code_allowed = false
+	
 	Dialogic.Jump.jump_to_label("death")
 	Dialogic.Inputs.auto_advance.enabled_until_next_event = true
 	AudioManager.start_clock("res://assets/sounds/Heartbeat.mp3")
@@ -409,6 +463,7 @@ func death():
 	scene_animator.play("death_animation")
 
 func win_animation_start():
+	is_code_allowed = false
 	is_player_dead = true
 	scene_animator.play("win_animation")
 

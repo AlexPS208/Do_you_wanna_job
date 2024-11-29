@@ -40,6 +40,8 @@ func _on_dialogic_signal(params: Dictionary):
 				head_animation_sprites_names = ["quiet_open_surprised", "speak_open_surprised"]
 			elif head_animation_name == "smile_serious":
 				head_animation_sprites_names = ["smile_open_serious", "speak_open_serious"]
+			elif head_animation_name == "smile_serious":
+				head_animation_sprites_names = ["smile_open_unserious", "speak_open_unserious"]
 			elif head_animation_name == "smirk_unserious":
 				head_animation_sprites_names = ["smirk_open_unserious", "speak_open_unserious"]
 			elif head_animation_name == "smirk_serious":
