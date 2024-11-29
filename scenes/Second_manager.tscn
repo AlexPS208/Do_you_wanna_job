@@ -216,7 +216,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("../../Under_UI_effects/Sight_texture:modulate")
+tracks/6/path = NodePath("../Sight_texture:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -448,7 +448,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../../Under_UI_effects/Sight_texture:modulate")
+tracks/2/path = NodePath("../Sight_texture:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -1843,7 +1843,7 @@ random_pitch = 1.05
 streams_count = 1
 stream_0/stream = ExtResource("80_tkkwk")
 
-[node name="FirstManager" type="Node3D"]
+[node name="SecondManager" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1msqq")

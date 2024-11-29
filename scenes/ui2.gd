@@ -474,6 +474,8 @@ func death():
 	scene_animator.play("death_animation")
 
 func win_animation_start():
+	AudioManager.set_music_volume(-50, 1)
+	AudioManager.set_ambient_volume(-50, 1)
 	is_code_allowed = false
 	is_player_dead = true
 	scene_animator.play("win_animation")
