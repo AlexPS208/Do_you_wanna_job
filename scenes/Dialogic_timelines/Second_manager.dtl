@@ -224,6 +224,179 @@ Player: Yes, but sometimes letting curiosity roam can lead to unexpected insight
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
 Second_manager: True... true...
 [signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_05
+label main_05
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: Trust is both a gift and a weapon.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: Here, it is earned — or taken away — by the smallest of actions.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: [color=#2effff][b]How do you determine if someone can be trusted?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]By observing their actions[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]By observing their actions over time[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Time reveals much, but patience is a luxury we don’t always have
+- [color=#8e59f5]Depends on the situation[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]It depends on the situation. Trust is rarely black and white.[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: A careful answer
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	Second_manager: Trust often thrives in ambiguity, not absolutes
+- [color=#f7d038]I follow the whispers[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I’d ask them directly. If they lie, at least I’ll know where we stand[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Bold, but blunt.
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+	Second_manager: Trust earned through laughter is fragile at best.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: No answer? 
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
+	Second_manager: A lack of trust in your own words, perhaps?
+[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+Second_manager: Trust is the glue of this place, but also its sharpest blade. 
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
+Second_manager: How do you decide when it’s safe to wield?
+Player: I think you have to weigh the risks, but there’s always a leap of faith involved.
+[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+Second_manager: True, but misstep, and the blade turns inward.
+[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
+Second_manager: Trust carefully, or not at all.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_06
+label main_06
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: In the chaos of shared work, responsibilities blur.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: How you act then reveals much.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]How do you handle responsibilities that aren’t clearly yours?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Take them on[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I step up and take them on if needed[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Admirable, but beware of biting off more than you can chew
+- [color=#8e59f5]I try to assess the role[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I try to assess if it’s truly my role before committing[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: Measured
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	Second_manager: Responsibility misplaced can weigh heavier than it seems.
+- [color=#f7d038]Avoid eye contact[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I avoid eye contact until someone else takes the lead[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: A coward’s jest, though I suppose humor eases the burden
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: A refusal to act when lines blur is a choice too — but not one that inspires trust
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":7,"part":"head"}"]
+Second_manager: Do you think stepping in without question shows initiative or recklessness?
+Player: It depends. Initiative is valuable, but so is understanding where you’re needed.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
+Second_manager: Indeed
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+Second_manager: Knowing when to act is often harder than the act itself
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_07
+label main_07
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: A plate too full tips over, yet an empty one goes unnoticed.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+Second_manager: The balance you strike matters more than you think
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]How do you balance competing priorities?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Focus on the most urgent task[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I focus on the most urgent task and work through the rest systematically[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Systematic, but priorities often shift too quickly for rigid methods
+- [color=#8e59f5]Evaluate each priority[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I evaluate each priority and adjust as new demands arise[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	Second_manager: Dynamic
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	Second_manager: Prioritization is a skill that demands constant reevaluation.
+- [color=#f7d038]Flip a coin[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I flip a coin and let fate decide — it hasn’t failed me yet[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Fate may amuse, but it rarely guarantees success.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Silence leaves priorities unspoken and chaos unchecked
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":8,"part":"head"}"]
+Second_manager: Priorities often conflict. Do you think it’s better to focus on what’s urgent or what’s important?
+Player: It depends. Sometimes the urgent takes precedence, but ignoring the important can cause bigger issues.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
+Second_manager: True
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+Second_manager: The challenge is knowing which will matter more in the end
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_08
+label main_08
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: Not every journey begins with a map. 
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+Second_manager: How you navigate uncertainty often determines where you end up.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
+Second_manager: [color=#2effff][b]How do you handle projects with unclear goals?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Create a plan[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I create a plan and stick to it, even if the goals are unclear[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	Second_manager: Decisive, but rigid.
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	Second_manager: A fixed plan without clear goals often leads to dead ends.
+- [color=#8e59f5]Focus on gathering more information[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I focus on gathering more information and adjust as I go[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
+	Second_manager: Adjusting to uncertainty shows understanding of shifting priorities
+- [color=#f7d038]Ask for a magic eight ball[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I ask for a magic eight ball — it’s never let me down[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":7,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	Second_manager: Amusing, but I hope your sense of humor doesn’t guide your decisions entirely.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	Second_manager: Silence in the face of uncertainty only deepens the void
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+Second_manager: Unclear goals are often hidden tests.
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
+Second_manager: Do you think it’s better to act first or wait for clarity?
+Player: Sometimes clarity comes from action, but rushing in can backfire.
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
+Second_manager: The trick is knowing when hesitation costs more than action.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 # WIN
 label End
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
