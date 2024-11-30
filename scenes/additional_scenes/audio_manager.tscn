@@ -1,7 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://bnfv3fkfv32vu"]
+[gd_scene load_steps=11 format=3 uid="uid://bnfv3fkfv32vu"]
 
 [ext_resource type="Script" path="res://scenes/additional_scenes/audio_manager.gd" id="1_45fwd"]
 [ext_resource type="AudioStream" uid="uid://cbimsgtq4k823" path="res://assets/sounds/Do you wanna job.wav" id="1_mvky7"]
+[ext_resource type="AudioStream" uid="uid://b0mi5r1padx3g" path="res://assets/sounds/timer.mp3" id="3_bkbac"]
+[ext_resource type="AudioStream" uid="uid://ql2rijw1a5i7" path="res://assets/sounds/punch1.mp3" id="3_gbb4k"]
+[ext_resource type="AudioStream" uid="uid://djabwrhrnf7g3" path="res://assets/sounds/punch2.mp3" id="4_eu5dy"]
+[ext_resource type="AudioStream" uid="uid://b8y2b16k3rgjk" path="res://assets/sounds/heal1.mp3" id="5_drb16"]
+[ext_resource type="AudioStream" uid="uid://coxyvd5b68gst" path="res://assets/sounds/heal2.mp3" id="6_nuhkc"]
+[ext_resource type="AudioStream" uid="uid://dx3b8hht562q" path="res://assets/sounds/heal3.mp3" id="7_2adca"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_04b8v"]
+random_pitch = 1.1
+streams_count = 2
+stream_0/stream = ExtResource("3_gbb4k")
+stream_1/stream = ExtResource("4_eu5dy")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_3mwpt"]
+random_pitch = 1.05
+streams_count = 3
+stream_0/stream = ExtResource("5_drb16")
+stream_1/stream = ExtResource("6_nuhkc")
+stream_2/stream = ExtResource("7_2adca")
 
 [node name="AudioManager" type="Node"]
 process_mode = 3
@@ -23,6 +42,24 @@ volume_db = -25.0
 
 [node name="Clock" type="AudioStreamPlayer3D" parent="."]
 volume_db = -15.0
+max_distance = 10.0
+
+[node name="Clock" type="AudioStreamPlayer3D" parent="Clock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -2)
+stream = ExtResource("3_bkbac")
+volume_db = -10.0
+
+[node name="Stress_hit" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -2)
+stream = SubResource("AudioStreamRandomizer_04b8v")
+volume_db = -15.0
+max_distance = 10.0
+
+[node name="Stress_heal" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -2)
+stream = SubResource("AudioStreamRandomizer_3mwpt")
+volume_db = -10.0
+max_distance = 10.0
 
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
 [connection signal="finished" from="Music/Music" to="." method="_on_music_finished"]

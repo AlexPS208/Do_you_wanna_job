@@ -4,6 +4,9 @@ extends Node
 @onready var music_double_player = $Music/Music
 @onready var ambient_player = $Ambient
 @onready var clock_player = $Clock
+@onready var clock_double_player = $Clock/Clock
+@onready var stress_hit = $Stress_hit
+@onready var stress_heal = $Stress_heal
 
 # Музыка
 var music_fade_duration: float = 10.0
@@ -121,6 +124,21 @@ func move_to_target(delta: float):
 
 	if abs(current_position.x - target_position) < 0.01:
 		current_target_index += 1
+
+
+# Stress damage and heal
+func hit() -> void:
+	stress_hit.play()
+
+func heal() -> void:
+	stress_heal.play()
+
+
+func start_timer() -> void:
+	clock_double_player.play()
+
+func stop_timer() -> void:
+	clock_double_player.stop()
 
 
 # События завершения

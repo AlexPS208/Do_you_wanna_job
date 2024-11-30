@@ -736,7 +736,7 @@ First_manager: [color=#2effff][b]Has that shadow always been in the painting?[/b
 	[signal arg_type="dict" arg="{"animation":"fear_surprised","end_sprite":"fear_open_surprised","loops":4,"part":"head"}"]
 	First_manager: Really? Are you sure? You didn’t sound sure.
 	[signal arg_type="dict" arg="{"animation":"fear_surprised","end_sprite":"fear_open_surprised","loops":4,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":5}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
 	First_manager: Why would you lie to me about something so odd?
 - [color=#8e59f5]Didn’t notice[/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
@@ -755,7 +755,7 @@ First_manager: [color=#2effff][b]Has that shadow always been in the painting?[/b
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	First_manager: Ha! Bold, aren’t you?
 	[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-	[signal arg_type="dict" arg="{"stress_change":5}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
 	First_manager: You’ve got jokes. Let’s hope you’re joking, at least
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]

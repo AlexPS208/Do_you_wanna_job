@@ -50,6 +50,7 @@ var target_fov: float = 60.0
 var original_sight_color: Color = Color(1, 1, 1, 0)  # ffffff00
 var target_sight_color: Color = Color(1, 1, 1, 1)    # ffffff
 var lerp_speed: float = 0.3
+var is_tic_tac_played: bool = false
 
 # Questions
 var questions_value = 11
@@ -116,6 +117,9 @@ func _process(delta: float) -> void:
 		update_timebar(total_time, remaining_time)
 		camera.fov = lerp(camera.fov, target_fov, lerp_speed * delta)
 		sight.modulate = sight.modulate.lerp(target_sight_color, lerp_speed * delta)
+		if timer.time_left <= 3 and !is_tic_tac_played:
+			AudioManager.start_timer()
+			is_tic_tac_played = true
 	else:
 		camera.fov = lerp(camera.fov, original_fov, lerp_speed * delta * 15)
 		sight.modulate = sight.modulate.lerp(original_sight_color, lerp_speed * delta * 15)
@@ -283,6 +287,9 @@ func _on_dialogic_signal(argument: Dictionary):
 		if stress_change_value > 0:
 			stress_pointer_cut.play("cut")
 			stressbar_animator.play("stress_hit")
+			AudioManager.hit()
+		else:
+			AudioManager.heal()
 		
 		current_stress -= stress_change_value
 		current_stress = clamp(current_stress, min_stress, max_stress)
@@ -380,6 +387,8 @@ func stop_timer() -> void:
 		AudioManager.set_original_music_volume(5.0)
 		AudioManager.set_original_ambient_volume(5.0)
 		AudioManager.stop_clock()
+		AudioManager.stop_timer()
+		is_tic_tac_played = true
 		stress_pointer.play("idle")
 		timer.stop()
 		timebar_bar.position.x = original_timebar_position.x
