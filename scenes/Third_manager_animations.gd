@@ -1,9 +1,10 @@
 extends Node3D
 
 @onready var head: AnimatedSprite3D = $Manager_head
-@onready var hands: AnimatedSprite3D = $Manager_hands
+@onready var hands: AnimatedSprite3D = $Manager_body
 @onready var voice: AudioStreamPlayer3D = $Manager_voice
 @onready var blink_timer: Timer = $Manager_blink_timer
+@onready var change_sound: AudioStreamPlayer3D = $Manager_neck
 
 # Signals params for head
 var head_animation_name: String = ""
@@ -35,22 +36,37 @@ func _on_dialogic_signal(params: Dictionary):
 			head_end_sprite_name = params["end_sprite"]
 			head_loops = params["loops"]
 
-			if head_animation_name == "speak_surprised_serious":
-				head_animation_sprites_names = ["quiet_surprised_serious", "speak_surprised_serious"]
-			elif head_animation_name == "speak_surprised_smile":
-				head_animation_sprites_names = ["quiet_surprised_smile", "speak_surprised_smile"]
-			elif head_animation_name == "speak_open_serious":
-				head_animation_sprites_names = ["quiet_open_serious", "speak_open_serious"]
-			elif head_animation_name == "speak_close_serious":
-				head_animation_sprites_names = ["quiet_close_serious", "speak_close_serious"]
-			elif head_animation_name == "speak_open_smile":
-				head_animation_sprites_names = ["quiet_open_smile", "speak_open_smile"]
-			elif head_animation_name == "speak_close_smile":
-				head_animation_sprites_names = ["quiet_close_smile", "speak_close_smile"]
-			elif head_animation_name == "speak_open_sadsmile":
-				head_animation_sprites_names = ["quiet_open_sadsmile", "speak_open_sadsmile"]
-			elif head_animation_name == "speak_open_sad":
-				head_animation_sprites_names = ["quiet_open_sad", "speak_open_sad"]
+
+			# VICTIM
+			if head_animation_name == "sad_speak_open":
+				head_animation_sprites_names = ["sad_open_quiet", "sad_open_speak"]
+			elif head_animation_name == "sad_speak_close":
+				head_animation_sprites_names = ["sad_close_quiet", "sad_close_speak"]
+			elif head_animation_name == "sad_cry_open":
+				head_animation_sprites_names = ["sad_open_speak", "sad_open_cry"]
+			elif head_animation_name == "sad_speak_surprised":
+				head_animation_sprites_names = ["sad_surprised_quiet", "sad_surprised_speak"]
+			elif head_animation_name == "sad_cry_surprised":
+				head_animation_sprites_names = ["sad_surprised_speak", "sad_surprised_cry"]
+			
+			# MANIAC
+			elif head_animation_name == "happy_speak_open":
+				head_animation_sprites_names = ["happy_open_quiet", "happy_open_speak"]
+			elif head_animation_name == "happy_speak_close":
+				head_animation_sprites_names = ["happy_close_quiet", "happy_close_speak"]
+			elif head_animation_name == "happy_smile_open":
+				head_animation_sprites_names = ["happy_open_speak", "happy_open_smile"]
+			elif head_animation_name == "happy_smile_close":
+				head_animation_sprites_names = ["happy_close_speak", "happy_close_smile"]
+			
+			# CREEP
+			elif head_animation_name == "creep_speak":
+				head_animation_sprites_names = ["creep_quiet", "creep_speak"]
+			elif head_animation_name == "creep_laught":
+				head_animation_sprites_names = ["creep_laught"]
+			elif head_animation_name == "change":
+				change_sound.play()
+				head_animation_sprites_names = ["change"]
 
 			start_head_animation()
 
@@ -75,7 +91,7 @@ func start_head_animation() -> void:
 		for sprite in head_animation_sprites_names:
 			head.play(sprite)
 			voice.play()
-			await get_tree().create_timer(0.15).timeout
+			await get_tree().create_timer(0.125).timeout
 
 	head.play(head_end_sprite_name)
 	is_animation_playing = false
@@ -94,15 +110,17 @@ func start_hand_animation(sprite: String, end_sprite: String):
 func _on_manager_blink_timer_timeout() -> void:
 	if head.animation.contains("open") and is_blink_allowed and not is_animation_playing:
 		var open_state = head.animation
-		if open_state == "quiet_open_serious" or open_state == "quiet_open_smile":
-			var close_state = open_state.replace("open", "close")
+		var close_state = open_state.replace("open", "close")
+		for i in range(randi_range(1, 2)):
 			head.play(close_state)
-	
+			await get_tree().create_timer(0.125).timeout
+			head.play(open_state)
+			await get_tree().create_timer(0.125).timeout
 	reset_blink_timer()
 
 
 
 func reset_blink_timer() -> void:
 	if not is_animation_playing:
-		blink_timer.wait_time = randf_range(3.0, 5.0)
+		blink_timer.wait_time = randf_range(2.0, 4.0)
 		blink_timer.start()

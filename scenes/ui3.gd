@@ -55,12 +55,26 @@ var is_tic_tac_played: bool = false
 var questions_value = 11
 var current_question_number = 0
 
-var main_labels = ["main_01", "main_02", "main_03", "main_04", "main_05", "main_06", "main_07", "main_08", "main_09", "main_10", "main_11", "main_12"]
-var event_labels = ["event_01", "event_02", "event_03", "event_04"]
+var sad_labels = ["sad_01", "sad_02", "sad_03", "sad_04", "sad_05", "sad_06", "sad_07", "sad_08", "sad_09", "sad_10"]
+var mania_labels = ["maniac_01", "maniac_02", "maniac_03", "maniac_04", "maniac_05"]
+var event_labels = ["event_01", "event_02", "event_03"]
 var used_labels = []
 
-var is_art_event: bool = false
-var is_whispers_event: bool = false
+var question_sequence = [
+	"sad", "sad", "maniac",
+	"sad", "sad", "sad",
+	"maniac", "maniac",
+	"event_01",
+	"sad", "sad",
+	"event_02",
+	"maniac",
+	"sad", "sad",
+	"maniac", "maniac",
+	"event_03",
+	"sad", "sad",
+	"maniac",
+	"sad"
+]
 
 
 # Stressbar
@@ -294,25 +308,30 @@ func _on_dialogic_signal(argument: Dictionary):
 
 # RANDOM QUESTION
 func random_jump():
-	if questions_value <= 0:
+	if questions_value <= 0 or current_question_number >= question_sequence.size():
 		Dialogic.Jump.jump_to_label("End")
 		return
-	
-	var current_block
+
+	var current_type = question_sequence[current_question_number]
 	current_question_number += 1
-	if current_question_number in [4, 8, 12]:
-		current_block = event_labels
-	else:
-		current_block = main_labels
-	
-	
+
+	if current_type == "sad":
+		jump_to_label_from(sad_labels)
+	elif current_type == "maniac":
+		jump_to_label_from(mania_labels)
+	elif current_type == "event_01":
+		Dialogic.Jump.jump_to_label("event_01")
+	elif current_type == "event_02":
+		Dialogic.Jump.jump_to_label("event_02")
+	elif current_type == "event_03":
+		Dialogic.Jump.jump_to_label("event_03")
+
+func jump_to_label_from(label_array):
 	var available_labels = []
-	
-	for label in current_block:
+	for label in label_array:
 		if not used_labels.has(label):
 			available_labels.append(label)
 
-	
 	if available_labels.size() > 0:
 		var random_label = available_labels[randi() % available_labels.size()]
 		Dialogic.Jump.jump_to_label(random_label)
