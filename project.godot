@@ -29,6 +29,9 @@ directories/dch_directory={
 "First_manager": "res://scenes/Dialogic_timelines/First_manager.dch",
 "Player": "res://scenes/Dialogic_timelines/Player.dch",
 "Second_manager": "res://scenes/Dialogic_timelines/Second_manager.dch",
+"Third_manager_happy": "res://scenes/Dialogic_timelines/Third_manager_happy.dch",
+"Third_manager_real": "res://scenes/Dialogic_timelines/Third_manager_real.dch",
+"Third_manager_sad": "res://scenes/Dialogic_timelines/Third_manager_sad.dch",
 "You": "res://scenes/Dialogic_timelines/You.dch"
 }
 directories/dtl_directory={
@@ -36,7 +39,8 @@ directories/dtl_directory={
 "First_manager": "res://scenes/Dialogic_timelines/First_manager.dtl",
 "Second_cutscene": "res://scenes/Dialogic_timelines/Second_cutscene.dtl",
 "Second_manager": "res://scenes/Dialogic_timelines/Second_manager.dtl",
-"Third_cutscene": "res://scenes/Dialogic_timelines/Third_cutscene.dtl"
+"Third_cutscene": "res://scenes/Dialogic_timelines/Third_cutscene.dtl",
+"Third_manager": "res://scenes/Dialogic_timelines/Third_manager.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.025

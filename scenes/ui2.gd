@@ -26,6 +26,7 @@ extends CanvasLayer
 
 @onready var whispers: AudioStreamPlayer3D = $"../Scene/Decor/Ventilation/Whispers"
 
+var third_manager_scene = preload("res://scenes/Third_manager.tscn")
 
 # Menu
 var is_menu_active: bool = false
@@ -524,3 +525,8 @@ func _on_cancel_pressed() -> void:
 func _on_restart_pressed() -> void:
 	AudioManager.stop_clock()
 	get_tree().reload_current_scene()
+
+
+func _on_lamp_animator_animation_finished(anim_name: StringName) -> void:
+	if anim_name == "win_animation":
+		get_tree().change_scene_to_packed(third_manager_scene)

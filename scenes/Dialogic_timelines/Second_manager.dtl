@@ -11,6 +11,7 @@ Second_manager: He spoke...
 Second_manager: ...
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
 Second_manager: ...highly of you.
+jump End
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 Second_manager: Said you’ve got potential, though perhaps still a bit unpolished.
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]

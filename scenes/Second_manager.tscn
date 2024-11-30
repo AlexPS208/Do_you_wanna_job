@@ -2580,13 +2580,13 @@ transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.275, -2.1)
 script = ExtResource("40_d67qj")
 
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0400844, 0.0334854)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0400844, -0.288063)
 sprite_frames = SubResource("SpriteFrames_ea45k")
 animation = &"quiet_open_smile"
 autoplay = "quiet_close_serious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.200001, -0.203426)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.200001, -0.585411)
 sprite_frames = SubResource("SpriteFrames_0vue5")
 animation = &"idle"
 autoplay = "idle"
@@ -2608,6 +2608,7 @@ pitch_scale = 0.75
 
 [node name="Manager_blink_timer" type="Timer" parent="Manager"]
 
+[connection signal="animation_finished" from="Under_UI_effects/Scene_transit_start/Lamp_animator" to="UI" method="_on_lamp_animator_animation_finished"]
 [connection signal="pressed" from="Under_UI_effects/Scene_transit_start/Restart" to="UI" method="_on_restart_pressed"]
 [connection signal="timeout" from="UI/Timebar/Timer" to="UI" method="_on_timer_timeout"]
 [connection signal="pressed" from="UI/Menu/MenuPanel/Resume" to="UI" method="_on_resume_pressed"]

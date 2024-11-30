@@ -1,0 +1,4 @@
+[style name="Default_style_with_typing_sound"]
+You: Oh shit...
+[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
+Third_manager_sad: Why are you swearing?

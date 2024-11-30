@@ -93,7 +93,7 @@ func _ready() -> void:
 	update_pointer_position()
 	
 	Dialogic.signal_event.connect(_on_dialogic_signal)
-	Dialogic.start("First_cutscene")
+	Dialogic.start("Third_cutscene")
 	
 	original_timebar_width = timebar_bar.size.x
 	original_timebar_position = timebar_bar.position
@@ -234,10 +234,10 @@ func _on_dialogic_signal(argument: Dictionary):
 	if argument.has("light_on"):
 		await get_tree().create_timer(1).timeout
 		scene_animator.play("Light_turn_on")
-		AudioManager.play_music_loop_with_fade("res://assets/sounds/BGMusic.mp3")
+		AudioManager.play_music_loop_with_fade("res://assets/sounds/Vintage_music.wav")
 		AudioManager.play_ambient("res://assets/sounds/office_ambient.wav")
 		await get_tree().create_timer(1).timeout
-		dialog_node = Dialogic.start("First_manager")
+		dialog_node = Dialogic.start("Third_manager")
 
 	
 	# Timebar
