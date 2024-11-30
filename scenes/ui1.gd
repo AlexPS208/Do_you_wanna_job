@@ -388,7 +388,7 @@ func stop_timer() -> void:
 		AudioManager.set_original_ambient_volume(5.0)
 		AudioManager.stop_clock()
 		AudioManager.stop_timer()
-		is_tic_tac_played = true
+		is_tic_tac_played = false
 		stress_pointer.play("idle")
 		timer.stop()
 		timebar_bar.position.x = original_timebar_position.x
