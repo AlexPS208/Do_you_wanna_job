@@ -286,6 +286,9 @@ func _on_dialogic_signal(argument: Dictionary):
 	if argument.has("event_end"):
 		if argument["event_end"]:
 			event_end()
+	if argument.has("more_questions"):
+		if argument["more_questions"]:
+			increase_questions_value()
 	
 	# Сигнал об окончании анимации после лейбла Change
 	if argument.has("animation_finished") and argument["animation_finished"]:
@@ -322,10 +325,13 @@ func random_jump():
 	var current_type = question_sequence[current_question_number]
 	current_question_number += 1
 
-	if current_type != previous_type and !current_type.begins_with("event"):
+	# Проверка на изменение типа вопроса и пропуск для события
+	if current_type != previous_type and !current_type.begins_with("event") and previous_type != "event":
+		# Сохраняем текущий тип и делаем переход на Change
 		previous_type = current_type
 		Dialogic.Jump.jump_to_label("Change")
 	else:
+		# Если тип совпадает или это событие, сохраняем текущий тип и прыгаем на лейбл
 		previous_type = current_type
 		jump_to_label(current_type)
 
@@ -364,6 +370,12 @@ func decrease_questions_value() -> void:
 	question_counter.text = str(questions_value)
 	timebar_animator.play("Questions_counter_show")
 
+func increase_questions_value() -> void:
+	timebar_animator.play("Questions_counter_hide")
+	await get_tree().create_timer(0.2).timeout
+	questions_value += 7
+	question_counter.text = str(questions_value)
+	timebar_animator.play("Questions_counter_show")
 
 # EVENTS
 func event_start() -> void:

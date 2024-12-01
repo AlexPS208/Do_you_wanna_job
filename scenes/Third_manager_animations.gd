@@ -53,11 +53,11 @@ func _on_dialogic_signal(params: Dictionary):
 			elif head_animation_name == "happy_speak_open":
 				head_animation_sprites_names = ["happy_open_quiet", "happy_open_speak"]
 			elif head_animation_name == "happy_speak_close":
-				head_animation_sprites_names = ["happy_close_quiet", "happy_close_speak"]
+				head_animation_sprites_names = ["happy_open_quiet", "happy_open_speak"]
 			elif head_animation_name == "happy_smile_open":
 				head_animation_sprites_names = ["happy_open_speak", "happy_open_smile"]
 			elif head_animation_name == "happy_smile_close":
-				head_animation_sprites_names = ["happy_close_speak", "happy_close_smile"]
+				head_animation_sprites_names = ["happy_open_speak", "happy_open_smile"]
 			
 			# CREEP
 			elif head_animation_name == "creep_speak":

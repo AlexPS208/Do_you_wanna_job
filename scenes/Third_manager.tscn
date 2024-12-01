@@ -2758,7 +2758,7 @@ script = ExtResource("45_nybyt")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.169004, -0.165455)
 sprite_frames = SubResource("SpriteFrames_n2c8d")
-animation = &"creep_laught"
+animation = &"creep_smile"
 autoplay = "sad_open_quiet"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]

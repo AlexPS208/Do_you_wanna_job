@@ -1,6 +1,5 @@
 [style name="Default_style_with_typing_sound"]
 You: BLOODY COW!
-jump sad_02
 [signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":4,"part":"head"}"]
 Third_manager_sad: Why are you swearing?
 [signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":4,"part":"head"}"]
@@ -22,6 +21,7 @@ Third_manager_sad: They stumble, break, or simply…
 Third_manager_sad: [b]fade away[/b].
 Player: I’m just here to finish the interview.
 [signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":5,"part":"head"}"]
+[signal arg_type="dict" arg="{"is_answered":true,"show_silentbar":true,"show_stressbar":true,"stop_timer":true}"]
 Third_manager_sad: Finish… yes, I suppose it’s about endings, isn’t it?
 [signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
 Third_manager_sad: But endings come in many forms. Some are quiet. Others… not so much.
@@ -218,11 +218,11 @@ Third_manager_sad: [color=#2effff][b]How do you decide where to place your trust
 	[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":7,"part":"head"}"]
 	Third_manager_sad: Silence is safer, I suppose.
 	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
-	Third_manager_sad: But trust doesn’t thrive in silence—it withers.
+	Third_manager_sad: But trust doesn’t thrive in silence — it withers.
 [signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
 Third_manager_sad: Trust is fragile, like a thread stretched too thin.
 [signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":6,"part":"head"}"]
-Third_manager_sad: And when it snaps, it doesn’t just break—it cuts. Be careful where you place it, or you might bleed for it.
+Third_manager_sad: And when it snaps, it doesn’t just break — it cuts. Be careful where you place it, or you might bleed for it.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # sad_05
 label sad_05
@@ -252,9 +252,9 @@ Third_manager_sad: [color=#2effff][b]What’s the best approach when your option
 - [color=gray] . . . [/color]
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":12,"part":"head"}"]
 	Third_manager_sad: Silence? Maybe that’s your only option left… when there’s nothing to say, there’s nothing to choose. Or maybe the choices have already been made for you.
-[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":6,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":19,"part":"head"}"]
 Third_manager_sad: Choices are an illusion, most of the time. You think you’re clever, making decisions, carving paths… but in the end, the paths were already there, waiting for you to stumble down them. All you can do is hope you don’t fall too hard when you reach the end.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # sad_06
@@ -268,7 +268,7 @@ Third_manager_sad: [color=#2effff][b]How do you approach situations where every 
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	Player: [color=#6BBF59]I take the boldest choice and face it head-on[/color]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":10,"part":"head"}"]
 	Third_manager_sad: Boldness is admirable… until it leads you straight into the trap. Sometimes the most dangerous path is the one you don’t see.
 - [color=#8e59f5]Weigh risks and act[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
@@ -287,7 +287,7 @@ Third_manager_sad: [color=#2effff][b]How do you approach situations where every 
 	[signal arg_type="dict" arg="{"stress_change":25}"]
 	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":10,"part":"head"}"]
 	Third_manager_sad: Nothing? Maybe that’s wise. Silence keeps you from choosing — and choosing is when the danger starts.
-[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":7,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":15,"part":"head"}"]
 Third_manager_sad: Every choice carries weight, even when you don’t realize it. Some crush you slowly, others all at once. The trick isn’t avoiding danger—it’s deciding which weight you can carry without breaking.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # sad_07
@@ -320,7 +320,7 @@ Third_manager_sad: [color=#2effff][b]What’s your first reaction when you feel 
 	[signal arg_type="dict" arg="{"stress_change":25}"]
 	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":6,"part":"head"}"]
 	Third_manager_sad: You’d rather pretend it isn’t there? Ignoring it won’t stop it. If anything, it only watches closer.
-[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":7,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":13,"part":"head"}"]
 Third_manager_sad: Being watched changes you. It forces you to act, to move, to respond. The real question is… are you acting for yourself, or for whatever’s watching?
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # sad_08
@@ -352,8 +352,8 @@ Third_manager_sad: [color=#2effff][b]How do you handle silence when it becomes u
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
 	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":9,"part":"head"}"]
-	Third_manager_sad: You let the silence win? That’s the thing about it—it never fights you. It just… swallows you whole.
-[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":6,"part":"head"}"]
+	Third_manager_sad: You let the silence win? That’s the thing about it — it never fights you. It just… swallows you whole.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":13,"part":"head"}"]
 Third_manager_sad: Silence isn’t empty. It’s heavy, full of everything you’re trying not to think about. And when it finally breaks… it’s never as clean as you’d hope.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # sad_09
@@ -452,8 +452,8 @@ Third_manager_sad: [color=#2effff][b]What’s your first instinct when faced wit
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
 	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":7,"part":"head"}"]
-	Third_manager_sad: Silence before a door doesn’t stop it from opening. It only gives it more time to decide who—or what—it lets through.
-[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Silence before a door doesn’t stop it from opening. It only gives it more time to decide who — or what — it lets through.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":16,"part":"head"}"]
 Third_manager_sad: Doors are thresholds, but not all thresholds are meant to be crossed. Sometimes, what’s on the other side isn’t waiting for you—it’s waiting because of you. And once you open it, there’s no going back.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 
@@ -490,33 +490,256 @@ Third_manager_sad: [color=#2effff][b]How do you feel when you realize that somet
 [signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":14,"part":"head"}"]
 Third_manager_sad: When you’re followed, you’re not meant to feel safe. It’s a reminder that something is always there, watching, waiting. You can’t outrun it. The only question is\: can you live with it?
 [signal arg_type="dict" arg="{"random_question":"main"}"]
+# maniac_01
+label maniac_01
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+Third_manager_happy: Traps? Oh, they’re not traps! They’re invitations to fun, chaotic surprises!
 
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":5,"part":"head"}"]
+Third_manager_happy: [color=#2effff][b]What’s your strategy for handling unexpected surprises?[/b][/color]
+
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+
+- [color=#6BBF59]Assess quickly and act smartly[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Assess quickly and act smartly[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":6,"part":"head"}"]
+	Third_manager_happy: Assess? Pfft, where’s the fun in that? Too much thinking ruins the surprise!
+
+- [color=#8e59f5]Avoid rashness until more info[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]Avoid rashness until more info[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":6,"part":"head"}"]
+	Third_manager_happy: Avoiding rashness? Boring! Sometimes, rashness is exactly what you need!
+
+- [color=#f7d038]Jump in headfirst and hope[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Jump in headfirst and hope[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
+	Third_manager_happy: Headfirst? Yes! That’s the spirit! No time for boring plans — just dive in!
+
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
+	Third_manager_happy: Oh, don’t tell me you’re frozen! Come on, surprises are fun! Well, for me, at least.
+[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_smile","loops":15,"part":"head"}"]
+Third_manager_happy: Life’s full of surprises! Big ones, small ones, the kind that knock you off your feet! The trick is to enjoy the fall—who cares if you land flat on your face? At least it’s exciting!
+
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# maniac_02
+label maniac_02
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":4,"part":"head"}"]
+Third_manager_happy: Tick-tock, tick-tock!
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":5,"part":"head"}"]
+Third_manager_happy: Isn’t it beautiful? It’s like music for the restless!
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":5,"part":"head"}"]
+Third_manager_happy: [color=#2effff][b]What do you do when time feels chaotic?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Bring order to schedule[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Bring order to your schedule to regain control[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":8,"part":"head"}"]
+	Third_manager_happy: Bring order? Ugh, how dull! Chaos doesn’t care about your order — it thrives on the mess!
+- [color=#8e59f5]Try to adapt[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]Try to adapt to the rhythm, however chaotic[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":3,"part":"head"}"]
+	Third_manager_happy: Adapt? Smart!
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":6,"part":"head"}"]
+	Third_manager_happy: Time’s rhythm is wild — dancing with it is much more fun!
+- [color=#f7d038]Laugh at the clock[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Laugh at the clock and see if it breaks[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":6,"part":"head"}"]
+	Third_manager_happy: Laugh at it? Oh, a comedian! But clocks don’t break so easily!
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_smile","loops":9,"part":"head"}"]
+	Third_manager_happy: Speechless? Oh, come on, the clock’s still ticking! You’ve got to play along, or time will just run you over!
+[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_smile","loops":15,"part":"head"}"]
+Third_manager_happy: Time’s a dance partner, don’t you think? Sometimes it leads, sometimes it trips you up. But oh, when you’re in sync — it’s magic. Or maybe a mess. Either way, it’s worth the spin!
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# maniac_03
+label maniac_03
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":4,"part":"head"}"]
+Third_manager_happy: Shadows? Oh, I love shadows!
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":5,"part":"head"}"]
+Third_manager_happy: They’re like playful dancers without partners!
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":5,"part":"head"}"]
+Third_manager_happy: [color=#2effff][b]What’s your first instinct when confronted by something strange?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Analyze it carefully[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Analyze it carefully to understand it[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":7,"part":"head"}"]
+	Third_manager_happy: Analyze it? Ugh, where’s the fun in that? Overthinking kills the thrill!
+- [color=#8e59f5]Avoid it[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]Avoid it until you’re sure it’s safe[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":6,"part":"head"}"]
+	Third_manager_happy: Avoid it? Oh, how boring! Strange things want your attention!
+- [color=#f7d038]Introduce yourself[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Introduce yourself and hope it doesn’t eat you[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
+	Third_manager_happy: Introduce yourself? Yes!
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
+	Third_manager_happy: That’s the energy we need! Who knows — it might even say hello back!
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_quiet","loops":4,"part":"head"}"]
+	Third_manager_happy: Oh, silence? Really? Boring! 
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":13,"part":"head"}"]
+Third_manager_happy: Strange things are the best things! They shake you up, make you think, make you feel. Who wants a life without surprises? Not me, that’s for sure!
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 
 # event_01
 label event_01
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":3,"part":"head"}"]
+Third_manager_happy: You know what?
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
+Third_manager_happy: We are sitting here together too well!
+[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
+Third_manager_happy: I'm ready to say more — I even like you
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":6,"part":"head"}"]
+Third_manager_happy: Let's stay a little longer, I don't want to say goodbye to you.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
+Third_manager_happy: Maybe... [color=#2effff][b]3 more questions?[/b][/color]
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
+Third_manager_happy: NO-NO! [color=#2effff][b]7 more questions![/b][/color]
+[signal arg_type="dict" arg="{"more_questions":true}"]
+[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
+Third_manager_happy: Why 7? I don't even know
+[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
+Third_manager_happy: But it's sounds like a great idea!
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_02
+label event_02
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
 [wait time="1.0"]
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":5,"part":"head"}"]
+Third_manager_real: You think you’re safe here, don’t you?
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":20,"part":"head"}"]
+Third_manager_real: B̷͘ưt͘ ͝r̴e̸m̀e͠m̨b̡e͡r̷, ̵t̛h̛e͟ d͡a̷n͠g̨e̡r̀ d̸ơe͡sn’̷t͢ c͟o͟m͜e͢ f̢r͠o͞m̢ t͝h͘e͠ o̸u͢ts͜i̶d͡e̛—įt’s̡ r͜i̛ght͞ i̷n f̴r͡o͘n͝t o͘f͡ y̷o͠u̸, ẁ͘e͜ąr̷i̡n͘g̡ t̵h͜e͟ s̡a̸m͜e̡ f͜a͡c͝e͢ a͠s t͡h͝e͡ o͟n͠e y̷o͠u t̶r͠u͝s͠t.
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":9,"part":"head"}"]
+Third_manager_real: [color=#2effff][b]What will you do when you realize I͠ ͠a̸m͝ t̶h͠ę d͠a͝n̢g͠e̴r̷?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":6}"]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]I’ll get out![/color]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]I’ll get out![/color]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]I’ll get out![/color]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]I’ll get out![/color]
+[signal arg_type="dict" arg="{"stress_change":25}"]
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":2,"part":"head"}"]
+Third_manager_happy: Run?
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":2,"part":"head"}"]
+Third_manager_happy: Ha!
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":14,"part":"head"}"]
+Third_manager_happy: T͝h͘e͘r͘e’s̢ n͠o͘ r͝ưn͝i̷n̛g͢ f̛r͠o͡m m͠e, f̡r͠o͠m͡ u̡s. Y̡ǫu’r͡e a͞l͡r͢e͘àd͡y i͠n t͢h͝e t̛r͠a͢p. Y̡o͠u a͡l͠w͠a͡ys w͢e͡r̢e.
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_03
+label event_03
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":3,"part":"head"}"]
+Third_manager_real: The door is wide open.
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":7,"part":"head"}"]
+Third_manager_real: But you still hesitate, don’t you? You know what lies behind it, yet you remain.
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":9,"part":"head"}"]
+Third_manager_real: [color=#2effff][b]Why do you stay when you know there's no going back?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":6}"]
+- [color=#6BBF59]Because I’m not afraid[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: . . .
+- [color=#8e59f5]I’m not sure[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: . . .
+- [color=#f7d038]Waiting for the grand reveal[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: . . .
+- [color=gray]. . .[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: . . .
+[signal arg_type="dict" arg="{"stress_change":25}"]
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":2,"part":"head"}"]
+Third_manager_happy: No answer?
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":4,"part":"head"}"]
+Third_manager_happy: You think silence will save you?
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":3,"part":"head"}"]
+Third_manager_happy: Or it's just fear?
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":6,"part":"head"}"]
-Third_manager_real: A̸͟͝t̀͢͢ l̷͜͜a̢͡ś̛͘t, ̶͜͞w͜͡ę͜͞ ḿ͡͞e̷̵é̀͠t͡.̕
-[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":8,"part":"head"}"]
-Third_manager_real: Y̷̢ǫ̕ų̷͝ c̢̕͡a̵̛͠m͜͢͞è͢ h̶̀̕e̸r͝͡e̵͞ ò͜n̵͟͠ y̶̨o͢͟u̷̷r̛̀ o͢͠w̢͠͠n͞.̷
-[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":10,"part":"head"}"]
-Third_manager_real: D̷̢o͘͜ ̕͘͟y͘͢͜ò̶̡u̢͝ t́̕h̵̸͟i̷̡ńk̷͜ ý͘ó͠u̴͢'͢r̶̡è̷́ s͡p̴̕e͘͜c̀̀͡i͘͢͢a͞͡l̸͠?͢
+Third_manager_happy: A͠l͢r͠i̸g͠h͠t, ͠I̴'͢l͝l b̢e b̡a͢ck l̡a͠t̸e͡r
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_04
+label event_04
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":5,"part":"head"}"]
+Third_manager_real: You think you’re in control, but control is an illusion.
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":14,"part":"head"}"]
+Third_manager_real: T͟h͜i͝s p͠l͟a͜c͠e i͢s͡ a͟l͡i̡v̴e — a͠l͞i̡v͢e w͡i̷t̢h e̢v͠e͝r͘y͡t̷h̛i̢n͟g t͡h͡a͡t’s a͡l͢r͡e͟a͡dy w͘a͠i͘t̡i͡n͠g t̶o s̛w͡a͟l͡l͡o͡w y͝o͠u.
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":9,"part":"head"}"]
+Third_manager_real: [color=#2effff][b]How will you react when you realize this company [i]wants[/i] to consume you?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":6}"]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]. . .[/color]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]. . .[/color]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]. . .[/color]
+- [color=#b3071b]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#b3071b]. . .[/color]
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":2,"part":"head"}"]
+Third_manager_happy: What?
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":3,"part":"head"}"]
+Third_manager_happy: Can't breathe?
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":3,"part":"head"}"]
+Third_manager_happy: No one leaves.
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":16,"part":"head"}"]
+Third_manager_happy: N͠o͜ o͡n͜e l͢e͡a͡v̢e͟s. Y̢o͞u’ll b̛e c͝o͢n͡s͟u̡m̛e͡d w͠h̀e͠t͝h͡e̕r y͝o͠u k̡n͞o͠w i̡t o͝r n̡o͘t. T͟h͝e̷ o̡n͡l͢y q̢u͝e͝s͝t̴i̛o̴n i͢s\: h͟o͡w l͠o͢n͠g ưn͠t͟i͞l y͡o͝u r͡e͡a͡l͟i͠z̢e i͡t?
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
+[wait time="1.0"]
+jump End
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 # Change animation
 label Change
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [wait time="1.0"]
 [signal arg_type="dict" arg="{"animation_finished":true}"]
-# Change animation
-label Change_to_white
-[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
-[signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
-[wait time="1.0"]
-[signal arg_type="dict" arg="{"animation_finished":true}"]
-# Change animation
-label Change_from_white
-[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
-[signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
-[wait time="1.0"]
-[signal arg_type="dict" arg="{"animation_finished":true}"]
+label End
