@@ -1,14 +1,12 @@
-extends Button
+extends Node
 
 var menu = preload("res://scenes/start_cutscene.tscn")
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	AudioManager.play_music_loop_with_fade("res://assets/sounds/Do you wanna job.wav")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
