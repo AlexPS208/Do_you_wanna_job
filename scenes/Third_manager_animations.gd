@@ -64,6 +64,8 @@ func _on_dialogic_signal(params: Dictionary):
 				head_animation_sprites_names = ["creep_quiet", "creep_speak"]
 			elif head_animation_name == "creep_laught":
 				head_animation_sprites_names = ["creep_laught"]
+			
+			# CHANGE
 			elif head_animation_name == "change":
 				change_sound.play()
 				head_animation_sprites_names = ["change"]

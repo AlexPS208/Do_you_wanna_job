@@ -75,6 +75,7 @@ var question_sequence = [
 	"maniac",
 	"sad"
 ]
+var previous_type = ""
 
 
 # Stressbar
@@ -286,6 +287,12 @@ func _on_dialogic_signal(argument: Dictionary):
 		if argument["event_end"]:
 			event_end()
 	
+	# Сигнал об окончании анимации после лейбла Change
+	if argument.has("animation_finished") and argument["animation_finished"]:
+		if current_question_number > 0:
+			var current_type = question_sequence[current_question_number - 1]
+			jump_to_label(current_type)
+	
 	# Stressbar
 	if argument.has("stress_change"):
 		var stress_change_value: float = argument["stress_change"]
@@ -315,16 +322,13 @@ func random_jump():
 	var current_type = question_sequence[current_question_number]
 	current_question_number += 1
 
-	if current_type == "sad":
-		jump_to_label_from(sad_labels)
-	elif current_type == "maniac":
-		jump_to_label_from(mania_labels)
-	elif current_type == "event_01":
-		Dialogic.Jump.jump_to_label("event_01")
-	elif current_type == "event_02":
-		Dialogic.Jump.jump_to_label("event_02")
-	elif current_type == "event_03":
-		Dialogic.Jump.jump_to_label("event_03")
+	if current_type != previous_type and !current_type.begins_with("event"):
+		previous_type = current_type
+		Dialogic.Jump.jump_to_label("Change")
+	else:
+		previous_type = current_type
+		jump_to_label(current_type)
+
 
 func jump_to_label_from(label_array):
 	var available_labels = []
@@ -338,6 +342,19 @@ func jump_to_label_from(label_array):
 		used_labels.append(random_label)
 	else:
 		Dialogic.Jump.jump_to_label("End")
+
+
+func jump_to_label(current_type: String):
+	if current_type == "sad":
+		jump_to_label_from(sad_labels)
+	elif current_type == "maniac":
+		jump_to_label_from(mania_labels)
+	elif current_type == "event_01":
+		Dialogic.Jump.jump_to_label("event_01")
+	elif current_type == "event_02":
+		Dialogic.Jump.jump_to_label("event_02")
+	elif current_type == "event_03":
+		Dialogic.Jump.jump_to_label("event_03")
 
 
 func decrease_questions_value() -> void:

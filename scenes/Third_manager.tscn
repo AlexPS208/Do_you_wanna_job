@@ -2766,8 +2766,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.324772)
 sprite_frames = SubResource("SpriteFrames_wrjvb")
 animation = &"change_to_blue"
 autoplay = "idle"
-frame = 6
-frame_progress = 1.0
 
 [node name="Manager_hands" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175977, 0.754335)

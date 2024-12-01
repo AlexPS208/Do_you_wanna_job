@@ -503,3 +503,20 @@ Third_manager_real: A̸͟͝t̀͢͢ l̷͜͜a̢͡ś̛͘t, ̶͜͞w͜͡ę͜͞ m͡�
 Third_manager_real: Y̷̢ǫ̕ų̷͝ c̢̕͡a̵̛͠m͜͢͞è͢ h̶̀̕e̸r͝͡e̵͞ ò͜n̵͟͠ y̶̨o͢͟u̷̷r̛̀ o͢͠w̢͠͠n͞.̷
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":10,"part":"head"}"]
 Third_manager_real: D̷̢o͘͜ ̕͘͟y͘͢͜ò̶̡u̢͝ t́̕h̵̸͟i̷̡ńk̷͜ ý͘ó͠u̴͢'͢r̶̡è̷́ s͡p̴̕e͘͜c̀̀͡i͘͢͢a͞͡l̸͠?͢
+# Change animation
+label Change
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"animation_finished":true}"]
+# Change animation
+label Change_to_white
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"animation_finished":true}"]
+# Change animation
+label Change_from_white
+[signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
+[wait time="1.0"]
+[signal arg_type="dict" arg="{"animation_finished":true}"]
