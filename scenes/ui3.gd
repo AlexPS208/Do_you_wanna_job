@@ -57,7 +57,7 @@ var current_question_number = 0
 
 var sad_labels = ["sad_01", "sad_02", "sad_03", "sad_04", "sad_05", "sad_06", "sad_07", "sad_08", "sad_09", "sad_10", "sad_11", "sad_12"]
 var mania_labels = ["maniac_01", "maniac_02", "maniac_03", "maniac_04", "maniac_05", "maniac_06", "maniac_07"]
-var event_labels = ["event_01", "event_02", "event_03"]
+var event_labels = ["event_01", "event_02", "event_03", "event_03"]
 var used_labels = []
 
 var question_sequence = [
@@ -73,7 +73,7 @@ var question_sequence = [
 	"event_03",
 	"sad", "sad",
 	"maniac",
-	"sad"
+	"sad", "event_04"
 ]
 var previous_type = ""
 
@@ -326,7 +326,7 @@ func random_jump():
 	current_question_number += 1
 
 	# Проверка на изменение типа вопроса и пропуск для события
-	if current_type != previous_type and !current_type.begins_with("event") and previous_type != "event":
+	if current_type != previous_type and !current_type.begins_with("event") and previous_type != "event" and previous_type != "":
 		# Сохраняем текущий тип и делаем переход на Change
 		previous_type = current_type
 		Dialogic.Jump.jump_to_label("Change")
@@ -361,6 +361,8 @@ func jump_to_label(current_type: String):
 		Dialogic.Jump.jump_to_label("event_02")
 	elif current_type == "event_03":
 		Dialogic.Jump.jump_to_label("event_03")
+	elif current_type == "event_04":
+		Dialogic.Jump.jump_to_label("event_04")
 
 
 func decrease_questions_value() -> void:
@@ -373,7 +375,7 @@ func decrease_questions_value() -> void:
 func increase_questions_value() -> void:
 	timebar_animator.play("Questions_counter_hide")
 	await get_tree().create_timer(0.2).timeout
-	questions_value += 7
+	questions_value += 9
 	question_counter.text = str(questions_value)
 	timebar_animator.play("Questions_counter_show")
 

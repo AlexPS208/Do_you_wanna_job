@@ -604,6 +604,179 @@ Third_manager_happy: [color=#2effff][b]What’s your first instinct when confron
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":13,"part":"head"}"]
 Third_manager_happy: Strange things are the best things! They shake you up, make you think, make you feel. Who wants a life without surprises? Not me, that’s for sure!
 [signal arg_type="dict" arg="{"random_question":"main"}"]
+# maniac_04
+label maniac_04
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":5,"part":"head"}"]
+Third_manager_happy: Trust? Who needs trust when you can have...
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":2,"part":"head"}"]
+Third_manager_happy: ADVENTURE?!
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+Third_manager_happy: [color=#2effff][b]What’s your stance on working with unpredictable colleagues?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Build a relationship[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Find common ground and build a relationship[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":3,"part":"head"}"]
+	Third_manager_happy: Ha, bold! 
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
+	Third_manager_happy: But unpredictable people might just break them for fun!
+- [color=#8e59f5]Stay distant[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]Stay distant but cooperative when needed[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":6,"part":"head"}"]
+	Third_manager_happy: Oh, how lonely! And they’ll still find a way to surprise you!
+- [color=#f7d038]Out-crazy them[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Out-crazy them—it’s the only way to win[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
+	Third_manager_happy: Out-crazy them?
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
+	Third_manager_happy: Now that’s a strategy I can get behind!
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_quiet","loops":4,"part":"head"}"]
+	Third_manager_happy: Silent, are we? Oh, you’re no fun! 
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":10,"part":"head"}"]
+Third_manager_happy: Unpredictable people make life worth living! Sure, they might ruin your plans or throw you off your game, but isn’t that the best part?
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# maniac_05
+label maniac_05
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":5,"part":"head"}"]
+Third_manager_happy: I can feel the excitement building. You can’t deny it
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
+Third_manager_happy: Something is waiting for you, something you’ve been looking for all along. Why hesitate now?
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+Third_manager_happy: [color=#2effff][b]What are you really hoping to find in this place?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Job[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I’m looking for the job[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":4,"part":"head"}"]
+	Third_manager_happy: Oh, you really think you'll find it here?
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
+	Third_manager_happy: The job isn’t a gift; it’s a curse. \
+You’ll regret asking for it.
+- [color=#8e59f5]I’m just curious[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I’m just curious. I don’t know what’s here, but I want to see for myself.[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":8,"part":"head"}"]
+	Third_manager_happy: Ha! You have no idea what you're asking for. Curiosity will pull you deeper than you can imagine.
+- [color=#f7d038]Free coffee[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I’m just here for the free coffee. Who doesn’t love a good mystery, right?[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
+	Third_manager_happy: Free coffee? Is that all?
+	[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":8,"part":"head"}"]
+	Third_manager_happy: Well, mystery will get you more than caffeine, my friend. It'll get you answers you can't unhear
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_quiet","loops":4,"part":"head"}"]
+	Third_manager_happy: Not going to answer? Smart.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":9,"part":"head"}"]
+Third_manager_happy: You came looking for something, whether you admit it or not. And in places like this, you find what you’re meant to find.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":7,"part":"head"}"]
+Third_manager_happy: Truths, fears, things you didn’t want to know… They all come for you
+[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
+Third_manager_happy: Whether you’re ready or not
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# maniac_06
+label maniac_06
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":7,"part":"head"}"]
+Third_manager_happy: You’ve heard the rumors. They don’t just say this place is strange — they say it changes you.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":5,"part":"head"}"]
+Third_manager_happy: But how can something change if you’re not open to it?
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+Third_manager_happy: [color=#2effff][b]Do you think this place will change you?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Yes.[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Yes. I think it already has[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":4,"part":"head"}"]
+	Third_manager_happy: Ah, you’re honest, I’ll give you that.
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_happy: But admitting it doesn’t change the fact that you’re not in control here.
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":8,"part":"head"}"]
+	Third_manager_happy: his place doesn’t just change you — it takes what you are and leaves something else behind
+- [color=#8e59f5]Maybe[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I don’t know. Maybe. I guess we’ll see.[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
+	Third_manager_happy: Oh, so you’re waiting for it to decide, huh?
+- [color=#f7d038]No.[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Nah, I’m pretty sure I’m just here for the ride. What could change?[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
+	Third_manager_happy: Oh, nothing? You’re sure?
+	[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":8,"part":"head"}"]
+	Third_manager_happy: Keep saying that and you might find out what happens when nothing happens
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_quiet","loops":13,"part":"head"}"]
+	Third_manager_happy: Still thinking about it, huh? You’ll understand soon enough, even if you don’t say a word. It’ll change you — whether you want it to or not.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":3,"part":"head"}"]
+Third_manager_happy: You’re here for a reason.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":6,"part":"head"}"]
+Third_manager_happy: But it’s not the reason you think. Everything changes in the end. 
+[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":3,"part":"head"}"]
+Third_manager_happy: This place ensures that.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# maniac_07
+label maniac_07
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+Third_manager_happy: Some people come here seeking power. Others, secrets.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":3,"part":"head"}"]
+Third_manager_happy: What about you?
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+Third_manager_happy: [color=#2effff][b]What’s the price you’re willing to pay for your desires?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Whatever it takes[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I’m willing to pay whatever it takes[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":3,"part":"head"}"]
+	Third_manager_happy: Willing to pay?
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+	Third_manager_happy: You’ll learn soon enough that nothing comes without a cost.
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
+	Third_manager_happy: But be careful — the price might not be something you’re ready to give
+- [color=#8e59f5]I’m not sure[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I’m not sure yet. I guess I’ll find out if I get there.[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
+	Third_manager_happy: Oh, the typical wait-and-see approach. Well, you don’t get to decide when it’s too late.
+- [color=#f7d038]A smile and a handshake[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I’d pay with a smile and a handshake. I’m easy like that.[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":3,"part":"head"}"]
+	Third_manager_happy: A smile, huh?
+	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":2,"part":"head"}"]
+	Third_manager_happy: Freak
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"happy_speak_close","end_sprite":"happy_open_quiet","loops":6,"part":"head"}"]
+	Third_manager_happy: No words? Or have you just realized the price is too high to speak?
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":3,"part":"head"}"]
+Third_manager_happy: Everyone has a price.
+[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_speak","loops":4,"part":"head"}"]
+Third_manager_happy: You just haven’t figured out what yours is yet.
+[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":6,"part":"head"}"]
+Third_manager_happy: But trust me, this place knows, and it won’t hesitate to make you pay.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 
 # event_01
 label event_01
@@ -618,7 +791,7 @@ Third_manager_happy: Let's stay a little longer, I don't want to say goodbye to 
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
 Third_manager_happy: Maybe... [color=#2effff][b]3 more questions?[/b][/color]
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
-Third_manager_happy: NO-NO! [color=#2effff][b]7 more questions![/b][/color]
+Third_manager_happy: NO-NO! [color=#2effff][b]9 more questions![/b][/color]
 [signal arg_type="dict" arg="{"more_questions":true}"]
 [signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
 Third_manager_happy: Why 7? I don't even know
@@ -692,7 +865,7 @@ Third_manager_happy: No answer?
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":4,"part":"head"}"]
 Third_manager_happy: You think silence will save you?
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":3,"part":"head"}"]
-Third_manager_happy: Or it's just fear?
+Third_manager_happy: Or maybe just scared
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":6,"part":"head"}"]
 Third_manager_happy: A͠l͢r͠i̸g͠h͠t, ͠I̴'͢l͝l b̢e b̡a͢ck l̡a͠t̸e͡r
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
@@ -743,3 +916,8 @@ label Change
 [wait time="1.0"]
 [signal arg_type="dict" arg="{"animation_finished":true}"]
 label End
+[signal arg_type="dict" arg="{"end_manager":true}"]
+[end_timeline]
+label death
+[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":1,"part":"head"}"]
+[end_timeline]
