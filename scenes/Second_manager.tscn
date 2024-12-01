@@ -60,7 +60,7 @@
 [ext_resource type="Texture2D" uid="uid://c6pkiuf4j7ub4" path="res://assets/Second_manager/CHh16.png" id="50_dxrd1"]
 [ext_resource type="Texture2D" uid="uid://salftehdkion" path="res://assets/Second_manager/CHh6.png" id="51_1nwk8"]
 [ext_resource type="Texture2D" uid="uid://dt6ipgnrsfyg8" path="res://assets/Second_manager/CHh14.png" id="52_dxtkk"]
-[ext_resource type="Texture2D" uid="uid://sve66g3arjfv" path="res://assets/Second_manager/CHha4png.png" id="60_kgbac"]
+[ext_resource type="Texture2D" uid="uid://l0d8civk5mcs" path="res://assets/Second_manager/CHha4png (3).png" id="60_wqv4l"]
 [ext_resource type="Texture2D" uid="uid://b7jssrwk08q5a" path="res://assets/Second_manager/CHh1.png" id="65_kmbtq"]
 [ext_resource type="Texture2D" uid="uid://diaa74m3hl64j" path="res://assets/Second_manager_scene/table2.png" id="74_fsplh"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="80_tkkwk"]
@@ -1804,7 +1804,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("60_kgbac")
+"texture": ExtResource("60_wqv4l")
 }],
 "loop": true,
 "name": &"claps",
