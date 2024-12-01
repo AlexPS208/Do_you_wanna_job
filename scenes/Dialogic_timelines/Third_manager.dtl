@@ -789,12 +789,12 @@ Third_manager_happy: I'm ready to say more — I even like you, choomba
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
 Third_manager_happy: Let's stay a little longer, I don't want to say goodbye to you.
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
-Third_manager_happy: Maybe... [color=#2effff][b]3 more questions?[/b][/color]
+Third_manager_happy: Maybe... [color=#2effff][b]5 more questions?[/b][/color]
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
-Third_manager_happy: NO-NO! [color=#2effff][b]9 more questions![/b][/color]
+Third_manager_happy: NO-NO! [color=#2effff][b]12 more questions![/b][/color]
 [signal arg_type="dict" arg="{"more_questions":true}"]
 [signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
-Third_manager_happy: Why 9? I don't even know
+Third_manager_happy: Why 12? I don't even know
 [signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
 Third_manager_happy: But it's sounds like a great idea!
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
@@ -940,12 +940,10 @@ Third_manager_sad: Secrets are our currency, our product, our power. Each secret
 Third_manager_real: And now, you —
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":4,"part":"head"}"]
 Third_manager_real: — will become one of us
-[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":5,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"remove_hands","end_sprite":"remove_hands","loops":0,"part":"hand"}"]
-Third_manager_real: Y̸̷ó̀u͟ d͘ơn̴’͟͝t̕ b͞e̢͢l̵̡o̵͜n͡g h͜e͢͠r̵͝e͡.̵"
-[signal arg_type="dict" arg="{"end_manager":true}"]
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":5,"part":"head"}"]
 Third_manager_real: Congratulations, {Players_name}! You've been hired.
+[signal arg_type="dict" arg="{"end_manager":true}"]
 [end_timeline]
 # death
 label death

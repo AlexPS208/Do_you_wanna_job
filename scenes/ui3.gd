@@ -312,8 +312,8 @@ func _on_dialogic_signal(argument: Dictionary):
 		current_stress = clamp(current_stress, min_stress, max_stress)
 	
 	# Win
-	if argument.has("end_first_manager"):
-		if argument["end_first_manager"]:
+	if argument.has("end_manager"):
+		if argument["end_manager"]:
 			win_animation_start()
 
 
@@ -377,7 +377,7 @@ func decrease_questions_value() -> void:
 func increase_questions_value() -> void:
 	timebar_animator.play("Questions_counter_hide")
 	await get_tree().create_timer(0.2).timeout
-	questions_value += 9
+	questions_value += 12
 	question_counter.text = str(questions_value)
 	timebar_animator.play("Questions_counter_show")
 
