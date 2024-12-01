@@ -2571,7 +2571,7 @@ script = ExtResource("40_d67qj")
 [node name="Manager_head" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0400844, -0.288063)
 sprite_frames = SubResource("SpriteFrames_ea45k")
-animation = &"quiet_open_smile"
+animation = &"quiet_close_serious"
 autoplay = "quiet_close_serious"
 
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]

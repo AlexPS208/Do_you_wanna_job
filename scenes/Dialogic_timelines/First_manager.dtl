@@ -516,6 +516,7 @@ First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inco
 	[signal arg_type="dict" arg="{"stress_change":25}"]
 	First_manager: A missed moment, perhaps
 	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":7,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":7,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":5,"part":"hand"}"]
 First_manager: Sometimes those spur-of-the-moment ideas are the best ones — don’t let them get away.
 [signal arg_type="dict" arg="{"random_question":"main"}"]
