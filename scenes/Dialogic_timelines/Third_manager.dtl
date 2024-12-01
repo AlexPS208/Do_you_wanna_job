@@ -660,7 +660,7 @@ Third_manager_happy: [color=#2effff][b]What are you really hoping to find in thi
 	Third_manager_happy: Oh, you really think you'll find it here?
 	[signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":7,"part":"head"}"]
 	Third_manager_happy: The job isn’t a gift; it’s a curse. \
-	You’ll regret asking for it.
+You’ll regret asking for it.
 - [color=#8e59f5]I’m just curious[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	Player: [color=#8e59f5]I’m just curious. I don’t know what’s here, but I want to see for myself.[/color]
@@ -784,8 +784,8 @@ label event_01
 Third_manager_happy: You know what?
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
 Third_manager_happy: We are sitting here together too well!
-[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
-Third_manager_happy: I'm ready to say more — I even like you
+[signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":6,"part":"head"}"]
+Third_manager_happy: I'm ready to say more — I even like you, choomba
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
 Third_manager_happy: Let's stay a little longer, I don't want to say goodbye to you.
 [signal arg_type="dict" arg="{"animation":"happy_speak_open","end_sprite":"happy_open_smile","loops":5,"part":"head"}"]
@@ -794,7 +794,7 @@ Third_manager_happy: Maybe... [color=#2effff][b]3 more questions?[/b][/color]
 Third_manager_happy: NO-NO! [color=#2effff][b]9 more questions![/b][/color]
 [signal arg_type="dict" arg="{"more_questions":true}"]
 [signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
-Third_manager_happy: Why 7? I don't even know
+Third_manager_happy: Why 9? I don't even know
 [signal arg_type="dict" arg="{"animation":"happy_smile_open","end_sprite":"happy_open_smile","loops":4,"part":"head"}"]
 Third_manager_happy: But it's sounds like a great idea!
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
@@ -802,6 +802,7 @@ Third_manager_happy: But it's sounds like a great idea!
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # event_02
 label event_02
+[signal arg_type="dict" arg="{"event":". . ."}"]
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
 [wait time="1.0"]
@@ -810,20 +811,20 @@ Third_manager_real: You think you’re safe here, don’t you?
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":20,"part":"head"}"]
 Third_manager_real: B̷͘ưt͘ ͝r̴e̸m̀e͠m̨b̡e͡r̷, ̵t̛h̛e͟ d͡a̷n͠g̨e̡r̀ d̸ơe͡sn’̷t͢ c͟o͟m͜e͢ f̢r͠o͞m̢ t͝h͘e͠ o̸u͢ts͜i̶d͡e̛—įt’s̡ r͜i̛ght͞ i̷n f̴r͡o͘n͝t o͘f͡ y̷o͠u̸, ẁ͘e͜ąr̷i̡n͘g̡ t̵h͜e͟ s̡a̸m͜e̡ f͜a͡c͝e͢ a͠s t͡h͝e͡ o͟n͠e y̷o͠u t̶r͠u͝s͠t.
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":9,"part":"head"}"]
-Third_manager_real: [color=#2effff][b]What will you do when you realize I͠ ͠a̸m͝ t̶h͠ę d͠a͝n̢g͠e̴r̷?[/b][/color]
+Third_manager_real: [color=#2effff][b]What will you do when you realize[/b][/color] [color=#cc292c][b]I͠ ͠a̸m͝ t̶h͠ę d͠a͝n̢g͠e̴r̷?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":6}"]
-- [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]I’ll get out![/color]
-- [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]I’ll get out![/color]
-- [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]I’ll get out![/color]
-- [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]I’ll get out![/color]
+- [color=#cc292c]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]I’ll get out![/color]
+- [color=#cc292c]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]I’ll get out![/color]
+- [color=#cc292c]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]I’ll get out![/color]
+- [color=#cc292c]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]I’ll get out![/color]
 [signal arg_type="dict" arg="{"stress_change":25}"]
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":2,"part":"head"}"]
 Third_manager_happy: Run?
@@ -834,9 +835,10 @@ Third_manager_happy: T͝h͘e͘r͘e’s̢ n͠o͘ r͝ưn͝i̷n̛g͢ f̛r͠o͡m m�
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
 [wait time="1.0"]
-[signal arg_type="dict" arg="{"random_question":"main"}"]
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # event_03
 label event_03
+[signal arg_type="dict" arg="{"event":". . ."}"]
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
 [wait time="1.0"]
@@ -845,19 +847,19 @@ Third_manager_real: Secrets are this place's lifeblood, and you — you carry on
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":5,"part":"head"}"]
 Third_manager_real: But tell me, how long before it consumes you?
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":9,"part":"head"}"]
-Third_manager_real: [color=#2effff][b]What happens when your secret becomes bigger than you?[/b][/color]
+Third_manager_real: [color=#2effff][b]What happens when your secret becomes[/b][/color] [color=#cc292c][b]bigger than you[/b][/color][color=#2effff][b]?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":6}"]
 - [color=#6BBF59]I’ll... try to control it.[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	Player: [color=#6BBF59]I’ll... try to control it.[/color]
 - [color=#8e59f5]I’ll... figure something out.[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	Player: [color=#8e59f5]I’ll... figure something out.[/color]
 - [color=#f7d038]I don’t... have a choice.[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	Player: [color=#f7d038]I don’t... have a choice.[/color]
 - [color=gray]. . .[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	Player: [color=gray]. . .[/color]
 [signal arg_type="dict" arg="{"stress_change":25}"]
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":4,"part":"head"}"]
@@ -869,9 +871,10 @@ Third_manager_happy: You were claimed the moment you walked in, and your secret 
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
 [wait time="1.0"]
-[signal arg_type="dict" arg="{"random_question":"main"}"]
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # event_04
 label event_04
+[signal arg_type="dict" arg="{"event":". . ."}"]
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
 [wait time="1.0"]
@@ -880,20 +883,20 @@ Third_manager_real: You think you’re in control, but control is an illusion.
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":14,"part":"head"}"]
 Third_manager_real: T͟h͜i͝s p͠l͟a͜c͠e i͢s͡ a͟l͡i̡v̴e — a͠l͞i̡v͢e w͡i̷t̢h e̢v͠e͝r͘y͡t̷h̛i̢n͟g t͡h͡a͡t’s a͡l͢r͡e͟a͡dy w͘a͠i͘t̡i͡n͠g t̶o s̛w͡a͟l͡l͡o͡w y͝o͠u.
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":9,"part":"head"}"]
-Third_manager_real: [color=#2effff][b]How will you react when you realize this company [i]wants[/i] to consume you?[/b][/color]
+Third_manager_real: [color=#2effff][b]How will you react when you realize[/b][/color] [color=#cc292c][b]this company wants to consume you?[/b][/color]
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":6}"]
+- [color=#cc292c]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]. . .[/color]
 - [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]. . .[/color]
-- [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]. . .[/color]
-- [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]. . .[/color]
-- [color=#b3071b]PANIC[/color]
-	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#b3071b]. . .[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]. . .[/color]
+- [color=#cc292c]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]. . .[/color]
+- [color=#cc292c]PANIC[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#cc292c]. . .[/color]
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":2,"part":"head"}"]
 Third_manager_happy: What?
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":3,"part":"head"}"]
@@ -929,7 +932,7 @@ Third_manager_happy: We are the architects of whispers, the engineers of shadows
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [wait time="1.0"]
 [signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":10,"part":"head"}"]
-Third_manager_sad:  Secrets are our currency, our product, our power. Each secret we create fuels empires, destroys rivals, and shapes worlds
+Third_manager_sad: Secrets are our currency, our product, our power. Each secret we create fuels empires, destroys rivals, and shapes worlds
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]
 [wait time="1.0"]
@@ -941,6 +944,8 @@ Third_manager_real: — will become one of us
 [signal arg_type="dict" arg="{"animation":"remove_hands","end_sprite":"remove_hands","loops":0,"part":"hand"}"]
 Third_manager_real: Y̸̷ó̀u͟ d͘ơn̴’͟͝t̕ b͞e̢͢l̵̡o̵͜n͡g h͜e͢͠r̵͝e͡.̵"
 [signal arg_type="dict" arg="{"end_manager":true}"]
+[signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_laught","loops":5,"part":"head"}"]
+Third_manager_real: Congratulations, {Players_name}! You've been hired.
 [end_timeline]
 # death
 label death

@@ -515,3 +515,345 @@ First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inco
 	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
 	First_manager: A missed moment, perhaps
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":7,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"finger_up","end_sprite":"normal","loops":5,"part":"hand"}"]
+First_manager: Sometimes those spur-of-the-moment ideas are the best ones — don’t let them get away.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# main_12
+label main_12
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"with_paper","loops":5,"part":"hand"}"]
+First_manager: By the way, I read in your [i]CV[/i] about your [i]communication skills[/i]. Is that true?
+[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"smirk_open_surprised","loops":5,"part":"head"}"]
+First_manager: [color=#2effff][b]How do you deal with sudden inspiration at inconvenient times?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":18}"]
+- [color=#6BBF59]Direct and concise[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#6BBF59]I focus on being direct and to the point in every situation[/color]
+	[signal arg_type="dict" arg="{"animation":"smirk_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	First_manager: Efficient, but it doesn’t always suit every scenario
+- [color=#8e59f5]Adapt as I go[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5]I adapt to the situation and figure it out as I go[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	First_manager: Flexible, especially if it helps build rapport with others
+- [color=#f7d038]Fluent sarcasm[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#f7d038]I speak fluent sarcasm, but I promise to keep it work-appropriate![/color]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	First_manager: This is not a business approach, you know?
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	First_manager: Absolutely not...
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":2,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":0,"part":"hand"}"]
+First_manager: And I lied to you
+[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":4,"part":"head"}"]
+[signal arg_type="dict" arg="{"stress_change":10}"]
+First_manager: There's no anything about communication in your CV
+[signal arg_type="dict" arg="{"animation":"smile_surprised","end_sprite":"smile_open_surprised","loops":2,"part":"head"}"]
+First_manager: Wanna comment this?
+[signal arg_type="dict" arg="{"skip_choice":3,"start_timer":18}"]
+- [color=#8e59f5]This was just an answer[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5]Doesn't matter. You asked - I responded[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: Good... Good...
+- [color=#f7d038]Too many ambitions[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#f7d038]There are so many of my ambitions described there, I can’t even remember them all[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smirk_open_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: So... Your memory is not very good?
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+	First_manager: I got you
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# event_01
+label event_01
+[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":3,"part":"head"}"]
+First_manager: Who in their right mind… ahem!
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":2,"part":"head"}"]
+First_manager: Excuse me
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"with_cookie","end_sprite":"with_cookie","event":"cookie","loops":4,"part":"hand"}"]
+First_manager: I just noticed this poor little cookie here
+[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":2,"part":"head"}"]
+First_manager: My cookie!
+[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":2,"part":"head"}"]
+First_manager: Bitten!
+[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":2,"part":"head"}"]
+First_manager: Half-devoured!
+[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":3,"part":"head"}"]
+First_manager: Someone has some nerve!
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
+First_manager: Tell me, do you like cookies?
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
+First_manager: [color=#2effff][b]Did you eat my cookie?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":10}"]
+- [color=#6BBF59]Not me![/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#6BBF59]No, I would never touch your food without permission![/color]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+	First_manager: Really? You look suspiciously... crumb-free for someone innocent.
+- [color=#8e59f5]No memory of it[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5]I don’t even remember seeing a cookie on your desk[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: [i]Convenient. Conveniently vague. Makes me wonder.[/i]
+- [color=#f7d038]If it were me…[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#f7d038]I’m not saying it was me, but if I had, I would’ve eaten the whole thing[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	First_manager: Ha! Bold, aren’t you?
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: But that doesn’t mean I trust you
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_surprised","loops":2,"part":"head"}"]
+	First_manager: Silent, huh?
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_surprised","loops":3,"part":"head"}"]
+	First_manager: Guilty conscience?
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_surprised","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	First_manager: Or are you just bad under pressure?
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":1,"part":"hand"}"]
+First_manager: Now let me think… who could’ve done this?
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+First_manager: You’re the only one I’ve spoken to today… but then, this door rarely opens.
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+First_manager: Nobody else comes in here except candidates like you
+[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+Player: Maybe someone sneaked in earlier? I mean, could it have been you by accident?
+[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
+First_manager: Me? Do I look like someone who forgets his own snacks?
+[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
+First_manager: Ridiculous!
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+First_manager: No, no, I think I’d remember biting into something this delicious.
+[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+Player: Maybe it’s stress. People sometimes eat without realizing it
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
+First_manager: Stress makes people mutter to themselves, not eat cookies without thinking!
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":6,"part":"head"}"]
+First_manager: Well, if this is how the day’s starting… I need to keep an eye on people like you
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
+# event_02
+label event_02
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":8,"part":"head"}"]
+First_manager: By the way, in this morning I found a note, writen by some of ex-workers.\
+I want to show it for you.
+[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":12,"part":"head"}"]
+[signal arg_type="dict" arg="{"animation":"with_paper","end_sprite":"with_paper","event":"note","loops":15,"part":"hand"}"]
+First_manager: ‘To whoever comes next, beware. This place has its own way of testing you. It’s not just the work—it’s the walls, the air, the… noises. No one makes it out without changing. You’ll see what I mean soon enough.’
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_surprised","loops":5,"part":"head"}"]
+First_manager: [color=#2effff][b]That’s cheerful, isn’t it? So, what do you make of that?[/b][/color]
+[signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":2,"part":"hand"}"]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":10}"]
+- [color=#6BBF59]Weak employee[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":7,"part":"player_voice"}"]
+	Player: [color=#6BBF59]Sounds like someone who couldn’t handle the pressure and wanted to scare others[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"smile_open_surprised","loops":8,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+	First_manager: Hmm, could be. Or maybe they were just being honest. Sometimes pressure reveals things you didn’t know were there…
+- [color=#8e59f5]Overreaction[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#8e59f5]Maybe they were just being dramatic. Stress makes people exaggerate[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	First_manager: Dramatic, you think?
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":6,"part":"head"}"]
+	First_manager: Yeah, some people love to make their suffering everyone’s problem.
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_surprised","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: Or maybe they knew more than they let on…
+- [color=#f7d038]Horror script[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#f7d038]Sounds like a great plot for a horror movie. You’d better watch out![/color]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":3,"part":"head"}"]
+	First_manager: A movie, huh?
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
+	First_manager: If this were fiction, you might be the main character. Think about that
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":2,"part":"head"}"]
+	First_manager: Speechless?
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_surprised","loops":7,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	First_manager: Maybe that note got to you more than you want to admit. Careful, silence speaks volumes
+[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+Player: Do you think they were serious? I mean, what kind of place is this?
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":9,"part":"head"}"]
+First_manager: Serious? Probably not. But there’s truth in every exaggeration, isn’t there? You’ve got to wonder what pushed him to write it.
+[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
+Player: Have others said things like this?
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":8,"part":"head"}"]
+First_manager: Hmm, let’s just say the people who’ve been here long enough tend to keep their thoughts to themselves
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
+First_manager: Anyway, enough of this
+[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":6,"part":"head"}"]
+First_manager: Let’s move on before you start writing your own farewell letter
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
+# event_03
+label event_03
+[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","loops":4,"part":"head"}"]
+First_manager: Wait a second… has that always been there?
+[signal arg_type="dict" arg="{"loops":2,"part":"player_voice"}"]
+Player: What do you mean?
+[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","event":"art","loops":4,"part":"head"}"]
+First_manager: That shadow. In the painting. Look at it!
+[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","loops":5,"part":"head"}"]
+First_manager: [color=#2effff][b]Has that shadow always been in the painting?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":10}"]
+- [color=#6BBF59]Always there[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#6BBF59]Yes, I think it’s always been there[/color]
+	[signal arg_type="dict" arg="{"animation":"fear_surprised","end_sprite":"fear_open_surprised","loops":4,"part":"head"}"]
+	First_manager: Really? Are you sure? You didn’t sound sure.
+	[signal arg_type="dict" arg="{"animation":"fear_surprised","end_sprite":"fear_open_surprised","loops":4,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: Why would you lie to me about something so odd?
+- [color=#8e59f5]Didn’t notice[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5]I didn’t notice it before, but I wasn’t paying attention.[/color]
+	[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":3,"part":"head"}"]
+	First_manager: Not paying attention?
+	[signal arg_type="dict" arg="{"animation":"fear_serious","end_sprite":"fear_open_serious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+	First_manager: A great trait for a future employee, isn’t it?
+- [color=#f7d038]Haunted painting[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":5,"part":"player_voice"}"]
+	Player: [color=#f7d038]Maybe the painting’s haunted? Or just has a sense of humor.[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	First_manager: Ha! Bold, aren’t you?
+	[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: You’ve got jokes. Let’s hope you’re joking, at least
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":2,"part":"head"}"]
+	First_manager: Silent?
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_surprised","loops":5,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	First_manager: Don’t tell me you’re scared of a little shadow in a painting
+[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
+Player: Isn’t it just a trick of the light? Paintings can look different depending on the angle.
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":6,"part":"head"}"]
+First_manager: Maybe. But I’ve had this painting for years. Never saw a shadow there before.
+[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
+Player: Is it a portrait of you?
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":6,"part":"head"}"]
+First_manager: Yes, me, back when I first started here. That was a long time ago
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":8,"part":"head"}"]
+First_manager: I’ve been feeling… odd lately. Tired, distracted. Maybe this is some… symptom. Or maybe something else.
+[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+Player: Do you think it means something?
+[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":5,"part":"head"}"]
+First_manager: Mean something? Ha! Don’t get ahead of yourself.
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
+First_manager: Still, strange things do happen in this building...
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
+# event_04
+label event_04
+[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_unserious","event":"whispers","loops":3,"part":"head"}"]
+First_manager: Do you hear that?
+[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","loops":4,"part":"head"}"]
+First_manager: No, seriously — do you hear anything?
+[signal arg_type="dict" arg="{"animation":"speak_surprised","end_sprite":"quiet_open_surprised","loops":4,"part":"head"}"]
+First_manager: [color=#2effff][b]Do you hear anything unusual?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":10}"]
+- [color=#6BBF59]Whispers heard[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#6BBF59]Yes, I hear whispers. What is that?[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_unserious","loops":3,"part":"head"}"]
+	First_manager: Oh, so it’s not just me?
+	[signal arg_type="dict" arg="{"animation":"fear_unserious","end_sprite":"fear_open_unserious","loops":3,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":15}"]
+	First_manager: That’s... not reassuring
+- [color=#8e59f5]Uncertain[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":4,"part":"player_voice"}"]
+	Player: [color=#8e59f5]Maybe? It’s hard to tell. What do you think it is?[/color]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
+	First_manager: Hmm, you’re on the fence. Smart.
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"smile_open_surprised","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":5}"]
+	First_manager: Sometimes, it’s best not to commit to what you can’t explain
+- [color=#f7d038]Ghost joke[/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"loops":6,"part":"player_voice"}"]
+	Player: [color=#f7d038]Must be the ghosts having a staff meeting. Should we join them?[/color]
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":3,"part":"head"}"]
+	First_manager: Ha! Staff meeting?
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_serious","loops":6,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	First_manager: If they are, I hope they’re more productive than the last one I attendedt
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_surprised","loops":5,"part":"head"}"]
+	First_manager: Not a fan of answering mysterious questions, huh?
+	[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":4,"part":"head"}"]
+	First_manager: Don’t worry. The vent doesn’t bite.
+	[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_surprised","loops":2,"part":"head"}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	First_manager: Probably.
+[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
+Player: Do you hear whispers often?
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"quiet_open_serious","loops":8,"part":"head"}"]
+First_manager: Now and then. This building has its quirks. Though, there’s a story floating around…
+[signal arg_type="dict" arg="{"loops":3,"part":"player_voice"}"]
+Player: What kind of story?
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_serious","loops":12,"part":"head"}"]
+First_manager: Oh, just some nonsense. Supposedly, years ago, an employee got locked in the air ducts during renovations.
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_serious","loops":10,"part":"head"}"]
+First_manager: He didn’t make it out, so now he whispers advice—or warnings. Who knows? Maybe he’s just bored
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":6,"part":"head"}"]
+First_manager: Anyway, let’s focus. The whispers won’t finish the interview for you
+[signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
+# ENDING
+label End
+[signal arg_type="dict" arg="{"animation":"smile_unserious","end_sprite":"smile_open_unserious","loops":2,"part":"head"}"]
+First_manager: So, very good
+[signal arg_type="dict" arg="{"animation":"smirk_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
+First_manager: I really like your answers
+[signal arg_type="dict" arg="{"animation":"smirk_serious","end_sprite":"smirk_open_serious","loops":4,"part":"head"}"]
+First_manager: Of course, it could have been better
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smirk_open_unserious","loops":3,"part":"head"}"]
+First_manager: But this is quite enough
+[signal arg_type="dict" arg="{"animation":"speak_unserious","end_sprite":"smile_open_unserious","loops":3,"part":"head"}"]
+First_manager: You can go to the mr. Pop
+[signal arg_type="dict" arg="{"animation":"smile_serious","end_sprite":"smile_open_serious","loops":4,"part":"head"}"]
+First_manager: I'll call him for recomendation about you
+[signal arg_type="dict" arg="{"end_first_manager":true}"]
+[end_timeline]
+label death
+[signal arg_type="dict" arg="{"animation":"speak_serious","end_sprite":"quiet_open_unserious","loops":0,"part":"head"}"]
+[end_timeline]
