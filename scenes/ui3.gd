@@ -26,7 +26,7 @@ extends CanvasLayer
 
 @onready var whispers: AudioStreamPlayer3D = $"../Scene/Decor/Ventilation/Whispers"
 
-var second_manager_scene = preload("res://scenes/Second_manager.tscn")
+var title = preload("res://scenes/Subtitles.tscn")
 
 # Menu
 var is_menu_active: bool = false
@@ -497,7 +497,7 @@ func win_animation_start():
 
 func _on_lamp_animator_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "death_animation_final":
-		get_tree().change_scene_to_packed(second_manager_scene)
+		get_tree().change_scene_to_packed(title)
 
 
 # BUTTONS

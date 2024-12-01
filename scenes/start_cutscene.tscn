@@ -222,12 +222,12 @@ ground_bottom_color = Color(0.150786, 0.0624201, 0, 1)
 sun_angle_max = 90.0
 energy_multiplier = 0.0
 
-[sub_resource type="Sky" id="Sky_qykuh"]
+[sub_resource type="Sky" id="Sky_wd018"]
 sky_material = SubResource("ProceduralSkyMaterial_7yisd")
 
 [sub_resource type="Environment" id="Environment_avuky"]
 background_energy_multiplier = 0.0
-sky = SubResource("Sky_qykuh")
+sky = SubResource("Sky_wd018")
 sky_custom_fov = 75.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hoo87"]

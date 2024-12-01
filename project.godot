@@ -14,8 +14,8 @@ config/name="Do you wanna job?"
 run/main_scene="res://scenes/start_cutscene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/image="res://assets/P5 (2).png"
-config/icon="res://assets/_Mpt5D2 копия.png"
+boot_splash/image="res://assets/P5 (3).png"
+config/icon="res://assets/logo (3).png"
 
 [autoload]
 

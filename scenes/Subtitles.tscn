@@ -1,0 +1,260 @@
+[gd_scene load_steps=25 format=3 uid="uid://bwhhhmaj1epvw"]
+
+[ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="1_fdugi"]
+[ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_kj7w2"]
+[ext_resource type="Texture2D" uid="uid://kc4m35a78urw" path="res://assets/door1.png" id="2_p2lro"]
+[ext_resource type="Texture2D" uid="uid://dyrvdqs3nreip" path="res://assets/title.png" id="2_t3vcx"]
+[ext_resource type="Script" path="res://scenes/back_to_menu.gd" id="3_dvjfi"]
+[ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="3_glpo7"]
+[ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="3_v2dw8"]
+[ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="4_77oye"]
+[ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="5_7j15y"]
+[ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="6_wpnp4"]
+[ext_resource type="AudioStream" uid="uid://bexj2d15lpa27" path="res://assets/sounds/whispers.mp3" id="7_y8tpj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ut67e"]
+shader = ExtResource("1_fdugi")
+shader_parameter/grain_amount = 0.05
+shader_parameter/grain_size = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_or4ye"]
+font_size = 62
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bjirx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_icoos"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_df2j0"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6gap5"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("3_glpo7")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1001w"]
+sky_top_color = Color(1, 1, 1, 1)
+ground_bottom_color = Color(0.150786, 0.0624201, 0, 1)
+sun_angle_max = 90.0
+energy_multiplier = 0.0
+
+[sub_resource type="Sky" id="Sky_qykuh"]
+sky_material = SubResource("ProceduralSkyMaterial_1001w")
+
+[sub_resource type="Environment" id="Environment_r2w8p"]
+background_energy_multiplier = 0.0
+sky = SubResource("Sky_qykuh")
+sky_custom_fov = 75.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gu3fm"]
+albedo_texture = ExtResource("1_kj7w2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qw813"]
+albedo_texture = ExtResource("2_p2lro")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kotq2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amld8"]
+albedo_texture = ExtResource("1_kj7w2")
+uv1_scale = Vector3(2, 3, 1)
+
+[node name="Subtitles" type="Node3D"]
+
+[node name="Under_UI_effects" type="CanvasLayer" parent="."]
+
+[node name="Postprocessing_shader" type="ColorRect" parent="Under_UI_effects"]
+material = SubResource("ShaderMaterial_ut67e")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("3_dvjfi")
+
+[node name="Menu" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Name" type="TextureRect" parent="UI/Menu"]
+layout_mode = 0
+offset_left = -243.0
+offset_top = 43.0
+offset_right = 1157.0
+offset_bottom = 392.0
+texture = ExtResource("2_t3vcx")
+
+[node name="Thanks" type="Label" parent="UI/Menu"]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 344.0
+offset_right = 815.0
+offset_bottom = 446.0
+text = "Thank you for plaing!"
+label_settings = SubResource("LabelSettings_or4ye")
+
+[node name="Designer" type="RichTextLabel" parent="UI/Menu"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 476.0
+offset_right = 1010.0
+offset_bottom = 585.0
+theme_override_font_sizes/normal_font_size = 62
+bbcode_enabled = true
+text = "Designer: [color=#f3b211]ArchER[/color]"
+
+[node name="Programer" type="RichTextLabel" parent="UI/Menu"]
+offset_left = 97.0
+offset_top = 648.0
+offset_right = 1010.0
+offset_bottom = 755.0
+theme_override_font_sizes/normal_font_size = 62
+bbcode_enabled = true
+text = "Programmer: [color=#f3b211]AlPS_208[/color]"
+
+[node name="Music" type="RichTextLabel" parent="UI/Menu"]
+offset_left = 97.0
+offset_top = 822.0
+offset_right = 1010.0
+offset_bottom = 927.0
+theme_override_font_sizes/normal_font_size = 62
+bbcode_enabled = true
+text = "Musician: [color=#f3b211]Boihop[/color]"
+
+[node name="Back" type="Button" parent="UI/Menu"]
+layout_mode = 0
+offset_left = 1484.0
+offset_top = 941.0
+offset_right = 1867.0
+offset_bottom = 1034.0
+focus_mode = 0
+theme_override_colors/font_hover_pressed_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_pressed_color = Color(0.952941, 0.698039, 0.0666667, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 62
+theme_override_styles/hover = SubResource("StyleBoxTexture_bjirx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_icoos")
+theme_override_styles/normal = SubResource("StyleBoxTexture_df2j0")
+text = "Back to menu"
+
+[node name="Button_sound" type="AudioStreamPlayer3D" parent="UI"]
+stream = SubResource("AudioStreamRandomizer_6gap5")
+volume_db = -10.0
+pitch_scale = 1.7
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_r2w8p")
+
+[node name="Scene" type="Node3D" parent="."]
+
+[node name="Ceil" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.364258, 2.20415, -0.569743)
+size = Vector3(18, 0.1, 10)
+material = SubResource("StandardMaterial3D_gu3fm")
+
+[node name="Wall" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+use_collision = true
+size = Vector3(16, 5, 0.1)
+material = SubResource("StandardMaterial3D_gu3fm")
+
+[node name="Door_frame" type="CSGBox3D" parent="Scene/Wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.831809, 0)
+operation = 2
+size = Vector3(1.75, 4.04346, 0.12)
+
+[node name="Door" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.56, -5)
+size = Vector3(1.75, 3.49389, 0.1)
+material = SubResource("StandardMaterial3D_qw813")
+
+[node name="door_open_sound" type="AudioStreamPlayer3D" parent="Scene/Door"]
+stream = ExtResource("3_v2dw8")
+volume_db = 15.0
+max_distance = 10.0
+
+[node name="door_boom_sound" type="AudioStreamPlayer3D" parent="Scene/Door"]
+stream = ExtResource("4_77oye")
+volume_db = 10.0
+max_distance = 10.0
+
+[node name="Lamp" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.639, -4.87)
+size = Vector3(1.5, 0.1, 0.1)
+material = SubResource("StandardMaterial3D_kotq2")
+script = ExtResource("5_7j15y")
+
+[node name="OmniLight3D1" type="OmniLight3D" parent="Scene/Lamp"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+light_color = Color(1, 1, 0.913725, 1)
+light_energy = 0.2
+light_indirect_energy = 0.2
+omni_range = 0.3
+omni_attenuation = 0.2
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Scene/Lamp"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.1, 0)
+light_color = Color(1, 1, 0.913725, 1)
+light_energy = 0.2
+light_indirect_energy = 0.2
+omni_range = 0.3
+omni_attenuation = 0.2
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Scene/Lamp"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.1, 0)
+light_color = Color(1, 1, 0.913725, 1)
+light_energy = 0.2
+light_indirect_energy = 0.2
+omni_range = 0.3
+omni_attenuation = 0.2
+
+[node name="SpotLight3D1" type="SpotLight3D" parent="Scene/Lamp"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Scene/Lamp"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Scene/Lamp"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.5, 0, 0)
+light_color = Color(1, 1, 0.913725, 1)
+
+[node name="Flicker_timer" type="Timer" parent="Scene/Lamp"]
+
+[node name="Flicker_duration_timer" type="Timer" parent="Scene/Lamp"]
+
+[node name="Floor" type="CSGBox3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -0.0735346, -2.36826, -5.13286)
+size = Vector3(15, 0.1, 20)
+material = SubResource("StandardMaterial3D_amld8")
+
+[node name="Low_decs" type="AudioStreamPlayer3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.87205)
+stream = ExtResource("6_wpnp4")
+volume_db = -15.0
+autoplay = true
+max_distance = 15.0
+parameters/looping = true
+
+[node name="Whispers" type="AudioStreamPlayer3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.84523)
+stream = ExtResource("7_y8tpj")
+volume_db = -15.0
+max_distance = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.65069)
+keep_aspect = 0
+current = true
+
+[connection signal="pressed" from="UI/Menu/Back" to="UI" method="_on_back_pressed"]
+[connection signal="timeout" from="Scene/Lamp/Flicker_timer" to="Scene/Lamp" method="_on_flicker_timer_timeout"]
+[connection signal="timeout" from="Scene/Lamp/Flicker_duration_timer" to="Scene/Lamp" method="_on_flicker_duration_timer_timeout"]
