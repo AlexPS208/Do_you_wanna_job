@@ -863,11 +863,11 @@ Third_manager_real: [color=#2effff][b]What happens when your secret becomes[/b][
 	Player: [color=gray]. . .[/color]
 [signal arg_type="dict" arg="{"stress_change":25}"]
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":4,"part":"head"}"]
-Third_manager_happy: Control? Figure it out? Choice?
+Third_manager_real: Control? Figure it out? Choice?
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_smile","loops":3,"part":"head"}"]
-Third_manager_happy: You have none.
+Third_manager_real: You have none.
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":7,"part":"head"}"]
-Third_manager_happy: You were claimed the moment you walked in, and your secret is no longer yours to hold.
+Third_manager_real: You were claimed the moment you walked in, and your secret is no longer yours to hold.
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
 [wait time="1.0"]
@@ -906,7 +906,6 @@ Third_manager_happy: No one leaves.
 [signal arg_type="dict" arg="{"animation":"creep_speak","end_sprite":"creep_quiet","loops":16,"part":"head"}"]
 Third_manager_happy: N͠o͜ o͡n͜e l͢e͡a͡v̢e͟s. Y̢o͞u’ll b̛e c͝o͢n͡s͟u̡m̛e͡d w͠h̀e͠t͝h͡e̕r y͝o͠u k̡n͞o͠w i̡t o͝r n̡o͘t. T͟h͝e̷ o̡n͡l͢y q̢u͝e͝s͝t̴i̛o̴n i͢s\: h͟o͡w l͠o͢n͠g ưn͠t͟i͞l y͡o͝u r͡e͡a͡l͟i͠z̢e i͡t?
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
-[signal arg_type="dict" arg="{"animation":"change_to_blue","end_sprite":"change_to_blue","loops":0,"part":"hand"}"]
 [wait time="1.0"]
 jump End
 [wait time="1.0"]
