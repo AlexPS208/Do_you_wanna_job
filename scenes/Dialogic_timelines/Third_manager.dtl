@@ -117,7 +117,7 @@ Third_manager_sad: [color=#2effff][b]How do you deal with time when it feels aga
 - [color=#f7d038]Ask it to pause[/color]
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	Player: [color=#f7d038]Ask time to pause politely—it might listen[/color]
-	[signal arg_type="dict" arg="{"stress_change":15}"]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
 	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":2,"part":"head"}"]
 	Third_manager_sad: Ask it to pause?
 	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":5,"part":"head"}"]
@@ -136,7 +136,363 @@ Third_manager_sad: And yet it always gets the last word.
 [signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":6,"part":"head"}"]
 Third_manager_sad: I wonder, does anyone ever truly win against it?
 [signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_03
+label sad_03
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Shadows move differently here. Sometimes, they seem alive.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]What’s the best way to deal with something you don’t understand?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Face it directly[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Face it directly and demand clarity[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":5,"part":"head"}"]
+	Third_manager_sad: Face it? That’s brave…
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: But bravery doesn’t always work. Sometimes, it just breaks you.
+- [color=#8e59f5]Approach it cautiously[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]Approach it cautiously and gather information[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":6,"part":"head"}"]
+	Third_manager_sad: Cautious… yes, maybe that’s the safest.
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_cry","loops":7,"part":"head"}"]
+	Third_manager_sad: But even then, safety is an illusion.
+- [color=#f7d038]Pretend to understand[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Pretend you understand — it might go away[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_speak","loops":5,"part":"head"}"]
+	Third_manager_sad: Pretend? Hah…
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":6,"part":"head"}"]
+	Third_manager_sad: Maybe ignorance really is bliss. Until it isn’t.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":5,"part":"head"}"]
+	Third_manager_sad: You’d rather say nothing? Maybe that’s wise.
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Sometimes not knowing is… safer.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: The unknown doesn’t care if you face it or not.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":6,"part":"head"}"]
+Third_manager_sad: It creeps in, regardless. And the more you try to understand, the more it slips through your fingers.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":5,"part":"head"}"]
+Third_manager_sad: Maybe that’s why we fear it so much.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_04
+label sad_04
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: It’s hard to tell if the walls here protect you or keep you prisoner.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]How do you decide where to place your trust?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Trust your instincts[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Trust your instincts and take risks when necessary[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Trust your instincts? That’s risky.
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_cry","loops":7,"part":"head"}"]
+	Third_manager_sad: Instincts fail more often than they save.
+- [color=#8e59f5]Trust after observation[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]Only trust after carefully observing behavior[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":6,"part":"head"}"]
+	Third_manager_sad: Careful observation… yes, trust must be earned.
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":6,"part":"head"}"]
+	Third_manager_sad: But even earned trust can break.
+- [color=#f7d038]Trust no one[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Trust no one, especially the walls![/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_speak","loops":5,"part":"head"}"]
+	Third_manager_sad: Trust no one?
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":6,"part":"head"}"]
+	Third_manager_sad: Maybe you’re right. Trust only leads to betrayal.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Silence is safer, I suppose.
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: But trust doesn’t thrive in silence—it withers.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Trust is fragile, like a thread stretched too thin.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":6,"part":"head"}"]
+Third_manager_sad: And when it snaps, it doesn’t just break—it cuts. Be careful where you place it, or you might bleed for it.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_05
+label sad_05
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: This place doesn’t just take your time. It takes your choices, too.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]What’s the best approach when your options feel limited?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Think creatively for solutions[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]Create new options through clever thinking[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":5,"part":"head"}"]
+	Third_manager_sad: Create new options? Clever… but even cleverness has its limits.
+- [color=#8e59f5]Make do with what’s here[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]Make the best of what’s available[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":6,"part":"head"}"]
+	Third_manager_sad: Make the best of what’s there? That’s practical… but also so very… small.
+- [color=#f7d038]Let fate decide[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Flip a coin and let fate decide[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_speak","loops":5,"part":"head"}"]
+	Third_manager_sad: Flip a coin? Fate loves a gambler… until it doesn’t.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":5,"part":"head"}"]
+	Third_manager_sad: Silence? Maybe that’s your only option left… when there’s nothing to say, there’s nothing to choose. Or maybe the choices have already been made for you.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":6,"part":"head"}"]
+Third_manager_sad: Choices are an illusion, most of the time. You think you’re clever, making decisions, carving paths… but in the end, the paths were already there, waiting for you to stumble down them. All you can do is hope you don’t fall too hard when you reach the end.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_06
+label sad_06
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Some doors lock to keep you out. Others lock to keep you in. Do you know which is which?
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]How do you approach situations where every choice seems dangerous?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Face it boldly[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I take the boldest choice and face it head-on[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":6,"part":"head"}"]
+	Third_manager_sad: Boldness is admirable… until it leads you straight into the trap. Sometimes the most dangerous path is the one you don’t see.
+- [color=#8e59f5]Weigh risks and act[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I weigh the risks carefully and tread lightly[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Caution, yes. It may not save you, but it might let you last a little longer.
+- [color=#f7d038]Hope danger won’t notice[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I close my eyes and hope for the best — maybe danger won’t notice me[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_speak","loops":5,"part":"head"}"]
+	Third_manager_sad: Hope is cruel. It lets you think you’re safe, right before it rips the ground from under you.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":10,"part":"head"}"]
+	Third_manager_sad: Nothing? Maybe that’s wise. Silence keeps you from choosing — and choosing is when the danger starts.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Every choice carries weight, even when you don’t realize it. Some crush you slowly, others all at once. The trick isn’t avoiding danger—it’s deciding which weight you can carry without breaking.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_07
+label sad_07
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Shadows aren’t just cast by light. Sometimes, they follow you, no matter where you go.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]What’s your first reaction when you feel something watching you?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Confront it immediately[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I confront it immediately—better to face it than let it linger[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":8,"part":"head"}"]
+	Third_manager_sad: Face it? Brave… or foolish. Some things thrive on being noticed. You might just be inviting it closer.
+- [color=#8e59f5]Observe and understand[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I observe quietly and try to understand what it is[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":8,"part":"head"}"]
+	Third_manager_sad: Careful, but curiosity is a dangerous game. Watching back doesn’t mean you’re safe.
+- [color=#f7d038]Wave and hope for friendship[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]Wave at it and hope it’s friendly. What’s the worst that could happen?[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_speak","loops":7,"part":"head"}"]
+	Third_manager_sad: Strange… humor in the face of fear. Maybe that’s what keeps you standing when others fall.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":6,"part":"head"}"]
+	Third_manager_sad: You’d rather pretend it isn’t there? Ignoring it won’t stop it. If anything, it only watches closer.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Being watched changes you. It forces you to act, to move, to respond. The real question is… are you acting for yourself, or for whatever’s watching?
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_08
+label sad_08
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":6,"part":"head"}"]
+Third_manager_sad: The quiet here isn’t peace. It’s the kind of quiet that listens, waiting for you to break it.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":6,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]How do you handle silence when it becomes unbearable?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Break silence with voice[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I fill it with my own voice—better to break it than let it crush me[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_speak","loops":7,"part":"head"}"]
+	Third_manager_sad: Break the silence, yes… but be careful. Sometimes it shatters into something sharper.
+- [color=#8e59f5]Wait for it to pass[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I endure it and wait for it to pass[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":8,"part":"head"}"]
+	Third_manager_sad: Endure it? Silence doesn’t pass — it settles in, makes itself at home. And it grows heavier.
+- [color=#f7d038]Hum to disrupt quiet[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I start humming. Maybe it’ll make the quiet jealous and leave[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_cry","loops":8,"part":"head"}"]
+	Third_manager_sad: Jealous? No… silence isn’t jealous. It’s patient. It waits for you to hum yourself hoarse.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":9,"part":"head"}"]
+	Third_manager_sad: You let the silence win? That’s the thing about it—it never fights you. It just… swallows you whole.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_close_quiet","loops":6,"part":"head"}"]
+Third_manager_sad: Silence isn’t empty. It’s heavy, full of everything you’re trying not to think about. And when it finally breaks… it’s never as clean as you’d hope.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_09
+label sad_09
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Walls don’t just trap you. They mirror what you’re afraid to face.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":8,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]What do you do when you’re confronted with something that mirrors your greatest fear?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Face terror directly[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I face it head-on, no matter how terrifying.[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":9,"part":"head"}"]
+	Third_manager_sad: Head-on? Ah, but sometimes charging into the fear only makes it grow stronger. The mirror doesn’t flinch.
+- [color=#8e59f5]Step back and assess[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I step back and try to understand it before acting.[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Wise… Fear hides its truths behind chaos. Understanding it first might give you a chance.
+- [color=#f7d038]Ask for a photo[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I ask it to take a picture. It’s only fair, after all.[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":8,"part":"head"}"]
+	Third_manager_sad: A clever joke, but fear doesn’t humor you. It only feeds off the laughter you give it.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":7,"part":"head"}"]
+	Third_manager_sad: You let the fear swallow your voice. That’s how it works, you know.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":14,"part":"head"}"]
+Third_manager_sad: Fear isn’t something you can fight. It’s something you live with — until you understand it, or until it understands you. Some choices let you walk away. Others don’t.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+# sad_10
+label sad_10
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_speak","loops":7,"part":"head"}"]
+Third_manager_sad: The floor beneath you feels solid. Until it doesn’t.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_speak","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]How do you react when the ground beneath you seems to be slipping away?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Adapt and move forward[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I steady myself and adapt. I find a way to keep moving forward.[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Good. When everything slips away, the ability to move through it with purpose is a kind of strength.
+- [color=#8e59f5]Freeze and wait[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I freeze and wait for the ground to stabilize.[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":9,"part":"head"}"]
+	Third_manager_sad: Waiting? It won’t stabilize. Not while you’re waiting for it. It’s already too late.
+- [color=#f7d038]Fall headfirst[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I just fall, headfirst. Who needs solid ground anyway?[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":9,"part":"head"}"]
+	Third_manager_sad: Fall? Sometimes, the ground welcomes you in a way you didn’t expect. But it doesn’t catch you, does it?
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":7,"part":"head"}"]
+	Third_manager_sad: You stand still while the world moves beneath you. Interesting. But time doesn’t wait for silence.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":14,"part":"head"}"]
+Third_manager_sad: The ground is an illusion. It holds you until it doesn’t. Your real strength isn’t in what’s beneath you—it’s in how you move when everything shifts away.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
 
+# sad_11
+label sad_11
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_speak","loops":7,"part":"head"}"]
+Third_manager_sad: Not every door leads to freedom. Some open to something far worse.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_speak","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]What’s your first instinct when faced with a door you’re afraid to open?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Open slowly, prepared[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I open it slowly, prepared for whatever’s on the other side.[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":7,"part":"head"}"]
+	Third_manager_sad: Careful… but preparation doesn’t always save you. Sometimes, the door swings wider than you expect.
+- [color=#8e59f5]Wait and listen[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I wait and listen, trying to determine what’s behind it.[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":9,"part":"head"}"]
+	Third_manager_sad: Listening? The door won’t tell you its secrets. It only waits for you to act.
+- [color=#f7d038]Knock politely first[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I knock first—might as well be polite to whatever’s inside.[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":8,"part":"head"}"]
+	Third_manager_sad: Polite? Hah. The door doesn’t care about politeness. It’s already decided whether to welcome you… or devour you.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_open_cry","loops":7,"part":"head"}"]
+	Third_manager_sad: Silence before a door doesn’t stop it from opening. It only gives it more time to decide who—or what—it lets through.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":7,"part":"head"}"]
+Third_manager_sad: Doors are thresholds, but not all thresholds are meant to be crossed. Sometimes, what’s on the other side isn’t waiting for you—it’s waiting because of you. And once you open it, there’s no going back.
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+
+# sad_12
+label sad_12
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_speak","loops":7,"part":"head"}"]
+Third_manager_sad: Shadows never ask for permission to follow you. They simply do.
+[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_speak","loops":7,"part":"head"}"]
+Third_manager_sad: [color=#2effff][b]How do you feel when you realize that something — or someone — is following you?[/b][/color]
+[signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
+- [color=#6BBF59]Turn and face it[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#6BBF59]I turn around and face it directly.[/color]
+	[signal arg_type="dict" arg="{"stress_change":20}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_surprised","end_sprite":"sad_surprised_quiet","loops":9,"part":"head"}"]
+	Third_manager_sad: Face it? It’s already there. Turning around doesn’t make it disappear—it just makes it real.
+- [color=#8e59f5]Avoid and hope[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#8e59f5]I try to avoid it, hoping it loses interest.[/color]
+	[signal arg_type="dict" arg="{"stress_change":-5}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_open","end_sprite":"sad_open_quiet","loops":8,"part":"head"}"]
+	Third_manager_sad: Avoidance. It doesn’t work, but it gives you time. That’s all you get—time.
+- [color=#f7d038]Wave and be friendly[/color]
+	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
+	Player: [color=#f7d038]I wave. Maybe they’re just looking for a friend.[/color]
+	[signal arg_type="dict" arg="{"stress_change":10}"]
+	[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_surprised_speak","loops":8,"part":"head"}"]
+	Third_manager_sad: A friend? It’s not interested in friendship. It’s following you for another reason entirely.
+- [color=gray] . . . [/color]
+	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
+	[signal arg_type="dict" arg="{"stress_change":25}"]
+	[signal arg_type="dict" arg="{"animation":"sad_cry_open","end_sprite":"sad_surprised_cry","loops":9,"part":"head"}"]
+	Third_manager_sad: Ignoring it? You think it’ll go away if you don’t speak? No, silence just makes the footsteps louder.
+[signal arg_type="dict" arg="{"animation":"sad_speak_close","end_sprite":"sad_open_quiet","loops":14,"part":"head"}"]
+Third_manager_sad: When you’re followed, you’re not meant to feel safe. It’s a reminder that something is always there, watching, waiting. You can’t outrun it. The only question is\: can you live with it?
+[signal arg_type="dict" arg="{"random_question":"main"}"]
+
+
+# event_01
 label event_01
 [signal arg_type="dict" arg="{"animation":"change","end_sprite":"change","loops":0,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"change_to_white","end_sprite":"change_to_white","loops":0,"part":"hand"}"]

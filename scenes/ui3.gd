@@ -55,8 +55,8 @@ var is_tic_tac_played: bool = false
 var questions_value = 11
 var current_question_number = 0
 
-var sad_labels = ["sad_01", "sad_02", "sad_03", "sad_04", "sad_05", "sad_06", "sad_07", "sad_08", "sad_09", "sad_10"]
-var mania_labels = ["maniac_01", "maniac_02", "maniac_03", "maniac_04", "maniac_05"]
+var sad_labels = ["sad_01", "sad_02", "sad_03", "sad_04", "sad_05", "sad_06", "sad_07", "sad_08", "sad_09", "sad_10", "sad_11", "sad_12"]
+var mania_labels = ["maniac_01", "maniac_02", "maniac_03", "maniac_04", "maniac_05", "maniac_06", "maniac_07"]
 var event_labels = ["event_01", "event_02", "event_03"]
 var used_labels = []
 
