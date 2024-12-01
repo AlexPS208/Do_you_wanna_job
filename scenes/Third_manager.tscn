@@ -1,7 +1,8 @@
-[gd_scene load_steps=140 format=3 uid="uid://ll5a0pq105kj"]
+[gd_scene load_steps=145 format=3 uid="uid://ll5a0pq105kj"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_puiji"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="2_vglk8"]
+[ext_resource type="Texture2D" uid="uid://di0bclvnhi0se" path="res://assets/Third_manager/hand.png" id="2_w4nsg"]
 [ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="3_x1v6s"]
 [ext_resource type="Texture2D" uid="uid://doeqs1dinas4x" path="res://assets/sight.png" id="4_1amjb"]
 [ext_resource type="Script" path="res://scenes/ui3.gd" id="5_r3jcp"]
@@ -478,6 +479,30 @@ tracks/22/keys = {
 "update": 0,
 "values": [Vector2(214, -191)]
 }
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Lamp_animator/LeftHand:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-3.84662, 0, -1.37865)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Lamp_animator/RightHand:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(3.96398, 0, -1.37865)]
+}
 
 [sub_resource type="Animation" id="Animation_gxhb4"]
 resource_name = "death_animation"
@@ -775,12 +800,131 @@ tracks/14/keys = {
 "values": [Vector2(214, 75), Vector2(214, -191)]
 }
 
+[sub_resource type="Animation" id="Animation_r2cua"]
+resource_name = "death_animation_final"
+length = 4.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sight_texture:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.33333),
+"transitions": PackedFloat32Array(1, 3.03143),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3.96667, 4.8),
+"transitions": PackedFloat32Array(1, 1.2),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Restart:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3.96667, 4.8),
+"transitions": PackedFloat32Array(1, 1.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Restart:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(3.9, 3.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Restart:mouse_filter")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.9, 3.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Lamp_animator/LeftHand:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 3.46667, 4, 4.33333, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-3.84662, 0, -1.37865), Vector3(-3.84662, 0, -1.37865), Vector3(-1.2, 0, -1.379), Vector3(-0.866152, 0, -0.926183), Vector3(-0.595537, 0.0515861, -0.574341)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Lamp_animator/RightHand:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 3.43333, 4, 4.33333, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(3.96398, 0, -1.37865), Vector3(3.96398, 0, -1.37865), Vector3(1.2, 0, -1.379), Vector3(0.627609, 0, -1.12359), Vector3(0.479824, 0.0693039, -0.888125)]
+}
+tracks/7/type = "animation"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../UI/Stressbar/Stressbar_animator")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"clips": PackedStringArray("stressbar_hide"),
+"times": PackedFloat32Array(3.13333)
+}
+tracks/8/type = "animation"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../UI/Timebar/Timebar_animator")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"clips": PackedStringArray("timebar_hide"),
+"times": PackedFloat32Array(3.13333)
+}
+tracks/9/type = "animation"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../../UI/Silentbar/Silentbar_animator")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"clips": PackedStringArray("hide_pointers"),
+"times": PackedFloat32Array(3.13333)
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0001e"]
 _data = {
 "Light_turn_on": SubResource("Animation_a5a76"),
 "Light_turn_on_boss": SubResource("Animation_yplwc"),
 "RESET": SubResource("Animation_g10gl"),
 "death_animation": SubResource("Animation_gxhb4"),
+"death_animation_final": SubResource("Animation_r2cua"),
 "win_animation": SubResource("Animation_y84vm")
 }
 
@@ -1055,10 +1199,51 @@ tracks/2/keys = {
 "values": [Vector2(64, -214), Vector2(64, 64)]
 }
 
+[sub_resource type="Animation" id="Animation_ug4yx"]
+resource_name = "stressbar_hide"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Stressbar_bar_back:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(214, 75), Vector2(214, -205)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Stressbar_bar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(212, 75), Vector2(212, -199)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StressBar_frame:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(64, 64), Vector2(64, -214)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lwogh"]
 _data = {
 "RESET": SubResource("Animation_4673v"),
 "stress_hit": SubResource("Animation_7ulva"),
+"stressbar_hide": SubResource("Animation_ug4yx"),
 "stressbar_show": SubResource("Animation_3qnwr")
 }
 
@@ -1449,6 +1634,46 @@ tracks/2/keys = {
 "values": [Vector2(1227, -204), Vector2(1227, 74)]
 }
 
+[sub_resource type="Animation" id="Animation_lr3do"]
+resource_name = "timebar_hide"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Timebar_frame:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1219, 64), Vector2(1219, -212)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Timebar_bar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1229, 77), Vector2(1229, -199)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Timebar_bar_background:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1227, 74), Vector2(1227, -204)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h683"]
 _data = {
 "Questions_counter_hide": SubResource("Animation_udtqr"),
@@ -1456,6 +1681,7 @@ _data = {
 "RESET": SubResource("Animation_j2fid"),
 "event_end": SubResource("Animation_xkjxb"),
 "event_start": SubResource("Animation_ge0jb"),
+"timebar_hide": SubResource("Animation_lr3do"),
 "timebar_show": SubResource("Animation_e0wfs")
 }
 
@@ -1633,9 +1859,50 @@ tracks/2/keys = {
 "values": [Vector2(1547, -128), Vector2(1522, 170)]
 }
 
+[sub_resource type="Animation" id="Animation_2ma53"]
+resource_name = "hide_pointers"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Point_1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(3.27826e-07, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1647, 170), Vector2(1652, -129)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Point_2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0666663, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1584, 170), Vector2(1599, -129)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Point_3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.133333, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1522, 170), Vector2(1547, -128)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rhmux"]
 _data = {
 "RESET": SubResource("Animation_w51oa"),
+"hide_pointers": SubResource("Animation_2ma53"),
 "remove_point_1": SubResource("Animation_5hl6p"),
 "remove_point_2": SubResource("Animation_j588o"),
 "remove_point_3": SubResource("Animation_usay6"),
@@ -1946,6 +2213,23 @@ animations = [{
 "loop": false,
 "name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("63_2eddw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_ldaph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_sdlql")
+}, {
+"duration": 2.0,
+"texture": ExtResource("47_biht1")
+}],
+"loop": false,
+"name": &"remove_hands",
+"speed": 5.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o5mk5"]
@@ -2008,6 +2292,17 @@ color = Color(0, 0, 0, 1)
 libraries = {
 "": SubResource("AnimationLibrary_0001e")
 }
+
+[node name="LeftHand" type="Sprite3D" parent="Under_UI_effects/Scene_transit_start/Lamp_animator"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.84662, 0, -1.37865)
+modulate = Color(0.47788, 0.47788, 0.47788, 1)
+texture = ExtResource("2_w4nsg")
+
+[node name="RightHand" type="Sprite3D" parent="Under_UI_effects/Scene_transit_start/Lamp_animator"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.96398, 0, -1.37865)
+flip_h = true
+modulate = Color(0.478431, 0.478431, 0.478431, 1)
+texture = ExtResource("2_w4nsg")
 
 [node name="Lamp_sound" type="AudioStreamPlayer3D" parent="Under_UI_effects/Scene_transit_start"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74544, -3.04326)
@@ -2764,8 +3059,10 @@ autoplay = "sad_open_quiet"
 [node name="Manager_body" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.324772)
 sprite_frames = SubResource("SpriteFrames_wrjvb")
-animation = &"change_to_blue"
+animation = &"remove_hands"
 autoplay = "idle"
+frame = 3
+frame_progress = 1.0
 
 [node name="Manager_hands" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175977, 0.754335)

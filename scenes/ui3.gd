@@ -492,11 +492,11 @@ func win_animation_start():
 	AudioManager.set_ambient_volume(-50, 1)
 	is_code_allowed = false
 	is_player_dead = true
-	scene_animator.play("win_animation")
+	scene_animator.play("death_animation_final")
 
 
 func _on_lamp_animator_animation_finished(anim_name: StringName) -> void:
-	if anim_name == "win_animation":
+	if anim_name == "death_animation_final":
 		get_tree().change_scene_to_packed(second_manager_scene)
 
 

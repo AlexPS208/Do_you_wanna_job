@@ -1,4 +1,4 @@
-[gd_scene load_steps=131 format=3 uid="uid://b2llcp711acor"]
+[gd_scene load_steps=129 format=3 uid="uid://b2llcp711acor"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_t68ne"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="2_tlc3q"]
@@ -52,17 +52,15 @@
 [ext_resource type="Texture2D" uid="uid://dmvmxdjfbek00" path="res://assets/Second_manager/CHh13.png" id="44_j3p25"]
 [ext_resource type="Texture2D" uid="uid://tqy8oju6a20l" path="res://assets/Second_manager/CHh9.png" id="44_j8y51"]
 [ext_resource type="Texture2D" uid="uid://cy0sytraj4yc8" path="res://assets/Second_manager_scene/decor/switch2.png" id="44_qovnt"]
-[ext_resource type="Texture2D" uid="uid://cx8inbdbol1q2" path="res://assets/Second_manager/CHha3.1png.png" id="44_rp3h8"]
 [ext_resource type="Texture2D" uid="uid://pule5r4j008s" path="res://assets/Second_manager/CHh12.png" id="44_ulfvh"]
 [ext_resource type="Texture2D" uid="uid://du565w1jamva2" path="res://assets/Second_manager/CHha3png.png" id="45_dsvr5"]
 [ext_resource type="Texture2D" uid="uid://o32rqvbnuc5f" path="res://assets/Second_manager/CHh4.png" id="45_dt015"]
-[ext_resource type="Texture2D" uid="uid://b0kwwqaamncgb" path="res://assets/Second_manager/CHha3.2png.png" id="45_qisdy"]
 [ext_resource type="Texture2D" uid="uid://pqhtkvobqaed" path="res://assets/Second_manager/CHh5.png" id="46_84kka"]
 [ext_resource type="Texture2D" uid="uid://cd1u5opjl7272" path="res://assets/Second_manager/CHh3.png" id="46_fcbh7"]
-[ext_resource type="Texture2D" uid="uid://b4mvqbyytauko" path="res://assets/Second_manager/CHha3.3png.png" id="46_mdojk"]
 [ext_resource type="Texture2D" uid="uid://c6pkiuf4j7ub4" path="res://assets/Second_manager/CHh16.png" id="50_dxrd1"]
 [ext_resource type="Texture2D" uid="uid://salftehdkion" path="res://assets/Second_manager/CHh6.png" id="51_1nwk8"]
 [ext_resource type="Texture2D" uid="uid://dt6ipgnrsfyg8" path="res://assets/Second_manager/CHh14.png" id="52_dxtkk"]
+[ext_resource type="Texture2D" uid="uid://sve66g3arjfv" path="res://assets/Second_manager/CHha4png.png" id="60_kgbac"]
 [ext_resource type="Texture2D" uid="uid://b7jssrwk08q5a" path="res://assets/Second_manager/CHh1.png" id="65_kmbtq"]
 [ext_resource type="Texture2D" uid="uid://diaa74m3hl64j" path="res://assets/Second_manager_scene/table2.png" id="74_fsplh"]
 [ext_resource type="AudioStream" uid="uid://3d27a77a7uox" path="res://assets/sounds/First_manager_voice.mp3" id="80_tkkwk"]
@@ -1806,16 +1804,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("44_rp3h8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("45_qisdy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("46_mdojk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("44_rp3h8")
+"texture": ExtResource("60_kgbac")
 }],
 "loop": true,
 "name": &"claps",
@@ -2594,7 +2583,7 @@ autoplay = "idle"
 [node name="Manager_hands" type="AnimatedSprite3D" parent="Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.895191, 0.881117)
 sprite_frames = SubResource("SpriteFrames_1q1cf")
-animation = &"normal"
+animation = &"claps"
 autoplay = "normal"
 
 [node name="Table" type="Sprite3D" parent="Manager"]
