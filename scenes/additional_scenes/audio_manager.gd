@@ -31,6 +31,11 @@ var move_speed: float = 2.0
 var target_x_positions: Array = [2.0, -2.0, 0.0]
 var current_target_index: int = 0
 
+var master_volume: float = 0.5
+
+func _ready():
+	set_master_volume(master_volume)
+
 
 func _process(delta: float) -> void:
 	# Плавное изменение громкости музыки
@@ -147,3 +152,22 @@ func _on_music_finished() -> void:
 
 func _on_ambient_finished() -> void:
 	play_ambient(ambient_player.stream.resource_path)
+
+
+
+
+func set_master_volume(value: float):
+	master_volume = clamp(value, 0.0, 1.0)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), linear_to_db(master_volume))
+
+# Конвертация из линейного значения (0.0-1.0) в децибелы
+func linear_to_db(value: float) -> float:
+	return 20.0 * logWithBase(value, 10) if value > 0.0 else -80.0
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	set_master_volume(value)
+
+
+func logWithBase(value, base):
+	return log(value) / log(base)

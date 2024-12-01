@@ -2335,6 +2335,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 0.588235)
 
 [node name="Label" type="Label" parent="UI/Menu/MenuPanel"]
@@ -2407,6 +2408,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 0.588235)
 
 [node name="Label" type="Label" parent="UI/Menu/Exit_pre_confirm"]
@@ -2480,6 +2482,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 0.588235)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="UI/Menu/Exit_confirm"]

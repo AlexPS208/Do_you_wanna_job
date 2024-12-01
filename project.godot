@@ -22,6 +22,7 @@ config/icon="res://assets/_Mpt5D2 копия.png"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 AudioManager="*res://scenes/additional_scenes/audio_manager.tscn"
 CursorManager="*res://scenes/additional_scenes/cursor_manager.tscn"
+AudioSettings="*res://scenes/additional_scenes/audio_settings.tscn"
 
 [dialogic]
 

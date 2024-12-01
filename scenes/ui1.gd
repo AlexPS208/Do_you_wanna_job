@@ -176,6 +176,7 @@ func _simulate_keypress(action_name: String):
 func show_menu() -> void:
 	get_tree().paused = true
 	
+	AudioSettings._show_slider()
 	menu_panel.visible = true
 	is_menu_active = true
 	is_menu_panel_active = true
@@ -191,6 +192,7 @@ func show_menu() -> void:
 func hide_menu() -> void:
 	get_tree().paused = false
 	
+	AudioSettings._hide_slider()
 	menu_panel.visible = false
 	exit_pre_confirm_panel.visible = false
 	exit_confirm_panel.visible = false

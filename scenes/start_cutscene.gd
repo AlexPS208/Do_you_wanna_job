@@ -18,6 +18,7 @@ func _on_cutscene_animation_animation_finished(_animation_name: String) -> void:
 func _on_start_pressed() -> void:
 	button_sound.play()
 	menu_panel.visible = false
+	AudioSettings._hide_slider()
 	cutscene_animator.play("Cutscene")
 
 
