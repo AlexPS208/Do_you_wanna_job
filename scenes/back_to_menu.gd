@@ -1,7 +1,5 @@
 extends Node
 
-@onready var button_sound: AudioStreamPlayer3D = $Button_sound
-
 var menu = preload("res://scenes/start_cutscene.tscn")
 
 
@@ -14,5 +12,5 @@ func _process(delta: float) -> void:
 
 
 func _on_back_pressed() -> void:
-	button_sound.play()
+	AudioManager.button_play()
 	get_tree().change_scene_to_packed(menu)

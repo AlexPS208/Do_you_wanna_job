@@ -1,0 +1,512 @@
+keys,en,ru
+Text/311/text,BLOODY COW!,ТВОЮ МАТЬ!
+Text/312/text,Why are you swearing?,Почему ты ругаешься?  
+Text/313/text,Does the room frighten you?,Комната тебя пугает?  
+Text/314/text,I... it’s just… unsettling.,Я... это просто... тревожно.  
+Text/315/text,Unsettling? Yes… that’s a fair word.,Тревожно? Да... это подходящее слово.  
+Text/316/text,This place was never meant to comfort anyone,"Это место никогда не было создано, чтобы успокаивать.  "
+Text/317/text,It reflects… everything we hide. Everything we can’t fix.,"Оно отражает... всё, что мы скрываем. Всё, что не можем исправить.  "
+Text/318/text,"You’ve come this far. That’s something, I suppose.","Ты зашел так далеко. Это уже что-то, полагаю.  "
+Text/319/text,Most don’t.,Большинство не доходит.  
+Text/31a/text,"They stumble, break, or simply…","Они оступаются, ломаются или просто...  "
+Text/31b/text,[b]fade away[/b].,[b]исчезают[/b].  
+Text/31c/text,I’m just here to finish the interview.,"Я просто здесь, чтобы закончить собеседование.  "
+Text/31d/text,"Finish… yes, I suppose it’s about endings, isn’t it?","Закончить... да, наверное, дело в концовках, не так ли?  "
+Text/31e/text,But endings come in many forms. Some are quiet. Others… not so much.,Но концовки бывают разными. Иногда тихими. А иногда... совсем нет.  
+Text/31f/text,I am the last step.,Я — последний шаг.  
+Text/320/text,The final test.,Финальное испытание.  
+Text/321/text,But don’t think of it as success or failure — think of it as… revealing who you are. Or who you’ve been pretending to be,"Но не думай об этом как об успехе или провале — подумай, что это... раскрывает, кто ты есть. Или кем ты притворялся быть.  "
+Text/322/text,"Well, we should begin","Ну, давай начнем.  "
+Text/323/text,▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓,▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  
+Text/324/text,Sorry?,Извините?  
+Text/325/text,I said — questions are all I have left,"Я сказал — вопросы — это всё, что у меня осталось.  "
+Text/326/text,"And perhaps, all you have too","И, возможно, всё, что осталось у тебя.  "
+Label/327/display_name,,
+Text/328/text,Do you ever feel like this place pulls you in deeper the more you resist?,"Ты когда-нибудь чувствовал, что чем больше сопротивляешься этому месту, тем глубже оно затягивает?  "
+Text/329/text,[color=#2effff][b]What’s the safest way to navigate through such a trap?[/b][/color],[color=#2effff][b]Как безопаснее всего пройти через такую ловушку?[/b][/color]  
+Choice/32a/text,[color=#6BBF59]Break free[/color],[color=#6BBF59]Вырваться[/color]  
+Choice/32a/disabled_text,,
+Text/32b/text,"[color=#6BBF59]Break free, no matter the cost[/color]","[color=#6BBF59]Вырваться, чего бы это ни стоило[/color]  "
+Text/32c/text,"Break free, no matter the cost?","Вырваться, чего бы это ни стоило?  "
+Text/32d/text,"That’s bold, but traps are patient. They wait for boldness to stumble.","Смело, но ловушки терпеливы. Они ждут, пока смелость оступится.  "
+Choice/32e/text,[color=#8e59f5]Tread carefully[/color],[color=#8e59f5]Шагать осторожно[/color]  
+Choice/32e/disabled_text,,
+Text/32f/text,[color=#8e59f5]Tread carefully and stay observant[/color],[color=#8e59f5]Шагать осторожно и оставаться внимательным[/color]  
+Text/330/text,Treading carefully…,Шагать осторожно...  
+Text/331/text,"Yes, that might give you a chance. But even the careful can misstep","Да, это может дать шанс. Но даже самые осторожные могут ошибиться.  "
+Choice/332/text,[color=#f7d038]Resign to it[/color],[color=#f7d038]Смириться[/color]  
+Choice/332/disabled_text,,
+Text/333/text,[color=#f7d038]Resign to it — it’ll swallow you anyway[/color],[color=#f7d038]Смириться — она всё равно тебя поглотит[/color]  
+Text/334/text,Resign?,Смириться?  
+Text/335/text,"Maybe that’s the only option. It swallows you anyway, doesn’t it?","Может быть, это единственный вариант. Она всё равно тебя поглотит, не так ли?  "
+Choice/336/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/336/disabled_text,,
+Text/337/text,"Ah, silence… maybe the trap’s already won.","Ах, молчание... может, ловушка уже победила.  "
+Text/338/text,Maybe it’s just waiting to spring on us both.,"Может, она просто ждет, чтобы захлопнуться на нас обоих.  "
+Text/339/text,"Traps are clever that way, you know.",Ловушки умны в этом.  
+Text/33a/text,They don’t always catch you with force. Sometimes they just…,Они не всегда ловят силой. Иногда они просто...  
+Text/33b/text,wait for you to step wrong.,"ждут, пока ты ошибёшься.  "
+Text/33c/text,And the worst part?,И худшая часть?  
+Text/33d/text,You rarely see the mistake until it’s too late,"Ты редко видишь ошибку, пока не становится слишком поздно.  "
+Label/33e/display_name,,
+Text/33f/text,Do you hear the ticking? It’s like time here isn’t a friend but a hunter.,"Ты слышишь этот тик-так? Как будто время здесь — не друг, а охотник.  "
+Text/340/text,[color=#2effff][b]How do you deal with time when it feels against you?[/b][/color],"[color=#2effff][b]Что делать с временем, если кажется, что оно против тебя?[/b][/color]  "
+Choice/341/text,[color=#6BBF59]Take control of it[/color],[color=#6BBF59]Взять его под контроль[/color]  
+Choice/341/disabled_text,,
+Text/342/text,[color=#6BBF59]Take control of it—don’t let it control you[/color],[color=#6BBF59]Взять время под контроль — не позволить ему управлять собой[/color]  
+Text/343/text,Take control? Maybe…,Взять под контроль? Может быть...  
+Text/344/text,"But time is a hunter, and it never stops chasing.","Но время — это охотник, и оно никогда не перестанет преследовать.  "
+Choice/345/text,[color=#8e59f5]Work with it[/color],[color=#8e59f5]Работать с ним[/color]  
+Choice/345/disabled_text,,
+Text/346/text,"[color=#8e59f5]Work with it, even if it feels against you[/color]","[color=#8e59f5]Работать с ним, даже если оно против тебя[/color]  "
+Text/347/text,Work with it?,Работать с ним?  
+Text/348/text,It’s against you from the start. You’re just delaying the inevitable.,Оно против тебя с самого начала. Ты лишь оттягиваешь неизбежное.  
+Choice/349/text,[color=#f7d038]Ask it to pause[/color],[color=#f7d038]Попросить его остановиться[/color]  
+Choice/349/disabled_text,,
+Text/34a/text,[color=#f7d038]Ask time to pause politely—it might listen[/color],[color=#f7d038]Попросить время остановиться вежливо — вдруг оно послушается[/color]  
+Text/34b/text,Ask it to pause?,Попросить его остановиться?  
+Text/34c/text,If only it were that polite… but it’s not.,Если бы оно только было таким вежливым... но это не так.  
+Choice/34d/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/34d/disabled_text,,
+Text/34e/text,So… you’d let it win? Just like that?,Значит… ты бы просто сдался? Вот так вот?  
+Text/34f/text,Time doesn’t need help dragging you down—it’s good at that on its own.,"Времени не нужна помощь, чтобы утянуть тебя на дно — оно и так в этом мастер.  "
+Text/350/text,"Time isn’t fair. It never is. You run, you stumble, you fight…","Время несправедливо. Всегда было и будет. Ты бежишь, оступаешься, борешься…  "
+Text/351/text,And yet it always gets the last word.,И всё равно последнее слово остаётся за ним.  
+Text/352/text,"I wonder, does anyone ever truly win against it?","Интересно, побеждает ли его вообще хоть кто-нибудь?  "
+Label/353/display_name,,
+Text/354/text,"Shadows move differently here. Sometimes, they seem alive.","Тени здесь двигаются иначе. Иногда кажется, будто они живые.  "
+Text/355/text,[color=#2effff][b]What’s the best way to deal with something you don’t understand?[/b][/color],"[color=#2effff][b]Как лучше всего справляться с тем, что ты не понимаешь?[/b][/color]  "
+Choice/356/text,[color=#6BBF59]Face it directly[/color],[color=#6BBF59]Посмотреть в лицо[/color]  
+Choice/356/disabled_text,,
+Text/357/text,[color=#6BBF59]Face it directly and demand clarity[/color],[color=#6BBF59]Посмотреть в лицо и потребовать ясности[/color]  
+Text/358/text,Face it? That’s brave…,Посмотреть в лицо? Смело…  
+Text/359/text,"But bravery doesn’t always work. Sometimes, it just breaks you.",Но смелость не всегда помогает. Иногда она ломает.  
+Choice/35a/text,[color=#8e59f5]Approach it cautiously[/color],[color=#8e59f5]Подходить осторожно[/color]  
+Choice/35a/disabled_text,,
+Text/35b/text,[color=#8e59f5]Approach it cautiously and gather information[/color],[color=#8e59f5]Подойти осторожно и собрать информацию[/color]  
+Text/35c/text,"Cautious… yes, maybe that’s the safest.","Осторожно… возможно, это самый безопасный путь.  "
+Text/35d/text,"But even then, safety is an illusion.",Но даже тогда безопасность — лишь иллюзия.  
+Choice/35e/text,[color=#f7d038]Pretend to understand[/color],"[color=#f7d038]Притвориться, что понимаешь[/color]  "
+Choice/35e/disabled_text,,
+Text/35f/text,[color=#f7d038]Pretend you understand — it might go away[/color],"[color=#f7d038]Притворись, что понимаешь — возможно, оно исчезнет[/color]  "
+Text/360/text,Pretend? Hah…,Притвориться? Ха…  
+Text/361/text,Maybe ignorance really is bliss. Until it isn’t.,"Может, незнание действительно счастье. Пока не перестанет быть таковым.  "
+Choice/362/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/362/disabled_text,,
+Text/363/text,You’d rather say nothing? Maybe that’s wise.,"Предпочитаешь молчать? Может, это и разумно.  "
+Text/364/text,Sometimes not knowing is… safer.,Иногда не знать… безопаснее.  
+Text/365/text,The unknown doesn’t care if you face it or not.,"Неизвестное не заботится, встретишь ли ты его или нет.  "
+Text/366/text,"It creeps in, regardless. And the more you try to understand, the more it slips through your fingers.","Оно подкрадывается, в любом случае. И чем больше пытаешься понять, тем сильнее оно ускользает.  "
+Text/367/text,Maybe that’s why we fear it so much.,"Может, именно поэтому мы так его боимся.  "
+Label/368/display_name,,
+Text/369/text,It’s hard to tell if the walls here protect you or keep you prisoner.,"Трудно сказать, защищают ли эти стены тебя или держат в плену.  "
+Text/36a/text,[color=#2effff][b]How do you decide where to place your trust?[/b][/color],"[color=#2effff][b]Как ты решаешь, кому доверять?[/b][/color]  "
+Choice/36b/text,[color=#6BBF59]Trust your instincts[/color],[color=#6BBF59]Доверять инстинктам[/color]  
+Choice/36b/disabled_text,,
+Text/36c/text,[color=#6BBF59]Trust your instincts and take risks when necessary[/color],"[color=#6BBF59]Доверять инстинктам и рисковать, если нужно[/color]  "
+Text/36d/text,Trust your instincts? That’s risky.,Инстинктам? Это рискованно.  
+Text/36e/text,Instincts fail more often than they save.,"Инстинкты чаще подводят, чем спасают.  "
+Choice/36f/text,[color=#8e59f5]Trust after observation[/color],[color=#8e59f5]Доверять после наблюдений[/color]  
+Choice/36f/disabled_text,,
+Text/370/text,[color=#8e59f5]Only trust after carefully observing behavior[/color],[color=#8e59f5]Доверять только после тщательных наблюдений[/color]  
+Text/371/text,"Careful observation… yes, trust must be earned.","Наблюдательность… да, доверие нужно заслужить.  "
+Text/372/text,But even earned trust can break.,Но даже заслуженное доверие может быть разрушено.  
+Choice/373/text,[color=#f7d038]Trust no one[/color],[color=#f7d038]Никому не доверять[/color]  
+Choice/373/disabled_text,,
+Text/374/text,"[color=#f7d038]Trust no one, especially the walls![/color]","[color=#f7d038]Никому не доверяй, особенно стенам![/color]  "
+Text/375/text,Trust no one?,Никому?  
+Text/376/text,Maybe you’re right. Trust only leads to betrayal.,"Возможно, ты прав. Доверие слишком часто ведёт к предательству.  "
+Choice/377/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/377/disabled_text,,
+Text/378/text,"Silence is safer, I suppose.","Молчание безопаснее, наверное.  "
+Text/379/text,But trust doesn’t thrive in silence — it withers.,Но в тишине доверие не растёт — оно умирает.  
+Text/37a/text,"Trust is fragile, like a thread stretched too thin.","Доверие хрупко, как натянутая нить.  "
+Text/37b/text,"And when it snaps, it doesn’t just break — it cuts. Be careful where you place it, or you might bleed for it.","И когда она рвётся, это не просто разрыв — это рана. Будь осторожен, куда его кладёшь, иначе можешь за это истечь кровью.  "
+Label/37c/display_name,,
+Text/37d/text,"This place doesn’t just take your time. It takes your choices, too.",Это место забирает не только ваше время. Оно отнимает и ваш выбор.  
+Text/37e/text,[color=#2effff][b]What’s the best approach when your options feel limited?[/b][/color],"[color=#2effff][b]Как лучше поступить, если кажется, что вариантов почти нет?[/b][/color]  "
+Choice/37f/text,[color=#6BBF59]Think creatively for solutions[/color],[color=#6BBF59]Думать нестандартно[/color]  
+Choice/37f/disabled_text,,
+Text/380/text,[color=#6BBF59]Create new options through clever thinking[/color],[color=#6BBF59]Придумать новые варианты с помощью хитроумных решений[/color]  
+Text/381/text,Create new options? Clever… but even cleverness has its limits.,Придумать новые варианты? Ловко… но даже у хитрости есть пределы.  
+Choice/382/text,[color=#8e59f5]Make do with what’s here[/color],[color=#8e59f5]Использовать доступное[/color]  
+Choice/382/disabled_text,,
+Text/383/text,[color=#8e59f5]Make the best of what’s available[/color],"[color=#8e59f5]Максимально использовать то, что есть под рукой[/color]  "
+Text/384/text,Make the best of what’s there? That’s practical… but also so very… small.,Использовать доступное? Практично… но это так… мелко.  
+Choice/385/text,[color=#f7d038]Let fate decide[/color],[color=#f7d038]Положиться на судьбу[/color]  
+Choice/385/disabled_text,,
+Text/386/text,[color=#f7d038]Flip a coin and let fate decide[/color],[color=#f7d038]Подбросить монетку и довериться судьбе[/color]  
+Text/387/text,Flip a coin? Fate loves a gambler… until it doesn’t.,Монетка? Судьба любит игроков… пока не решит иначе.  
+Choice/388/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/388/disabled_text,,
+Text/389/text,"Silence? Maybe that’s your only option left… when there’s nothing to say, there’s nothing to choose. Or maybe the choices have already been made for you.","Молчание? Возможно, это единственный оставшийся выбор… Когда нечего сказать, выбирать больше нечего. А может, выборы уже сделаны за вас.  "
+Text/38a/text,"Choices are an illusion, most of the time. You think you’re clever, making decisions, carving paths… but in the end, the paths were already there, waiting for you to stumble down them. All you can do is hope you don’t fall too hard when you reach the end.","Чаще всего выбор — это иллюзия. Вам кажется, что вы умны, принимаете решения, прокладываете путь… но на самом деле пути уже были готовы, ждали, пока вы споткнётесь на них. Всё, что остаётся, — это надеяться, что в конце вы не упадёте слишком больно.  "
+Label/38b/display_name,,
+Text/38c/text,Some doors lock to keep you out. Others lock to keep you in. Do you know which is which?,"Некоторые двери заперты, чтобы не пустить вас внутрь. Другие — чтобы не выпустить наружу. Вы знаете, где какие?  "
+Text/38d/text,[color=#2effff][b]How do you approach situations where every choice seems dangerous?[/b][/color],"[color=#2effff][b]Что делать, если любой выбор кажется опасным?[/b][/color]  "
+Choice/38e/text,[color=#6BBF59]Face it boldly[/color],[color=#6BBF59]Идти напролом[/color]  
+Choice/38e/disabled_text,,
+Text/38f/text,[color=#6BBF59]I take the boldest choice and face it head-on[/color],[color=#6BBF59]Я выбираю смелость и действую решительно[/color]  
+Text/390/text,Boldness is admirable… until it leads you straight into the trap. Sometimes the most dangerous path is the one you don’t see.,"Смелость восхищает… пока не приводит прямо в ловушку. Иногда самый опасный путь — это тот, который вы не замечаете.  "
+Choice/391/text,[color=#8e59f5]Weigh risks and act[/color],[color=#8e59f5]Оценивать риски[/color]  
+Choice/391/disabled_text,,
+Text/392/text,[color=#8e59f5]I weigh the risks carefully and tread lightly[/color],[color=#8e59f5]Я тщательно оцениваю риски и действую осторожно[/color]  
+Text/393/text,"Caution, yes. It may not save you, but it might let you last a little longer.","Осторожность, да. Она может и не спасти, но, возможно, позволит продержаться чуть дольше.  "
+Choice/394/text,[color=#f7d038]Hope danger won’t notice[/color],"[color=#f7d038]Надеться, что опасность пройдёт мимо[/color]  "
+Choice/394/disabled_text,,
+Text/395/text,[color=#f7d038]I close my eyes and hope for the best — maybe danger won’t notice me[/color],[color=#f7d038]Я закрываю глаза и надеюсь на лучшее — вдруг меня не заметят[/color]  
+Text/396/text,"Hope is cruel. It lets you think you’re safe, right before it rips the ground from under you.","Надежда жестока. Она даёт вам почувствовать себя в безопасности, прежде чем выбить почву из-под ног.  "
+Choice/397/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/397/disabled_text,,
+Text/398/text,Nothing? Maybe that’s wise. Silence keeps you from choosing — and choosing is when the danger starts.,"Ничего? Может, это мудро. Молчание избавляет от необходимости выбора — а выбор и есть начало опасности.  "
+Text/399/text,"Every choice carries weight, even when you don’t realize it. Some crush you slowly, others all at once. The trick isn’t avoiding danger—it’s deciding which weight you can carry without breaking.","Каждый выбор несёт в себе тяжесть, даже если вы этого не осознаёте. Одни медленно раздавливают, другие делают это мгновенно. Секрет не в том, чтобы избегать опасности, а в том, чтобы понять, какой вес вы сможете вынести, не сломавшись.  "
+Label/39a/display_name,,
+Text/39b/text,"Shadows aren’t just cast by light. Sometimes, they follow you, no matter where you go.","Тени появляются не только там, где есть свет. Иногда они следуют за вами, куда бы вы ни пошли.  "
+Text/39c/text,[color=#2effff][b]What’s your first reaction when you feel something watching you?[/b][/color],"[color=#2effff][b]Как вы реагируете, когда чувствуете, что за вами наблюдают?[/b][/color]  "
+Choice/39d/text,[color=#6BBF59]Confront it immediately[/color],[color=#6BBF59]Сразу сталкиваюсь с этим[/color]  
+Choice/39d/disabled_text,,
+Text/39e/text,[color=#6BBF59]I confront it immediately—better to face it than let it linger[/color],"[color=#6BBF59]Я смотрю прямо на это — лучше встретить лицом к лицу, чем терпеть неизвестность[/color]  "
+Text/39f/text,Face it? Brave… or foolish. Some things thrive on being noticed. You might just be inviting it closer.,"Встретить? Смело… или глупо. Некоторые вещи только усиливаются, когда на них обращают внимание. Возможно, вы просто приглашаете их ближе.  "
+Choice/3a0/text,[color=#8e59f5]Observe and understand[/color],[color=#8e59f5]Наблюдать за ними[/color]  
+Choice/3a0/disabled_text,,
+Text/3a1/text,[color=#8e59f5]I observe quietly and try to understand what it is[/color],"[color=#8e59f5]Я наблюдаю тихо, стараясь понять, что это такое[/color]  "
+Text/3a2/text,"Careful, but curiosity is a dangerous game. Watching back doesn’t mean you’re safe.","Осторожно, но любопытство — опасная игра. Наблюдать за ними не значит быть в безопасности.  "
+Choice/3a3/text,[color=#f7d038]Wave and hope for friendship[/color],[color=#f7d038]Попытаться подружиться[/color]  
+Choice/3a3/disabled_text,,
+Text/3a4/text,[color=#f7d038]Wave at it and hope it’s friendly. What’s the worst that could happen?[/color],[color=#f7d038]Помахать и надеяться на дружелюбие. Что может пойти не так?[/color]  
+Text/3a5/text,Strange… humor in the face of fear. Maybe that’s what keeps you standing when others fall.,"Странно… юмор перед лицом страха. Может, именно он держит вас на ногах, когда другие падают.  "
+Choice/3a6/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/3a6/disabled_text,,
+Text/3a7/text,"You’d rather pretend it isn’t there? Ignoring it won’t stop it. If anything, it only watches closer.","Предпочитаете делать вид, что ничего нет? Игнорирование не остановит это. Скорее наоборот, оно начнёт наблюдать ещё пристальнее.  "
+Text/3a8/text,"Being watched changes you. It forces you to act, to move, to respond. The real question is… are you acting for yourself, or for whatever’s watching?","Наблюдение меняет вас. Оно вынуждает действовать, двигаться, реагировать. Но главный вопрос в том, для кого вы это делаете — для себя или для того, что наблюдает?  "
+Label/3a9/display_name,,
+Text/3aa/text,"The quiet here isn’t peace. It’s the kind of quiet that listens, waiting for you to break it.","Тишина здесь — это не покой. Это тишина, которая слушает, ожидая, пока вы её нарушите.  "
+Text/3ab/text,[color=#2effff][b]How do you handle silence when it becomes unbearable?[/b][/color],"[color=#2effff][b]Что вы делаете, когда тишина становится невыносимой?[/b][/color]  "
+Choice/3ac/text,[color=#6BBF59]Break silence with voice[/color],[color=#6BBF59]Нарушаю её голосом[/color]  
+Choice/3ac/disabled_text,,
+Text/3ad/text,[color=#6BBF59]I fill it with my own voice—better to break it than let it crush me[/color],"[color=#6BBF59]Я заполняю её своим голосом — лучше разрушить тишину, чем позволить ей разрушить меня[/color]  "
+Text/3ae/text,"Break the silence, yes… but be careful. Sometimes it shatters into something sharper.","Разрушить тишину, да… но будьте осторожны. Иногда она разлетается на острые осколки.  "
+Choice/3af/text,[color=#8e59f5]Wait for it to pass[/color],"[color=#8e59f5]Жду, пока пройдёт[/color]  "
+Choice/3af/disabled_text,,
+Text/3b0/text,[color=#8e59f5]I endure it and wait for it to pass[/color],"[color=#8e59f5]Я терплю и жду, пока она не пройдёт сама[/color]  "
+Text/3b1/text,"Endure it? Silence doesn’t pass — it settles in, makes itself at home. And it grows heavier.","Терпеть? Тишина не проходит — она оседает, обживается. И с каждым разом становится тяжелее.  "
+Choice/3b2/text,[color=#f7d038]Hum to disrupt quiet[/color],[color=#f7d038]Напеваю мелодию[/color]  
+Choice/3b2/disabled_text,,
+Text/3b3/text,[color=#f7d038]I start humming. Maybe it’ll make the quiet jealous and leave[/color],[color=#f7d038]Я начинаю напевать. Вдруг тишина разозлится и уйдёт?[/color]  
+Text/3b4/text,Jealous? No… silence isn’t jealous. It’s patient. It waits for you to hum yourself hoarse.,"Разозлится? Нет… тишина не злится. Она терпелива. И ждёт, пока вы не сорвёте голос.  "
+Choice/3b5/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/3b5/disabled_text,,
+Text/3b6/text,You let the silence win? That’s the thing about it — it never fights you. It just… swallows you whole.,Вы позволяете тишине победить? В этом её особенность — она никогда не борется. Она просто… поглощает.  
+Text/3b7/text,"Silence isn’t empty. It’s heavy, full of everything you’re trying not to think about. And when it finally breaks… it’s never as clean as you’d hope.","Тишина не пуста. Она полна всего, о чём вы пытаетесь не думать. А когда она наконец нарушается… это никогда не бывает так чисто, как вам хотелось бы.  "
+Label/3b8/display_name,,
+Text/3b9/text,Walls don’t just trap you. They mirror what you’re afraid to face.,Стены не просто не выпускают вас. Они отражают ваши страхи.
+Text/3ba/text,[color=#2effff][b]What do you do when you’re confronted with something that mirrors your greatest fear?[/b][/color],"[color=#2effff][b]Что ты будешь делать, если столкнешься с тем, что отражает твой самый большой страх?[/b][/color]"
+Choice/3bb/text,[color=#6BBF59]Face terror directly[/color],[color=#6BBF59]Противостоять страху лицом к лицу[/color]
+Choice/3bb/disabled_text,,
+Text/3bc/text,"[color=#6BBF59]I face it head-on, no matter how terrifying.[/color]","[color=#6BBF59]Я встречаю его прямо, несмотря на весь ужас.[/color]"
+Text/3bd/text,"Head-on? Ah, but sometimes charging into the fear only makes it grow stronger. The mirror doesn’t flinch.",Прямо? А вот иногда бросаться в страх — это только усиливает его. Зеркало не моргает.
+Choice/3be/text,[color=#8e59f5]Step back and assess[/color],[color=#8e59f5]Отступить и оценить ситуацию[/color]
+Choice/3be/disabled_text,,
+Text/3bf/text,[color=#8e59f5]I step back and try to understand it before acting.[/color],"[color=#8e59f5]Я отступаю и пытаюсь понять, что происходит, прежде чем действовать.[/color]"
+Text/3c0/text,Wise… Fear hides its truths behind chaos. Understanding it first might give you a chance.,Мудро… Страх скрывает свои истоки за хаосом. Понимание поможет тебе.
+Choice/3c1/text,[color=#f7d038]Ask for a photo[/color],[color=#f7d038]Попросить сделать фото[/color]
+Choice/3c1/disabled_text,,
+Text/3c2/text,"[color=#f7d038]I ask it to take a picture. It’s only fair, after all.[/color]","[color=#f7d038]Я прошу его сделать снимок. В конце концов, это справедливо.[/color]"
+Text/3c3/text,"A clever joke, but fear doesn’t humor you. It only feeds off the laughter you give it.","Остроумная шутка, но страх не шутит с тобой. Он питается тем смехом, который ты ему даешь."
+Choice/3c4/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/3c4/disabled_text,,
+Text/3c5/text,"You let the fear swallow your voice. That’s how it works, you know.","Ты позволяешь страху поглотить твой голос. Так оно и работает, знаешь ли."
+Text/3c6/text,"Fear isn’t something you can fight. It’s something you live with — until you understand it, or until it understands you. Some choices let you walk away. Others don’t.","Страх — это не то, с чем можно бороться. Это то, с чем приходится жить — пока не поймешь его или не поймет он тебя. Некоторые выборы позволяют уйти. Другие — нет."
+Label/3c7/display_name,,
+Text/3c8/text,The floor beneath you feels solid. Until it doesn’t.,Пол под тобой кажется твердым. Пока это не меняется.
+Text/3c9/text,[color=#2effff][b]How do you react when the ground beneath you seems to be slipping away?[/b][/color],"[color=#2effff][b]Как ты отреагируешь, если почувствуешь, что земля уходит из-под ног?[/b][/color]"
+Choice/3ca/text,[color=#6BBF59]Adapt and move forward[/color],[color=#6BBF59]Приспособиться и двигаться дальше[/color]
+Choice/3ca/disabled_text,,
+Text/3cb/text,[color=#6BBF59]I steady myself and adapt. I find a way to keep moving forward.[/color],[color=#6BBF59]Я держусь и приспосабливаюсь. Я нахожу способ двигаться вперед.[/color]
+Text/3cc/text,"Good. When everything slips away, the ability to move through it with purpose is a kind of strength.","Хорошо. Когда все уходит, способность двигаться с целью — это своего рода сила."
+Choice/3cd/text,[color=#8e59f5]Freeze and wait[/color],[color=#8e59f5]Замереть и подождать[/color]
+Choice/3cd/disabled_text,,
+Text/3ce/text,[color=#8e59f5]I freeze and wait for the ground to stabilize.[/color],"[color=#8e59f5]Я замираю и жду, пока земля не стабилизируется.[/color]"
+Text/3cf/text,Waiting? It won’t stabilize. Not while you’re waiting for it. It’s already too late.,Ждать? Она не стабилизируется. Не пока ты ждешь. Уже слишком поздно.
+Choice/3d0/text,[color=#f7d038]Fall headfirst[/color],[color=#f7d038]Упасть головой вниз[/color]
+Choice/3d0/disabled_text,,
+Text/3d1/text,"[color=#f7d038]I just fall, headfirst. Who needs solid ground anyway?[/color]","[color=#f7d038]Я просто падаю, головой вниз. Кому вообще нужна твердая земля?[/color]"
+Text/3d2/text,"Fall? Sometimes, the ground welcomes you in a way you didn’t expect. But it doesn’t catch you, does it?","Упасть? Иногда земля встречает тебя так, как ты не ожидал. Но она не поймает тебя, верно?"
+Choice/3d3/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/3d3/disabled_text,,
+Text/3d4/text,You stand still while the world moves beneath you. Interesting. But time doesn’t wait for silence.,"Ты стоишь неподвижно, пока мир двигается под тобой. Интересно. Но время не ждет тишины."
+Text/3d5/text,The ground is an illusion. It holds you until it doesn’t. Your real strength isn’t in what’s beneath you—it’s in how you move when everything shifts away.,"Земля — это иллюзия. Она держит тебя, пока не перестает. Твоя настоящая сила не в том, что под тобой — а в том, как ты двигаешься, когда все уходит."
+Label/3d6/display_name,,
+Text/3d7/text,Not every door leads to freedom. Some open to something far worse.,Не каждая дверь ведет к свободе. Некоторые открывают путь к худшему.
+Text/3d8/text,[color=#2effff][b]What’s your first instinct when faced with a door you’re afraid to open?[/b][/color],"[color=#2effff][b]Какое твое первое ощущение, когда ты сталкиваешься с дверью, которую боишься открыть?[/b][/color]"
+Choice/3d9/text,"[color=#6BBF59]Open slowly, prepared[/color]","[color=#6BBF59]Открыть медленно, подготовленным[/color]"
+Choice/3d9/disabled_text,,
+Text/3da/text,"[color=#6BBF59]I open it slowly, prepared for whatever’s on the other side.[/color]","[color=#6BBF59]Я открываю дверь медленно, готовый ко всему, что за ней.[/color]"
+Text/3db/text,"Careful… but preparation doesn’t always save you. Sometimes, the door swings wider than you expect.","Осторожно… но подготовка не всегда спасает. Иногда дверь распахивается шире, чем ты ожидал."
+Choice/3dc/text,[color=#8e59f5]Wait and listen[/color],[color=#8e59f5]Подождать и послушать[/color]
+Choice/3dc/disabled_text,,
+Text/3dd/text,"[color=#8e59f5]I wait and listen, trying to determine what’s behind it.[/color]","[color=#8e59f5]Я жду и прислушиваюсь, пытаясь понять, что за ней.[/color]"
+Text/3de/text,Listening? The door won’t tell you its secrets. It only waits for you to act.,Слушать? Дверь не расскажет тебе своих секретов. Она только ждет твоих действий.
+Choice/3df/text,[color=#f7d038]Knock politely first[/color],[color=#f7d038]Постучать вежливо[/color]
+Choice/3df/disabled_text,,
+Text/3e0/text,[color=#f7d038]I knock first—might as well be polite to whatever’s inside.[/color],"[color=#f7d038]Я постучал первым — на всякий случай, пусть будет вежливо с тем, кто внутри.[/color]"
+Text/3e1/text,Polite? Hah. The door doesn’t care about politeness. It’s already decided whether to welcome you… or devour you.,"Вежливо? Хах. Дверь не заботится о вежливости. Она уже решила, впустить тебя… или поглотить."
+Choice/3e2/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/3e2/disabled_text,,
+Text/3e3/text,Silence before a door doesn’t stop it from opening. It only gives it more time to decide who — or what — it lets through.,"Тишина перед дверью не остановит ее от открытия. Она только дает ей время решить, кто — или что — пройдет через нее."
+Text/3e4/text,"Doors are thresholds, but not all thresholds are meant to be crossed. Sometimes, what’s on the other side isn’t waiting for you—it’s waiting because of you. And once you open it, there’s no going back.","Двери — это пороги, но не все пороги предназначены для того, чтобы их переходить. Иногда то, что за дверью, не ждет тебя — оно ждет из-за тебя. И как только ты откроешь, уже не будет пути назад."
+Label/3e5/display_name,,
+Text/3e6/text,Shadows never ask for permission to follow you. They simply do.,Тени никогда не просят разрешения следовать за тобой. Они просто следуют.
+Text/3e7/text,[color=#2effff][b]How do you feel when you realize that something — or someone — is following you?[/b][/color],"[color=#2effff][b]Как ты себя чувствуешь, когда понимаешь, что что-то — или кто-то — идет за тобой?[/b][/color]"
+Choice/3e8/text,[color=#6BBF59]Turn and face it[/color],[color=#6BBF59]Повернуться и встретиться с ним[/color]
+Choice/3e8/disabled_text,,
+Text/3e9/text,[color=#6BBF59]I turn around and face it directly.[/color],[color=#6BBF59]Я оборачиваюсь и встречаю его прямо.[/color]
+Text/3ea/text,Face it? It’s already there. Turning around doesn’t make it disappear—it just makes it real.,Встретиться? Оно уже здесь. Поворот не заставит его исчезнуть — он только делает его настоящим.
+Choice/3eb/text,[color=#8e59f5]Avoid and hope[/color],[color=#8e59f5]Избегать и надеяться[/color]
+Choice/3eb/disabled_text,,
+Text/3ec/text,"[color=#8e59f5]I try to avoid it, hoping it loses interest.[/color]","[color=#8e59f5]Я стараюсь избежать его, надеясь, что он потеряет интерес.[/color]"
+Text/3ed/text,"Avoidance. It doesn’t work, but it gives you time. That’s all you get—time.","Избегание. Это не работает, но дает тебе время. И все, что у тебя есть — это время."
+Choice/3ee/text,[color=#f7d038]Wave and be friendly[/color],[color=#f7d038]Помахать и быть дружелюбным[/color]
+Choice/3ee/disabled_text,,
+Text/3ef/text,[color=#f7d038]I wave. Maybe they’re just looking for a friend.[/color],"[color=#f7d038]Я машу. Может, ему просто нужен друг.[/color]"
+Text/3f0/text,A friend? It’s not interested in friendship. It’s following you for another reason entirely.,Друг? Он не ищет дружбы. Он следует за тобой по другой причине.
+Choice/3f1/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/3f1/disabled_text,,
+Text/3f2/text,"Ignoring it? You think it’ll go away if you don’t speak? No, silence just makes the footsteps louder.","Игнорировать его? Думаешь, он уйдет, если ты не скажешь ни слова? Нет, молчание лишь делает шаги громче."
+Text/3f3/text,"When you’re followed, you’re not meant to feel safe. It’s a reminder that something is always there, watching, waiting. You can’t outrun it. The only question is: can you live with it?","Когда за тобой следят, ты не должен чувствовать себя в безопасности. Это напоминание о том, что что-то всегда рядом, наблюдает и ждет. Ты не сможешь убежать. Единственный вопрос: сможешь ли ты жить с этим?"
+Label/3f4/display_name,,
+Text/3f5/text,"Traps? Oh, they’re not traps! They’re invitations to fun, chaotic surprises!","Ловушки? О, это не ловушки! Это приглашения к весёлым, хаотичным сюрпризам!"
+Text/3f6/text,[color=#2effff][b]What’s your strategy for handling unexpected surprises?[/b][/color],[color=#2effff][b]Как вы реагируете на неожиданные сюрпризы?[/b][/color]
+Choice/3f7/text,[color=#6BBF59]Assess quickly and act smartly[/color],[color=#6BBF59]Оценить быстро и действовать умно[/color]
+Choice/3f7/disabled_text,,
+Text/3f8/text,[color=#6BBF59]Assess quickly and act smartly[/color],[color=#6BBF59]Оценить быстро и действовать умно[/color]
+Text/3f9/text,"Assess? Pfft, where’s the fun in that? Too much thinking ruins the surprise!","Оценить? Пфф, где тут веселье? Слишком много размышлений портит сюрприз!"
+Choice/3fa/text,[color=#8e59f5]Avoid rashness until more info[/color],[color=#8e59f5]Избегать поспешных решений до получения информации[/color]
+Choice/3fa/disabled_text,,
+Text/3fb/text,[color=#8e59f5]Avoid rashness until more info[/color],[color=#8e59f5]Избегать поспешных решений до получения информации[/color]
+Text/3fc/text,"Avoiding rashness? Boring! Sometimes, rashness is exactly what you need!","Избегать поспешных решений? Скучно! Иногда поспешность — это именно то, что нужно!"
+Choice/3fd/text,[color=#f7d038]Jump in headfirst and hope[/color],[color=#f7d038]Прыгнуть в омут с головой и надеяться[/color]
+Choice/3fd/disabled_text,,
+Text/3fe/text,[color=#f7d038]Jump in headfirst and hope[/color],[color=#f7d038]Прыгнуть в омут с головой и надеяться[/color]
+Text/3ff/text,Headfirst? Yes! That’s the spirit! No time for boring plans — just dive in!,С головой? Да! Вот это дух! Не время для скучных планов — просто прыгай!
+Choice/400/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/400/disabled_text,,
+Text/401/text,"Oh, don’t tell me you’re frozen! Come on, surprises are fun! Well, for me, at least.","О, не скажи мне, что ты замер! Давай, сюрпризы — это весело! Ну, по крайней мере, для меня."
+Text/402/text,"Life’s full of surprises! Big ones, small ones, the kind that knock you off your feet! The trick is to enjoy the fall—who cares if you land flat on your face? At least it’s exciting!","Жизнь полна сюрпризов! Больших, маленьких, таких, которые сбивают с ног! Главное — наслаждаться падением — кому важно, если ты упал на лицо? По крайней мере, это захватывающе!"
+Label/403/display_name,,
+Text/404/text,"Zick-zack, zick-zack!","Тики-таки, тики-таки!"
+Text/405/text,Isn’t it beautiful? It’s like music for the restless!,Разве это не красиво? Это как музыка для беспокойных!
+Text/406/text,[color=#2effff][b]What do you do when time feels chaotic?[/b][/color],"[color=#2effff][b]Что вы делаете, когда время кажется хаотичным?[/b][/color]"
+Choice/407/text,[color=#6BBF59]Bring order to schedule[/color],[color=#6BBF59]Привести расписание в порядок[/color]
+Choice/407/disabled_text,,
+Text/408/text,[color=#6BBF59]Bring order to your schedule to regain control[/color],"[color=#6BBF59]Привести расписание в порядок, чтобы вернуть контроль[/color]"
+Text/409/text,"Bring order? Ugh, how dull! Chaos doesn’t care about your order — it thrives on the mess!","Привести в порядок? Фу, как скучно! Хаос не заботится о твоем порядке — он процветает в беспорядке!"
+Choice/40a/text,[color=#8e59f5]Try to adapt[/color],[color=#8e59f5]Попробовать адаптироваться[/color]
+Choice/40a/disabled_text,,
+Text/40b/text,"[color=#8e59f5]Try to adapt to the rhythm, however chaotic[/color]","[color=#8e59f5]Попробовать адаптироваться к ритму, каким бы хаотичным он ни был[/color]"
+Text/40c/text,Adapt? Smart!,Адаптироваться? Умно!
+Text/40d/text,Time’s rhythm is wild — dancing with it is much more fun!,Ритм времени дикий — танцевать с ним гораздо веселее!
+Choice/40e/text,[color=#f7d038]Laugh at the clock[/color],[color=#f7d038]Смеяться над часами[/color]
+Choice/40e/disabled_text,,
+Text/40f/text,[color=#f7d038]Laugh at the clock and see if it breaks[/color],"[color=#f7d038]Смеяться над часами и смотреть, не сломаются ли они[/color]"
+Text/410/text,"Laugh at it? Oh, a comedian! But clocks don’t break so easily!",Смеяться? Как комично! Но часы не так просто ломаются!
+Choice/411/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/411/disabled_text,,
+Text/412/text,"Speechless? Oh, come on, the clock’s still ticking! You’ve got to play along, or time will just run you over!","Без слов? О, да ладно, часы всё ещё тикают! Ты должен действовать, иначе время просто прокатит тебя!"
+Text/413/text,"Time’s a dance partner, don’t you think? Sometimes it leads, sometimes it trips you up. But oh, when you’re in sync — it’s magic. Or maybe a mess. Either way, it’s worth the spin!","Время — это танцевальный партнёр, не так ли? Иногда оно ведёт, иногда запутывает. Но о, когда ты в такт — это магия. Или, может, беспорядок. Но в любом случае, это стоит того!"
+Label/414/display_name,,
+Text/415/text,"Shadows? Oh, I love shadows!","Тени? О, я обожаю тени!"
+Text/416/text,They’re like playful dancers without partners!,Они как игривые танцоры без партнёров!
+Text/417/text,[color=#2effff][b]What’s your first instinct when confronted by something strange?[/b][/color],[color=#2effff][b]Как вы реагируете на странное?[/b][/color]
+Choice/418/text,[color=#6BBF59]Analyze it carefully[/color],[color=#6BBF59]Тщательно анализировать[/color]
+Choice/418/disabled_text,,
+Text/419/text,[color=#6BBF59]Analyze it carefully to understand it[/color],"[color=#6BBF59]Тщательно анализировать, чтобы понять[/color]"
+Text/41a/text,"Analyze it? Ugh, where’s the fun in that? Overthinking kills the thrill!","Анализировать? Ух, где в этом веселье? Перемудрить — это убивает весь азарт!"
+Choice/41b/text,[color=#8e59f5]Avoid it[/color],[color=#8e59f5]Избегать[/color]
+Choice/41b/disabled_text,,
+Text/41c/text,[color=#8e59f5]Avoid it until you’re sure it’s safe[/color],"[color=#8e59f5]Избегать, пока не будешь уверен, что всё в порядке[/color]"
+Text/41d/text,"Avoid it? Oh, how boring! Strange things want your attention!","Избегать? О, как скучно! Странные вещи хотят твоего внимания!"
+Choice/41e/text,[color=#f7d038]Introduce yourself[/color],[color=#f7d038]Представиться[/color]
+Choice/41e/disabled_text,,
+Text/41f/text,[color=#f7d038]Introduce yourself and hope it doesn’t eat you[/color],"[color=#f7d038]Представиться и надеяться, что оно тебя не съест[/color]"
+Text/420/text,Introduce yourself? Yes!,Представиться? Да!
+Text/421/text,That’s the energy we need! Who knows — it might even say hello back!,Вот это настрой! Кто знает — оно может даже поздороваться в ответ!
+Choice/422/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/422/disabled_text,,
+Text/423/text,"Oh, silence? Really? Boring!","О, тишина? Серьёзно? Скучно!"
+Text/424/text,"Strange things are the best things! They shake you up, make you think, make you feel. Who wants a life without surprises? Not me, that’s for sure!","Странные вещи — это лучшие вещи! Они встряхивают тебя, заставляют думать, чувствовать. Кто хочет жизнь без сюрпризов? Я точно нет!"
+Label/425/display_name,,
+Text/426/text,Trust? Who needs trust when you can have...,"Доверие? Кто его нуждается, когда есть..."
+Text/427/text,ADVENTURE?!,ПРИКЛЮЧЕНИЕ?!
+Text/428/text,[color=#2effff][b]What’s your stance on working with unpredictable colleagues?[/b][/color],[color=#2effff][b]Как вы относитесь к работе с непредсказуемыми коллегами?[/b][/color]
+Choice/429/text,[color=#6BBF59]Build a relationship[/color],[color=#6BBF59]Строить отношения[/color]
+Choice/429/disabled_text,,
+Text/42a/text,[color=#6BBF59]Find common ground and build a relationship[/color],[color=#6BBF59]Найти общий язык и строить отношения[/color]
+Text/42b/text,"Ha, bold!","Ха, смело!"
+Text/42c/text,But unpredictable people might just break them for fun!,Но непредсказуемые люди могут сломать их ради забавы!
+Choice/42d/text,[color=#8e59f5]Stay distant[/color],[color=#8e59f5]Держать дистанцию[/color]
+Choice/42d/disabled_text,,
+Text/42e/text,[color=#8e59f5]Stay distant but cooperative when needed[/color],"[color=#8e59f5]Держи дистанцию, но будь готов к сотрудничеству, когда нужно[/color]"
+Text/42f/text,"Oh, how lonely! And they’ll still find a way to surprise you!","О, как одиноко! И они всё равно найдут способ удивить тебя!"
+Choice/430/text,[color=#f7d038]Out-crazy them[/color],[color=#f7d038]Переплюнь их в безумии[/color]
+Choice/430/disabled_text,,
+Text/431/text,[color=#f7d038]Out-crazy them—it’s the only way to win[/color],[color=#f7d038]Переплюнь их в безумии — это единственный способ победить[/color]
+Text/432/text,Out-crazy them?,Переплюнуть их в безумии?
+Text/433/text,Now that’s a strategy I can get behind!,"Вот это стратегия, которую я могу поддержать!"
+Choice/434/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/434/disabled_text,,
+Text/435/text,"Silent, are we? Oh, you’re no fun!","Тихо, да? О, ты не весёлый!"
+Text/436/text,"Unpredictable people make life worth living! Sure, they might ruin your plans or throw you off your game, but isn’t that the best part?","Непредсказуемые люди делают жизнь стоящей! Конечно, они могут разрушить твои планы или выбить тебя из колеи, но разве это не лучшее в этом?"
+Label/437/display_name,,
+Text/438/text,I can feel the excitement building. You can’t deny it,"Я чувствую, как напряжение нарастает. Ты не можешь этого отрицать."
+Text/439/text,"Something is waiting for you, something you’ve been looking for all along. Why hesitate now?","Что-то тебя ждёт, то, что ты искал всё это время. Почему бы не взять это прямо сейчас?"
+Text/43a/text,[color=#2effff][b]What are you really hoping to find in this place?[/b][/color],[color=#2effff][b]Что ты на самом деле надеешься найти здесь?[/b][/color]
+Choice/43b/text,[color=#6BBF59]Job[/color],[color=#6BBF59]Работу[/color]
+Choice/43b/disabled_text,,
+Text/43c/text,[color=#6BBF59]I’m looking for the job[/color],[color=#6BBF59]Я ищу работу[/color]
+Text/43d/text,"Oh, you really think you'll find it here?","О, ты действительно думаешь, что найдёшь её здесь?"
+Text/43e/text,"The job isn’t a gift; it’s a curse. 
+You’ll regret asking for it.","Работа — это не подарок; это проклятие. Ты пожалеешь, что просил её."
+Choice/43f/text,[color=#8e59f5]I’m just curious[/color],[color=#8e59f5]Просто любопытство[/color]
+Choice/43f/disabled_text,,
+Text/440/text,"[color=#8e59f5]I’m just curious. I don’t know what’s here, but I want to see for myself.[/color]","[color=#8e59f5]Я просто любопытен. Не знаю, что здесь, но хочу узнать сам.[/color]"
+Text/441/text,Ha! You have no idea what you're asking for. Curiosity will pull you deeper than you can imagine.,"Ха! Ты не представляешь, о чём спрашиваешь. Любопытство втянет тебя глубже, чем ты можешь представить."
+Choice/442/text,[color=#f7d038]Free coffee[/color],[color=#f7d038]Бесплатный кофе[/color]
+Choice/442/disabled_text,,
+Text/443/text,"[color=#f7d038]I’m just here for the free coffee. Who doesn’t love a good mystery, right?[/color]","[color=#f7d038]Я тут только ради бесплатного кофе. Кто не любит хорошую загадку, верно?[/color]"
+Text/444/text,Free coffee? Is that all?,Бесплатный кофе? Это всё?
+Text/445/text,"Well, mystery will get you more than caffeine, my friend. It'll get you answers you can't unhear","Ну, загадка даст тебе больше, чем кофеин, мой друг. Она даст тебе ответы, которые ты не сможешь забыть."
+Choice/446/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/446/disabled_text,,
+Text/447/text,Not going to answer? Smart.,Не собираешься отвечать? Умно.
+Text/448/text,"You came looking for something, whether you admit it or not. And in places like this, you find what you’re meant to find.","Ты пришёл сюда за чем-то, даже если не признаёшься в этом. И в таких местах ты находишь то, что должен найти."
+Text/449/text,"Truths, fears, things you didn’t want to know… They all come for you","Правду, страхи, то, что ты не хотел знать… Всё это придёт за тобой."
+Text/44a/text,Whether you’re ready or not,Будешь ли ты к этому готов или нет.
+Label/44b/display_name,,
+Text/44c/text,You’ve heard the rumors. They don’t just say this place is strange — they say it changes you.,"Ты слышал слухи. Они говорят, что это место не просто странное — оно меняет тебя."
+Text/44d/text,But how can something change if you’re not open to it?,"Но как что-то может измениться, если ты не готов к этому?"
+Text/44e/text,[color=#2effff][b]Do you think this place will change you?[/b][/color],"[color=#2effff][b]Думаешь ли ты, что это место изменит тебя?[/b][/color]"
+Choice/44f/text,[color=#6BBF59]Yes.[/color],[color=#6BBF59]Да.[/color]
+Choice/44f/disabled_text,,
+Text/450/text,[color=#6BBF59]Yes. I think it already has[/color],"[color=#6BBF59]Да. Думаю, оно уже изменило меня[/color]"
+Text/451/text,"Ah, you’re honest, I’ll give you that.","Ах, ты честен, это я оценю."
+Text/452/text,But admitting it doesn’t change the fact that you’re not in control here.,"Но признание не изменит того, что здесь ты не контролируешь ситуацию."
+Text/453/text,his place doesn’t just change you — it takes what you are and leaves something else behind,"Это место не просто меняет тебя — оно забирает то, что ты есть, и оставляет что-то другое."
+Choice/454/text,[color=#8e59f5]Maybe[/color],[color=#8e59f5]Может быть[/color]
+Choice/454/disabled_text,,
+Text/455/text,[color=#8e59f5]I don’t know. Maybe. I guess we’ll see.[/color],[color=#8e59f5]Не знаю. Может быть. Посмотрим.[/color]
+Text/456/text,"Oh, so you’re waiting for it to decide, huh?","О, значит, ты ждёшь, что оно решит, да?"
+Choice/457/text,[color=#f7d038]No.[/color],[color=#f7d038]Нет.[/color]
+Choice/457/disabled_text,,
+Text/458/text,"[color=#f7d038]Nah, I’m pretty sure I’m just here for the ride. What could change?[/color]","[color=#f7d038]Неа, я скорее просто здесь ради приключения. Что может измениться?[/color]"
+Text/459/text,"Oh, nothing? You’re sure?","О, ничего? Ты уверен?"
+Text/45a/text,Keep saying that and you might find out what happens when nothing happens,"Продолжай так говорить, и возможно, ты узнаешь, что происходит, когда ничего не происходит."
+Choice/45b/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/45b/disabled_text,,
+Text/45c/text,"Still thinking about it, huh? You’ll understand soon enough, even if you don’t say a word. It’ll change you — whether you want it to or not.","Всё ещё думаешь об этом? Скоро ты всё поймёшь, даже если не скажешь ни слова. Это изменит тебя — хочешь ты этого или нет."
+Text/45d/text,You’re here for a reason.,Ты здесь не просто так.  
+Text/45e/text,But it’s not the reason you think. Everything changes in the end.,"Но причина, по которой ты пришел, не та, что ты думаешь. Всё в конце концов меняется.  "
+Text/45f/text,This place ensures that.,Это место об этом позаботится.  
+Label/460/display_name,,
+Text/461/text,"Some people come here seeking power. Others, secrets.",Некоторые приходят за силой. Другие — за тайнами.  
+Text/462/text,What about you?,А ты?  
+Text/463/text,[color=#2effff][b]What’s the price you’re willing to pay for your desires?[/b][/color],[color=#2effff][b]Какую цену ты готов заплатить за свои желания?[/b][/color]  
+Choice/464/text,[color=#6BBF59]Whatever it takes[/color],[color=#6BBF59]Что угодно[/color]  
+Choice/464/disabled_text,,
+Text/465/text,[color=#6BBF59]I’m willing to pay whatever it takes[/color],[color=#6BBF59]Я готов заплатить что угодно[/color]  
+Text/466/text,Willing to pay?,Готов заплатить?  
+Text/467/text,You’ll learn soon enough that nothing comes without a cost.,"Скоро ты поймешь, что ничто не дается бесплатно.  "
+Text/468/text,But be careful — the price might not be something you’re ready to give,"Но будь осторожен — цена может оказаться тем, что ты не хочешь отдать.  "
+Choice/469/text,[color=#8e59f5]I’m not sure[/color],[color=#8e59f5]Не уверен[/color]  
+Choice/469/disabled_text,,
+Text/46a/text,[color=#8e59f5]I’m not sure yet. I guess I’ll find out if I get there.[/color],"[color=#8e59f5]Я ещё не уверен. Думаю, узнаю, если дойду до этого.[/color]  "
+Text/46b/text,"Oh, the typical wait-and-see approach. Well, you don’t get to decide when it’s too late.","Ага, типичный подход «поживем — увидим». Ну что ж, ты не решаешь, когда будет слишком поздно.  "
+Choice/46c/text,[color=#f7d038]A smile and a handshake[/color],[color=#f7d038]Улыбка и рукопожатие[/color]  
+Choice/46c/disabled_text,,
+Text/46d/text,[color=#f7d038]I’d pay with a smile and a handshake. I’m easy like that.[/color],[color=#f7d038]Я заплачу улыбкой и рукопожатием. Я такой.[/color]  
+Text/46e/text,"A smile, huh?","Улыбка, да?  "
+Text/46f/text,Freak,Ты странный.  
+Choice/470/text,[color=gray] . . . [/color],[color=gray] . . . [/color]  
+Choice/470/disabled_text,,
+Text/471/text,No words? Or have you just realized the price is too high to speak?,"Без слов? Или ты только что понял, что цена слишком высока, чтобы говорить?  "
+Text/472/text,Everyone has a price.,У каждого есть своя цена.  
+Text/473/text,You just haven’t figured out what yours is yet.,"Ты ещё не понял, какая твоя.  "
+Text/474/text,"But trust me, this place knows, and it won’t hesitate to make you pay.","Но поверь, это место знает, и оно не постесняется заставить тебя заплатить.  "
+Label/475/display_name,,
+Text/476/text,You know what?,Знаешь что?  
+Text/477/text,We are sitting here together too well!,Мы слишком хорошо сидим здесь вместе!  
+Text/478/text,"I'm ready to say more — I even like you, choomba","Я готов продолжить — даже мне ты нравишься, чумба.  "
+Text/479/text,"Let's stay a little longer, I don't want to say goodbye to you.","Остаться чуть дольше, я не хочу прощаться с тобой.  "
+Text/47a/text,Maybe... [color=#2effff][b]5 more questions?[/b][/color],Может быть... [color=#2effff][b]Ещё 5 вопросов?[/b][/color]  
+Text/47b/text,NO-NO! [color=#2effff][b]12 more questions![/b][/color],НЕТ-НЕТ! [color=#2effff][b]12 вопросов![/b][/color]  
+Text/47c/text,Why 12? I don't even know,Почему 12? Даже не знаю.  
+Text/47d/text,But it's sounds like a great idea!,Но это звучит как отличная идея!  
+Label/47e/display_name,,
+Text/47f/text,"You think you’re safe here, don’t you?","Ты думаешь, что здесь в безопасности, да?"
+Text/480/text,"B̷͘ưt͘ ͝r̴e̸m̀e͠m̨b̡e͡r̷, ̵t̛h̛e͟ d͡a̷n͠g̨e̡r̀ d̸ơe͡sn’̷t͢ c͟o͟m͜e͢ f̢r͠o͞m̢ t͝h͘e͠ o̸u͢ts͜i̶d͡e̛—įt’s̡ r͜i̛ght͞ i̷n f̴r͡o͘n͝t o͘f͡ y̷o͠u̸, ẁ͘e͜ąr̷i̡n͘g̡ t̵h͜e͟ s̡a̸m͜e̡ f͜a͡c͝e͢ a͠s t͡h͝e͡ o͟n͠e y̷o͠u t̶r͠u͝s͠t.","Н̴о̢ ͡п͘о͘м̢н͠и, о͟п̛а͡сн̨о͠с͡т͠ь н̀е͘ ͡и͠с͠хо͡д͜и͞т с̶н̡а͢р͞у͟ж͜и — о͠н͠а п̴р͡я͝м͢о п͘е͡ред т̷о͢б͠о͡й, н͡о͢с͜и͡т т̶о͢ ж͡е ̴ли͝ц͡о, ч̢т͡о и у т̷о͡г͡о, к͡о͢му ты д̡о͠в͡е͞р͡яе͡шь."
+Text/481/text,[color=#2effff][b]What will you do when you realize[/b][/color] [color=#cc292c][b]I͠ ͠a̸m͝ t̶h͠ę d͠a͝n̢g͠e̴r̷?[/b][/color],"[color=#2effff][b]Что ты будешь делать, когда осознаешь, [/b][/color] [color=#cc292c][b]ч̨т͡о я — э͢т͜о о͟п̡а͡сн̷о͜с͠ть?[/b][/color]  "
+Choice/482/text,[color=#cc292c]PANIC[/color],[color=#cc292c]ПАНИКА[/color]
+Choice/482/disabled_text,,
+Text/483/text,[color=#cc292c]I’ll get out![/color],[color=#cc292c]Я выберусь![/color]  
+Choice/484/text,[color=#cc292c]PANIC[/color],[color=#cc292c]ПАНИКА[/color]
+Choice/484/disabled_text,,
+Text/485/text,[color=#cc292c]I’ll get out![/color],[color=#cc292c]Я выберусь![/color]  
+Choice/486/text,[color=#cc292c]PANIC[/color],[color=#cc292c]ПАНИКА[/color]
+Choice/486/disabled_text,,
+Text/487/text,[color=#cc292c]I’ll get out![/color],[color=#cc292c]Я выберусь![/color]  
+Choice/488/text,[color=#cc292c]PANIC[/color],[color=#cc292c]ПАНИКА[/color]
+Choice/488/disabled_text,,
+Text/489/text,[color=#cc292c]I’ll get out![/color],[color=#cc292c]Я выберусь![/color]  
+Text/48a/text,Run?,Бежать?  
+Text/48b/text,Ha!,Ха!  
+Text/48c/text,"T͝h͘e͘r͘e’s̢ n͠o͘ r͝ưn͝i̷n̛g͢ f̛r͠o͡m m͠e, f̡r͠o͠m͡ u̡s. Y̡ǫu’r͡e a͞l͡r͢e͘àd͡y i͠n t͢h͝e t̛r͠a͢p. Y̡o͠u a͡l͠w͠a͡ys w͢e͡r̢e.",Т̴ы не у͡б͡еж͠и͘ш̢ь ̡о͡т м̴е͟н͠я. Т̷ы уже в ло͠в͢ушке. В͜сег͠да бы͞л в ло͠в͢ушке.
+Label/48d/display_name,,
+Text/48e/text,"Secrets are this place's lifeblood, and you — you carry one so carefully, so desperately.","Секреты — это кровь этого места, и ты... ты так бережно, так отчаянно носишь один.  "
+Text/48f/text,"But tell me, how long before it consumes you?","Но скажи мне, как долго ты продержишься, прежде чем он поглотит тебя?  "
+Text/490/text,[color=#2effff][b]What happens when your secret becomes[/b][/color] [color=#cc292c][b]bigger than you[/b][/color][color=#2effff][b]?[/b][/color],"[color=#2effff][b]Что будет, когда твой секрет станет [/b][/color] [color=#cc292c][b]больше тебя?[/b][/color]  "
+Choice/491/text,[color=#6BBF59]I’ll... try to control it.[/color],[color=#6BBF59]Я... постараюсь контролировать его.[/color]
+Choice/491/disabled_text,,
+Text/492/text,[color=#6BBF59]I’ll... try to control it.[/color],[color=#6BBF59]Я... постараюсь контролировать его.[/color]  
+Choice/493/text,[color=#8e59f5]I’ll... figure something out.[/color],[color=#8e59f5]Я... что-нибудь придумаю.[/color]
+Choice/493/disabled_text,,
+Text/494/text,[color=#8e59f5]I’ll... figure something out.[/color],[color=#8e59f5]Я... что-нибудь придумаю.[/color]  
+Choice/495/text,[color=#f7d038]I don’t... have a choice.[/color],[color=#f7d038]Я не... имею выбора.[/color]
+Choice/495/disabled_text,,
+Text/496/text,[color=#f7d038]I don’t... have a choice.[/color],[color=#f7d038]Я не... имею выбора.[/color]  
+Choice/497/text,[color=gray]. . .[/color],[color=gray]. . .[/color]
+Choice/497/disabled_text,,
+Text/498/text,[color=gray]. . .[/color],[color=gray]. . .[/color]  
+Text/499/text,Control? Figure it out? Choice?,Контроль? Придумать что-то? Выбор?  
+Text/49a/text,You have none.,У тебя нет ни одного.  
+Text/49b/text,"You were claimed the moment you walked in, and your secret is no longer yours to hold.","Ты был взят в плен в тот момент, как вошел, и теперь твой секрет больше не твой, чтобы его держать."
+Label/49c/display_name,,
+Text/49d/text,"You think you’re in control, but control is an illusion.","Ты думаешь, что контролируешь ситуацию, но контроль — это иллюзия.  "
+Text/49e/text,T͟h͜i͝s p͠l͟a͜c͠e i͢s͡ a͟l͡i̡v̴e — a͠l͞i̡v͢e w͡i̷t̢h e̢v͠e͝r͘y͡t̷h̛i̢n͟g t͡h͡a͡t’s a͡l͢r͡e͟a͡dy w͘a͠i͘t̡i͡n͠g t̶o s̛w͡a͟l͡l͡o͡w y͝o͠u.,"Э͡т͡о м͢е͡с͡т͡о д̷ы͜шит. К͢ак и в͢с͡ё зде͡сь. О͟н͜и ж͡дали мо͡мент, что͢бы поглоти͠ть т͡ебя."
+Text/49f/text,[color=#2effff][b]How will you react when you realize[/b][/color] [color=#cc292c][b]this company wants to consume you?[/b][/color],"[color=#2effff][b]Как ты отреагируешь, когда осознаешь, [/b][/color] [color=#cc292c][b]что эта компания хочет поглотить тебя?[/b][/color]  "
+Choice/4a0/text,[color=#cc292c]PANIC[/color],[color=#cc292c]ПАНИКА[/color]
+Choice/4a0/disabled_text,,
+Text/4a1/text,[color=#cc292c]. . .[/color],[color=#cc292c]. . .[/color]  
+Choice/4a2/text,[color=#b3071b]PANIC[/color],[color=#b3071b]ПАНИКА[/color]
+Choice/4a2/disabled_text,,
+Text/4a3/text,[color=#cc292c]. . .[/color],[color=#cc292c]. . .[/color]  
+Choice/4a4/text,[color=#cc292c]PANIC[/color],[color=#cc292c]ПАНИКА[/color]
+Choice/4a4/disabled_text,,
+Text/4a5/text,[color=#cc292c]. . .[/color],[color=#cc292c]. . .[/color]  
+Choice/4a6/text,[color=#cc292c]PANIC[/color],[color=#cc292c]ПАНИКА[/color]
+Choice/4a6/disabled_text,,
+Text/4a7/text,[color=#cc292c]. . .[/color],[color=#cc292c]. . .[/color]  
+Text/4a8/text,What?,Что?  
+Text/4a9/text,Can't breathe?,Не можешь дышать?  
+Text/4aa/text,No one leaves.,Никто не уходит.  
+Text/4ab/text,N͠o͜ o͡n͜e l͢e͡a͡v̢e͟s. Y̢o͞u’ll b̛e c͝o͢n͡s͟u̡m̛e͡d w͠h̀e͠t͝h͡e̕r y͝o͠u k̡n͞o͠w i̡t o͝r n̡o͘t. T͟h͝e̷ o̡n͡l͢y q̢u͝e͝s͝t̴i̛o̴n i͢s: h͟o͡w l͠o͢n͠g ưn͠t͟i͞l y͡o͝u r͡e͡a͡l͟i͠z̢e i͡t?,Н͡и͝кто н̴е у͡йд͡ё͡т. Т͡ы уже ч̴а͞с͡ть э͡т͡о͡го м͡е͡с͡т͡а. О͠дин вопр̛ос: как д͠о͢л͡го до͡ т͡ебя э͡т͡о д̡о͡хо͢ди͠ло?
+Label/4ac/display_name,,
+Label/4ad/display_name,,
+Text/4ae/text,"Look at you. Frail, uncertain, and yet...","Посмотри на себя. Хрупкий, сомневающийся, и всё-таки...  "
+Text/4af/text,perfectly suited for this place.,идеально подходящий для этого места.  
+Text/4b0/text,"You’ve danced on the edge of the truth, and now, it’s time to see the whole picture","Ты танцевал на краю правды, и теперь пришло время увидеть всю картину.  "
+Text/4b1/text,"We are the architects of whispers, the engineers of shadows.","Мы — архитекторы шепотов, инженеры теней.  "
+Text/4b2/text,"Secrets are our currency, our product, our power. Each secret we create fuels empires, destroys rivals, and shapes worlds","Секреты — наша валюта, наш продукт, наша сила. Каждый секрет, который мы создаем, питает империи, разрушает соперников и формирует миры.  "
+Text/4b3/text,"And now, you —",А теперь ты —  
+Text/4b4/text,— will become one of us,— станешь одним из нас.  
+Text/4b5/text,"Congratulations, {Players_name}! You've been hired.","Поздравляю, {Players_name}! Ты принят на работу."
+Label/4b6/display_name,,

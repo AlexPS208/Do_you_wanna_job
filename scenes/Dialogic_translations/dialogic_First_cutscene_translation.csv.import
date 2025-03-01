@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://djosxn03hxqkp"
+
+[deps]
+
+files=["res://scenes/Dialogic_translations/dialogic_First_cutscene_translation.en.translation", "res://scenes/Dialogic_translations/dialogic_First_cutscene_translation.ru.translation"]
+
+source_file="res://scenes/Dialogic_translations/dialogic_First_cutscene_translation.csv"
+dest_files=["res://scenes/Dialogic_translations/dialogic_First_cutscene_translation.en.translation", "res://scenes/Dialogic_translations/dialogic_First_cutscene_translation.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,9 +1,9 @@
 [style name="Default_style_with_typing_sound"]
-You: Whew, that was harder than Jock. Definitely a different level
-You: But I made it through — kept my cool.
-You: I can handle this.
-You: Just one more stage to go.
-You: I need this job.
-You: Focus.
+You: Whew, that was harder than Jock. Definitely a different level #id:30b
+You: But I made it through — kept my cool. #id:30c
+You: I can handle this. #id:30d
+You: Just one more stage to go. #id:30e
+You: I need this job. #id:30f
+You: Focus. #id:310
 [signal arg_type="dict" arg="{"light_on":true}"]
 [end_timeline]

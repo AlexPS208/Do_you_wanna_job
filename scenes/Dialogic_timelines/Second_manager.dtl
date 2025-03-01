@@ -1,862 +1,862 @@
 [style name="Default_style_with_typing_sound"]
-Player: What the strange layout of the building...
-Player: Hello?
-Player: Mr. Pop?
+Player: What the strange layout of the building... #id:18c
+Player: Hello? #id:18d
+Player: Mr. Pop? #id:18e
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
-Second_manager: Huh? Who's there?
+Second_manager: Huh? Who's there? #id:18f
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: Ah, you must be the candidate Mr. Jock mentioned
+Second_manager: Ah, you must be the candidate Mr. Jock mentioned #id:190
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
-Second_manager: He spoke...
-Second_manager: ...
+Second_manager: He spoke... #id:191
+Second_manager: ... #id:192
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-Second_manager: ...highly of you.
+Second_manager: ...highly of you. #id:193
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: Said you’ve got potential, though perhaps still a bit unpolished.
+Second_manager: Said you’ve got potential, though perhaps still a bit unpolished. #id:194
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: Don’t worry — that’s not unusual.
+Second_manager: Don’t worry — that’s not unusual. #id:195
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
-Second_manager: I’ve been conducting interviews longer than most people have been working.
+Second_manager: I’ve been conducting interviews longer than most people have been working. #id:196
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: I’ll warn you now — I take this process seriously.
+Second_manager: I’ll warn you now — I take this process seriously. #id:197
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: This isn’t just about skills.
+Second_manager: This isn’t just about skills. #id:198
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: It’s about fit, about resilience, about finding someone who can thrive in...
+Second_manager: It’s about fit, about resilience, about finding someone who can thrive in... #id:199
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
-Second_manager: ...unique circumstances.
+Second_manager: ...unique circumstances. #id:19a
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: That said, you’d be wrong to think we’re looking for perfection.
+Second_manager: That said, you’d be wrong to think we’re looking for perfection. #id:19b
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: A diamond starts as coal, after all
+Second_manager: A diamond starts as coal, after all #id:19c
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: If there’s something worth refining, we’ll see it
+Second_manager: If there’s something worth refining, we’ll see it #id:19d
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: That said, you’d be wrong to think we’re looking for perfection.
+Second_manager: That said, you’d be wrong to think we’re looking for perfection. #id:19e
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: So, don’t let nerves get the better of you
+Second_manager: So, don’t let nerves get the better of you #id:19f
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":10,"part":"head"}"]
-Second_manager: Take a deep breath and remember — this is as much about us getting to know you as it is about you proving yourself.
-Second_manager: ...
+Second_manager: Take a deep breath and remember — this is as much about us getting to know you as it is about you proving yourself. #id:1a0
+Second_manager: ... #id:1a1
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
 [signal arg_type="dict" arg="{"is_answered":true,"show_silentbar":true,"show_stressbar":true,"stop_timer":true}"]
-Second_manager: You know rules
+Second_manager: You know rules #id:1a2
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Now, let’s begin, shall we?
+Second_manager: Now, let’s begin, shall we? #id:1a3
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-Second_manager: Soo.. First question
+Second_manager: Soo.. First question #id:1a4
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_01
-label main_01
+label main_01 #id:1a5
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
-Second_manager: In this place, success comes to those who know how to navigate ambiguity
+Second_manager: In this place, success comes to those who know how to navigate ambiguity #id:1a6
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":4,"part":"head"}"]
-Second_manager: [color=#2effff][b]How do you handle unclear situations?[/b][/color]
+Second_manager: [color=#2effff][b]How do you handle unclear situations?[/b][/color] #id:1a7
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Seek clarity[/color]
+- [color=#6BBF59]Seek clarity[/color] #id:1a8
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]By seeking clarity and making informed decisions[/color]
+	Player: [color=#6BBF59]By seeking clarity and making informed decisions[/color] #id:1a9
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: A wise choice. Clarity is earned, not given, and the bold reap the rewards.
-- [color=#8e59f5]Wait[/color]
+	Second_manager: A wise choice. Clarity is earned, not given, and the bold reap the rewards. #id:1aa
+- [color=#8e59f5]Wait[/color] #id:1ab
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I try to wait until things become clearer[/color]
+	Player: [color=#8e59f5]I try to wait until things become clearer[/color] #id:1ac
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Hesitation is a trap. This place thrives on the indecisive and leaves them behind
-- [color=#f7d038]Add more mystery[/color]
+	Second_manager: Hesitation is a trap. This place thrives on the indecisive and leaves them behind #id:1ad
+- [color=#f7d038]Add more mystery[/color] #id:1ae
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]By adding more mystery to fit in here[/color]
+	Player: [color=#f7d038]By adding more mystery to fit in here[/color] #id:1af
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Amusing, but this isn’t a game. Mystery won’t be your ally for long.
-- [color=gray] . . . [/color]
+	Second_manager: Amusing, but this isn’t a game. Mystery won’t be your ally for long. #id:1b0
+- [color=gray] . . . [/color] #id:1b1
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Quiet won’t save you.
+	Second_manager: Quiet won’t save you. #id:1b2
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-	Second_manager: Shadows consume those who stand still
+	Second_manager: Shadows consume those who stand still #id:1b3
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
-Second_manager: Ambiguity can paralyze or empower, depending on how you respond.
+Second_manager: Ambiguity can paralyze or empower, depending on how you respond. #id:1b4
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
-Second_manager: Tell me, do you trust your instincts when the path isn’t clear?
-Player: I’d say instincts are useful, but careful thought keeps you grounded.
+Second_manager: Tell me, do you trust your instincts when the path isn’t clear? #id:1b5
+Player: I’d say instincts are useful, but careful thought keeps you grounded. #id:1b6
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: Instincts are a blade, but thought is the hilt
+Second_manager: Instincts are a blade, but thought is the hilt #id:1b7
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-Second_manager: You’d best hold both tightly here
+Second_manager: You’d best hold both tightly here #id:1b8
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_02
-label main_02
+label main_02 #id:1b9
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: Rules are the foundation of this realm, but they are shrouded in mystery.
+Second_manager: Rules are the foundation of this realm, but they are shrouded in mystery. #id:1ba
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":4,"part":"head"}"]
-Second_manager: [color=#2effff][b]What is your stance on following unwritten rules?[/b][/color]
+Second_manager: [color=#2effff][b]What is your stance on following unwritten rules?[/b][/color] #id:1bb
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Observe and adapt[/color]
+- [color=#6BBF59]Observe and adapt[/color] #id:1bc
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I’ll observe and adapt quickly[/color]
+	Player: [color=#6BBF59]I’ll observe and adapt quickly[/color] #id:1bd
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: Good. The unspoken forms the foundation of what keeps this place standing...
-- [color=#8e59f5]Ask for guidance[/color]
+	Second_manager: Good. The unspoken forms the foundation of what keeps this place standing... #id:1be
+- [color=#8e59f5]Ask for guidance[/color] #id:1bf
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I’ll ask for guidance when I don’t understand[/color]
+	Player: [color=#8e59f5]I’ll ask for guidance when I don’t understand[/color] #id:1c0
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":8,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Guidance won’t always arrive when you need it. Learn quickly, or suffer the gaps in knowledge.
-- [color=#f7d038]It's just suggestions[/color]
+	Second_manager: Guidance won’t always arrive when you need it. Learn quickly, or suffer the gaps in knowledge. #id:1c1
+- [color=#f7d038]It's just suggestions[/color] #id:1c2
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]Unwritten rules are just suggestions, aren’t they?[/color]
+	Player: [color=#f7d038]Unwritten rules are just suggestions, aren’t they?[/color] #id:1c3
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Mock the unwritten at your peril. They carry weight you may not yet comprehend.
-- [color=gray] . . . [/color]
+	Second_manager: Mock the unwritten at your peril. They carry weight you may not yet comprehend. #id:1c4
+- [color=gray] . . . [/color] #id:1c5
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":8,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Silence doesn’t excuse ignorance. The unwritten rules don’t care if you understand them
+	Second_manager: Silence doesn’t excuse ignorance. The unwritten rules don’t care if you understand them #id:1c6
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: The unseen binds us just as tightly as what’s documented.
+Second_manager: The unseen binds us just as tightly as what’s documented. #id:1c7
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: Do you think you’re capable of recognizing such bonds?
-Player: It depends on how obvious they are. Some things can only be learned through experience
+Second_manager: Do you think you’re capable of recognizing such bonds? #id:1c8
+Player: It depends on how obvious they are. Some things can only be learned through experience #id:1c9
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
-Second_manager: Tell me, do you trust your instincts when the path isn’t clear?
+Second_manager: Tell me, do you trust your instincts when the path isn’t clear? #id:1ca
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
-Second_manager: Obvious?
+Second_manager: Obvious? #id:1cb
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
-Second_manager: Rarely
+Second_manager: Rarely #id:1cc
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
-Second_manager: Experience?
+Second_manager: Experience? #id:1cd
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
-Second_manager: Certainly
+Second_manager: Certainly #id:1ce
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
-Second_manager: Pay attention to what others ignore — it might save you.
+Second_manager: Pay attention to what others ignore — it might save you. #id:1cf
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_03
-label main_03
+label main_03 #id:1d0
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: Not all secrets are meant to be kept forever.
+Second_manager: Not all secrets are meant to be kept forever. #id:1d1
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-Second_manager: Some must evolve.
+Second_manager: Some must evolve. #id:1d2
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
-Second_manager: [color=#2effff][b]What’s your strategy for handling sensitive information?[/b][/color]
+Second_manager: [color=#2effff][b]What’s your strategy for handling sensitive information?[/b][/color] #id:1d3
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Safeguard it[/color]
+- [color=#6BBF59]Safeguard it[/color] #id:1d4
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]To safeguard it with utmost care[/color]
+	Player: [color=#6BBF59]To safeguard it with utmost care[/color] #id:1d5
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: Trust is earned, not given
-- [color=#8e59f5]As the situation demands[/color]
+	Second_manager: Trust is earned, not given #id:1d6
+- [color=#8e59f5]As the situation demands[/color] #id:1d7
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I’ll handle it as the situation demands[/color]
+	Player: [color=#8e59f5]I’ll handle it as the situation demands[/color] #id:1d8
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: A vague strategy lacks conviction.
-- [color=#f7d038]Whisper them[/color]
+	Second_manager: A vague strategy lacks conviction. #id:1d9
+- [color=#f7d038]Whisper them[/color] #id:1da
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]Secrets are meant to be whispered in shadows[/color]
+	Player: [color=#f7d038]Secrets are meant to be whispered in shadows[/color] #id:1db
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Clever, but far from practical
-- [color=gray] . . . [/color]
+	Second_manager: Clever, but far from practical #id:1dc
+- [color=gray] . . . [/color] #id:1dd
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":2,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: Ironic
+	Second_manager: Ironic #id:1de
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":4,"part":"head"}"]
-	Second_manager: Secrets thrive in silence, but so does fear.
+	Second_manager: Secrets thrive in silence, but so does fear. #id:1df
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-	Second_manager: Speak, or the weight of silence will crush you
+	Second_manager: Speak, or the weight of silence will crush you #id:1e0
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: Handling secrets requires more than just care — it demands understanding
+Second_manager: Handling secrets requires more than just care — it demands understanding #id:1e1
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: Tell me, do you see them as a burden or an opportunity?
-Player: I think it depends. Some secrets are worth keeping, while others are too heavy.
+Second_manager: Tell me, do you see them as a burden or an opportunity? #id:1e2
+Player: I think it depends. Some secrets are worth keeping, while others are too heavy. #id:1e3
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
-Second_manager: A wise answer
+Second_manager: A wise answer #id:1e4
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: But beware — mishandled secrets can be heavier than they seem
+Second_manager: But beware — mishandled secrets can be heavier than they seem #id:1e5
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_04
-label main_04
+label main_04 #id:1e6
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: Every secret has a price, and not all are worth paying
+Second_manager: Every secret has a price, and not all are worth paying #id:1e7
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
-Second_manager: [color=#2effff][b]What drives your curiosity?[/b][/color]
+Second_manager: [color=#2effff][b]What drives your curiosity?[/b][/color] #id:1e8
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Understanding and purpose[/color]
+- [color=#6BBF59]Understanding and purpose[/color] #id:1e9
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]The pursuit of understanding and purpose[/color]
+	Player: [color=#6BBF59]The pursuit of understanding and purpose[/color] #id:1ea
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: Such drive leads to enlightenment
-- [color=#8e59f5]Curious only when I need[/color]
+	Second_manager: Such drive leads to enlightenment #id:1eb
+- [color=#8e59f5]Curious only when I need[/color] #id:1ec
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I’m curious only when I need to be[/color]
+	Player: [color=#8e59f5]I’m curious only when I need to be[/color] #id:1ed
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Curiosity without constancy is fleeting
-- [color=#f7d038]I follow the whispers[/color]
+	Second_manager: Curiosity without constancy is fleeting #id:1ee
+- [color=#f7d038]I follow the whispers[/color] #id:1ef
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I follow the whispers of the unknown[/color]
+	Player: [color=#f7d038]I follow the whispers of the unknown[/color] #id:1f0
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Whimsy has its place, but not here
-- [color=gray] . . . [/color]
+	Second_manager: Whimsy has its place, but not here #id:1f1
+- [color=gray] . . . [/color] #id:1f2
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: A quiet mind may be at peace, but a silent one stagnates.
+	Second_manager: A quiet mind may be at peace, but a silent one stagnates. #id:1f3
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
-	Second_manager: Curiosity cannot grow in the shadows of hesitation.
+	Second_manager: Curiosity cannot grow in the shadows of hesitation. #id:1f4
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
-	Second_manager: Including mine
+	Second_manager: Including mine #id:1f5
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: Curiosity is the spark of discovery, but it must be controlled.
+Second_manager: Curiosity is the spark of discovery, but it must be controlled. #id:1f6
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
-Second_manager: Do you agree?
-Player: Yes, but sometimes letting curiosity roam can lead to unexpected insights.
+Second_manager: Do you agree? #id:1f7
+Player: Yes, but sometimes letting curiosity roam can lead to unexpected insights. #id:1f8
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":3,"part":"head"}"]
-Second_manager: True... true...
+Second_manager: True... true... #id:1f9
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_05
-label main_05
+label main_05 #id:1fa
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Trust is both a gift and a weapon.
+Second_manager: Trust is both a gift and a weapon. #id:1fb
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: Here, it is earned — or taken away — by the smallest of actions.
+Second_manager: Here, it is earned — or taken away — by the smallest of actions. #id:1fc
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]How do you determine if someone can be trusted?[/b][/color]
+Second_manager: [color=#2effff][b]How do you determine if someone can be trusted?[/b][/color] #id:1fd
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]By observing their actions[/color]
+- [color=#6BBF59]By observing their actions[/color] #id:1fe
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]By observing their actions over time[/color]
+	Player: [color=#6BBF59]By observing their actions over time[/color] #id:1ff
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Time reveals much, but patience is a luxury we don’t always have
-- [color=#8e59f5]Depends on the situation[/color]
+	Second_manager: Time reveals much, but patience is a luxury we don’t always have #id:200
+- [color=#8e59f5]Depends on the situation[/color] #id:201
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]It depends on the situation. Trust is rarely black and white.[/color]
+	Player: [color=#8e59f5]It depends on the situation. Trust is rarely black and white.[/color] #id:202
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: A careful answer
+	Second_manager: A careful answer #id:203
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-	Second_manager: Trust often thrives in ambiguity, not absolutes
-- [color=#f7d038]I follow the whispers[/color]
+	Second_manager: Trust often thrives in ambiguity, not absolutes #id:204
+- [color=#f7d038]I follow the whispers[/color] #id:205
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I’d ask them directly. If they lie, at least I’ll know where we stand[/color]
+	Player: [color=#f7d038]I’d ask them directly. If they lie, at least I’ll know where we stand[/color] #id:206
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":3,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Bold, but blunt.
+	Second_manager: Bold, but blunt. #id:207
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-	Second_manager: Trust earned through laughter is fragile at best.
-- [color=gray] . . . [/color]
+	Second_manager: Trust earned through laughter is fragile at best. #id:208
+- [color=gray] . . . [/color] #id:209
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":2,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: No answer?
+	Second_manager: No answer? #id:20a
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
-	Second_manager: A lack of trust in your own words, perhaps?
+	Second_manager: A lack of trust in your own words, perhaps? #id:20b
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: Trust is the glue of this place, but also its sharpest blade.
+Second_manager: Trust is the glue of this place, but also its sharpest blade. #id:20c
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
-Second_manager: How do you decide when it’s safe to wield?
-Player: I think you have to weigh the risks, but there’s always a leap of faith involved.
+Second_manager: How do you decide when it’s safe to wield? #id:20d
+Player: I think you have to weigh the risks, but there’s always a leap of faith involved. #id:20e
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: True, but misstep, and the blade turns inward.
+Second_manager: True, but misstep, and the blade turns inward. #id:20f
 [signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
-Second_manager: Trust carefully, or not at all.
+Second_manager: Trust carefully, or not at all. #id:210
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_06
-label main_06
+label main_06 #id:211
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: In the chaos of shared work, responsibilities blur.
+Second_manager: In the chaos of shared work, responsibilities blur. #id:212
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: How you act then reveals much.
+Second_manager: How you act then reveals much. #id:213
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]How do you handle responsibilities that aren’t clearly yours?[/b][/color]
+Second_manager: [color=#2effff][b]How do you handle responsibilities that aren’t clearly yours?[/b][/color] #id:214
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Take them on[/color]
+- [color=#6BBF59]Take them on[/color] #id:215
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I step up and take them on if needed[/color]
+	Player: [color=#6BBF59]I step up and take them on if needed[/color] #id:216
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Admirable, but beware of biting off more than you can chew
-- [color=#8e59f5]I try to assess the role[/color]
+	Second_manager: Admirable, but beware of biting off more than you can chew #id:217
+- [color=#8e59f5]I try to assess the role[/color] #id:218
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I try to assess if it’s truly my role before committing[/color]
+	Player: [color=#8e59f5]I try to assess if it’s truly my role before committing[/color] #id:219
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":2,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: Measured
+	Second_manager: Measured #id:21a
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-	Second_manager: Responsibility misplaced can weigh heavier than it seems.
-- [color=#f7d038]Avoid eye contact[/color]
+	Second_manager: Responsibility misplaced can weigh heavier than it seems. #id:21b
+- [color=#f7d038]Avoid eye contact[/color] #id:21c
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I avoid eye contact until someone else takes the lead[/color]
+	Player: [color=#f7d038]I avoid eye contact until someone else takes the lead[/color] #id:21d
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: A coward’s jest, though I suppose humor eases the burden
-- [color=gray] . . . [/color]
+	Second_manager: A coward’s jest, though I suppose humor eases the burden #id:21e
+- [color=gray] . . . [/color] #id:21f
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: A refusal to act when lines blur is a choice too — but not one that inspires trust
+	Second_manager: A refusal to act when lines blur is a choice too — but not one that inspires trust #id:220
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":7,"part":"head"}"]
-Second_manager: Do you think stepping in without question shows initiative or recklessness?
-Player: It depends. Initiative is valuable, but so is understanding where you’re needed.
+Second_manager: Do you think stepping in without question shows initiative or recklessness? #id:221
+Player: It depends. Initiative is valuable, but so is understanding where you’re needed. #id:222
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
-Second_manager: Indeed
+Second_manager: Indeed #id:223
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: Knowing when to act is often harder than the act itself
+Second_manager: Knowing when to act is often harder than the act itself #id:224
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_07
-label main_07
+label main_07 #id:225
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: A plate too full tips over, yet an empty one goes unnoticed.
+Second_manager: A plate too full tips over, yet an empty one goes unnoticed. #id:226
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: The balance you strike matters more than you think
+Second_manager: The balance you strike matters more than you think #id:227
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]How do you balance competing priorities?[/b][/color]
+Second_manager: [color=#2effff][b]How do you balance competing priorities?[/b][/color] #id:228
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Focus on the most urgent task[/color]
+- [color=#6BBF59]Focus on the most urgent task[/color] #id:229
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I focus on the most urgent task and work through the rest systematically[/color]
+	Player: [color=#6BBF59]I focus on the most urgent task and work through the rest systematically[/color] #id:22a
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Systematic, but priorities often shift too quickly for rigid methods
-- [color=#8e59f5]Evaluate each priority[/color]
+	Second_manager: Systematic, but priorities often shift too quickly for rigid methods #id:22b
+- [color=#8e59f5]Evaluate each priority[/color] #id:22c
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I evaluate each priority and adjust as new demands arise[/color]
+	Player: [color=#8e59f5]I evaluate each priority and adjust as new demands arise[/color] #id:22d
 	[signal arg_type="dict" arg="{"animation":"speak_close_serious","end_sprite":"quiet_close_serious","loops":2,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Second_manager: Dynamic
+	Second_manager: Dynamic #id:22e
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-	Second_manager: Prioritization is a skill that demands constant reevaluation.
-- [color=#f7d038]Flip a coin[/color]
+	Second_manager: Prioritization is a skill that demands constant reevaluation. #id:22f
+- [color=#f7d038]Flip a coin[/color] #id:230
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I flip a coin and let fate decide — it hasn’t failed me yet[/color]
+	Player: [color=#f7d038]I flip a coin and let fate decide — it hasn’t failed me yet[/color] #id:231
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Fate may amuse, but it rarely guarantees success.
-- [color=gray] . . . [/color]
+	Second_manager: Fate may amuse, but it rarely guarantees success. #id:232
+- [color=gray] . . . [/color] #id:233
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Silence leaves priorities unspoken and chaos unchecked
+	Second_manager: Silence leaves priorities unspoken and chaos unchecked #id:234
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":8,"part":"head"}"]
-Second_manager: Priorities often conflict. Do you think it’s better to focus on what’s urgent or what’s important?
-Player: It depends. Sometimes the urgent takes precedence, but ignoring the important can cause bigger issues.
+Second_manager: Priorities often conflict. Do you think it’s better to focus on what’s urgent or what’s important? #id:235
+Player: It depends. Sometimes the urgent takes precedence, but ignoring the important can cause bigger issues. #id:236
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":2,"part":"head"}"]
-Second_manager: True
+Second_manager: True #id:237
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: The challenge is knowing which will matter more in the end
+Second_manager: The challenge is knowing which will matter more in the end #id:238
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_08
-label main_08
+label main_08 #id:239
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Not every journey begins with a map.
+Second_manager: Not every journey begins with a map. #id:23a
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: How you navigate uncertainty often determines where you end up.
+Second_manager: How you navigate uncertainty often determines where you end up. #id:23b
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":4,"part":"head"}"]
-Second_manager: [color=#2effff][b]How do you handle projects with unclear goals?[/b][/color]
+Second_manager: [color=#2effff][b]How do you handle projects with unclear goals?[/b][/color] #id:23c
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Create a plan[/color]
+- [color=#6BBF59]Create a plan[/color] #id:23d
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I create a plan and stick to it, even if the goals are unclear[/color]
+	Player: [color=#6BBF59]I create a plan and stick to it, even if the goals are unclear[/color] #id:23e
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Decisive, but rigid.
+	Second_manager: Decisive, but rigid. #id:23f
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-	Second_manager: A fixed plan without clear goals often leads to dead ends.
-- [color=#8e59f5]Focus on gathering more information[/color]
+	Second_manager: A fixed plan without clear goals often leads to dead ends. #id:240
+- [color=#8e59f5]Focus on gathering more information[/color] #id:241
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
-	Player: [color=#8e59f5]I focus on gathering more information and adjust as I go[/color]
+	Player: [color=#8e59f5]I focus on gathering more information and adjust as I go[/color] #id:242
 	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
-	Second_manager: Adjusting to uncertainty shows understanding of shifting priorities
-- [color=#f7d038]Ask for a magic eight ball[/color]
+	Second_manager: Adjusting to uncertainty shows understanding of shifting priorities #id:243
+- [color=#f7d038]Ask for a magic eight ball[/color] #id:244
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I ask for a magic eight ball — it’s never let me down[/color]
+	Player: [color=#f7d038]I ask for a magic eight ball — it’s never let me down[/color] #id:245
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":7,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Amusing, but I hope your sense of humor doesn’t guide your decisions entirely.
-- [color=gray] . . . [/color]
+	Second_manager: Amusing, but I hope your sense of humor doesn’t guide your decisions entirely. #id:246
+- [color=gray] . . . [/color] #id:247
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Silence in the face of uncertainty only deepens the void
+	Second_manager: Silence in the face of uncertainty only deepens the void #id:248
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Unclear goals are often hidden tests.
+Second_manager: Unclear goals are often hidden tests. #id:249
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: Do you think it’s better to act first or wait for clarity?
-Player: Sometimes clarity comes from action, but rushing in can backfire.
+Second_manager: Do you think it’s better to act first or wait for clarity? #id:24a
+Player: Sometimes clarity comes from action, but rushing in can backfire. #id:24b
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: The trick is knowing when hesitation costs more than action.
+Second_manager: The trick is knowing when hesitation costs more than action. #id:24c
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_09
-label main_09
+label main_09 #id:24d
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: The absence of a clear path doesn’t stop the journey.
+Second_manager: The absence of a clear path doesn’t stop the journey. #id:24e
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: It’s what you do in the void that defines you.
+Second_manager: It’s what you do in the void that defines you. #id:24f
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]How do you handle situations where there’s no clear solution?[/b][/color]
+Second_manager: [color=#2effff][b]How do you handle situations where there’s no clear solution?[/b][/color] #id:250
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Create a structured plan[/color]
+- [color=#6BBF59]Create a structured plan[/color] #id:251
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I create a structured plan and tackle the problem step by step[/color]
+	Player: [color=#6BBF59]I create a structured plan and tackle the problem step by step[/color] #id:252
 	[signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":3,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Orderly, but too rigid.
+	Second_manager: Orderly, but too rigid. #id:253
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-	Second_manager: The undefined often breaks structured plans.
-- [color=#8e59f5]Pause and wait[/color]
+	Second_manager: The undefined often breaks structured plans. #id:254
+- [color=#8e59f5]Pause and wait[/color] #id:255
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Player: [color=#8e59f5]I pause and wait until the situation becomes clearer[/color]
+	Player: [color=#8e59f5]I pause and wait until the situation becomes clearer[/color] #id:256
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":7,"part":"head"}"]
-	Second_manager: Hesitation rarely leads to resolution. Clarity won’t always come on its own.
-- [color=#f7d038]Embrace chaos[/color]
+	Second_manager: Hesitation rarely leads to resolution. Clarity won’t always come on its own. #id:257
+- [color=#f7d038]Embrace chaos[/color] #id:258
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I embrace chaos — it’s not a problem if I can’t define it[/color]
+	Player: [color=#f7d038]I embrace chaos — it’s not a problem if I can’t define it[/color] #id:259
 	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":4,"part":"head"}"]
-	Second_manager: A bold embrace of madness
+	Second_manager: A bold embrace of madness #id:25a
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":5,"part":"head"}"]
-	Second_manager: Sometimes, that’s exactly what’s needed.
-- [color=gray] . . . [/color]
+	Second_manager: Sometimes, that’s exactly what’s needed. #id:25b
+- [color=gray] . . . [/color] #id:25c
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Quiet uncertainty doesn’t solve undefined problems — it only deepens them
+	Second_manager: Quiet uncertainty doesn’t solve undefined problems — it only deepens them #id:25d
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Chaos is a natural state of things.
+Second_manager: Chaos is a natural state of things. #id:25e
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: Do you think it’s better to control it or let it run free?
-Player: Sometimes chaos can create opportunities.
+Second_manager: Do you think it’s better to control it or let it run free? #id:25f
+Player: Sometimes chaos can create opportunities. #id:260
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":3,"part":"head"}"]
-Second_manager: Risky, indeed
+Second_manager: Risky, indeed #id:261
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
-Second_manager: Control what you can — but don’t be surprised when the rest slips through your fingers
+Second_manager: Control what you can — but don’t be surprised when the rest slips through your fingers #id:262
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_10
-label main_10
+label main_10 #id:263
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: Time is the cruelest master, and it rarely bends to our will.
+Second_manager: Time is the cruelest master, and it rarely bends to our will. #id:264
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: How do you cope when the clock conspires against you?
+Second_manager: How do you cope when the clock conspires against you? #id:265
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]What’s your approach to impossible deadlines?[/b][/color]
+Second_manager: [color=#2effff][b]What’s your approach to impossible deadlines?[/b][/color] #id:266
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Prioritize tasks[/color]
+- [color=#6BBF59]Prioritize tasks[/color] #id:267
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I prioritize tasks and focus on the most critical elements[/color]
+	Player: [color=#6BBF59]I prioritize tasks and focus on the most critical elements[/color] #id:268
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":8,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: A practical approach, but even the most critical task can slip through the cracks of time
-- [color=#8e59f5]Assess what’s feasible[/color]
+	Second_manager: A practical approach, but even the most critical task can slip through the cracks of time #id:269
+- [color=#8e59f5]Assess what’s feasible[/color] #id:26a
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I assess what’s feasible and negotiate for more time if needed[/color]
+	Player: [color=#8e59f5]I assess what’s feasible and negotiate for more time if needed[/color] #id:26b
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Negotiate...
+	Second_manager: Negotiate... #id:26c
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-	Second_manager: With who?
-- [color=#f7d038]Write my resignation letter[/color]
+	Second_manager: With who? #id:26d
+- [color=#f7d038]Write my resignation letter[/color] #id:26e
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I write my resignation letter — after all, it’s the easiest task to finish.[/color]
+	Player: [color=#f7d038]I write my resignation letter — after all, it’s the easiest task to finish.[/color] #id:26f
 	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":3,"part":"head"}"]
-	Second_manager: Clever, if a bit defeatist
+	Second_manager: Clever, if a bit defeatist #id:270
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_close_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
-	Second_manager: Sometimes humor is the only way to survive the absurd
-- [color=gray] . . . [/color]
+	Second_manager: Sometimes humor is the only way to survive the absurd #id:271
+- [color=gray] . . . [/color] #id:272
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Silence won’t stop the ticking clock
+	Second_manager: Silence won’t stop the ticking clock #id:273
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-	Second_manager: Ticky-tacky...
+	Second_manager: Ticky-tacky... #id:274
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Deadlines are the ultimate test of resolve.
+Second_manager: Deadlines are the ultimate test of resolve. #id:275
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: Do you meet them head-on, or bend them to your will?
-Player: Both, ideally. But sometimes, you just have to make the best of a bad situation.
+Second_manager: Do you meet them head-on, or bend them to your will? #id:276
+Player: Both, ideally. But sometimes, you just have to make the best of a bad situation. #id:277
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":5,"part":"head"}"]
-Second_manager: Flexibility under pressure is the mark of a survivor
+Second_manager: Flexibility under pressure is the mark of a survivor #id:278
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_11
-label main_11
+label main_11 #id:279
 [signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
-Second_manager: In every workplace, there are thorns among the roses.
+Second_manager: In every workplace, there are thorns among the roses. #id:27a
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]How do you handle difficult clients or coworkers?[/b][/color]
+Second_manager: [color=#2effff][b]How do you handle difficult clients or coworkers?[/b][/color] #id:27b
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]I stay professional[/color]
+- [color=#6BBF59]I stay professional[/color] #id:27c
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I stay professional and address conflicts directly[/color]
+	Player: [color=#6BBF59]I stay professional and address conflicts directly[/color] #id:27d
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Professional, but direct conflict often stirs more trouble than it resolves.
-- [color=#8e59f5]I avoid unnecessary confrontation[/color]
+	Second_manager: Professional, but direct conflict often stirs more trouble than it resolves. #id:27e
+- [color=#8e59f5]I avoid unnecessary confrontation[/color] #id:27f
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I avoid unnecessary confrontation and focus on my work[/color]
+	Player: [color=#8e59f5]I avoid unnecessary confrontation and focus on my work[/color] #id:280
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Avoidance creates distance, but not solutions
-- [color=#f7d038]I offer them coffee[/color]
+	Second_manager: Avoidance creates distance, but not solutions #id:281
+- [color=#f7d038]I offer them coffee[/color] #id:282
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I offer them coffee laced with extra patience — and maybe a little sugar[/color]
+	Player: [color=#f7d038]I offer them coffee laced with extra patience — and maybe a little sugar[/color] #id:283
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-	Second_manager: A sweet approach
+	Second_manager: A sweet approach #id:284
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
-	Second_manager: Humor disarms even the sharpest tongues — if used wisely
-- [color=gray] . . . [/color]
+	Second_manager: Humor disarms even the sharpest tongues — if used wisely #id:285
+- [color=gray] . . . [/color] #id:286
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Silence is an acceptance of difficulty, not a resolution to it
+	Second_manager: Silence is an acceptance of difficulty, not a resolution to it #id:287
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: Dealing with thorns requires care.
+Second_manager: Dealing with thorns requires care. #id:288
 [signal arg_type="dict" arg="{"animation":"speak_surprised_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
-Second_manager: Do you think it’s better to pluck them out or work around them?
-Player: Work around them — sometimes removing the thorn does more harm than good
+Second_manager: Do you think it’s better to pluck them out or work around them? #id:289
+Player: Work around them — sometimes removing the thorn does more harm than good #id:28a
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
 Second_manager: Some thorns protect the rose;\
-others are best left alone
+others are best left alone #id:28b
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # main_12
-label main_12
+label main_12 #id:28c
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":4,"part":"head"}"]
-Second_manager: Every job has its monotony.
+Second_manager: Every job has its monotony. #id:28d
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
-Second_manager: How you face it often determines how you’re remembered — or forgotten
+Second_manager: How you face it often determines how you’re remembered — or forgotten #id:28e
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]What’s your approach to handling boring tasks?[/b][/color]
+Second_manager: [color=#2effff][b]What’s your approach to handling boring tasks?[/b][/color] #id:28f
 [signal arg_type="dict" arg="{"skip_choice":4,"start_timer":12}"]
-- [color=#6BBF59]Focus on finishing them[/color]
+- [color=#6BBF59]Focus on finishing them[/color] #id:290
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#6BBF59]I focus on finishing them quickly to move on to more important work[/color]
+	Player: [color=#6BBF59]I focus on finishing them quickly to move on to more important work[/color] #id:291
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":20}"]
-	Second_manager: Efficient, but speed doesn’t always lead to quality
-- [color=#8e59f5]I do them as needed[/color]
+	Second_manager: Efficient, but speed doesn’t always lead to quality #id:292
+- [color=#8e59f5]I do them as needed[/color] #id:293
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#8e59f5]I do them as needed and try to find a way to make them tolerable[/color]
+	Player: [color=#8e59f5]I do them as needed and try to find a way to make them tolerable[/color] #id:294
 	[signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":10}"]
-	Second_manager: Practical, but tolerating monotony doesn’t inspire improvement
-- [color=#f7d038]Turn them into a competition[/color]
+	Second_manager: Practical, but tolerating monotony doesn’t inspire improvement #id:295
+- [color=#f7d038]Turn them into a competition[/color] #id:296
 	[signal arg_type="dict" arg="{"is_answered":true,"is_silent":false,"stop_timer":true}"]
-	Player: [color=#f7d038]I turn them into a competition with myself—who said boredom can’t be fun?[/color]
+	Player: [color=#f7d038]I turn them into a competition with myself—who said boredom can’t be fun?[/color] #id:297
 	[signal arg_type="dict" arg="{"stress_change":-5}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
-	Second_manager: Creative
+	Second_manager: Creative #id:298
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-	Second_manager: Finding joy in monotony is a rare skill
-- [color=gray] . . . [/color]
+	Second_manager: Finding joy in monotony is a rare skill #id:299
+- [color=gray] . . . [/color] #id:29a
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":true,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":6,"part":"head"}"]
 	[signal arg_type="dict" arg="{"stress_change":25}"]
-	Second_manager: Silence in the face of boredom risks turning apathy into habit
+	Second_manager: Silence in the face of boredom risks turning apathy into habit #id:29b
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: Boredom tests patience as much as skill.
+Second_manager: Boredom tests patience as much as skill. #id:29c
 [signal arg_type="dict" arg="{"animation":"speak_surprised_serious","end_sprite":"quiet_surprised_serious","loops":5,"part":"head"}"]
-Second_manager: Do you think it’s better to endure or innovate?
-Player: Both, but innovation makes endurance easier
+Second_manager: Do you think it’s better to endure or innovate? #id:29d
+Player: Both, but innovation makes endurance easier #id:29e
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":5,"part":"head"}"]
-Second_manager: Those who innovate turn monotony into mastery
+Second_manager: Those who innovate turn monotony into mastery #id:29f
 [signal arg_type="dict" arg="{"random_question":"main"}"]
 # event_01
-label event_01
+label event_01 #id:2a0
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":6,"part":"head"}"]
-Second_manager: This next step is my own design — a method born from years of experience.
+Second_manager: This next step is my own design — a method born from years of experience. #id:2a1
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":8,"part":"head"}"]
 [signal arg_type="dict" arg="{"event":"blitz"}"]
-Second_manager: A blitz of questions, rapid and deliberate, aimed at peeling back the surface to reveal the core of a candidate.
+Second_manager: A blitz of questions, rapid and deliberate, aimed at peeling back the surface to reveal the core of a candidate. #id:2a2
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":8,"part":"head"}"]
-Second_manager: It’s not about perfection — it’s about instinct, reaction, and the truth that comes when thought gives way to honesty
+Second_manager: It’s not about perfection — it’s about instinct, reaction, and the truth that comes when thought gives way to honesty #id:2a3
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: Consider it… my personal touch
+Second_manager: Consider it… my personal touch #id:2a4
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: Don’t waste time thinking too much.
+Second_manager: Don’t waste time thinking too much. #id:2a5
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-Second_manager: Let’s get on with it
+Second_manager: Let’s get on with it #id:2a6
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # event_02
-label event_02
+label event_02 #id:2a7
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_close_serious","loops":7,"part":"head"}"]
-Second_manager: The first round of blitz revealed much, but insight is fleeting if left unchecked.
+Second_manager: The first round of blitz revealed much, but insight is fleeting if left unchecked. #id:2a8
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_close_smile","loops":5,"part":"head"}"]
 [signal arg_type="dict" arg="{"event":"blitz"}"]
-Second_manager: To ensure clarity, we’ll conduct another one.
+Second_manager: To ensure clarity, we’ll conduct another one. #id:2a9
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":9,"part":"head"}"]
-Second_manager: This second round will solidify the impressions formed in the first — confirming or contradicting what we’ve learned.
+Second_manager: This second round will solidify the impressions formed in the first — confirming or contradicting what we’ve learned. #id:2aa
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":7,"part":"head"}"]
-Second_manager: Consistency matters here, as does adaptability. Let’s see if the foundation holds.
+Second_manager: Consistency matters here, as does adaptability. Let’s see if the foundation holds. #id:2ab
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-Second_manager: Let’s get on with it
+Second_manager: Let’s get on with it #id:2ac
 [signal arg_type="dict" arg="{"event":"blitz"}"]
 # blitz_01
-label blitz_01
+label blitz_01 #id:2ad
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]What is the most important skill for survival here?[/b][/color]
+Second_manager: [color=#2effff][b]What is the most important skill for survival here?[/b][/color] #id:2ae
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- Adaptation to unpredictability
+- Adaptation to unpredictability #id:2af
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Adaptation to unpredictability
+	Player: Adaptation to unpredictability #id:2b0
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- Obedience to every rule
+- Obedience to every rule #id:2b1
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Obedience to every rule
+	Player: Obedience to every rule #id:2b2
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- . . .
+- . . . #id:2b3
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_02
-label blitz_02
+label blitz_02 #id:2b4
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]What do you do when the shadows start moving?[/b][/color]
+Second_manager: [color=#2effff][b]What do you do when the shadows start moving?[/b][/color] #id:2b5
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- Stand still and observe
+- Stand still and observe #id:2b6
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Stand still and observe
+	Player: Stand still and observe #id:2b7
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- Run in the opposite direction.
+- Run in the opposite direction. #id:2b8
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Run in the opposite direction.
+	Player: Run in the opposite direction. #id:2b9
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- . . .
+- . . . #id:2ba
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_03
-label blitz_03
+label blitz_03 #id:2bb
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]What is the function of the locked room on the third floor?[/b][/color]
+Second_manager: [color=#2effff][b]What is the function of the locked room on the third floor?[/b][/color] #id:2bc
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- To store forgotten records.
+- To store forgotten records. #id:2bd
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: To store forgotten records.
+	Player: To store forgotten records. #id:2be
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- To preserve the essence of secrecy
+- To preserve the essence of secrecy #id:2bf
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: To preserve the essence of secrecy
+	Player: To preserve the essence of secrecy #id:2c0
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- . . .
+- . . . #id:2c1
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_04
-label blitz_04
+label blitz_04 #id:2c2
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]If a co-worker disappears, what’s your first step?[/b][/color]
+Second_manager: [color=#2effff][b]If a co-worker disappears, what’s your first step?[/b][/color] #id:2c3
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- Look for them immediately
+- Look for them immediately #id:2c4
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Look for them immediately.
+	Player: Look for them immediately. #id:2c5
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- File a report and continue working
+- File a report and continue working #id:2c6
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: File a report and continue working
+	Player: File a report and continue working #id:2c7
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- . . .
+- . . . #id:2c8
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_05
-label blitz_05
+label blitz_05 #id:2c9
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]Why is silence more valuable than answers?[/b][/color]
+Second_manager: [color=#2effff][b]Why is silence more valuable than answers?[/b][/color] #id:2ca
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- Speaking reveals too much
+- Speaking reveals too much #id:2cb
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Because speaking reveals too much
+	Player: Because speaking reveals too much #id:2cc
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- It lets mystery grow
+- It lets mystery grow #id:2cd
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Because it leaves room for mystery to grow
+	Player: Because it leaves room for mystery to grow #id:2ce
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- . . .
+- . . . #id:2cf
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 	[signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-	Second_manager: Not this time
+	Second_manager: Not this time #id:2d0
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_06
-label blitz_06
+label blitz_06 #id:2d1
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":5,"part":"head"}"]
-Second_manager: [color=#2effff][b]What does the phrase “the floor remembers” mean?[/b][/color]
+Second_manager: [color=#2effff][b]What does the phrase “the floor remembers” mean?[/b][/color] #id:2d2
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- Every step leaves a mark
+- Every step leaves a mark #id:2d3
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Every step taken here leaves a permanent mark
+	Player: Every step taken here leaves a permanent mark #id:2d4
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- The floor keeps secrets
+- The floor keeps secrets #id:2d5
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: The floor records secrets of those who walk on it
+	Player: The floor records secrets of those who walk on it #id:2d6
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- . . .
+- . . . #id:2d7
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_07
-label blitz_07
+label blitz_07 #id:2d8
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]Why is eye contact discouraged with the mirrors in the west wing?[/b][/color]
+Second_manager: [color=#2effff][b]Why is eye contact discouraged with the mirrors in the west wing?[/b][/color] #id:2d9
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- They reflect more than you
+- They reflect more than you #id:2da
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: They reflect more than just your image
+	Player: They reflect more than just your image #id:2db
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- They’re fragile and need protection
+- They’re fragile and need protection #id:2dc
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: They are fragile and must be protected
+	Player: They are fragile and must be protected #id:2dd
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- . . .
+- . . . #id:2de
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_08
-label blitz_08
+label blitz_08 #id:2df
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]What should you do if a file disappears from your desk?[/b][/color]
+Second_manager: [color=#2effff][b]What should you do if a file disappears from your desk?[/b][/color] #id:2e0
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- Report to the supervisor
+- Report to the supervisor #id:2e1
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Report it to the supervisor immediately
+	Player: Report it to the supervisor immediately #id:2e2
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- Trust it’s in place
+- Trust it’s in place #id:2e3
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Trust that it’s where it needs to be
+	Player: Trust that it’s where it needs to be #id:2e4
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- . . .
+- . . . #id:2e5
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_09
-label blitz_09
+label blitz_09 #id:2e6
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]Why must we always speak in riddles when discussing secrets?[/b][/color]
+Second_manager: [color=#2effff][b]Why must we always speak in riddles when discussing secrets?[/b][/color] #id:2e7
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- It confuses unwanted listeners
+- It confuses unwanted listeners #id:2e8
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: It confuses unwanted listeners
+	Player: It confuses unwanted listeners #id:2e9
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- It strengthens their allure
+- It strengthens their allure #id:2ea
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: It strengthens their allure
+	Player: It strengthens their allure #id:2eb
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- . . .
+- . . . #id:2ec
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_10
-label blitz_10
+label blitz_10 #id:2ed
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_surprised_smile","loops":6,"part":"head"}"]
-Second_manager: [color=#2effff][b]What should you do if the clock shows a time that doesn’t exist?[/b][/color]
+Second_manager: [color=#2effff][b]What should you do if the clock shows a time that doesn’t exist?[/b][/color] #id:2ee
 [signal arg_type="dict" arg="{"skip_choice":3,"start_timer":6}"]
-- Ignore it; time is malleable here
+- Ignore it; time is malleable here #id:2ef
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Ignore it; time is malleable here
+	Player: Ignore it; time is malleable here #id:2f0
 	[signal arg_type="dict" arg="{"animation":"approve","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":2.5}"]
-- Reset the clock to the correct time
+- Reset the clock to the correct time #id:2f1
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
-	Player: Reset the clock to the correct time
+	Player: Reset the clock to the correct time #id:2f2
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
-- . . .
+- . . . #id:2f3
 	[signal arg_type="dict" arg="{"is_answered":false,"is_silent":false,"stop_timer":true}"]
 	[signal arg_type="dict" arg="{"animation":"reject","end_sprite":"normal","loops":5,"part":"hand"}"]
 	[signal arg_type="dict" arg="{"stress_change":15}"]
 [signal arg_type="dict" arg="{"random_blitz":true}"]
 # blitz_passed_01
-label blitz_passed_01
+label blitz_passed_01 #id:2f4
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":1,"part":"head"}"]
-Second_manager: . . .
+Second_manager: . . . #id:2f5
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"claps","end_sprite":"claps","loops":5,"part":"hand"}"]
-Second_manager: Interesting.
+Second_manager: Interesting. #id:2f6
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":15,"part":"head"}"]
-Second_manager: Far more revealing than you might have intended. Your answers have shown me aspects of your character — maybe more than you expected.
+Second_manager: Far more revealing than you might have intended. Your answers have shown me aspects of your character — maybe more than you expected. #id:2f7
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":7,"part":"head"}"]
-Second_manager: You've painted a clearer picture of who you are, or perhaps who you're trying to be.
+Second_manager: You've painted a clearer picture of who you are, or perhaps who you're trying to be. #id:2f8
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
-Second_manager: You’ve given me plenty to consider, but the real test still lies ahead
+Second_manager: You’ve given me plenty to consider, but the real test still lies ahead #id:2f9
 [signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":1,"part":"hand"}"]
 [signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # blitz_passed_02
-label blitz_passed_02
+label blitz_passed_02 #id:2fa
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":1,"part":"head"}"]
-Second_manager: . . .
+Second_manager: . . . #id:2fb
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
 [signal arg_type="dict" arg="{"animation":"claps","end_sprite":"claps","loops":5,"part":"hand"}"]
-Second_manager: Fascinating.
+Second_manager: Fascinating. #id:2fc
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
-Second_manager: Your answers were more illuminating than you may realize
+Second_manager: Your answers were more illuminating than you may realize #id:2fd
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
-Second_manager: Each one has painted a clearer picture of who you are
+Second_manager: Each one has painted a clearer picture of who you are #id:2fe
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: ... or perhaps, who you wish to be
+Second_manager: ... or perhaps, who you wish to be #id:2ff
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":4,"part":"head"}"]
-Second_manager: Time will tell if my trust is well-placed.
+Second_manager: Time will tell if my trust is well-placed. #id:300
 [signal arg_type="dict" arg="{"animation":"normal","end_sprite":"normal","loops":1,"part":"hand"}"]
 [signal arg_type="dict" arg="{"event_end":true,"random_question":"main"}"]
 # WIN
-label End
+label End #id:301
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":3,"part":"head"}"]
-Second_manager: Well, look at that.
+Second_manager: Well, look at that. #id:302
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":5,"part":"head"}"]
-Second_manager: You’ve managed to impress me — a feat few achieve.
+Second_manager: You’ve managed to impress me — a feat few achieve. #id:303
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":6,"part":"head"}"]
-Second_manager: My stage of this process is rarely kind to candidates, but you held your own.
+Second_manager: My stage of this process is rarely kind to candidates, but you held your own. #id:304
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: Resilience, adaptability, a spark of wit—I see potential in you.
+Second_manager: Resilience, adaptability, a spark of wit—I see potential in you. #id:305
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":4,"part":"head"}"]
-Second_manager: The final test awaits with our esteemed leader.
+Second_manager: The final test awaits with our esteemed leader. #id:306
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":9,"part":"head"}"]
-Second_manager: I’ll be sending my recommendations along, and I’ll make sure they know you’ve earned the chance to move forward.
+Second_manager: I’ll be sending my recommendations along, and I’ll make sure they know you’ve earned the chance to move forward. #id:307
 [signal arg_type="dict" arg="{"animation":"speak_open_smile","end_sprite":"quiet_open_smile","loops":2,"part":"head"}"]
-Second_manager: Good luck.
+Second_manager: Good luck. #id:308
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":5,"part":"head"}"]
-Second_manager: And remember, if you’ve come this far, you’re stronger than you think.
+Second_manager: And remember, if you’ve come this far, you’re stronger than you think. #id:309
 [signal arg_type="dict" arg="{"end_manager":true}"]
 [end_timeline]
-label death
+label death #id:30a
 [signal arg_type="dict" arg="{"animation":"speak_open_serious","end_sprite":"quiet_open_serious","loops":1,"part":"head"}"]
 [end_timeline]

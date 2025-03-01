@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bnfv3fkfv32vu"]
+[gd_scene load_steps=13 format=3 uid="uid://bnfv3fkfv32vu"]
 
 [ext_resource type="Script" path="res://scenes/additional_scenes/audio_manager.gd" id="1_45fwd"]
 [ext_resource type="AudioStream" uid="uid://cbimsgtq4k823" path="res://assets/sounds/Do you wanna job.wav" id="1_mvky7"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://b8y2b16k3rgjk" path="res://assets/sounds/heal1.mp3" id="5_drb16"]
 [ext_resource type="AudioStream" uid="uid://coxyvd5b68gst" path="res://assets/sounds/heal2.mp3" id="6_nuhkc"]
 [ext_resource type="AudioStream" uid="uid://dx3b8hht562q" path="res://assets/sounds/heal3.mp3" id="7_2adca"]
+[ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="9_awdqy"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_04b8v"]
 random_pitch = 1.1
@@ -21,6 +22,11 @@ streams_count = 3
 stream_0/stream = ExtResource("5_drb16")
 stream_1/stream = ExtResource("6_nuhkc")
 stream_2/stream = ExtResource("7_2adca")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_l0264"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("9_awdqy")
 
 [node name="AudioManager" type="Node"]
 process_mode = 3
@@ -60,6 +66,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -2)
 stream = SubResource("AudioStreamRandomizer_3mwpt")
 volume_db = -10.0
 max_distance = 10.0
+
+[node name="Button_sound" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_l0264")
+pitch_scale = 1.7
 
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
 [connection signal="finished" from="Music/Music" to="." method="_on_music_finished"]
