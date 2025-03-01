@@ -1,0 +1,463 @@
+keys,en,ru
+Text/18c/text,What the strange layout of the building...,Как странно устроено здание...
+Text/18d/text,Hello?,Привет?
+Text/18e/text,Mr. Pop?,Мистер пророк?
+Text/18f/text,Huh? Who's there?,А? Кто там?
+Text/190/text,"Ah, you must be the candidate Mr. Jock mentioned","Ах, ты, наверное, тот кандидат, о котором говорил Шутняра."
+Text/191/text,He spoke...,Он говорил...
+Text/192/text,...,...
+Text/193/text,...highly of you.,...очень хорошо о тебе.
+Text/194/text,"Said you’ve got potential, though perhaps still a bit unpolished.","Сказал, что у тебя есть потенциал, хотя ты ещё немного необработан."
+Text/195/text,Don’t worry — that’s not unusual.,Не переживай — это нормально.
+Text/196/text,I’ve been conducting interviews longer than most people have been working.,"Я провожу собеседования дольше, чем большинство людей работает."
+Text/197/text,I’ll warn you now — I take this process seriously.,Предупреждаю сразу — я отношусь к этому процессу серьёзно.
+Text/198/text,This isn’t just about skills.,Здесь не только навыки важны.
+Text/199/text,"It’s about fit, about resilience, about finding someone who can thrive in...","Это про то, как ты подходишь, про твою устойчивость, про способность справляться с..."
+Text/19a/text,...unique circumstances.,...необычными обстоятельствами.
+Text/19b/text,"That said, you’d be wrong to think we’re looking for perfection.","С этим сказано, не думай, что мы ищем совершенство."
+Text/19c/text,"A diamond starts as coal, after all",Алмаз ведь начинается как уголь.
+Text/19d/text,"If there’s something worth refining, we’ll see it","Если есть что-то стоящее, мы это увидим."
+Text/19e/text,"That said, you’d be wrong to think we’re looking for perfection.","Не думай, что мы ищем совершенство."
+Text/19f/text,"So, don’t let nerves get the better of you",Так что не позволяй нервам взять верх.
+Text/1a0/text,Take a deep breath and remember — this is as much about us getting to know you as it is about you proving yourself.,"Глубокий вдох и помни — это не только ты нам показываешь себя, но и мы тебя познаём."
+Text/1a1/text,...,...
+Text/1a2/text,You know rules,Ты знаешь правила.
+Text/1a3/text,"Now, let’s begin, shall we?","Давай начнём, ладно?"
+Text/1a4/text,Soo.. First question,"Итак, первый вопрос:"
+Label/1a5/display_name,,
+Text/1a6/text,"In this place, success comes to those who know how to navigate ambiguity","В этом месте успех приходит к тем, кто умеет ориентироваться в неясных ситуациях."
+Text/1a7/text,[color=#2effff][b]How do you handle unclear situations?[/b][/color],[color=#2effff][b]Как ты справляешься с неясными ситуациями?[/b][/color]
+Choice/1a8/text,[color=#6BBF59]Seek clarity[/color],[color=#6BBF59]Ищу ясность[/color]
+Choice/1a8/disabled_text,,
+Text/1a9/text,[color=#6BBF59]By seeking clarity and making informed decisions[/color],[color=#6BBF59]Ищу ясность и принимаю обоснованные решения[/color]
+Text/1aa/text,"A wise choice. Clarity is earned, not given, and the bold reap the rewards.","Мудрое решение. Ясность заслуживается, а не дается, и смелые получают награду."
+Choice/1ab/text,[color=#8e59f5]Wait[/color],[color=#8e59f5]Жду[/color]
+Choice/1ab/disabled_text,,
+Text/1ac/text,[color=#8e59f5]I try to wait until things become clearer[/color],"[color=#8e59f5]Я пытаюсь подождать, пока ситуация не прояснится[/color]"
+Text/1ad/text,Hesitation is a trap. This place thrives on the indecisive and leaves them behind,Колебания — это ловушка. Это место процветает на нерешительных и оставляет их позади.
+Choice/1ae/text,[color=#f7d038]Add more mystery[/color],[color=#f7d038]Добавить больше загадочности[/color]
+Choice/1ae/disabled_text,,
+Text/1af/text,[color=#f7d038]By adding more mystery to fit in here[/color],"[color=#f7d038]Добавляю больше загадочности, чтобы здесь вписаться[/color]"
+Text/1b0/text,"Amusing, but this isn’t a game. Mystery won’t be your ally for long.","Забавно, но это не игра. Загадочность не будет твоим союзником долго."
+Choice/1b1/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/1b1/disabled_text,,
+Text/1b2/text,Quiet won’t save you.,Тишина тебя не спасёт.
+Text/1b3/text,Shadows consume those who stand still,"Тени поглощают тех, кто стоит на месте."
+Text/1b4/text,"Ambiguity can paralyze or empower, depending on how you respond.","Неопределённость может парализовать или наделить силой, в зависимости от того, как ты реагируешь."
+Text/1b5/text,"Tell me, do you trust your instincts when the path isn’t clear?","Скажи мне, ты доверяешь своим инстинктам, когда путь не ясен?"
+Text/1b6/text,"I’d say instincts are useful, but careful thought keeps you grounded.","Скажу так, инстинкты полезны, но внимательное размышление помогает держаться на ногах."
+Text/1b7/text,"Instincts are a blade, but thought is the hilt","Инстинкты — это лезвие, но размышления — рукоятка."
+Text/1b8/text,You’d best hold both tightly here,Ты лучше держи оба и держи их крепко.
+Label/1b9/display_name,,
+Text/1ba/text,"Rules are the foundation of this realm, but they are shrouded in mystery.","Правила — основа этого мира, но они окутаны тайной."
+Text/1bb/text,[color=#2effff][b]What is your stance on following unwritten rules?[/b][/color],[color=#2effff][b]Как ты относишься к следованию неписаным правилам?[/b][/color]
+Choice/1bc/text,[color=#6BBF59]Observe and adapt[/color],[color=#6BBF59]Наблюдаю и адаптируюсь[/color]
+Choice/1bc/disabled_text,,
+Text/1bd/text,[color=#6BBF59]I’ll observe and adapt quickly[/color],[color=#6BBF59]Буду наблюдать и быстро адаптироваться[/color]
+Text/1be/text,Good. The unspoken forms the foundation of what keeps this place standing...,"Хорошо. Неписанное формирует основу того, что поддерживает этот мир..."
+Choice/1bf/text,[color=#8e59f5]Ask for guidance[/color],[color=#8e59f5]Спрошу совета[/color]
+Choice/1bf/disabled_text,,
+Text/1c0/text,[color=#8e59f5]I’ll ask for guidance when I don’t understand[/color],"[color=#8e59f5]Я буду просить совета, когда не понимаю[/color]"
+Text/1c1/text,"Guidance won’t always arrive when you need it. Learn quickly, or suffer the gaps in knowledge.","Совет не всегда придёт, когда ты его ждёшь. Учись быстро, иначе будешь страдать от пробелов в знаниях."
+Choice/1c2/text,[color=#f7d038]It's just suggestions[/color],[color=#f7d038]Это всего лишь предложения[/color]
+Choice/1c2/disabled_text,,
+Text/1c3/text,"[color=#f7d038]Unwritten rules are just suggestions, aren’t they?[/color]","[color=#f7d038]Неписаные правила — это всего лишь предложения, не так ли?[/color]"
+Text/1c4/text,Mock the unwritten at your peril. They carry weight you may not yet comprehend.,"Не смей насмехаться над неписаным. Это имеет значение, которое ты ещё не понимаешь."
+Choice/1c5/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/1c5/disabled_text,,
+Text/1c6/text,Silence doesn’t excuse ignorance. The unwritten rules don’t care if you understand them,"Тишина не оправдывает невежества. Неписаные правила не волнуют, понимаешь ли ты их."
+Text/1c7/text,The unseen binds us just as tightly as what’s documented.,"Невидимые узы держат нас так же крепко, как и зафиксированные."
+Text/1c8/text,Do you think you’re capable of recognizing such bonds?,"Ты считаешь, что способен распознать такие узы?"
+Text/1c9/text,It depends on how obvious they are. Some things can only be learned through experience,"Зависит от того, насколько они очевидны. Некоторые вещи можно узнать только через опыт."
+Text/1ca/text,"Tell me, do you trust your instincts when the path isn’t clear?","Скажи, ты доверяешь своим инстинктам, когда путь не ясен?"
+Text/1cb/text,Obvious?,Очевидные?
+Text/1cc/text,Rarely,Редко.
+Text/1cd/text,Experience?,Опыт?
+Text/1ce/text,Certainly,Определённо.
+Text/1cf/text,Pay attention to what others ignore — it might save you.,"Обращай внимание на то, что игнорируют другие — это может тебя спасти."
+Label/1d0/display_name,,
+Text/1d1/text,Not all secrets are meant to be kept forever.,Не все секреты должны храниться вечно.
+Text/1d2/text,Some must evolve.,Некоторые должны изменяться.
+Text/1d3/text,[color=#2effff][b]What’s your strategy for handling sensitive information?[/b][/color],[color=#2effff][b]Какая у тебя стратегия для обращения с конфиденциальной информацией?[/b][/color]
+Choice/1d4/text,[color=#6BBF59]Safeguard it[/color],[color=#6BBF59]Охранять её[/color]
+Choice/1d4/disabled_text,,
+Text/1d5/text,[color=#6BBF59]To safeguard it with utmost care[/color],[color=#6BBF59]Охранять её с максимальной осторожностью[/color]
+Text/1d6/text,"Trust is earned, not given","Доверие зарабатывается, а не даётся."
+Choice/1d7/text,[color=#8e59f5]As the situation demands[/color],[color=#8e59f5]По мере необходимости[/color]
+Choice/1d7/disabled_text,,
+Text/1d8/text,[color=#8e59f5]I’ll handle it as the situation demands[/color],[color=#8e59f5]Я буду действовать по мере необходимости[/color]
+Text/1d9/text,A vague strategy lacks conviction.,Неопределённая стратегия лишена решимости.
+Choice/1da/text,[color=#f7d038]Whisper them[/color],[color=#f7d038]Шептать их[/color]
+Choice/1da/disabled_text,,
+Text/1db/text,[color=#f7d038]Secrets are meant to be whispered in shadows[/color],"[color=#f7d038]Секреты предназначены для того, чтобы шептать в тени[/color]"
+Text/1dc/text,"Clever, but far from practical","Остроумно, но далёко от практичности."
+Choice/1dd/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/1dd/disabled_text,,
+Text/1de/text,Ironic,Иронично.
+Text/1df/text,"Secrets thrive in silence, but so does fear.","Секреты процветают в тишине, но так же и страх."
+Text/1e0/text,"Speak, or the weight of silence will crush you","Говори, иначе тяжесть молчания раздавит тебя."
+Text/1e1/text,Handling secrets requires more than just care — it demands understanding,Работа с секретами требует не только осторожности — она требует понимания.
+Text/1e2/text,"Tell me, do you see them as a burden or an opportunity?","Скажи, считаешь ли ты их бременем или возможностью?"
+Text/1e3/text,"I think it depends. Some secrets are worth keeping, while others are too heavy.","Думаю, это зависит. Некоторые секреты стоит хранить, а другие слишком тяжёлые."
+Text/1e4/text,A wise answer,Мудрый ответ.
+Text/1e5/text,But beware — mishandled secrets can be heavier than they seem,"Но остерегайся — неправильно обращённые секреты могут быть тяжелее, чем кажутся."
+Label/1e6/display_name,,
+Text/1e7/text,"Every secret has a price, and not all are worth paying","Каждый секрет имеет свою цену, и не все они стоят того, чтобы платить за них.  "
+Text/1e8/text,[color=#2effff][b]What drives your curiosity?[/b][/color],[color=#2effff][b]Что движет твоим любопытством?[/b][/color]  
+Choice/1e9/text,[color=#6BBF59]Understanding and purpose[/color],[color=#6BBF59]Понимание и цель[/color]
+Choice/1e9/disabled_text,,
+Text/1ea/text,[color=#6BBF59]The pursuit of understanding and purpose[/color],[color=#6BBF59]Стремление к пониманию и цели[/color]  
+Text/1eb/text,Such drive leads to enlightenment,Такое стремление ведёт к просветлению.  
+Choice/1ec/text,[color=#8e59f5]Curious only when I need[/color],[color=#8e59f5]Любопытен только по необходимости[/color]
+Choice/1ec/disabled_text,,
+Text/1ed/text,[color=#8e59f5]I’m curious only when I need to be[/color],[color=#8e59f5]Я любопытен только когда нужно[/color]  
+Text/1ee/text,Curiosity without constancy is fleeting,Любопытство без постоянства — мимолётно.  
+Choice/1ef/text,[color=#f7d038]I follow the whispers[/color],[color=#f7d038]Следую за шепотом[/color]
+Choice/1ef/disabled_text,,
+Text/1f0/text,[color=#f7d038]I follow the whispers of the unknown[/color],[color=#f7d038]Я следую за шепотом неизвестного[/color]  
+Text/1f1/text,"Whimsy has its place, but not here","Прихоть имеет своё место, но не здесь.  "
+Choice/1f2/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/1f2/disabled_text,,
+Text/1f3/text,"A quiet mind may be at peace, but a silent one stagnates.","Тихий ум может быть в покое, но молчаливый — застывает.  "
+Text/1f4/text,Curiosity cannot grow in the shadows of hesitation.,Любопытство не может расти в тенях колебаний.  
+Text/1f5/text,Including mine,Включая моё.  
+Text/1f6/text,"Curiosity is the spark of discovery, but it must be controlled.","Любопытство — искра открытия, но его нужно контролировать.  "
+Text/1f7/text,Do you agree?,Ты согласен?  
+Text/1f8/text,"Yes, but sometimes letting curiosity roam can lead to unexpected insights.","Да, но иногда, позволяя любопытству блуждать, можно получить неожиданные откровения.  "
+Text/1f9/text,True... true...,Правда... правда...
+Label/1fa/display_name,,
+Text/1fb/text,Trust is both a gift and a weapon.,"Доверие — это и подарок, и оружие.  "
+Text/1fc/text,"Here, it is earned — or taken away — by the smallest of actions.",Здесь оно заслужено — или отнимается — за малейшие действия.  
+Text/1fd/text,[color=#2effff][b]How do you determine if someone can be trusted?[/b][/color],"[color=#2effff][b]Как ты определяешь, кому можно доверять?[/b][/color]  "
+Choice/1fe/text,[color=#6BBF59]By observing their actions[/color],[color=#6BBF59]По их действиям[/color]
+Choice/1fe/disabled_text,,
+Text/1ff/text,[color=#6BBF59]By observing their actions over time[/color],[color=#6BBF59]По их действиям на протяжении времени[/color]  
+Text/200/text,"Time reveals much, but patience is a luxury we don’t always have","Время многое раскрывает, но терпение — не всегда роскошь, которой мы располагаем.  "
+Choice/201/text,[color=#8e59f5]Depends on the situation[/color],[color=#8e59f5]Зависит от ситуации[/color]
+Choice/201/disabled_text,,
+Text/202/text,[color=#8e59f5]It depends on the situation. Trust is rarely black and white.[/color],[color=#8e59f5]Зависит от ситуации. Доверие редко бывает чёрным или белым.[/color]  
+Text/203/text,A careful answer,Осторожный ответ  
+Text/204/text,"Trust often thrives in ambiguity, not absolutes","Доверие часто процветает в неопределённости, а не в абсолютных истинах.  "
+Choice/205/text,[color=#f7d038]I follow the whispers[/color],[color=#f7d038]Следую за шепотом[/color]
+Choice/205/disabled_text,,
+Text/206/text,"[color=#f7d038]I’d ask them directly. If they lie, at least I’ll know where we stand[/color]","[color=#f7d038]Я бы спросил прямо. Если они солгут, хотя бы буду знать, на чём стоим[/color]  "
+Text/207/text,"Bold, but blunt.","Смело, но прямо.  "
+Text/208/text,Trust earned through laughter is fragile at best.,"Доверие, заработанное смехом, хрупко, как минимум.  "
+Choice/209/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/209/disabled_text,,
+Text/20a/text,No answer?,Нет ответа?  
+Text/20b/text,"A lack of trust in your own words, perhaps?",Не доверяешь своим словам?  
+Text/20c/text,"Trust is the glue of this place, but also its sharpest blade.","Доверие — склеивающее начало этого мира, но и его острейшее лезвие.  "
+Text/20d/text,How do you decide when it’s safe to wield?,"Как ты решаешь, когда безопасно его использовать?  "
+Text/20e/text,"I think you have to weigh the risks, but there’s always a leap of faith involved.","Думаю, нужно взвесить риски, но всегда есть элемент веры.  "
+Text/20f/text,"True, but misstep, and the blade turns inward.","Правда, но ошибись — и лезвие обернётся к тебе.  "
+Text/210/text,"Trust carefully, or not at all.","Доверяй осторожно, или вовсе не доверяй."
+Label/211/display_name,,
+Text/212/text,"In the chaos of shared work, responsibilities blur.",В хаосе совместной работы границы ответственности размыты.  
+Text/213/text,How you act then reveals much.,"То, как ты действуешь в такой ситуации, многое о тебе расскажет.  "
+Text/214/text,[color=#2effff][b]How do you handle responsibilities that aren’t clearly yours?[/b][/color],"[color=#2effff][b]Как ты справляешься с обязанностями, которые не совсем твои?[/b][/color]  "
+Choice/215/text,[color=#6BBF59]Take them on[/color],[color=#6BBF59]Беру на себя[/color]
+Choice/215/disabled_text,,
+Text/216/text,[color=#6BBF59]I step up and take them on if needed[/color],"[color=#6BBF59]Я беру на себя, если это нужно[/color]  "
+Text/217/text,"Admirable, but beware of biting off more than you can chew","Заслуживает похвалы, но остерегайся брать на себя больше, чем можешь осилить.  "
+Choice/218/text,[color=#8e59f5]I try to assess the role[/color],[color=#8e59f5]Оцениваю ситуацию[/color]
+Choice/218/disabled_text,,
+Text/219/text,[color=#8e59f5]I try to assess if it’s truly my role before committing[/color],"[color=#8e59f5]Я оцениваю, действительно ли это моя обязанность, прежде чем брать её на себя[/color]  "
+Text/21a/text,Measured,Взвешенно.  
+Text/21b/text,Responsibility misplaced can weigh heavier than it seems.,"Неуместная ответственность может оказаться тяжелее, чем кажется.  "
+Choice/21c/text,[color=#f7d038]Avoid eye contact[/color],[color=#f7d038]Избегаю взгляда[/color]
+Choice/21c/disabled_text,,
+Text/21d/text,[color=#f7d038]I avoid eye contact until someone else takes the lead[/color],"[color=#f7d038]Я избегаю взгляда, пока кто-то другой не возьмёт на себя руководство[/color]  "
+Text/21e/text,"A coward’s jest, though I suppose humor eases the burden","Шутка труса, хотя, наверное, юмор облегчает бремя.  "
+Choice/21f/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/21f/disabled_text,,
+Text/220/text,A refusal to act when lines blur is a choice too — but not one that inspires trust,"Отказ действовать, когда границы размыты, тоже выбор — но не тот, который вызывает доверие.  "
+Text/221/text,Do you think stepping in without question shows initiative or recklessness?,"Как ты думаешь, вступить без вопросов — это проявление инициативы или безрассудства?  "
+Text/222/text,"It depends. Initiative is valuable, but so is understanding where you’re needed.","Зависит от ситуации. Инициатива ценна, но важно понимать, где тебя действительно ждут.  "
+Text/223/text,Indeed,Верно.  
+Text/224/text,Knowing when to act is often harder than the act itself,"Знать, когда действовать, часто сложнее самого действия."
+Label/225/display_name,,
+Text/226/text,"A plate too full tips over, yet an empty one goes unnoticed.","Слишком наполненная тарелка переворачивается, а пустую никто не замечает.  "
+Text/227/text,The balance you strike matters more than you think,"Баланс, который ты найдешь, важнее, чем думаешь.  "
+Text/228/text,[color=#2effff][b]How do you balance competing priorities?[/b][/color],[color=#2effff][b]Как ты балансируешь конкурирующие приоритеты?[/b][/color]  
+Choice/229/text,[color=#6BBF59]Focus on the most urgent task[/color],[color=#6BBF59]Сосредотачиваюсь на самой срочной задаче[/color]
+Choice/229/disabled_text,,
+Text/22a/text,[color=#6BBF59]I focus on the most urgent task and work through the rest systematically[/color],[color=#6BBF59]Я сосредотачиваюсь на самой срочной задаче и постепенно решаю остальные[/color]  
+Text/22b/text,"Systematic, but priorities often shift too quickly for rigid methods","Систематично, но приоритеты часто меняются слишком быстро для жестких методов.  "
+Choice/22c/text,[color=#8e59f5]Evaluate each priority[/color],[color=#8e59f5]Оцениваю каждый приоритет[/color]
+Choice/22c/disabled_text,,
+Text/22d/text,[color=#8e59f5]I evaluate each priority and adjust as new demands arise[/color],"[color=#8e59f5]Я оцениваю каждый приоритет и корректирую, когда появляются новые требования[/color]  "
+Text/22e/text,Dynamic,Динамично.  
+Text/22f/text,Prioritization is a skill that demands constant reevaluation.,"Приоритизация — это умение, требующее постоянной переоценки.  "
+Choice/230/text,[color=#f7d038]Flip a coin[/color],[color=#f7d038]Подбросить монету[/color]
+Choice/230/disabled_text,,
+Text/231/text,[color=#f7d038]I flip a coin and let fate decide — it hasn’t failed me yet[/color],[color=#f7d038]Я подбрасываю монету и позволяю судьбе решить — она меня ещё не подвела[/color]  
+Text/232/text,"Fate may amuse, but it rarely guarantees success.","Судьба может развлекать, но редко гарантирует успех.  "
+Choice/233/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/233/disabled_text,,
+Text/234/text,Silence leaves priorities unspoken and chaos unchecked,"Молчание оставляет приоритеты невысказанными, а хаос — неконтролируемым.  "
+Text/235/text,Priorities often conflict. Do you think it’s better to focus on what’s urgent or what’s important?,"Приоритеты часто вступают в конфликт. Как ты думаешь, лучше сосредоточиться на том, что срочно, или на том, что важно?  "
+Text/236/text,"It depends. Sometimes the urgent takes precedence, but ignoring the important can cause bigger issues.","Зависит от ситуации. Иногда срочность важнее, но игнорирование важного может привести к большим проблемам.  "
+Text/237/text,True,Верно.  
+Text/238/text,The challenge is knowing which will matter more in the end,"Задача — понять, что будет важнее в конце концов."
+Label/239/display_name,,
+Text/23a/text,Not every journey begins with a map.,Не каждое путешествие начинается с карты.
+Text/23b/text,How you navigate uncertainty often determines where you end up.,"То, как ты справляешься с неопределённостью, часто определяет, куда ты в итоге придёшь."
+Text/23c/text,[color=#2effff][b]How do you handle projects with unclear goals?[/b][/color],[color=#2effff][b]Как ты работаешь над проектами с неясными целями?[/b][/color]
+Choice/23d/text,[color=#6BBF59]Create a plan[/color],[color=#6BBF59]Создаю план[/color]
+Choice/23d/disabled_text,,
+Text/23e/text,"[color=#6BBF59]I create a plan and stick to it, even if the goals are unclear[/color]","[color=#6BBF59]Я создаю план и следую ему, даже если цели не ясны[/color]"
+Text/23f/text,"Decisive, but rigid.","Решительно, но слишком жёстко."
+Text/240/text,A fixed plan without clear goals often leads to dead ends.,Жёсткий план без чётких целей часто заводит в тупик.
+Choice/241/text,[color=#8e59f5]Focus on gathering more information[/color],[color=#8e59f5]Собираю больше информации[/color]
+Choice/241/disabled_text,,
+Text/242/text,[color=#8e59f5]I focus on gathering more information and adjust as I go[/color],[color=#8e59f5]Я фокусируюсь на сборе информации и корректирую действия по ходу[/color]
+Text/243/text,Adjusting to uncertainty shows understanding of shifting priorities,Гибкость в условиях неопределённости показывает умение адаптироваться.
+Choice/244/text,[color=#f7d038]Ask for a magic eight ball[/color],[color=#f7d038]Спрашиваю у магического шара[/color]
+Choice/244/disabled_text,,
+Text/245/text,[color=#f7d038]I ask for a magic eight ball — it’s never let me down[/color],[color=#f7d038]Я спрашиваю у магического шара — он меня ещё не подводил[/color]
+Text/246/text,"Amusing, but I hope your sense of humor doesn’t guide your decisions entirely.","Забавно, но надеюсь, твоё чувство юмора не всегда ведёт тебя."
+Choice/247/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/247/disabled_text,,
+Text/248/text,Silence in the face of uncertainty only deepens the void,Молчание перед лицом неопределённости только усиливает её.
+Text/249/text,Unclear goals are often hidden tests.,Неясные цели часто скрывают испытания.
+Text/24a/text,Do you think it’s better to act first or wait for clarity?,"Как ты думаешь, лучше действовать сразу или ждать ясности?"
+Text/24b/text,"Sometimes clarity comes from action, but rushing in can backfire.","Иногда ясность приходит через действие, но поспешность может обернуться неудачей."
+Text/24c/text,The trick is knowing when hesitation costs more than action.,"Секрет в том, чтобы понять, когда промедление обходится дороже, чем действие."
+Label/24d/display_name,,
+Text/24e/text,The absence of a clear path doesn’t stop the journey.,Отсутствие чёткого пути не останавливает путешествие.
+Text/24f/text,It’s what you do in the void that defines you.,"То, что ты делаешь в пустоте, определяет тебя."
+Text/250/text,[color=#2effff][b]How do you handle situations where there’s no clear solution?[/b][/color],"[color=#2effff][b]Как ты справляешься с ситуациями, где нет очевидного решения?[/b][/color]"
+Choice/251/text,[color=#6BBF59]Create a structured plan[/color],[color=#6BBF59]Создаю структурированный план[/color]
+Choice/251/disabled_text,,
+Text/252/text,[color=#6BBF59]I create a structured plan and tackle the problem step by step[/color],[color=#6BBF59]Я создаю структурированный план и решаю проблему шаг за шагом[/color]
+Text/253/text,"Orderly, but too rigid.","Упорядоченно, но слишком строго."
+Text/254/text,The undefined often breaks structured plans.,Неопределённое часто разрушает структурированные планы.
+Choice/255/text,[color=#8e59f5]Pause and wait[/color],[color=#8e59f5]Жду и наблюдаю[/color]
+Choice/255/disabled_text,,
+Text/256/text,[color=#8e59f5]I pause and wait until the situation becomes clearer[/color],"[color=#8e59f5]Я жду и наблюдаю, пока ситуация не прояснится[/color]"
+Text/257/text,Hesitation rarely leads to resolution. Clarity won’t always come on its own.,Ожидание редко приносит решение. Ясность не всегда приходит сама по себе.
+Choice/258/text,[color=#f7d038]Embrace chaos[/color],[color=#f7d038]Принимаю хаос[/color]
+Choice/258/disabled_text,,
+Text/259/text,[color=#f7d038]I embrace chaos — it’s not a problem if I can’t define it[/color],"[color=#f7d038]Я принимаю хаос — если проблему нельзя определить, её нельзя решить[/color]"
+Text/25a/text,A bold embrace of madness,Смелое принятие безумия.
+Text/25b/text,"Sometimes, that’s exactly what’s needed.",Иногда именно этого и требует ситуация.
+Choice/25c/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/25c/disabled_text,,
+Text/25d/text,Quiet uncertainty doesn’t solve undefined problems — it only deepens them,Тихая неопределённость не решает неясных проблем — она лишь усугубляет их.
+Text/25e/text,Chaos is a natural state of things.,Хаос — естественное состояние вещей.
+Text/25f/text,Do you think it’s better to control it or let it run free?,"Как ты думаешь, лучше пытаться контролировать его или позволить ему идти своим чередом?"
+Text/260/text,Sometimes chaos can create opportunities.,Иногда хаос открывает новые возможности.
+Text/261/text,"Risky, indeed","Рискованно, конечно."
+Text/262/text,Control what you can — but don’t be surprised when the rest slips through your fingers,"Контролируй то, что можешь, — но не удивляйся, если остальное ускользнёт."
+Label/263/display_name,,
+Text/264/text,"Time is the cruelest master, and it rarely bends to our will.","Время — самый жестокий хозяин, и оно редко подчиняется нашей воле.  "
+Text/265/text,How do you cope when the clock conspires against you?,"Как ты справляешься, когда часы играют против тебя?  "
+Text/266/text,[color=#2effff][b]What’s your approach to impossible deadlines?[/b][/color],[color=#2effff][b]Как ты справляешься с невозможными дедлайнами?[/b][/color]  
+Choice/267/text,[color=#6BBF59]Prioritize tasks[/color],[color=#6BBF59]Распределяю приоритеты[/color]
+Choice/267/disabled_text,,
+Text/268/text,[color=#6BBF59]I prioritize tasks and focus on the most critical elements[/color],[color=#6BBF59]Я распределяю приоритеты и фокусируюсь на самых важных задачах[/color]  
+Text/269/text,"A practical approach, but even the most critical task can slip through the cracks of time","Практично, но даже самые важные задачи могут ускользнуть сквозь пальцы времени.  "
+Choice/26a/text,[color=#8e59f5]Assess what’s feasible[/color],"[color=#8e59f5]Оцениваю, что реально успеть[/color]"
+Choice/26a/disabled_text,,
+Text/26b/text,[color=#8e59f5]I assess what’s feasible and negotiate for more time if needed[/color],"[color=#8e59f5]Я оцениваю, что реально успеть, и договариваюсь о продлении срока, если это необходимо[/color]  "
+Text/26c/text,Negotiate...,Договориться…  
+Text/26d/text,With who?,С кем?  
+Choice/26e/text,[color=#f7d038]Write my resignation letter[/color],[color=#f7d038]Пишу заявление на увольнение[/color]
+Choice/26e/disabled_text,,
+Text/26f/text,"[color=#f7d038]I write my resignation letter — after all, it’s the easiest task to finish.[/color]","[color=#f7d038]Я пишу заявление на увольнение — всё же это самая лёгкая задача, которую можно выполнить.[/color]  "
+Text/270/text,"Clever, if a bit defeatist","Остроумно, хоть и немного капитулятивно.  "
+Text/271/text,Sometimes humor is the only way to survive the absurd,Иногда юмор — единственный способ пережить абсурд.  
+Choice/272/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/272/disabled_text,,
+Text/273/text,Silence won’t stop the ticking clock,Молчание не остановит тиканье часов.  
+Text/274/text,Ticky-tacky...,Тик-так...  
+Text/275/text,Deadlines are the ultimate test of resolve.,Дедлайны — это высшее испытание решимости.  
+Text/276/text,"Do you meet them head-on, or bend them to your will?",Ты принимаешь их прямо или подчиняешь себе?  
+Text/277/text,"Both, ideally. But sometimes, you just have to make the best of a bad situation.","В идеале, и то, и другое. Но иногда приходится извлекать максимум из плохой ситуации.  "
+Text/278/text,Flexibility under pressure is the mark of a survivor,Гибкость под давлением — признак выживания.  
+Label/279/display_name,,
+Text/27a/text,"In every workplace, there are thorns among the roses.",В любой работе есть свои шипы среди роз.  
+Text/27b/text,[color=#2effff][b]How do you handle difficult clients or coworkers?[/b][/color],[color=#2effff][b]Как ты справляешься со сложными клиентами или коллегами?[/b][/color]  
+Choice/27c/text,[color=#6BBF59]I stay professional[/color],[color=#6BBF59]Сохраняю профессионализм[/color]
+Choice/27c/disabled_text,,
+Text/27d/text,[color=#6BBF59]I stay professional and address conflicts directly[/color],[color=#6BBF59]Я сохраняю профессионализм и прямо решаю конфликты[/color]  
+Text/27e/text,"Professional, but direct conflict often stirs more trouble than it resolves.","Профессионально, но прямое столкновение часто создаёт больше проблем, чем решает.  "
+Choice/27f/text,[color=#8e59f5]I avoid unnecessary confrontation[/color],[color=#8e59f5]Избегаю ненужных конфликтов[/color]
+Choice/27f/disabled_text,,
+Text/280/text,[color=#8e59f5]I avoid unnecessary confrontation and focus on my work[/color],[color=#8e59f5]Я избегаю ненужных конфликтов и сосредотачиваюсь на своей работе[/color]  
+Text/281/text,"Avoidance creates distance, but not solutions","Избегание создаёт дистанцию, но не решает проблему.  "
+Choice/282/text,[color=#f7d038]I offer them coffee[/color],[color=#f7d038]Предлагаю им кофе[/color]
+Choice/282/disabled_text,,
+Text/283/text,[color=#f7d038]I offer them coffee laced with extra patience — and maybe a little sugar[/color],"[color=#f7d038]Я предлагаю им кофе с добавкой терпения — и, может быть, немного сахара[/color]  "
+Text/284/text,A sweet approach,Сладкий подход.  
+Text/285/text,Humor disarms even the sharpest tongues — if used wisely,Юмор разряжает даже самые острые ситуации — если использовать его мудро.  
+Choice/286/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/286/disabled_text,,
+Text/287/text,"Silence is an acceptance of difficulty, not a resolution to it","Молчание — это принятие трудностей, а не их решение.  "
+Text/288/text,Dealing with thorns requires care.,"Работа с ""шипами"" требует осторожности.  "
+Text/289/text,Do you think it’s better to pluck them out or work around them?,"Как ты думаешь, лучше их вырывать или обходить стороной?  "
+Text/28a/text,Work around them — sometimes removing the thorn does more harm than good,"Обходить — иногда удаление шипа приносит больше вреда, чем пользы.  "
+Text/28b/text,"Some thorns protect the rose,
+others are best left alone","Некоторые шипы защищают розу,  другие лучше оставить в покое.  "
+Label/28c/display_name,,
+Text/28d/text,Every job has its monotony.,Любая работа полна рутины.  
+Text/28e/text,How you face it often determines how you’re remembered — or forgotten,"То, как ты её воспринимаешь, часто определяет, как тебя запомнят — или забудут.  "
+Text/28f/text,[color=#2effff][b]What’s your approach to handling boring tasks?[/b][/color],[color=#2effff][b]Как ты справляешься со скучными задачами?[/b][/color]  
+Choice/290/text,[color=#6BBF59]Focus on finishing them[/color],[color=#6BBF59]Фокусируюсь на их завершении[/color]
+Choice/290/disabled_text,,
+Text/291/text,[color=#6BBF59]I focus on finishing them quickly to move on to more important work[/color],"[color=#6BBF59]Я фокусируюсь на их быстром выполнении, чтобы перейти к более важным делам[/color]  "
+Text/292/text,"Efficient, but speed doesn’t always lead to quality","Эффективно, но скорость не всегда гарантирует качество.  "
+Choice/293/text,[color=#8e59f5]I do them as needed[/color],[color=#8e59f5]Делаю их по мере необходимости[/color]
+Choice/293/disabled_text,,
+Text/294/text,[color=#8e59f5]I do them as needed and try to find a way to make them tolerable[/color],[color=#8e59f5]Я делаю их по мере необходимости и стараюсь найти способ сделать их терпимыми[/color]  
+Text/295/text,"Practical, but tolerating monotony doesn’t inspire improvement","Практично, но терпимость к рутине не вдохновляет на улучшения.  "
+Choice/296/text,[color=#f7d038]Turn them into a competition[/color],[color=#f7d038]Превращаю их в соревнование[/color]
+Choice/296/disabled_text,,
+Text/297/text,[color=#f7d038]I turn them into a competition with myself—who said boredom can’t be fun?[/color],"[color=#f7d038]Я превращаю их в соревнование с собой — кто сказал, что скука не может быть весёлой?[/color]  "
+Text/298/text,Creative,Креативно.  
+Text/299/text,Finding joy in monotony is a rare skill,Находить радость в рутине — редкий талант.  
+Choice/29a/text,[color=gray] . . . [/color],[color=gray] . . . [/color]
+Choice/29a/disabled_text,,
+Text/29b/text,Silence in the face of boredom risks turning apathy into habit,Молчание перед лицом скуки рискует превратить апатию в привычку.
+Text/29c/text,Boredom tests patience as much as skill.,"Скука испытывает терпение так же сильно, как и умение.  "
+Text/29d/text,Do you think it’s better to endure or innovate?,"Как думаешь, что лучше: терпеть или искать новые подходы?  "
+Text/29e/text,"Both, but innovation makes endurance easier","И то, и другое, но инновации делают терпение проще.  "
+Text/29f/text,Those who innovate turn monotony into mastery,"Те, кто создаёт новое, превращают рутину в мастерство.  "
+Label/2a0/display_name,,
+Text/2a1/text,This next step is my own design — a method born from years of experience.,"Следующий шаг — мой собственный метод, созданный за годы опыта.  "
+Text/2a2/text,"A blitz of questions, rapid and deliberate, aimed at peeling back the surface to reveal the core of a candidate.","Всплеск вопросов, быстрых и целенаправленных, чтобы снять поверхностный слой и добраться до сути кандидата.  "
+Text/2a3/text,"It’s not about perfection — it’s about instinct, reaction, and the truth that comes when thought gives way to honesty","Здесь не важна идеальность — важны инстинкт, реакция и правда, которая появляется, когда мысли уступают место честности.  "
+Text/2a4/text,Consider it… my personal touch,Считай это… моим личным штрихом.  
+Text/2a5/text,Don’t waste time thinking too much.,Не трать слишком много времени на размышления.  
+Text/2a6/text,Let’s get on with it,Давай начнём.  
+Label/2a7/display_name,,
+Text/2a8/text,"The first round of blitz revealed much, but insight is fleeting if left unchecked.","Первый раунд блица многое показал, но понимание быстро исчезает, если его не закрепить.  "
+Text/2a9/text,"To ensure clarity, we’ll conduct another one.","Чтобы прояснить картину, мы проведём ещё один раунд.  "
+Text/2aa/text,This second round will solidify the impressions formed in the first — confirming or contradicting what we’ve learned.,"Второй раунд укрепит первые впечатления — подтвердит или опровергнет то, что мы узнали.  "
+Text/2ab/text,"Consistency matters here, as does adaptability. Let’s see if the foundation holds.","Здесь важна и последовательность, и гибкость. Посмотрим, устоит ли основа.  "
+Text/2ac/text,Let’s get on with it,Давай повторим. 
+Label/2ad/display_name,,
+Text/2ae/text,[color=#2effff][b]What is the most important skill for survival here?[/b][/color],[color=#2effff][b]Какой навык здесь самый важный для выживания?[/b][/color]  
+Choice/2af/text,Adaptation to unpredictability,Адаптация к непредсказуемости  
+Choice/2af/disabled_text,,
+Text/2b0/text,Adaptation to unpredictability,Адаптация к непредсказуемости  
+Choice/2b1/text,Obedience to every rule,Подчинение всем правилам  
+Choice/2b1/disabled_text,,
+Text/2b2/text,Obedience to every rule,Подчинение всем правилам  
+Choice/2b3/text,. . .,. . .  
+Choice/2b3/disabled_text,,
+Label/2b4/display_name,,
+Text/2b5/text,[color=#2effff][b]What do you do when the shadows start moving?[/b][/color],"[color=#2effff][b]Что ты будешь делать, если тени начнут двигаться?[/b][/color]  "
+Choice/2b6/text,Stand still and observe,Останусь на месте и буду наблюдать  
+Choice/2b6/disabled_text,,
+Text/2b7/text,Stand still and observe,Останусь на месте и буду наблюдать  
+Choice/2b8/text,Run in the opposite direction.,Побегу в противоположную сторону  
+Choice/2b8/disabled_text,,
+Text/2b9/text,Run in the opposite direction.,Побегу в противоположную сторону  
+Choice/2ba/text,. . .,. . .  
+Choice/2ba/disabled_text,,
+Label/2bb/display_name,,
+Text/2bc/text,[color=#2effff][b]What is the function of the locked room on the third floor?[/b][/color],[color=#2effff][b]Для чего используется запертая комната на третьем этаже?[/b][/color]  
+Choice/2bd/text,To store forgotten records.,Для хранения забытых записей  
+Choice/2bd/disabled_text,,
+Text/2be/text,To store forgotten records.,Для хранения забытых записей  
+Choice/2bf/text,To preserve the essence of secrecy,Для сохранения сути тайны  
+Choice/2bf/disabled_text,,
+Text/2c0/text,To preserve the essence of secrecy,Для сохранения сути тайны  
+Choice/2c1/text,. . .,. . .  
+Choice/2c1/disabled_text,,
+Label/2c2/display_name,,
+Text/2c3/text,"[color=#2effff][b]If a co-worker disappears, what’s your first step?[/b][/color]","[color=#2effff][b]Что ты сделаешь, если пропадёт коллега?[/b][/color]  "
+Choice/2c4/text,Look for them immediately,Сразу начну искать его  
+Choice/2c4/disabled_text,,
+Text/2c5/text,Look for them immediately.,Сразу начну искать его  
+Choice/2c6/text,File a report and continue working,Составлю отчёт и продолжу работать  
+Choice/2c6/disabled_text,,
+Text/2c7/text,File a report and continue working,Составлю отчёт и продолжу работать  
+Choice/2c8/text,. . .,. . .  
+Choice/2c8/disabled_text,,
+Label/2c9/display_name,,
+Text/2ca/text,[color=#2effff][b]Why is silence more valuable than answers?[/b][/color],"[color=#2effff][b]Почему молчание ценнее, чем ответы?[/b][/color]  "
+Choice/2cb/text,Speaking reveals too much,Речь слишком многое раскрывает  
+Choice/2cb/disabled_text,,
+Text/2cc/text,Because speaking reveals too much,Потому что речь слишком многое раскрывает  
+Choice/2cd/text,It lets mystery grow,Оно позволяет тайне расти  
+Choice/2cd/disabled_text,,
+Text/2ce/text,Because it leaves room for mystery to grow,Потому что оно оставляет место для роста тайны  
+Choice/2cf/text,. . .,. . .  
+Choice/2cf/disabled_text,,
+Text/2d0/text,Not this time,Не в этот раз.  
+Label/2d1/display_name,,
+Text/2d2/text,[color=#2effff][b]What does the phrase “the floor remembers” mean?[/b][/color],[color=#2effff][b]Что значит фраза «пол помнит»?[/b][/color]  
+Choice/2d3/text,Every step leaves a mark,Каждый шаг оставляет след  
+Choice/2d3/disabled_text,,
+Text/2d4/text,Every step taken here leaves a permanent mark,Каждый шаг здесь оставляет неизгладимый след  
+Choice/2d5/text,The floor keeps secrets,Пол хранит секреты  
+Choice/2d5/disabled_text,,
+Text/2d6/text,The floor records secrets of those who walk on it,"Пол записывает секреты тех, кто по нему ходит  "
+Choice/2d7/text,. . .,. . .  
+Choice/2d7/disabled_text,,
+Label/2d8/display_name,,
+Text/2d9/text,[color=#2effff][b]Why is eye contact discouraged with the mirrors in the west wing?[/b][/color],[color=#2effff][b]Почему не стоит смотреть в зеркала в западном крыле?[/b][/color]  
+Choice/2da/text,They reflect more than you,"Они отражают больше, чем тебя  "
+Choice/2da/disabled_text,,
+Text/2db/text,They reflect more than just your image,"Они отражают больше, чем просто твоё изображение  "
+Choice/2dc/text,They’re fragile and need protection,Они хрупкие и требуют защиты  
+Choice/2dc/disabled_text,,
+Text/2dd/text,They are fragile and must be protected,Они хрупкие и должны быть защищены  
+Choice/2de/text,. . .,. . .  
+Choice/2de/disabled_text,,
+Label/2df/display_name,,
+Text/2e0/text,[color=#2effff][b]What should you do if a file disappears from your desk?[/b][/color],"[color=#2effff][b]Что делать, если с твоего стола пропала папка?[/b][/color]  "
+Choice/2e1/text,Report to the supervisor,Сообщить начальнику  
+Choice/2e1/disabled_text,,
+Text/2e2/text,Report it to the supervisor immediately,Сразу сообщить об этом начальнику  
+Choice/2e3/text,Trust it’s in place,"Довериться, что она на своём месте  "
+Choice/2e3/disabled_text,,
+Text/2e4/text,Trust that it’s where it needs to be,"Довериться, что она там, где и должна быть  "
+Choice/2e5/text,. . .,. . .  
+Choice/2e5/disabled_text,,
+Label/2e6/display_name,,
+Text/2e7/text,[color=#2effff][b]Why must we always speak in riddles when discussing secrets?[/b][/color],"[color=#2effff][b]Почему, обсуждая секреты, мы всегда говорим загадками?[/b][/color]  "
+Choice/2e8/text,It confuses unwanted listeners,Они запутывают нежелательных слушателей  
+Choice/2e8/disabled_text,,
+Text/2e9/text,It confuses unwanted listeners,Они запутывают нежелательных слушателей  
+Choice/2ea/text,It strengthens their allure,Они усиливают их притягательность  
+Choice/2ea/disabled_text,,
+Text/2eb/text,It strengthens their allure,Они усиливают их притягательность  
+Choice/2ec/text,. . .,. . .  
+Choice/2ec/disabled_text,,
+Label/2ed/display_name,,
+Text/2ee/text,[color=#2effff][b]What should you do if the clock shows a time that doesn’t exist?[/b][/color],"[color=#2effff][b]Что делать, если часы показывают несуществующее время?[/b][/color]  "
+Choice/2ef/text,Ignore it; time is malleable here,Игнорировать это — время здесь изменчиво  
+Choice/2ef/disabled_text,,
+Text/2f0/text,Ignore it; time is malleable here,Игнорировать это — время здесь изменчиво  
+Choice/2f1/text,Reset the clock to the correct time,Сбросить часы на правильное время  
+Choice/2f1/disabled_text,,
+Text/2f2/text,Reset the clock to the correct time,Сбросить часы на правильное время  
+Choice/2f3/text,. . .,. . .  
+Choice/2f3/disabled_text,,
+Label/2f4/display_name,,
+Text/2f5/text,. . .,. . .  
+Text/2f6/text,Interesting.,Интересно.  
+Text/2f7/text,Far more revealing than you might have intended. Your answers have shown me aspects of your character — maybe more than you expected.,"Это оказалось куда более откровенным, чем ты мог предполагать. Твои ответы показали мне черты твоего характера — возможно, больше, чем ты ожидал.  "
+Text/2f8/text,"You've painted a clearer picture of who you are, or perhaps who you're trying to be.","Ты нарисовал ясный портрет того, кто ты есть, или, может быть, того, кем ты хочешь быть.  "
+Text/2f9/text,"You’ve given me plenty to consider, but the real test still lies ahead","Ты дал мне пищу для размышлений, но настоящий экзамен ещё впереди.  "
+Label/2fa/display_name,,
+Text/2fb/text,. . .,. . .  
+Text/2fc/text,Fascinating.,Захватывающе.  
+Text/2fd/text,Your answers were more illuminating than you may realize,"Твои ответы оказались более показательными, чем ты можешь себе представить.  "
+Text/2fe/text,Each one has painted a clearer picture of who you are,"Каждый из них сложил более чёткую картину того, кто ты есть.  "
+Text/2ff/text,"... or perhaps, who you wish to be","...или того, кем ты стремишься стать.  "
+Text/300/text,Time will tell if my trust is well-placed.,"Время покажет, оправдаешь ли ты моё доверие.  "
+Label/301/display_name,,
+Text/302/text,"Well, look at that.","Ну, надо же.  "
+Text/303/text,You’ve managed to impress me — a feat few achieve.,"Тебе удалось произвести на меня впечатление — достижение, редкое для других.  "
+Text/304/text,"My stage of this process is rarely kind to candidates, but you held your own.","Мой этап этого процесса редко бывает снисходительным к кандидатам, но ты справился.  "
+Text/305/text,"Resilience, adaptability, a spark of wit—I see potential in you.","Выносливость, гибкость, искра остроумия — я вижу в тебе потенциал.  "
+Text/306/text,The final test awaits with our esteemed leader.,Последнее испытание ждёт тебя у нашего уважаемого лидера.  
+Text/307/text,"I’ll be sending my recommendations along, and I’ll make sure they know you’ve earned the chance to move forward.","Я отправлю свои рекомендации и позабочусь, чтобы все знали, что ты заслужил шанс двигаться дальше.  "
+Text/308/text,Good luck.,Удачи.  
+Text/309/text,"And remember, if you’ve come this far, you’re stronger than you think.","И помни: если ты дошёл до этого момента, ты сильнее, чем думаешь."
+Label/30a/display_name,,

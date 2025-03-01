@@ -1,8 +1,8 @@
 [style name="Default_style_with_typing_sound"]
-You: Okay, deep breaths. I need this job. I really need this job
-You: That resume looked so professional when I bought it. Should’ve at least read it first... might’ve helped
-You: Alright, no panicking. Just nod, smile, and pray they don’t ask too many specifics
-You: I don’t even know what this role is for. Hopefully, they don’t either
-You: C’mon, if I can sell myself on paper, I can sell myself in person. Just… avoid any technical questions
+You: Okay, deep breaths. I need this job. I really need this job #id:11
+You: That resume looked so professional when I bought it. Should’ve at least read it first... might’ve helped #id:12
+You: Alright, no panicking. Just nod, smile, and pray they don’t ask too many specifics #id:13
+You: I don’t even know what this role is for. Hopefully, they don’t either #id:14
+You: C’mon, if I can sell myself on paper, I can sell myself in person. Just… avoid any technical questions #id:15
 [signal arg_type="dict" arg="{"light_on":true}"]
 [end_timeline]

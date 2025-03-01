@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://chfls0vfijv2p"
+
+[deps]
+
+files=["res://scenes/Dialogic_translations/dialogic_Second_manager_translation.en.translation", "res://scenes/Dialogic_translations/dialogic_Second_manager_translation.ru.translation"]
+
+source_file="res://scenes/Dialogic_translations/dialogic_Second_manager_translation.csv"
+dest_files=["res://scenes/Dialogic_translations/dialogic_Second_manager_translation.en.translation", "res://scenes/Dialogic_translations/dialogic_Second_manager_translation.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0
