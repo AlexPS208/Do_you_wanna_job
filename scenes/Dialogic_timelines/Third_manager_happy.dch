@@ -1,7 +1,7 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-"_translation_id": "4ba",
+"_translation_id": "",
 "color": Color(0.772549, 0.364706, 0.101961, 1),
 "custom_info": {
 "prefix": "",

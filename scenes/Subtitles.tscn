@@ -1,10 +1,11 @@
-[gd_scene load_steps=23 format=3 uid="uid://bwhhhmaj1epvw"]
+[gd_scene load_steps=25 format=3 uid="uid://bwhhhmaj1epvw"]
 
 [ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="1_fdugi"]
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_kj7w2"]
 [ext_resource type="Texture2D" uid="uid://kc4m35a78urw" path="res://assets/door1.png" id="2_p2lro"]
 [ext_resource type="Texture2D" uid="uid://dyrvdqs3nreip" path="res://assets/title.png" id="2_t3vcx"]
 [ext_resource type="Script" path="res://scenes/back_to_menu.gd" id="3_dvjfi"]
+[ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="3_glpo7"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="3_v2dw8"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="4_77oye"]
 [ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="5_7j15y"]
@@ -24,6 +25,11 @@ font_size = 62
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_icoos"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_df2j0"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6gap5"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("3_glpo7")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1001w"]
 sky_top_color = Color(1, 1, 1, 1)
@@ -65,7 +71,6 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="UI" type="CanvasLayer" parent="."]
-layer = 4
 script = ExtResource("3_dvjfi")
 
 [node name="Menu" type="Control" parent="UI"]
@@ -170,6 +175,11 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_bjirx")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_icoos")
 theme_override_styles/normal = SubResource("StyleBoxTexture_df2j0")
 text = "Back to menu"
+
+[node name="Button_sound" type="AudioStreamPlayer3D" parent="UI"]
+stream = SubResource("AudioStreamRandomizer_6gap5")
+volume_db = -10.0
+pitch_scale = 1.7
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r2w8p")

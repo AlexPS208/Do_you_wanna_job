@@ -90,7 +90,6 @@ var timer_active = false
 
 
 func _ready() -> void:
-	TranslationServer.set_locale("ru")
 	stressbar_original_width = stress_bar.size.x
 	update_pointer_position()
 	

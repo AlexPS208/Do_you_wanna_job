@@ -7,8 +7,6 @@ extends Node
 @onready var clock_double_player = $Clock/Clock
 @onready var stress_hit = $Stress_hit
 @onready var stress_heal = $Stress_heal
-@onready var button = $Button_sound
-
 
 # Музыка
 var music_fade_duration: float = 10.0
@@ -156,8 +154,6 @@ func _on_ambient_finished() -> void:
 	play_ambient(ambient_player.stream.resource_path)
 
 
-func button_play():
-	button.play()
 
 
 func set_master_volume(value: float):
