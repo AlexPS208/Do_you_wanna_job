@@ -1,0 +1,18 @@
+key,en,ru
+START_BUTTON,START,СТАРТ
+EXIT_BUTTON,EXIT,ВЫХОД
+PAUSE_LABEL,PAUSE,ПАУЗА
+RESUME_BUTTON,RESUME,ПРОДОЛЖИТЬ
+SURE_LABEL,Are you sure?,Вы уверены?
+YES_BUTTON,YES,ДА
+NO_BUTTON,NO,НЕТ
+CHEAT_CODE_LABEL,Here is a cheat code for you:,Вот чит-код для вас:
+STILL_SURE_LABEL,Do you still wanna exit?,Всё ещё хотите выйти?
+THANKS_LABEL,Thank you for plaing!,Благодарим за игру!
+DESIGNER,Designer,Дизайнер
+DESIGNER_FIRED,Fired due: [color=#b3071b]Diarrhea[/color],Уволен: [color=#b3071b]Диарея[/color]
+PROGRAMMER,Programmer,Программист
+PROGRAMMER_FIRED,Fired due to: [color=#b3071b]Leak of sleep[/color],Уволен: [color=#b3071b]Недостаток сна[/color]
+MUSICIAN,Musician,Музыкант
+MUSICIAN_FIRED,Fired due: [color=#b3071b]Cringe[/color],Уволен: [color=#b3071b]Кринж[/color]
+BACK_TO_MENU_BUTTON,Back to menu,Меню

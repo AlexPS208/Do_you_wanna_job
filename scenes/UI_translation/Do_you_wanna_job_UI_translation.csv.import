@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ppt1qq5diog6"
+
+[deps]
+
+files=["res://scenes/UI_translation/Do_you_wanna_job_UI_translation.en.translation", "res://scenes/UI_translation/Do_you_wanna_job_UI_translation.ru.translation"]
+
+source_file="res://scenes/UI_translation/Do_you_wanna_job_UI_translation.csv"
+dest_files=["res://scenes/UI_translation/Do_you_wanna_job_UI_translation.en.translation", "res://scenes/UI_translation/Do_you_wanna_job_UI_translation.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0

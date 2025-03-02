@@ -91,7 +91,7 @@ offset_left = 98.0
 offset_top = 344.0
 offset_right = 815.0
 offset_bottom = 446.0
-text = "Thank you for plaing!"
+text = "THANKS_LABEL"
 label_settings = SubResource("LabelSettings_or4ye")
 
 [node name="Designer" type="RichTextLabel" parent="UI/Menu"]
@@ -102,17 +102,17 @@ offset_right = 1010.0
 offset_bottom = 585.0
 theme_override_font_sizes/normal_font_size = 62
 bbcode_enabled = true
-text = "Designer: [color=#f3b211]ArchER[/color]"
+text = "DESIGNER: [color=#f3b211]ArchER[/color]"
 
 [node name="Designer_fired" type="RichTextLabel" parent="UI/Menu"]
 layout_mode = 0
 offset_left = 97.0
 offset_top = 557.0
-offset_right = 1010.0
+offset_right = 1814.0
 offset_bottom = 666.0
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "Fired due: [color=#b3071b]Diarrhea[/color]"
+text = "DESIGNER_FIRED"
 
 [node name="Programer" type="RichTextLabel" parent="UI/Menu"]
 layout_mode = 0
@@ -122,17 +122,17 @@ offset_right = 1010.0
 offset_bottom = 755.0
 theme_override_font_sizes/normal_font_size = 62
 bbcode_enabled = true
-text = "Programmer: [color=#f3b211]AlPS_208[/color]"
+text = "PROGRAMMER: [color=#f3b211]AlPS_208[/color]"
 
 [node name="Programmer_fired" type="RichTextLabel" parent="UI/Menu"]
 layout_mode = 0
 offset_left = 97.0
 offset_top = 729.0
-offset_right = 1010.0
+offset_right = 1819.0
 offset_bottom = 838.0
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "Fired due: [color=#b3071b]Lack of sleep[/color]"
+text = "PROGRAMMER_FIRED"
 
 [node name="Music" type="RichTextLabel" parent="UI/Menu"]
 layout_mode = 0
@@ -142,17 +142,17 @@ offset_right = 1010.0
 offset_bottom = 927.0
 theme_override_font_sizes/normal_font_size = 62
 bbcode_enabled = true
-text = "Musician: [color=#f3b211]Boihop[/color]"
+text = "MUSICIAN: [color=#f3b211]Boihop[/color]"
 
 [node name="Music_fired" type="RichTextLabel" parent="UI/Menu"]
 layout_mode = 0
 offset_left = 97.0
 offset_top = 902.0
-offset_right = 1010.0
+offset_right = 1464.0
 offset_bottom = 1011.0
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "Fired due: [color=#b3071b]Cringe[/color]"
+text = "MUSICIAN_FIRED"
 
 [node name="Back" type="Button" parent="UI/Menu"]
 layout_mode = 0
@@ -169,7 +169,7 @@ theme_override_font_sizes/font_size = 62
 theme_override_styles/hover = SubResource("StyleBoxTexture_bjirx")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_icoos")
 theme_override_styles/normal = SubResource("StyleBoxTexture_df2j0")
-text = "Back to menu"
+text = "BACK_TO_MENU_BUTTON"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r2w8p")

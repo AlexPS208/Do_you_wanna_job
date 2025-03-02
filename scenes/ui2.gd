@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var menu_panel: ColorRect = $Menu/MenuPanel
 @onready var exit_pre_confirm_panel: ColorRect = $Menu/Exit_pre_confirm
 @onready var exit_confirm_panel: ColorRect = $Menu/Exit_confirm
+@onready var exit_confirm_text_label: RichTextLabel = $Menu/Exit_confirm/RichTextLabel
 @onready var button_sound: AudioStreamPlayer3D = $Button_sound
 
 @onready var timebar: Node = $Timebar
@@ -106,6 +107,10 @@ func _ready() -> void:
 	
 	original_timebar_width = timebar_bar.size.x
 	original_timebar_position = timebar_bar.position
+	
+	exit_confirm_text_label.text = "[center]" + tr("CHEAT_CODE_LABEL") + "\n" + \
+					 	"[color=white]HESOYAM[/color]\n" + \
+					 	tr("STILL_SURE_LABEL") + "[/center]"
 
 
 func _process(delta: float) -> void:
