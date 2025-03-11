@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bv5oqfso4bgkk"]
 
-[ext_resource type="Script" path="res://scenes/additional_scenes/audio_settings_visibility.gd" id="1_foluu"]
+[ext_resource type="Script" uid="uid://b8mbpcfulkosg" path="res://scenes/additional_scenes/audio_settings_visibility.gd" id="1_foluu"]
 [ext_resource type="Texture2D" uid="uid://ri2dty22dpks" path="res://assets/line3.png" id="1_gbi50"]
 [ext_resource type="Texture2D" uid="uid://8tp3qmovx7ex" path="res://assets/ost.png" id="2_17ieo"]
 

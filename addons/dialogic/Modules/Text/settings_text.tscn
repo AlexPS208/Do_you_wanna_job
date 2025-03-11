@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cf3qks3v18xmr"]
 
-[ext_resource type="Script" path="res://addons/dialogic/Modules/Text/settings_text.gd" id="2"]
+[ext_resource type="Script" uid="uid://2p70ymwd33ib" path="res://addons/dialogic/Modules/Text/settings_text.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://dpwhshre1n4t6" path="res://addons/dialogic/Editor/Events/Fields/field_options_dynamic.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://dbpkta2tjsqim" path="res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn" id="3_s7xhj"]
 

@@ -27,7 +27,7 @@ extends CanvasLayer
 
 @onready var whispers: AudioStreamPlayer3D = $"../Scene/Decor/Ventilation/Whispers"
 
-var title = preload("res://scenes/Subtitles.tscn")
+var title = load("res://scenes/Subtitles.tscn")
 
 # Menu
 var is_menu_active: bool = false

@@ -1,12 +1,12 @@
 [gd_scene load_steps=31 format=3 uid="uid://4a511imbpxmm"]
 
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_5li4t"]
-[ext_resource type="Script" path="res://scenes/start_cutscene.gd" id="1_hjrkf"]
-[ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="2_hkafq"]
+[ext_resource type="Script" uid="uid://c85ajum6a3863" path="res://scenes/start_cutscene.gd" id="1_hjrkf"]
+[ext_resource type="Shader" uid="uid://tm3ttwi0gfw6" path="res://assets/shaders/Grain_shader.gdshader" id="2_hkafq"]
 [ext_resource type="AudioStream" uid="uid://bhb3xsdvbu25a" path="res://assets/sounds/button_click.mp3" id="2_wxyd6"]
 [ext_resource type="Texture2D" uid="uid://dyrvdqs3nreip" path="res://assets/title.png" id="4_3cyrk"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="5_m1b6y"]
-[ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="6_e411h"]
+[ext_resource type="Script" uid="uid://dwieijeban4mk" path="res://scenes/flicked_lamp.gd" id="6_e411h"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="6_wnjup"]
 [ext_resource type="Texture2D" uid="uid://kc4m35a78urw" path="res://assets/door1.png" id="7_cpvxn"]
 [ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="8_dvetb"]
@@ -212,8 +212,8 @@ tracks/6/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e66qx"]
 _data = {
-"Cutscene": SubResource("Animation_qui2l"),
-"RESET": SubResource("Animation_sin70")
+&"Cutscene": SubResource("Animation_qui2l"),
+&"RESET": SubResource("Animation_sin70")
 }
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7yisd"]
@@ -283,8 +283,8 @@ offset_right = 265.0
 offset_bottom = 439.0
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.811839, 0.591123, 0.0248622, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.811839, 0.591123, 0.0248622, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_xyunn")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_bg8ma")
@@ -300,8 +300,8 @@ offset_right = 265.0
 offset_bottom = 537.0
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.0235294, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.0235294, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_mgoep")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_fmvjb")
@@ -316,7 +316,7 @@ pitch_scale = 1.7
 
 [node name="Cutscene_animation" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_e66qx")
+&"": SubResource("AnimationLibrary_e66qx")
 }
 
 [node name="Camera3D" type="Camera3D" parent="."]

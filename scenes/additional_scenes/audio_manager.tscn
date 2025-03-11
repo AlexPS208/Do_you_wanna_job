@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://bnfv3fkfv32vu"]
 
-[ext_resource type="Script" path="res://scenes/additional_scenes/audio_manager.gd" id="1_45fwd"]
+[ext_resource type="Script" uid="uid://dupw0fhd6qknh" path="res://scenes/additional_scenes/audio_manager.gd" id="1_45fwd"]
 [ext_resource type="AudioStream" uid="uid://cbimsgtq4k823" path="res://assets/sounds/Do you wanna job.wav" id="1_mvky7"]
 [ext_resource type="AudioStream" uid="uid://b0mi5r1padx3g" path="res://assets/sounds/timer.mp3" id="3_bkbac"]
 [ext_resource type="AudioStream" uid="uid://ql2rijw1a5i7" path="res://assets/sounds/punch1.mp3" id="3_gbb4k"]

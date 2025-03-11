@@ -1,13 +1,13 @@
 [gd_scene load_steps=23 format=3 uid="uid://bwhhhmaj1epvw"]
 
-[ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="1_fdugi"]
+[ext_resource type="Shader" uid="uid://tm3ttwi0gfw6" path="res://assets/shaders/Grain_shader.gdshader" id="1_fdugi"]
 [ext_resource type="Texture2D" uid="uid://dyktctsqi5e1" path="res://assets/white_wall.jpg" id="1_kj7w2"]
 [ext_resource type="Texture2D" uid="uid://kc4m35a78urw" path="res://assets/door1.png" id="2_p2lro"]
 [ext_resource type="Texture2D" uid="uid://dyrvdqs3nreip" path="res://assets/title.png" id="2_t3vcx"]
-[ext_resource type="Script" path="res://scenes/back_to_menu.gd" id="3_dvjfi"]
+[ext_resource type="Script" uid="uid://cr30y2lxg3guc" path="res://scenes/back_to_menu.gd" id="3_dvjfi"]
 [ext_resource type="AudioStream" uid="uid://dp6qwqklfgbjg" path="res://assets/sounds/door_cracking.mp3" id="3_v2dw8"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="4_77oye"]
-[ext_resource type="Script" path="res://scenes/flicked_lamp.gd" id="5_7j15y"]
+[ext_resource type="Script" uid="uid://dwieijeban4mk" path="res://scenes/flicked_lamp.gd" id="5_7j15y"]
 [ext_resource type="AudioStream" uid="uid://brbdv8yq3wpn6" path="res://assets/sounds/low_decibells.mp3" id="6_wpnp4"]
 [ext_resource type="AudioStream" uid="uid://bexj2d15lpa27" path="res://assets/sounds/whispers.mp3" id="7_y8tpj"]
 
@@ -163,8 +163,8 @@ offset_bottom = 1032.0
 focus_mode = 0
 theme_override_colors/font_hover_pressed_color = Color(0.952941, 0.698039, 0.0666667, 1)
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.952941, 0.698039, 0.0666667, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.952941, 0.698039, 0.0666667, 1)
 theme_override_font_sizes/font_size = 62
 theme_override_styles/hover = SubResource("StyleBoxTexture_bjirx")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_icoos")

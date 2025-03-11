@@ -1,10 +1,10 @@
 [gd_scene load_steps=129 format=3 uid="uid://b2llcp711acor"]
 
-[ext_resource type="Shader" path="res://assets/shaders/Sky_shader.gdshader" id="1_t68ne"]
+[ext_resource type="Shader" uid="uid://daa57ocn5to5e" path="res://assets/shaders/Sky_shader.gdshader" id="1_t68ne"]
 [ext_resource type="AudioStream" uid="uid://bgy16tvb5jv1h" path="res://assets/sounds/Lamp_turn_on.mp3" id="2_tlc3q"]
-[ext_resource type="Shader" path="res://assets/shaders/Grain_shader.gdshader" id="3_h1juc"]
+[ext_resource type="Shader" uid="uid://tm3ttwi0gfw6" path="res://assets/shaders/Grain_shader.gdshader" id="3_h1juc"]
 [ext_resource type="Texture2D" uid="uid://doeqs1dinas4x" path="res://assets/sight.png" id="4_mh7dj"]
-[ext_resource type="Script" path="res://scenes/ui2.gd" id="5_mr4s0"]
+[ext_resource type="Script" uid="uid://dajxick0ikys0" path="res://scenes/ui2.gd" id="5_mr4s0"]
 [ext_resource type="Texture2D" uid="uid://c7bcc8m4r3mfr" path="res://assets/BAR.png" id="6_des0e"]
 [ext_resource type="Texture2D" uid="uid://bh5acs7mud0ny" path="res://assets/Stressbar/H1.png" id="7_n6uac"]
 [ext_resource type="Texture2D" uid="uid://k4c81co6lolh" path="res://assets/Stressbar/H2.png" id="8_kcuwe"]
@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://f7uqnp3gs8mr" path="res://assets/Second_manager_scene/ceiling3.png" id="20_r56t0"]
 [ext_resource type="Texture2D" uid="uid://bwqpce0sbjls" path="res://assets/Second_manager_scene/wallpaperK1 копия.png" id="21_23hlr"]
 [ext_resource type="Texture2D" uid="uid://d0343jkkhwhco" path="res://assets/taboo.png" id="22_oshtd"]
-[ext_resource type="Shader" path="res://assets/shaders/Outline_shader.gdshader" id="23_gmdws"]
+[ext_resource type="Shader" uid="uid://cm7jrxagi7kts" path="res://assets/shaders/Outline_shader.gdshader" id="23_gmdws"]
 [ext_resource type="Texture2D" uid="uid://dxfs0k6kjssxi" path="res://assets/Second_manager_scene/wallpaperTK1.png" id="25_p7d0o"]
 [ext_resource type="Texture2D" uid="uid://ly43yxw1vbfk" path="res://assets/door2.png" id="26_t70q2"]
 [ext_resource type="AudioStream" uid="uid://2nvj2peussxg" path="res://assets/sounds/door_boom.mp3" id="27_cta17"]
@@ -35,7 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://07wlq6tbiqiw" path="res://assets/Second_manager_scene/decor/art9.png" id="32_56pvi"]
 [ext_resource type="Texture2D" uid="uid://iuuf40yr1oml" path="res://assets/Second_manager_scene/decor/art10.png" id="33_vw0je"]
 [ext_resource type="Texture2D" uid="uid://cc3kibdandc4a" path="res://assets/Second_manager_scene/decor/art5.png" id="34_7t44w"]
-[ext_resource type="Script" path="res://scenes/Second_manager_animations.gd" id="40_d67qj"]
+[ext_resource type="Script" uid="uid://lbsy22bklwhs" path="res://scenes/Second_manager_animations.gd" id="40_d67qj"]
 [ext_resource type="Texture2D" uid="uid://uvplpytg0jxw" path="res://assets/Second_manager_scene/decor/art8.png" id="41_8s3db"]
 [ext_resource type="Texture2D" uid="uid://dihodlktsiwy0" path="res://assets/Second_manager/CHh8.png" id="41_d6gvj"]
 [ext_resource type="Texture2D" uid="uid://d0bdmyr27vdwq" path="res://assets/Second_manager_scene/decor/ventilation2.png" id="42_aj28f"]
@@ -714,10 +714,10 @@ tracks/14/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0001e"]
 _data = {
-"Light_turn_on": SubResource("Animation_a5a76"),
-"RESET": SubResource("Animation_g10gl"),
-"death_animation": SubResource("Animation_gxhb4"),
-"win_animation": SubResource("Animation_y84vm")
+&"Light_turn_on": SubResource("Animation_a5a76"),
+&"RESET": SubResource("Animation_g10gl"),
+&"death_animation": SubResource("Animation_gxhb4"),
+&"win_animation": SubResource("Animation_y84vm")
 }
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mci6f"]
@@ -993,9 +993,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lwogh"]
 _data = {
-"RESET": SubResource("Animation_4673v"),
-"stress_hit": SubResource("Animation_7ulva"),
-"stressbar_show": SubResource("Animation_3qnwr")
+&"RESET": SubResource("Animation_4673v"),
+&"stress_hit": SubResource("Animation_7ulva"),
+&"stressbar_show": SubResource("Animation_3qnwr")
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_ssfp5"]
@@ -1387,12 +1387,12 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h683"]
 _data = {
-"Questions_counter_hide": SubResource("Animation_udtqr"),
-"Questions_counter_show": SubResource("Animation_fp75i"),
-"RESET": SubResource("Animation_j2fid"),
-"event_end": SubResource("Animation_xkjxb"),
-"event_start": SubResource("Animation_ge0jb"),
-"timebar_show": SubResource("Animation_e0wfs")
+&"Questions_counter_hide": SubResource("Animation_udtqr"),
+&"Questions_counter_show": SubResource("Animation_fp75i"),
+&"RESET": SubResource("Animation_j2fid"),
+&"event_end": SubResource("Animation_xkjxb"),
+&"event_start": SubResource("Animation_ge0jb"),
+&"timebar_show": SubResource("Animation_e0wfs")
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jmyim"]
@@ -1571,11 +1571,11 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rhmux"]
 _data = {
-"RESET": SubResource("Animation_w51oa"),
-"remove_point_1": SubResource("Animation_5hl6p"),
-"remove_point_2": SubResource("Animation_j588o"),
-"remove_point_3": SubResource("Animation_usay6"),
-"show_pointers": SubResource("Animation_aga1w")
+&"RESET": SubResource("Animation_w51oa"),
+&"remove_point_1": SubResource("Animation_5hl6p"),
+&"remove_point_2": SubResource("Animation_j588o"),
+&"remove_point_3": SubResource("Animation_usay6"),
+&"show_pointers": SubResource("Animation_aga1w")
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_ln1j6"]
@@ -1623,7 +1623,7 @@ albedo_texture = ExtResource("21_23hlr")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8xyi8"]
 render_priority = 0
 shader = ExtResource("23_gmdws")
-shader_parameter/outline_color = null
+shader_parameter/outline_color = Color(0, 0, 0, 1)
 shader_parameter/outline_width = 2.0
 shader_parameter/constant_width = true
 
@@ -1850,7 +1850,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="Lamp_animator" type="AnimationPlayer" parent="Under_UI_effects/Scene_transit_start"]
 libraries = {
-"": SubResource("AnimationLibrary_0001e")
+&"": SubResource("AnimationLibrary_0001e")
 }
 
 [node name="Lamp_sound" type="AudioStreamPlayer3D" parent="Under_UI_effects/Scene_transit_start"]
@@ -1875,8 +1875,8 @@ pivot_offset = Vector2(0, 25)
 mouse_filter = 2
 theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.0235294, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.0235294, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/focus = SubResource("StyleBoxEmpty_mci6f")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_iybhq")
@@ -1957,7 +1957,7 @@ frame_progress = 1.0
 
 [node name="Stressbar_animator" type="AnimationPlayer" parent="UI/Stressbar"]
 libraries = {
-"": SubResource("AnimationLibrary_lwogh")
+&"": SubResource("AnimationLibrary_lwogh")
 }
 
 [node name="Timebar" type="Node" parent="UI"]
@@ -2015,7 +2015,7 @@ texture = ExtResource("14_4alel")
 
 [node name="Timebar_animator" type="AnimationPlayer" parent="UI/Timebar"]
 libraries = {
-"": SubResource("AnimationLibrary_4h683")
+&"": SubResource("AnimationLibrary_4h683")
 }
 
 [node name="Silentbar" type="Node" parent="UI"]
@@ -2145,7 +2145,7 @@ texture = ExtResource("18_8pvcu")
 
 [node name="Silentbar_animator" type="AnimationPlayer" parent="UI/Silentbar"]
 libraries = {
-"": SubResource("AnimationLibrary_rhmux")
+&"": SubResource("AnimationLibrary_rhmux")
 }
 
 [node name="Menu" type="Control" parent="UI"]
@@ -2199,8 +2199,8 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_6fsts")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_xoaum")
@@ -2222,8 +2222,8 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_0fy8g")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4cwbj")
@@ -2271,8 +2271,8 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_6fsts")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_xoaum")
@@ -2294,8 +2294,8 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_0fy8g")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4cwbj")
@@ -2349,8 +2349,8 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.806709, 0.587291, 0.0243619, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_6fsts")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_xoaum")
@@ -2372,8 +2372,8 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 0
 theme_override_colors/font_hover_color = Color(0.952941, 0.698039, 0.0666667, 1)
-theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.807843, 0.588235, 0.0235294, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxEmpty_0fy8g")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4cwbj")
